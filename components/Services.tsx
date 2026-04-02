@@ -54,7 +54,7 @@ const services = [
     desc: "Optimiza tu negocio con inteligencia artificial. Chatbots, respuestas automáticas, análisis de datos y flujos que trabajan mientras tú descansas.",
     features: ["Chatbot inteligente 24/7", "Automatización de WhatsApp", "Reportes con IA"],
     badge: { text: "IA Powered", style: "border-am-accent/30 bg-am-accent/8 text-am-accent" },
-    featured: true,
+    featured: false,
   },
   {
     icon: (
@@ -101,8 +101,26 @@ export default function Services() {
     <section id="servicios" className="relative py-28 bg-am-surface overflow-hidden">
       {/* Tech background */}
       <div className="absolute inset-0 grid-bg opacity-25 pointer-events-none" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] rounded-full bg-am-primary/8 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-20 right-0 w-[350px] h-[250px] rounded-full bg-am-accent/6 blur-[100px] pointer-events-none" />
+
+      {/* Scan line */}
+      <div
+        className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-am-primary/30 to-transparent pointer-events-none"
+        style={{ animation: "scan-line 8s ease-in-out infinite" }}
+      />
+
+      {/* Floating orbs */}
+      <div
+        className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-am-primary/7 blur-[100px] pointer-events-none"
+        style={{ animation: "orb-1 12s ease-in-out infinite" }}
+      />
+      <div
+        className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-am-accent/6 blur-[90px] pointer-events-none"
+        style={{ animation: "orb-2 16s ease-in-out infinite" }}
+      />
+      <div
+        className="absolute top-1/2 left-1/2 w-[300px] h-[300px] rounded-full bg-am-primary/5 blur-[80px] pointer-events-none"
+        style={{ animation: "orb-3 20s ease-in-out infinite" }}
+      />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Header */}

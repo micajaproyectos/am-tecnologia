@@ -158,10 +158,10 @@ function ProjectCard({ url, title, type, blocked, img }: (typeof projects)[0]) {
         <div className="absolute bottom-0 left-0 right-0 px-5 py-4 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-between">
           <div>
             <span
-              className="text-[11px] font-extrabold uppercase tracking-widest text-am-primary"
-              style={{ textShadow: "0 0 8px rgba(37,99,235,0.9), 0 0 20px rgba(37,99,235,0.5), 0 1px 3px rgba(0,0,0,1)" }}
+              className="text-[11px] font-extrabold uppercase tracking-widest text-white"
+              style={{ textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px rgba(0,0,0,0.8)" }}
             >{type}</span>
-            <h3 className="font-display font-extrabold text-white text-lg leading-tight drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">{title}</h3>
+            <h3 className="font-display font-extrabold text-am-primary text-lg leading-tight drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">{title}</h3>
           </div>
           <a
             href={url}
