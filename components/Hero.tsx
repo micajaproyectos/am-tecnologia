@@ -113,7 +113,7 @@ export default function Hero() {
 
       {/* Scroll hint */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-am-muted text-[11px] uppercase tracking-[0.1em] animate-float pointer-events-none">
-        <span>Descubre más</span>
+        <span>Nuestros Proyectos</span>
         <div className="w-4 h-4 border-r-2 border-b-2 border-am-muted rotate-45 -mt-1" />
       </div>
     </section>

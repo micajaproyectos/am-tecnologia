@@ -37,9 +37,9 @@ const projects: { url: string; title: string; type: string; blocked?: boolean; i
   },
 ];
 
-const CARD_W = 680;
+const CARD_W = 920;
 const IFRAME_W = 1440;
-const IFRAME_H = 960;
+const IFRAME_H = 900;
 const SCALE = CARD_W / IFRAME_W;
 const PREVIEW_H = Math.round(IFRAME_H * SCALE);
 
@@ -71,50 +71,36 @@ export default function Projects() {
   }
 
   return (
-    <section id="proyectos" className="relative py-16 bg-am-bg overflow-hidden">
-      {/* Background glow */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[280px] rounded-full bg-am-primary/10 blur-[130px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[130px] rounded-full bg-am-accent/7 blur-[90px]" />
-      </div>
+    <section id="proyectos" className="relative bg-am-bg overflow-hidden">
+      {/* Nav — left */}
+      <button
+        onClick={() => scroll("left")}
+        aria-label="Anterior"
+        className="hidden md:flex absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full border border-white/15 bg-am-bg/80 backdrop-blur-sm text-am-muted items-center justify-center hover:border-am-primary/50 hover:text-am-primary transition-all duration-200"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+      </button>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <div className="flex items-center justify-between mb-8 flex-wrap gap-4">
-          <h2 className="font-display font-bold text-white" style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }}>
-            Proyectos <span className="gradient-text">realizados</span>
-          </h2>
-          {/* Nav arrows */}
-          <div className="flex gap-2">
-            <button
-              onClick={() => scroll("left")}
-              aria-label="Anterior"
-              className="w-9 h-9 rounded-full border border-white/10 text-am-muted flex items-center justify-center hover:border-am-primary/40 hover:text-am-primary transition-all duration-200"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <path d="M15 18l-6-6 6-6" />
-              </svg>
-            </button>
-            <button
-              onClick={() => scroll("right")}
-              aria-label="Siguiente"
-              className="w-9 h-9 rounded-full border border-white/10 text-am-muted flex items-center justify-center hover:border-am-primary/40 hover:text-am-primary transition-all duration-200"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <path d="M9 18l6-6-6-6" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
+      {/* Nav — right */}
+      <button
+        onClick={() => scroll("right")}
+        aria-label="Siguiente"
+        className="hidden md:flex absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full border border-white/15 bg-am-bg/80 backdrop-blur-sm text-am-muted items-center justify-center hover:border-am-primary/50 hover:text-am-primary transition-all duration-200"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </button>
 
       {/* Scroll track — full bleed */}
       <div
         ref={trackRef}
-        className="relative z-10 flex gap-6 overflow-x-auto scroll-smooth pb-6 select-none"
+        className="flex gap-4 overflow-x-auto scroll-smooth select-none py-6"
         style={{
-          paddingLeft: "max(24px, calc((100vw - 1280px) / 2 + 24px))",
-          paddingRight: "max(24px, calc((100vw - 1280px) / 2 + 24px))",
+          paddingLeft: "16px",
+          paddingRight: "16px",
           scrollbarWidth: "none",
           cursor: dragging ? "grabbing" : "grab",
         }}
@@ -131,8 +117,6 @@ export default function Projects() {
       {/* Hide scrollbar webkit */}
       <style>{`.overflow-x-auto::-webkit-scrollbar { display: none; }`}</style>
 
-      {/* Section fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-am-surface to-transparent pointer-events-none" />
     </section>
   );
 }
@@ -140,86 +124,54 @@ export default function Projects() {
 function ProjectCard({ url, title, type, blocked, img }: (typeof projects)[0]) {
   const domain = url.replace(/^https?:\/\//, "");
 
-  const typeColors: Record<string, string> = {
-    "Tienda Online": "text-am-accent",
-    "E-commerce":    "text-am-accent",
-    "Landing Médica":"text-am-green",
-    "SaaS / App Web":"text-am-primary",
-  };
 
   return (
     <div
-      className="group flex-shrink-0 rounded-2xl border border-white/6 bg-am-surface overflow-hidden hover:border-am-primary/30 hover:shadow-[0_12px_40px_rgba(0,0,0,0.5)] transition-all duration-300"
+      className="group flex-shrink-0 rounded-xl border border-white/6 bg-am-surface overflow-hidden hover:border-am-primary/25 transition-all duration-300"
       style={{ width: CARD_W }}
     >
-      {/* Preview */}
-      <div
-        className="relative overflow-hidden bg-am-surf2"
-        style={{ height: PREVIEW_H }}
-      >
+      {/* Preview — full card */}
+      <div className="relative overflow-hidden bg-am-surf2" style={{ height: PREVIEW_H }}>
         {blocked && img ? (
-          /* Imagen estática en reemplazo del iframe bloqueado */
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={img}
-              alt={title}
-              className="absolute inset-0 w-full h-full object-cover object-top"
-            />
-            {/* Hover overlay */}
-            <div className="absolute inset-0 bg-am-bg/80 flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 rounded-md border border-am-primary text-am-primary text-sm font-semibold hover:bg-am-primary/8 transition-all duration-200 pointer-events-auto"
-              >
-                Abrir sitio →
-              </a>
-              <span className="text-am-muted text-xs">{domain}</span>
-            </div>
+            <img src={img} alt={title} className="absolute inset-0 w-full h-full object-cover object-top" />
           </>
         ) : (
-          <>
-            <div
-              className="absolute top-0 left-0 pointer-events-none origin-top-left"
-              style={{ width: IFRAME_W, height: IFRAME_H, transform: `scale(${SCALE})` }}
-            >
-              <iframe
-                src={url}
-                title={title}
-                width={IFRAME_W}
-                height={IFRAME_H}
-                className="border-0"
-                loading="lazy"
-                sandbox="allow-scripts allow-same-origin"
-              />
-            </div>
-            {/* Hover overlay */}
-            <div className="absolute inset-0 bg-am-bg/80 flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 rounded-md border border-am-primary text-am-primary text-sm font-semibold hover:bg-am-primary/8 transition-all duration-200 pointer-events-auto"
-              >
-                Abrir sitio →
-              </a>
-              <span className="text-am-muted text-xs">{domain}</span>
-            </div>
-          </>
+          <div
+            className="absolute top-0 left-0 pointer-events-none origin-top-left"
+            style={{ width: IFRAME_W + 20, height: IFRAME_H, transform: `scale(${SCALE})` }}
+          >
+            <iframe
+              src={url}
+              title={title}
+              width={IFRAME_W + 20}
+              height={IFRAME_H}
+              className="border-0"
+              loading="lazy"
+              sandbox="allow-scripts allow-same-origin"
+            />
+          </div>
         )}
-      </div>
 
-      {/* Info */}
-      <div className="px-7 py-6 flex items-center justify-between">
-        <div>
-          <span className={`text-[12px] font-bold uppercase tracking-wider ${typeColors[type] ?? "text-am-primary"}`}>
-            {type}
-          </span>
-          <h3 className="font-display font-bold text-white text-[20px] mt-0.5">{title}</h3>
+        {/* Bottom info overlay — always visible */}
+        <div className="absolute bottom-0 left-0 right-0 px-5 py-4 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-between">
+          <div>
+            <span
+              className="text-[11px] font-extrabold uppercase tracking-widest text-am-primary"
+              style={{ textShadow: "0 0 8px rgba(37,99,235,0.9), 0 0 20px rgba(37,99,235,0.5), 0 1px 3px rgba(0,0,0,1)" }}
+            >{type}</span>
+            <h3 className="font-display font-extrabold text-white text-lg leading-tight drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">{title}</h3>
+          </div>
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 px-4 py-2 rounded-md border border-white/30 text-white text-xs font-semibold hover:border-am-primary hover:text-am-primary transition-all duration-200 pointer-events-auto opacity-0 group-hover:opacity-100"
+          >
+            Abrir →
+          </a>
         </div>
-        <span className="text-am-muted text-sm truncate max-w-[200px] text-right">{domain}</span>
       </div>
     </div>
   );
