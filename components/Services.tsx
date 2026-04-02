@@ -124,7 +124,7 @@ export default function Services() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="flex items-end justify-between mb-12 flex-wrap gap-6">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
           <div>
             <h2 className="font-display font-bold text-white text-balance"
               style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}

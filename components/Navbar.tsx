@@ -77,7 +77,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-am-surface/98 backdrop-blur-xl border-t border-white/5 px-6 pb-6 flex flex-col gap-1">
+        <div className="md:hidden bg-am-surface/98 backdrop-blur-xl border-t border-white/5 px-6 pb-6 flex flex-col gap-1 max-h-[calc(100vh-72px)] overflow-y-auto">
           {links.map((l) => (
             <a
               key={l.href}

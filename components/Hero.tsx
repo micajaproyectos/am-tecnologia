@@ -83,9 +83,9 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-4 sm:gap-8">
             {stats.map((s, i) => (
-              <div key={s.num} className="flex items-center gap-8">
+              <div key={s.num} className="flex items-center gap-4 sm:gap-8">
                 <div className="text-center">
                   <span className="block font-display font-bold text-white text-3xl leading-none">
                     {s.num}

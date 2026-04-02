@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const projects: { url: string; title: string; type: string; blocked?: boolean; img?: string }[] = [
   {
@@ -37,17 +37,26 @@ const projects: { url: string; title: string; type: string; blocked?: boolean; i
   },
 ];
 
-const CARD_W = 920;
+const MAX_CARD_W = 920;
 const IFRAME_W = 1440;
 const IFRAME_H = 900;
-const SCALE = CARD_W / IFRAME_W;
-const PREVIEW_H = Math.round(IFRAME_H * SCALE);
 
 export default function Projects() {
   const trackRef = useRef<HTMLDivElement>(null);
   const [dragging, setDragging] = useState(false);
+  const [cardW, setCardW] = useState(MAX_CARD_W);
   const startX = useRef(0);
   const scrollLeft = useRef(0);
+
+  useEffect(() => {
+    const update = () => setCardW(window.innerWidth < 768 ? window.innerWidth - 32 : MAX_CARD_W);
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  const scale = cardW / IFRAME_W;
+  const previewH = Math.round(IFRAME_H * scale);
 
   function onMouseDown(e: React.MouseEvent) {
     setDragging(true);
@@ -67,7 +76,7 @@ export default function Projects() {
 
   function scroll(dir: "left" | "right") {
     if (!trackRef.current) return;
-    trackRef.current.scrollBy({ left: dir === "right" ? CARD_W + 24 : -(CARD_W + 24), behavior: "smooth" });
+    trackRef.current.scrollBy({ left: dir === "right" ? cardW + 16 : -(cardW + 16), behavior: "smooth" });
   }
 
   return (
@@ -110,7 +119,7 @@ export default function Projects() {
         onMouseLeave={stopDrag}
       >
         {projects.map((p) => (
-          <ProjectCard key={p.url} {...p} />
+          <ProjectCard key={p.url} {...p} cardW={cardW} scale={scale} previewH={previewH} />
         ))}
       </div>
 
@@ -121,17 +130,17 @@ export default function Projects() {
   );
 }
 
-function ProjectCard({ url, title, type, blocked, img }: (typeof projects)[0]) {
+function ProjectCard({ url, title, type, blocked, img, cardW, scale, previewH }: (typeof projects)[0] & { cardW: number; scale: number; previewH: number }) {
   const domain = url.replace(/^https?:\/\//, "");
 
 
   return (
     <div
       className="group flex-shrink-0 rounded-xl border border-white/6 bg-am-surface overflow-hidden hover:border-am-primary/25 transition-all duration-300"
-      style={{ width: CARD_W }}
+      style={{ width: cardW }}
     >
       {/* Preview — full card */}
-      <div className="relative overflow-hidden bg-am-surf2" style={{ height: PREVIEW_H }}>
+      <div className="relative overflow-hidden bg-am-surf2" style={{ height: previewH }}>
         {blocked && img ? (
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -140,7 +149,7 @@ function ProjectCard({ url, title, type, blocked, img }: (typeof projects)[0]) {
         ) : (
           <div
             className="absolute top-0 left-0 pointer-events-none origin-top-left"
-            style={{ width: IFRAME_W + 20, height: IFRAME_H, transform: `scale(${SCALE})` }}
+            style={{ width: IFRAME_W + 20, height: IFRAME_H, transform: `scale(${scale})` }}
           >
             <iframe
               src={url}
