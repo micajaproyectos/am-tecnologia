@@ -104,6 +104,9 @@ export default function Services() {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/55 pointer-events-none" />
 
+      {/* Fade superior desde Projects */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
+
       {/* Tech background */}
       <div className="absolute inset-0 grid-bg opacity-25 pointer-events-none" />
 

@@ -37,7 +37,7 @@ const projects: { url: string; title: string; type: string; blocked?: boolean; i
   },
 ];
 
-const MAX_CARD_W = 920;
+const MAX_CARD_W = 550;
 const IFRAME_W = 1440;
 const IFRAME_H = 900;
 
@@ -111,7 +111,7 @@ export default function Projects() {
       {/* Scroll track — full bleed */}
       <div
         ref={trackRef}
-        className="flex gap-4 overflow-x-auto scroll-smooth select-none py-6"
+        className="flex gap-4 overflow-x-auto scroll-smooth select-none py-16"
         style={{
           paddingLeft: "16px",
           paddingRight: "16px",
@@ -132,7 +132,7 @@ export default function Projects() {
       <style>{`.overflow-x-auto::-webkit-scrollbar { display: none; }`}</style>
 
       {/* Fade inferior hacia Services */}
-      <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-b from-transparent to-black pointer-events-none z-10" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none z-10" />
 
     </section>
   );

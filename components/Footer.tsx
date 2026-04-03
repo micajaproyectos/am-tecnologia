@@ -19,7 +19,7 @@ export default function Footer() {
     <footer className="metal-surface border-t border-white/5 relative">
       {/* Fade superior desde Services */}
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-t from-transparent to-black pointer-events-none" />
-      <div className="max-w-7xl mx-auto px-6 pt-16 pb-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-16 pb-10">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <p className="text-white font-semibold text-[15px] mb-5">Servicios</p>
+            <p className="text-am-accent font-bold text-[15px] tracking-wide uppercase mb-5">Servicios</p>
             <ul className="flex flex-col gap-3">
               {serviceLinks.map((s) => (
                 <li key={s}>
@@ -74,7 +74,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <p className="text-white font-semibold text-[15px] mb-5">Empresa</p>
+            <p className="text-am-accent font-bold text-[15px] tracking-wide uppercase mb-5">Empresa</p>
             <ul className="flex flex-col gap-3">
               {companyLinks.map((l) => (
                 <li key={l.href}>
@@ -88,7 +88,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="text-white font-semibold text-[15px] mb-5">Contacto</p>
+            <p className="text-am-accent font-bold text-[15px] tracking-wide uppercase mb-5">Contacto</p>
             <ul className="flex flex-col gap-3">
               <li>
                 <a
