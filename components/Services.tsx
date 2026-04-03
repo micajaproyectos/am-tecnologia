@@ -98,7 +98,12 @@ export default function Services() {
   }
 
   return (
-    <section id="servicios" className="relative py-28 bg-am-surface overflow-hidden">
+    <section id="servicios" className="relative py-28 overflow-hidden">
+      {/* Image background */}
+      <div className="absolute inset-0 bg-cover bg-center pointer-events-none" style={{ backgroundImage: "url('/proyectos.png')" }} />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/55 pointer-events-none" />
+
       {/* Tech background */}
       <div className="absolute inset-0 grid-bg opacity-25 pointer-events-none" />
 
@@ -219,8 +224,8 @@ export default function Services() {
 
       <style>{`.overflow-x-auto::-webkit-scrollbar { display: none; }`}</style>
 
-      {/* Section fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-am-surface to-transparent pointer-events-none" />
+      {/* Fade inferior hacia Footer */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none z-10" />
     </section>
   );
 }

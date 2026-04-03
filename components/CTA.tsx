@@ -3,7 +3,7 @@ const WA =
 
 export default function CTA() {
   return (
-    <section id="contacto" className="py-28 bg-am-bg">
+    <section id="contacto" className="py-28 metal-bg">
       <div className="max-w-5xl mx-auto px-6">
         <div className="relative rounded-3xl overflow-hidden border border-am-primary/20 bg-gradient-to-br from-[#0d1120] via-[#131928] to-[#0b1020] shadow-[0_0_60px_rgba(37,99,235,0.12)] text-center px-8 py-20">
           {/* Orbs */}

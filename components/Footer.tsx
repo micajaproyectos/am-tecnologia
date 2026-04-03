@@ -16,7 +16,9 @@ const companyLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-am-surface border-t border-white/5">
+    <footer className="metal-surface border-t border-white/5 relative">
+      {/* Fade superior desde Services */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-t from-transparent to-black pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-10">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-12">
           {/* Brand */}

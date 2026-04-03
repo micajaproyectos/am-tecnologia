@@ -21,7 +21,7 @@ const members = [
 
 export default function Team() {
   return (
-    <section id="equipo" className="py-28 bg-am-bg">
+    <section id="equipo" className="py-28 metal-bg">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">

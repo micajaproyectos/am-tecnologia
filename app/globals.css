@@ -95,9 +95,97 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background-color: #050914;
+  background-color: #020408;
   color: #e2e8f0;
   overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════
+   LIQUID METAL BACKGROUNDS
+════════════════════════════════════════ */
+
+/* SVG noise reutilizable (codificado una sola vez) */
+/* baseFrequency 0.55 = grano más grueso, más "cromado" */
+
+/* Section bg — fondo casi negro con cromo azul (replaces bg-am-bg) */
+@utility metal-bg {
+  background-image:
+    /* Grano metálico */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E"),
+    /* Reflejo especular principal — franja brillante diagonal */
+    linear-gradient(138deg,
+      transparent         18%,
+      rgba(160,205,255,0.13) 32%,
+      rgba(210,232,255,0.20) 42%,
+      rgba(180,215,255,0.10) 50%,
+      transparent         64%
+    ),
+    /* Segundo reflejo más tenue */
+    linear-gradient(118deg,
+      transparent         40%,
+      rgba(130,180,255,0.07) 55%,
+      transparent         70%
+    ),
+    /* Glow azul eléctrico — núcleo brillante */
+    radial-gradient(ellipse 90% 55% at 42% 45%,
+      rgba(30,  90, 220, 0.60) 0%,
+      rgba(15,  50, 160, 0.35) 35%,
+      transparent              68%
+    ),
+    /* Glow secundario superior-derecha */
+    radial-gradient(ellipse 65% 45% at 78% 22%,
+      rgba(25,  75, 200, 0.45) 0%,
+      rgba(10,  35, 130, 0.20) 45%,
+      transparent              68%
+    ),
+    /* Sombra profunda inferior-izquierda */
+    radial-gradient(ellipse 70% 60% at 12% 88%,
+      rgba(5,   15,  55, 0.70) 0%,
+      transparent              60%
+    ),
+    /* Sombra profunda superior-izquierda */
+    radial-gradient(ellipse 50% 40% at 5% 5%,
+      rgba(4,   10,  40, 0.65) 0%,
+      transparent              55%
+    );
+  background-color: #020408;
+  background-blend-mode: soft-light, normal, normal, normal, normal, normal, normal;
+  background-size: 256px 256px, cover, cover, cover, cover, cover, cover;
+}
+
+/* Section surface — ligeramente más claro que metal-bg (replaces bg-am-surface) */
+@utility metal-surface {
+  background-image:
+    /* Grano metálico */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E"),
+    /* Reflejo especular — diferente ángulo para variación */
+    linear-gradient(155deg,
+      transparent         22%,
+      rgba(155,200,255,0.11) 36%,
+      rgba(200,228,255,0.17) 46%,
+      rgba(170,210,255,0.08) 54%,
+      transparent         68%
+    ),
+    /* Glow azul — desplazado respecto a metal-bg */
+    radial-gradient(ellipse 85% 55% at 62% 55%,
+      rgba(28,  85, 215, 0.58) 0%,
+      rgba(12,  45, 155, 0.32) 38%,
+      transparent              68%
+    ),
+    /* Glow superior-izquierda */
+    radial-gradient(ellipse 55% 40% at 18% 18%,
+      rgba(22,  70, 195, 0.42) 0%,
+      rgba(8,   30, 120, 0.18) 48%,
+      transparent              68%
+    ),
+    /* Sombra inferior-derecha */
+    radial-gradient(ellipse 65% 55% at 92% 92%,
+      rgba(4,   12,  50, 0.68) 0%,
+      transparent              58%
+    );
+  background-color: #030509;
+  background-blend-mode: soft-light, normal, normal, normal, normal;
+  background-size: 256px 256px, cover, cover, cover, cover;
 }
 
 /* ═══════════════════════════════════════

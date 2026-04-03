@@ -23,7 +23,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="relative py-16 bg-am-surface">
+    <section className="relative py-16 metal-surface">
       <div className="max-w-2xl mx-auto px-6">
         {/* Header */}
         <div className="mb-10">

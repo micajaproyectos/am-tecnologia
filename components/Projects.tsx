@@ -80,7 +80,12 @@ export default function Projects() {
   }
 
   return (
-    <section id="proyectos" className="relative bg-am-bg overflow-hidden">
+    <section id="proyectos" className="relative overflow-hidden">
+      {/* Image background */}
+      <div className="absolute inset-0 bg-cover bg-center pointer-events-none" style={{ backgroundImage: "url('/proyectos.png')" }} />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/55 pointer-events-none" />
+
       {/* Nav — left */}
       <button
         onClick={() => scroll("left")}
@@ -125,6 +130,9 @@ export default function Projects() {
 
       {/* Hide scrollbar webkit */}
       <style>{`.overflow-x-auto::-webkit-scrollbar { display: none; }`}</style>
+
+      {/* Fade inferior hacia Services */}
+      <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-b from-transparent to-black pointer-events-none z-10" />
 
     </section>
   );

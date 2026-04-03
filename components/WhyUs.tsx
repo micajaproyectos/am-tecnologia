@@ -28,7 +28,7 @@ const tech = [
 
 export default function WhyUs() {
   return (
-    <section className="py-28 bg-am-surface">
+    <section className="py-28 metal-surface">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           {/* ── Copy ── */}

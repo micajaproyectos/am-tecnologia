@@ -23,11 +23,11 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
       >
-        <source src="/video-hero.mp4" type="video/mp4" />
+        <source src="/video_hero.mp4" type="video/mp4" />
       </video>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-am-bg/75 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/45 pointer-events-none" />
 
       {/* Grid background */}
       <div className="absolute inset-0 grid-bg pointer-events-none opacity-40" />
@@ -109,7 +109,7 @@ export default function Hero() {
       </div>
 
       {/* Section fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-am-bg to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent pointer-events-none" />
 
       {/* Scroll hint */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-am-muted text-[11px] uppercase tracking-[0.1em] animate-float pointer-events-none">
