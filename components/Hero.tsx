@@ -21,13 +21,13 @@ export default function Hero() {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none scale-110 blur-[5px]"
       >
-        <source src="/video_hero.mp4" type="video/mp4" />
+        <source src="/video-hero.mp4" type="video/mp4" />
       </video>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/45 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/60 pointer-events-none" />
 
       {/* Grid background */}
       <div className="absolute inset-0 grid-bg pointer-events-none opacity-40" />
