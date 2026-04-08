@@ -51,9 +51,9 @@ export default function Hero() {
           <h1 className="font-display font-extrabold text-white text-balance leading-[1.15] mb-6"
             style={{ fontSize: "clamp(2.25rem, 5vw, 3.75rem)" }}
           >
-            Tu negocio merece una{" "}
-            <span className="gradient-text">presencia digital</span>{" "}
-            que venda de verdad.
+            Si no tienes página web, estás{" "}
+            <span className="gradient-text">perdiendo clientes</span>{" "}
+            todos los días.
           </h1>
 
           <p className="text-am-muted text-lg leading-[1.75] mb-10 max-w-xl">
