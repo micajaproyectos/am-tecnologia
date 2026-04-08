@@ -18,11 +18,11 @@ export default function PromoCard() {
           Coloca tu imagen en: /public/promo-banner.png
           Se mostrará automáticamente al agregarlo.
       ── */}
-      <div className="relative aspect-[4/5] overflow-hidden bg-am-surf2">
+      <div className="relative aspect-[2/3] overflow-hidden bg-am-surf2">
         {!imgError ? (
           /* eslint-disable-next-line @next/next/no-img-element */
           <img
-            src="/promo_hero.png"
+            src="/promo-hero.png"
             alt="Promoción de lanzamiento AM Tecnología"
             className="w-full h-full object-cover"
             onError={() => setImgError(true)}
@@ -30,27 +30,6 @@ export default function PromoCard() {
         ) : (
           <ImagePlaceholder />
         )}
-      </div>
-
-      {/* Content */}
-      <div className="px-4 py-3 flex items-center justify-between gap-4">
-        <div>
-          <p className="text-am-muted text-xs leading-tight mb-1">
-            Sitio web profesional + dominio + hosting incluido
-          </p>
-          <div className="flex items-baseline gap-2">
-            <span className="text-am-muted line-through text-xs">$289.990</span>
-            <span className="font-display font-bold text-am-green text-xl">$99.990</span>
-          </div>
-        </div>
-        <a
-          href={WA}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-md border border-am-primary text-am-primary font-semibold text-sm hover:bg-am-primary/8 transition-all duration-200"
-        >
-          Aprovechar oferta
-        </a>
       </div>
 
       {/* Glow */}

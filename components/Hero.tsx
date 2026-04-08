@@ -51,16 +51,49 @@ export default function Hero() {
           <h1 className="font-display font-extrabold text-white text-balance leading-[1.15] mb-6"
             style={{ fontSize: "clamp(2.25rem, 5vw, 3.75rem)" }}
           >
-            Si no tienes página web, estás{" "}
-            <span className="gradient-text">perdiendo clientes</span>{" "}
-            todos los días.
+            Cada día que no tienes web, alguien más se queda con{" "}
+            <span className="gradient-text">tus clientes</span>
           </h1>
 
-          <p className="text-am-muted text-lg leading-[1.75] mb-10 max-w-xl">
-            Creamos sitios web, e-commerce y automatizaciones con IA para que
-            tu empresa crezca — diseñados por{" "}
-            <span className="text-am-text font-medium">Ingenieros Civiles</span>{" "}
-            con visión tecnológica.
+          <p className="text-am-muted text-base leading-snug mb-6 max-w-lg">
+            Tus clientes te buscan en la web… y terminan comprandole a tu competencia.
+          </p>
+
+          {/* Pricing */}
+          <div className="relative inline-flex items-center gap-4 mb-4 px-5 py-4 rounded-xl overflow-hidden shadow-[0_0_32px_rgba(251,146,60,0.35),0_4px_24px_rgba(0,0,0,0.4)]">
+            {/* Fondo degradado urgencia */}
+            <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-orange-500 to-amber-400" />
+            {/* Ruido sutil para textura */}
+            <div className="absolute inset-0 opacity-10 mix-blend-overlay bg-[url('/noise.png')]" />
+
+            <div className="relative flex flex-col">
+              <span className="text-white/80 text-[10px] uppercase tracking-widest font-bold leading-none mb-1.5">⚡ Oferta de lanzamiento</span>
+              <span className="text-white/60 line-through text-xs leading-none">Antes $199.990</span>
+            </div>
+
+            <div className="relative w-px h-10 bg-white/25" />
+
+            <div className="relative flex flex-col">
+              <span className="font-display font-extrabold text-white text-[2.1rem] leading-none tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">$99.990</span>
+              <span className="text-white/80 text-[11px] font-bold uppercase tracking-wide mt-0.5">Pago único · sin mensualidad</span>
+            </div>
+
+            <div className="relative flex flex-col items-center justify-center px-2.5 py-1.5 rounded-lg bg-white/20 border border-white/30">
+              <span className="text-white text-[10px] font-bold uppercase tracking-wide leading-none">¡Ahorra HOY!</span>
+              <span className="text-white font-extrabold text-base leading-tight">$100.000</span>
+            </div>
+          </div>
+
+          {/* Scarcity */}
+          <p className="flex items-center gap-2 text-amber-400 text-sm font-bold mb-2">
+            <span>🔥</span>
+            Solo 5 cupos esta semana.
+          </p>
+
+          {/* Social proof */}
+          <p className="flex items-center gap-2 text-am-text text-sm font-medium mb-6">
+            <span className="text-am-green text-base">✓</span>
+            +30 negocios en Chile ya están vendiendo con su web todos los días
           </p>
 
           {/* Actions */}
@@ -72,7 +105,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2.5 text-am-primary hover:text-am-prim2 font-bold text-[15px] border-b border-am-primary/40 hover:border-am-prim2/60 pb-0.5 transition-all duration-200"
             >
               <WaIcon />
-              Agendar Diagnóstico
+              Empieza a recibir clientes hoy
             </a>
             <a
               href="#proyectos"
@@ -113,7 +146,7 @@ export default function Hero() {
 
       {/* Scroll hint */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-am-muted text-[11px] uppercase tracking-[0.1em] animate-float pointer-events-none">
-        <span>Nuestros Proyectos</span>
+        <span>Algunos de Nuestros Proyectos</span>
         <div className="w-4 h-4 border-r-2 border-b-2 border-am-muted rotate-45 -mt-1" />
       </div>
     </section>
