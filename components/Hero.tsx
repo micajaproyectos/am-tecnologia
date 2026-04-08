@@ -60,25 +60,26 @@ export default function Hero() {
           </p>
 
           {/* Pricing */}
-          <div className="relative inline-flex items-center gap-4 mb-4 px-5 py-4 rounded-xl overflow-hidden shadow-[0_0_32px_rgba(251,146,60,0.35),0_4px_24px_rgba(0,0,0,0.4)]">
+          <div className="relative flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 mb-4 w-full max-w-md px-4 py-4 sm:px-5 rounded-xl overflow-hidden shadow-[0_0_32px_rgba(251,146,60,0.35),0_4px_24px_rgba(0,0,0,0.4)]">
             {/* Fondo degradado urgencia */}
             <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-orange-500 to-amber-400" />
-            {/* Ruido sutil para textura */}
-            <div className="absolute inset-0 opacity-10 mix-blend-overlay bg-[url('/noise.png')]" />
 
-            <div className="relative flex flex-col">
-              <span className="text-white/80 text-[10px] uppercase tracking-widest font-bold leading-none mb-1.5">⚡ Oferta de lanzamiento</span>
+            {/* Fila superior: etiqueta + precio anterior */}
+            <div className="relative flex sm:flex-col gap-3 sm:gap-0 items-center sm:items-start">
+              <span className="text-white/90 text-[10px] uppercase tracking-widest font-bold leading-none sm:mb-1.5">⚡ Oferta de lanzamiento</span>
               <span className="text-white/60 line-through text-xs leading-none">Antes $199.990</span>
             </div>
 
-            <div className="relative w-px h-10 bg-white/25" />
+            <div className="relative hidden sm:block w-px self-stretch bg-white/25" />
 
+            {/* Precio principal */}
             <div className="relative flex flex-col">
-              <span className="font-display font-extrabold text-white text-[2.1rem] leading-none tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">$99.990</span>
+              <span className="font-display font-extrabold text-white text-[2rem] sm:text-[2.1rem] leading-none tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">$99.990</span>
               <span className="text-white/80 text-[11px] font-bold uppercase tracking-wide mt-0.5">Pago único · sin mensualidad</span>
             </div>
 
-            <div className="relative flex flex-col items-center justify-center px-2.5 py-1.5 rounded-lg bg-white/20 border border-white/30">
+            {/* Badge ahorro */}
+            <div className="relative sm:ml-auto flex flex-col items-center justify-center px-2.5 py-1.5 rounded-lg bg-white/20 border border-white/30 self-start sm:self-auto">
               <span className="text-white text-[10px] font-bold uppercase tracking-wide leading-none">¡Ahorra HOY!</span>
               <span className="text-white font-extrabold text-base leading-tight">$100.000</span>
             </div>
@@ -93,7 +94,7 @@ export default function Hero() {
           {/* Social proof */}
           <p className="flex items-center gap-2 text-am-text text-sm font-medium mb-6">
             <span className="text-am-green text-base">✓</span>
-            +30 negocios en Chile ya están vendiendo con su web todos los días
+            +30 negocios en Chile ya están vendiendo todos los días con su web. 
           </p>
 
           {/* Actions */}
@@ -102,7 +103,7 @@ export default function Hero() {
               href={WA}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 text-am-primary hover:text-am-prim2 font-bold text-[15px] border-b border-am-primary/40 hover:border-am-prim2/60 pb-0.5 transition-all duration-200"
+              className="inline-flex items-center gap-2.5 text-green-400 hover:text-green-300 font-bold text-[15px] transition-colors duration-200"
             >
               <WaIcon />
               Empieza a recibir clientes hoy
