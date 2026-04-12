@@ -94,7 +94,7 @@ export default function Hero() {
           {/* Social proof */}
           <p className="flex items-center gap-2 text-am-text text-sm font-medium mb-6">
             <span className="text-am-green text-base">✓</span>
-            +30 negocios en Chile ya están vendiendo todos los días con su web. 
+            +50 negocios en Chile ya están vendiendo todos los días con su web.
           </p>
 
           {/* Actions */}
