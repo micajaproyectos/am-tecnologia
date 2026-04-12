@@ -86,6 +86,19 @@ export default function Projects() {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/55 pointer-events-none" />
 
+      {/* Section header */}
+      <div className="relative z-20 text-center pt-16 pb-2 px-6">
+        <h2 className="font-display font-bold text-white text-balance"
+          style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}
+        >
+          Diseño Web en Chile —{" "}
+          <span className="gradient-text">Resultados Reales</span>
+        </h2>
+        <p className="text-am-muted text-sm mt-3">
+          Sitios web, tiendas online y landing pages que están generando clientes hoy.
+        </p>
+      </div>
+
       {/* Nav — left */}
       <button
         onClick={() => scroll("left")}

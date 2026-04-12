@@ -137,9 +137,12 @@ export default function Services() {
             <h2 className="font-display font-bold text-white text-balance"
               style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}
             >
-              Soluciones digitales{" "}
-              <span className="gradient-text">a tu medida</span>
+              Servicios de{" "}
+              <span className="gradient-text">Diseño Web en Chile</span>
             </h2>
+            <p className="text-am-muted text-sm leading-relaxed mt-3 max-w-lg">
+              Landing pages, sitios web y tiendas online que convierten visitas en clientes. Servimos empresas en Puerto Montt, Valdivia, Temuco, Osorno y todo Chile.
+            </p>
           </div>
           {/* Nav arrows */}
           <div className="flex gap-3">

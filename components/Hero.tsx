@@ -1,4 +1,4 @@
-import PromoCard from "./PromoCard";
+import TestimonialsCard from "./TestimonialsCard";
 
 const WA =
   "https://wa.me/56985660954?text=Hola%2C%20quiero%20agendar%20un%20diagn%C3%B3stico%20gratuito";
@@ -43,7 +43,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-am-green animate-pulse-dot" />
             <span className="text-am-accent text-[13px] font-semibold tracking-wide">
-              Ingenieros a tu servicio
+              Diseño Web Chile · +50 Empresas Confían en Nosotros
             </span>
           </div>
 
@@ -56,7 +56,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-am-muted text-base leading-snug mb-6 max-w-lg">
-            Tus clientes te buscan en la web… y terminan comprandole a tu competencia.
+            Tu competencia tiene sitio web y te está quitando clientes. Creamos tu diseño web en Chile en 48 horas, sin mensualidades.
           </p>
 
           {/* Pricing */}
@@ -138,7 +138,7 @@ export default function Hero() {
 
         {/* ── PROMO CARD ── */}
         <div className="flex justify-center lg:justify-end">
-          <PromoCard />
+          <TestimonialsCard />
         </div>
       </div>
 

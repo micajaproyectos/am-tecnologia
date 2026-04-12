@@ -22,26 +22,47 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "AM Tecnología — Páginas Web Profesionales en Chile",
+    default: "Diseño Web Chile | Páginas Web desde $99.990 | AM Tecnología",
     template: "%s | AM Tecnología",
   },
 
   description:
-    "Creamos páginas web, tiendas online y automatizaciones con IA para empresas en Chile. Diseñadas por Ingenieros Civiles. Entrega en 48 horas. ¡Diagnóstico gratis!",
+    "Diseño web Chile desde $99.990. Landing pages, sitio web y tienda online para tu empresa. Servimos Puerto Montt, Temuco, Valdivia, Osorno y todo Chile. Entrega en 48h.",
 
   keywords: [
-    "páginas web Chile",
+    // Nacionales — alto volumen confirmado
+    "diseño web",
+    "páginas web",
+    "sitio web",
+    "landing page",
+    "diseño pagina web",
+    "página web para mi negocio",
+    "tienda online",
+    // Con geo Chile
     "diseño web Chile",
-    "agencia web Chile",
+    "páginas web Chile",
+    "sitio web Chile",
     "landing page Chile",
     "tienda online Chile",
-    "e-commerce Chile",
-    "desarrollo web profesional",
-    "automatización con IA",
-    "chatbot WhatsApp",
-    "sitio web empresa",
-    "página web precio",
-    "web pyme Chile",
+    "diseño web profesional Chile",
+    "página web empresa Chile",
+    "agencia diseño web Chile",
+    "hacer página web Chile",
+    "crear página web Chile",
+    // Locales — baja competencia, fácil de rankear
+    "diseño web Puerto Montt",
+    "diseño web Osorno",
+    "diseño web Valdivia",
+    "diseño web Temuco",
+    "diseño web Concepción",
+    "diseño web Coyhaique",
+    "diseño web Punta Arenas",
+    "diseño web Patagonia",
+    "páginas web región de los Lagos",
+    "diseño web región de los Lagos",
+    "diseño web región de los Ríos",
+    "diseño web Araucanía",
+    // Marca
     "AM Tecnología",
   ],
 
@@ -51,6 +72,10 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: siteUrl,
+  },
+
+  verification: {
+    google: "iuzcq3PnynOBicXpLgGcEZqKWScewQ_BajwYrwYuQp0",
   },
 
   robots: {
@@ -70,9 +95,9 @@ export const metadata: Metadata = {
     locale: "es_CL",
     url: siteUrl,
     siteName: "AM Tecnología",
-    title: "AM Tecnología — Páginas Web Profesionales en Chile",
+    title: "Diseño Web Chile | Páginas Web desde $99.990 | AM Tecnología",
     description:
-      "Landing pages, tiendas online y automatizaciones con IA. Diseñadas por Ingenieros Civiles. Entrega en 48 horas.",
+      "Diseño web profesional en Chile desde $99.990. Landing pages, tiendas online y sitios web para empresas en Puerto Montt, Temuco, Valdivia y todo Chile.",
     images: [
       {
         url: "/icon.png",
@@ -85,14 +110,164 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "AM Tecnología — Páginas Web Profesionales en Chile",
+    title: "Diseño Web Chile | Páginas Web desde $99.990 | AM Tecnología",
     description:
-      "Landing pages, tiendas online y automatizaciones con IA. Entrega en 48 horas.",
+      "Diseño web profesional en Chile desde $99.990. Landing pages, tiendas online y sitios web. Puerto Montt, Temuco, Valdivia y todo Chile. Entrega en 48h.",
     images: ["/icon.png"],
   },
 };
 
 const PIXEL_ID = "2526160884471265";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.amtecnologia.cl/#business",
+      "name": "AM Tecnología",
+      "description":
+        "Agencia de desarrollo web profesional en Chile. Creamos páginas web, tiendas online y automatizaciones con IA para empresas. Diseñadas por Ingenieros Civiles. Entrega en 48 horas.",
+      "url": "https://www.amtecnologia.cl",
+      "telephone": "+56985660954",
+      "email": "contacto@amconsultora.cl",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CL",
+        "addressRegion": "Los Lagos",
+        "addressLocality": "Futaleufú",
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "Chile" },
+        { "@type": "City", "name": "Puerto Montt" },
+        { "@type": "City", "name": "Osorno" },
+        { "@type": "City", "name": "Valdivia" },
+        { "@type": "City", "name": "Temuco" },
+        { "@type": "City", "name": "Concepción" },
+        { "@type": "City", "name": "Coyhaique" },
+        { "@type": "City", "name": "Punta Arenas" },
+        { "@type": "City", "name": "Futaleufú" },
+        { "@type": "City", "name": "Santiago" },
+      ],
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "20:00",
+      },
+      "sameAs": ["https://www.instagram.com/micajaempresa"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Desarrollo Web en Chile",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Landing Page de Ventas",
+              "description": "Páginas web diseñadas para convertir visitas en clientes. Con carrito WhatsApp integrado para cerrar ventas al instante.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "One Page Corporativo",
+              "description": "Presencia digital elegante en una sola página. Ideal para profesionales, consultoras y pymes en Chile.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-commerce con Pago",
+              "description": "Tienda online completa con Webpay y MercadoPago integrado. Vende tus productos las 24 horas.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Automatizaciones con IA",
+              "description": "Chatbots inteligentes, automatización de WhatsApp y flujos con inteligencia artificial para empresas en Chile.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "App Web SaaS",
+              "description": "Aplicaciones web a medida para tu negocio. Plataformas escalables con acceso desde cualquier dispositivo.",
+            },
+          },
+        ],
+      },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.amtecnologia.cl/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta una página web en Chile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nuestros planes parten desde $99.990 pago único, sin mensualidades ni costos ocultos. El precio incluye diseño, desarrollo, dominio y hosting.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta una página web con tienda online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una tienda online con Webpay y MercadoPago integrado parte desde $199.990 pago único. Incluye gestión de productos, carrito de compras y panel administrativo.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta posicionarme en Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El SEO básico está incluido en todos nuestros planes sin costo adicional. Configuramos título, descripción, sitemap y datos estructurados desde el primer día.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cobran por hacer una página web?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Precio fijo desde $99.990, sin cuotas mensuales ni contratos largos. Lo que cotizamos es exactamente lo que pagas.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito una página web para mi negocio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Si tu competencia ya tiene una, cada día sin web es un cliente que pierdes. El 92% de los chilenos busca productos y servicios en Google antes de comprar.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trabajan fuera de Santiago?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, atendemos todo Chile de forma 100% remota. Tenemos clientes en Puerto Montt, Valdivia, Temuco, Osorno, Punta Arenas, Coyhaique y más.",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.amtecnologia.cl/#website",
+      "url": "https://www.amtecnologia.cl",
+      "name": "AM Tecnología",
+      "description": "Páginas web profesionales en Chile. Landing pages, tiendas online y automatizaciones con IA.",
+      "publisher": { "@id": "https://www.amtecnologia.cl/#business" },
+    },
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -105,6 +280,11 @@ export default function RootLayout({
       <body className="font-sans">
         {children}
         <MetaPixelEvents />
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {/* Meta Pixel */}
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
