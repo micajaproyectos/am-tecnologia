@@ -2,44 +2,49 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const projects: { url: string; title: string; type: string; blocked?: boolean; img?: string }[] = [
+const projects: { url: string; title: string; type: string; img?: string }[] = [
   {
     url: "https://www.ajonegroaustral.cl",
     title: "Ajo Negro Austral",
     type: "Tienda Online",
+    img: "/preview-ajonegro.png",
   },
   {
     url: "https://www.perfumeriasur.cl",
     title: "Perfumería Sur",
     type: "E-commerce",
+    img: "/preview-perfumeria.png",
   },
   {
     url: "https://www.clinicabeautylab.cl",
     title: "Clínica Beauty Lab",
     type: "Landing Médica",
+    img: "/preview-beautylab.png",
   },
   {
     url: "https://www.drasolangeballen.cl",
     title: "Dra. Solange Ballén",
     type: "Landing Médica",
+    img: "/preview-solange.png",
   },
   {
     url: "https://www.micajaempresa.cl",
     title: "Mi Caja Empresa",
     type: "SaaS / App Web",
+    img: "/preview-micaja.png",
   },
   {
     url: "https://www.millanolli.com",
     title: "Millanolli",
     type: "Tienda Online",
-    blocked: true,
     img: "/pre_millanolli.png",
   },
 ];
 
-const MAX_CARD_W = 550;
+const MAX_CARD_W = 520;
 const IFRAME_W = 1440;
 const IFRAME_H = 900;
+const IMG_ASPECT = 16 / 10; // landscape preview ratio
 
 export default function Projects() {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -124,10 +129,10 @@ export default function Projects() {
       {/* Scroll track — full bleed */}
       <div
         ref={trackRef}
-        className="flex gap-4 overflow-x-auto scroll-smooth select-none py-16"
+        className="flex gap-6 overflow-x-auto scroll-smooth select-none py-12"
         style={{
-          paddingLeft: "16px",
-          paddingRight: "16px",
+          paddingLeft: "40px",
+          paddingRight: "40px",
           scrollbarWidth: "none",
           cursor: dragging ? "grabbing" : "grab",
         }}
@@ -151,22 +156,39 @@ export default function Projects() {
   );
 }
 
-function ProjectCard({ url, title, type, blocked, img, cardW, scale, previewH }: (typeof projects)[0] & { cardW: number; scale: number; previewH: number }) {
-  const domain = url.replace(/^https?:\/\//, "");
-
+function ProjectCard({ url, title, type, img, cardW, scale, previewH }: (typeof projects)[0] & { cardW: number; scale: number; previewH: number }) {
+  const domain = url.replace(/^https?:\/\/(www\.)?/, "");
+  const imgH = img ? Math.round(cardW / IMG_ASPECT) : previewH;
 
   return (
     <div
-      className="group flex-shrink-0 rounded-xl border border-white/6 bg-am-surface overflow-hidden hover:border-am-primary/25 transition-all duration-300"
+      className="group flex-shrink-0 rounded-2xl border border-white/8 bg-[#0d1120] shadow-[0_8px_32px_rgba(0,0,0,0.5)] hover:border-am-primary/30 hover:shadow-[0_12px_40px_rgba(37,99,235,0.15)] transition-all duration-300"
       style={{ width: cardW }}
     >
-      {/* Preview — full card */}
-      <div className="relative overflow-hidden bg-am-surf2" style={{ height: previewH }}>
-        {blocked && img ? (
-          <>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={img} alt={title} className="absolute inset-0 w-full h-full object-cover object-top" />
-          </>
+      {/* Browser chrome bar */}
+      <div className="flex items-center gap-2 px-4 py-2.5 border-b border-white/6 bg-white/3">
+        {/* Traffic lights */}
+        <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
+        <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
+        <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
+        {/* URL bar */}
+        <div className="flex-1 mx-3 px-3 py-1 rounded-md bg-white/5 border border-white/8 flex items-center gap-1.5">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-white/30 shrink-0">
+            <rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0110 0v4" />
+          </svg>
+          <span className="text-white/40 text-[11px] font-mono truncate">{domain}</span>
+        </div>
+      </div>
+
+      {/* Screenshot */}
+      <div className="relative overflow-hidden bg-am-surf2" style={{ height: imgH }}>
+        {img ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={img}
+            alt={`Diseño web ${title}`}
+            className="absolute inset-0 w-full h-full object-cover object-top"
+          />
         ) : (
           <div
             className="absolute top-0 left-0 pointer-events-none origin-top-left"
@@ -184,20 +206,17 @@ function ProjectCard({ url, title, type, blocked, img, cardW, scale, previewH }:
           </div>
         )}
 
-        {/* Bottom info overlay — always visible */}
-        <div className="absolute bottom-0 left-0 right-0 px-5 py-4 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-between">
+        {/* Bottom info overlay */}
+        <div className="absolute bottom-0 left-0 right-0 px-5 py-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex items-end justify-between">
           <div>
-            <span
-              className="text-[11px] font-extrabold uppercase tracking-widest text-white"
-              style={{ textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 10px rgba(0,0,0,0.8)" }}
-            >{type}</span>
-            <h3 className="font-display font-extrabold text-am-primary text-lg leading-tight drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">{title}</h3>
+            <span className="block text-[10px] font-bold uppercase tracking-widest text-white/50 mb-0.5">{type}</span>
+            <h3 className="font-display font-bold text-white text-base leading-tight">{title}</h3>
           </div>
           <a
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 px-4 py-2 rounded-md border border-white/30 text-white text-xs font-semibold hover:border-am-primary hover:text-am-primary transition-all duration-200 pointer-events-auto opacity-0 group-hover:opacity-100"
+            className="shrink-0 px-3 py-1.5 rounded-md bg-am-primary/90 text-white text-xs font-semibold hover:bg-am-primary transition-all duration-200 pointer-events-auto opacity-0 group-hover:opacity-100 -translate-y-1 group-hover:translate-y-0"
           >
             Abrir →
           </a>
