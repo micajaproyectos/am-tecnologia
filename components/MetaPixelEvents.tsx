@@ -12,8 +12,8 @@ export default function MetaPixelEvents() {
   useEffect(() => {
     function handleClick(e: MouseEvent) {
       const link = (e.target as Element).closest("a");
-      if (link?.href?.includes("wa.me")) {
-        window.fbq?.("track", "Contact");
+      if (link?.href?.includes("wa.me") || link?.href?.includes("api.whatsapp.com")) {
+        window.fbq?.("track", "Lead");
       }
     }
     document.addEventListener("click", handleClick);
