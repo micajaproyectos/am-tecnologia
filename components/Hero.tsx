@@ -66,7 +66,9 @@ export default function Hero() {
 
             {/* Fila superior: etiqueta + precio anterior */}
             <div className="relative flex sm:flex-col gap-3 sm:gap-0 items-center sm:items-start">
-              <span className="text-white/90 text-[10px] uppercase tracking-widest font-bold leading-none sm:mb-1.5">⚡ Oferta de lanzamiento</span>
+              <span className="text-white/90 text-[10px] uppercase tracking-widest font-bold leading-none sm:mb-1.5">
+                {"\u26A1"} Oferta de lanzamiento
+              </span>
               <span className="text-white/60 line-through text-xs leading-none">Antes $199.990</span>
             </div>
 
@@ -87,14 +89,8 @@ export default function Hero() {
 
           {/* Scarcity */}
           <p className="flex items-center gap-2 text-amber-400 text-sm font-bold mb-2">
-            <span>🔥</span>
+            <span>{"\uD83D\uDD25"}</span>
             Solo 5 cupos esta semana.
-          </p>
-
-          {/* Social proof */}
-          <p className="flex items-center gap-2 text-am-text text-sm font-medium mb-6">
-            <span className="text-am-green text-base">✓</span>
-            +50 negocios en Chile ya están vendiendo todos los días con su web.
           </p>
 
           {/* Actions */}
