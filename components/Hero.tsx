@@ -1,7 +1,7 @@
 import TestimonialsCard from "./TestimonialsCard";
 
 const WA =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20agendar%20un%20diagn%C3%B3stico%20gratuito";
+  "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
 
 const stats = [
   { num: "+50", label: "Proyectos" },

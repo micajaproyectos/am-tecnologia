@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const WA = "https://wa.me/56985660954?text=Hola%2C%20quiero%20agendar%20un%20diagn%C3%B3stico%20gratuito";
+const WA = "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -53,7 +53,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-md border border-white/20 text-sm font-semibold text-am-text hover:border-am-primary hover:text-am-primary transition-all duration-200"
         >
-          Diagnóstico Gratis
+          Cotiza tu Proyecto
         </a>
 
         {/* Hamburger */}
@@ -93,7 +93,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="mt-2 flex items-center justify-center gap-2 px-5 py-3 rounded-md border border-am-primary text-am-primary font-semibold text-sm hover:bg-am-primary/8 transition-all duration-200"
           >
-            Diagnóstico Gratis
+            Cotiza tu Proyecto
           </a>
         </div>
       )}

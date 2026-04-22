@@ -27,17 +27,18 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Diseño web Chile desde $99.990. Landing pages, sitio web y tienda online para tu empresa. Servimos Puerto Montt, Temuco, Valdivia, Osorno y todo Chile. Entrega en 48h.",
+    "Diseño web Chile desde $99.990 pago único. Cotiza hoy y recibe tu sitio web en 48h. Landing pages, tiendas online y sitios corporativos para empresas en todo Chile. Sin mensualidades.",
 
   keywords: [
-    // Nacionales — alto volumen confirmado
-    "diseño web",
-    "páginas web",
-    "sitio web",
-    "landing page",
-    "diseño pagina web",
-    "página web para mi negocio",
-    "tienda online",
+    // Transaccionales — intención de compra
+    "contratar diseño web Chile",
+    "cotizar página web Chile",
+    "agencia web Chile precio",
+    "hacer página web para empresa",
+    "contratar página web Chile",
+    "precio diseño web Chile",
+    "cotizar sitio web Chile",
+    "agencia diseño web Chile",
     // Con geo Chile
     "diseño web Chile",
     "páginas web Chile",
@@ -46,9 +47,6 @@ export const metadata: Metadata = {
     "tienda online Chile",
     "diseño web profesional Chile",
     "página web empresa Chile",
-    "agencia diseño web Chile",
-    "hacer página web Chile",
-    "crear página web Chile",
     // Locales — baja competencia, fácil de rankear
     "diseño web Puerto Montt",
     "diseño web Osorno",
@@ -100,7 +98,7 @@ export const metadata: Metadata = {
     siteName: "AM Tecnología",
     title: "Diseño Web Chile | Páginas Web desde $99.990 | AM Tecnología",
     description:
-      "Diseño web profesional en Chile desde $99.990. Landing pages, tiendas online y sitios web para empresas en Puerto Montt, Temuco, Valdivia y todo Chile.",
+      "Cotiza tu página web hoy desde $99.990 pago único. Landing pages, tiendas online y sitios corporativos para empresas en todo Chile. Entrega en 48h, sin mensualidades.",
     images: [
       {
         url: "/icon.png",
@@ -115,7 +113,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Diseño Web Chile | Páginas Web desde $99.990 | AM Tecnología",
     description:
-      "Diseño web profesional en Chile desde $99.990. Landing pages, tiendas online y sitios web. Puerto Montt, Temuco, Valdivia y todo Chile. Entrega en 48h.",
+      "Cotiza tu página web hoy desde $99.990 pago único. Entrega en 48h, sin mensualidades. Todo Chile.",
     images: ["/icon.png"],
   },
 };
@@ -257,6 +255,14 @@ const jsonLd = {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Sí, atendemos todo Chile de forma 100% remota. Tenemos clientes en Puerto Montt, Valdivia, Temuco, Osorno, Punta Arenas, Coyhaique y más.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo contratar una página web con AM Tecnología?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Escríbenos por WhatsApp con los detalles de tu proyecto. Te enviamos una cotización en menos de 1 hora, sin compromiso. Una vez aprobada, empezamos el mismo día y entregamos en 48 horas.",
           },
         },
       ],

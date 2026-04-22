@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const WA =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20agendar%20mi%20diagn%C3%B3stico%20digital%20gratuito";
+  "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
 
 export default function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
@@ -29,7 +29,7 @@ export default function WhatsAppButton() {
     >
       {/* Tooltip */}
       <span className="hidden sm:block bg-white text-slate-800 text-[13px] font-semibold px-4 py-2 rounded-xl shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-200 pointer-events-none select-none">
-        Agendar diagnóstico gratis
+        Cotizar mi proyecto
       </span>
 
       {/* Button */}
@@ -45,7 +45,7 @@ export default function WhatsAppButton() {
 
         {/* Tooltip on hover */}
         <span className="absolute right-[72px] bg-white text-slate-800 text-[13px] font-semibold px-4 py-2 rounded-xl shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-200 pointer-events-none select-none">
-          Agendar diagnóstico gratis
+          Cotizar mi proyecto
         </span>
 
         <svg
