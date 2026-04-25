@@ -102,9 +102,9 @@ export const metadata: Metadata = {
       "Cotiza tu página web hoy desde $99.990 pago único. Landing pages, tiendas online y sitios corporativos para empresas en todo Chile. Entrega en 48h, sin mensualidades.",
     images: [
       {
-        url: "/icon.png",
-        width: 512,
-        height: 512,
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
         alt: "AM Tecnología — Soluciones Web para Empresas en Chile",
       },
     ],
@@ -115,7 +115,7 @@ export const metadata: Metadata = {
     title: "Diseño Web Chile | Páginas Web desde $99.990 | AM Tecnología",
     description:
       "Cotiza tu página web hoy desde $99.990 pago único. Entrega en 48h, sin mensualidades. Todo Chile.",
-    images: ["/icon.png"],
+    images: ["/og-image.jpg"],
   },
 };
 
