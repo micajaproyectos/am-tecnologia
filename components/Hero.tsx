@@ -15,16 +15,20 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-[72px]"
     >
-      {/* Video background */}
+      {/* Video background — hidden on mobile to improve LCP */}
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover pointer-events-none scale-110 blur-[5px]"
+        preload="none"
+        className="hidden sm:block absolute inset-0 w-full h-full object-cover pointer-events-none scale-110 blur-[5px]"
       >
         <source src="/video-hero.mp4" type="video/mp4" />
       </video>
+
+      {/* Fallback background for mobile */}
+      <div className="sm:hidden absolute inset-0 bg-[#0b1020] pointer-events-none" />
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60 pointer-events-none" />

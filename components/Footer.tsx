@@ -92,9 +92,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               <li>
                 <a
-                  href="https://wa.me/56985660954"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="tel:+56985660954"
                   className="text-am-muted text-sm hover:text-white transition-colors"
                 >
                   +56 9 8566 0954
