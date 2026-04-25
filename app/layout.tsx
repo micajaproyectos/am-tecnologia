@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import Script from "next/script";
 import MetaPixelEvents from "@/components/MetaPixelEvents";
+import GoogleAdsEvents from "@/components/GoogleAdsEvents";
 import "./globals.css";
 
 const inter = Inter({
@@ -289,6 +290,7 @@ export default function RootLayout({
       <body className="font-sans">
         {children}
         <MetaPixelEvents />
+        <GoogleAdsEvents />
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
