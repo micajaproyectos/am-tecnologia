@@ -8,24 +8,24 @@ const faqs = [
     a: "Nuestros planes parten desde $99.990 pago único, sin mensualidades ni costos ocultos. El precio incluye diseño, desarrollo, dominio y hosting. Sin sorpresas al final.",
   },
   {
+    q: "¿Cuánto tarda en estar lista mi página web?",
+    a: "Entregamos en 48 horas desde que apruebas la cotización. Es nuestro compromiso con cada cliente. Una vez que nos das el visto bueno, empezamos el mismo día y en dos días tienes tu sitio web funcionando.",
+  },
+  {
     q: "¿Cuánto cuesta una página web con tienda online?",
     a: "Una tienda online con Webpay y MercadoPago integrado parte desde $199.990 pago único. Incluye gestión de productos, carrito de compras y panel administrativo completo.",
   },
   {
-    q: "¿Cuánto cuesta posicionarme en Google?",
-    a: "El SEO básico está incluido en todos nuestros planes sin costo adicional. Configuramos tu sitio para que Google lo encuentre desde el primer día — títulos, descripción, sitemap y datos estructurados.",
-  },
-  {
-    q: "¿Cuánto cobran por hacer una página web?",
-    a: "Precio fijo desde $99.990, sin cuotas mensuales ni contratos largos. Lo que cotizamos es exactamente lo que pagas. Sin cargos adicionales por mantenimiento básico.",
-  },
-  {
-    q: "¿Necesito una página web para mi negocio?",
-    a: "Si tu competencia ya tiene una, cada día sin web es un cliente que pierdes. El 92% de los chilenos busca productos y servicios en Google antes de comprar. Sin sitio web, no existes para ellos.",
+    q: "¿Cómo es el proceso para contratar?",
+    a: "Es simple: escríbenos por WhatsApp con los detalles de tu negocio. En menos de 1 hora te enviamos una cotización. Si la apruebas, empezamos el mismo día. En 48 horas tienes tu sitio web listo y publicado.",
   },
   {
     q: "¿Trabajan fuera de Santiago?",
     a: "Sí, atendemos todo Chile de forma 100% remota. Tenemos clientes en Puerto Montt, Valdivia, Temuco, Osorno, Punta Arenas, Coyhaique y más. La distancia no es ningún problema.",
+  },
+  {
+    q: "¿Necesito una página web para mi negocio?",
+    a: "Si tu competencia ya tiene una, cada día sin web es un cliente que pierdes. El 92% de los chilenos busca productos y servicios en Google antes de comprar. Sin sitio web, no existes para ellos.",
   },
 ];
 

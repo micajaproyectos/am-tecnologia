@@ -215,7 +215,15 @@ const jsonLd = {
           "name": "¿Cuánto cuesta una página web en Chile?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nuestros planes parten desde $99.990 pago único, sin mensualidades ni costos ocultos. El precio incluye diseño, desarrollo, dominio y hosting.",
+            "text": "Nuestros planes parten desde $99.990 pago único, sin mensualidades ni costos ocultos. El precio incluye diseño, desarrollo, dominio y hosting. Sin sorpresas al final.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tarda en estar lista mi página web?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entregamos en 48 horas desde que apruebas la cotización. Es nuestro compromiso con cada cliente. Una vez que nos das el visto bueno, empezamos el mismo día y en dos días tienes tu sitio web funcionando.",
           },
         },
         {
@@ -223,31 +231,15 @@ const jsonLd = {
           "name": "¿Cuánto cuesta una página web con tienda online?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Una tienda online con Webpay y MercadoPago integrado parte desde $199.990 pago único. Incluye gestión de productos, carrito de compras y panel administrativo.",
+            "text": "Una tienda online con Webpay y MercadoPago integrado parte desde $199.990 pago único. Incluye gestión de productos, carrito de compras y panel administrativo completo.",
           },
         },
         {
           "@type": "Question",
-          "name": "¿Cuánto cuesta posicionarme en Google?",
+          "name": "¿Cómo es el proceso para contratar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "El SEO básico está incluido en todos nuestros planes sin costo adicional. Configuramos título, descripción, sitemap y datos estructurados desde el primer día.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cuánto cobran por hacer una página web?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Precio fijo desde $99.990, sin cuotas mensuales ni contratos largos. Lo que cotizamos es exactamente lo que pagas.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "¿Necesito una página web para mi negocio?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Si tu competencia ya tiene una, cada día sin web es un cliente que pierdes. El 92% de los chilenos busca productos y servicios en Google antes de comprar.",
+            "text": "Es simple: escríbenos por WhatsApp con los detalles de tu negocio. En menos de 1 hora te enviamos una cotización. Si la apruebas, empezamos el mismo día. En 48 horas tienes tu sitio web listo y publicado.",
           },
         },
         {
@@ -255,15 +247,15 @@ const jsonLd = {
           "name": "¿Trabajan fuera de Santiago?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí, atendemos todo Chile de forma 100% remota. Tenemos clientes en Puerto Montt, Valdivia, Temuco, Osorno, Punta Arenas, Coyhaique y más.",
+            "text": "Sí, atendemos todo Chile de forma 100% remota. Tenemos clientes en Puerto Montt, Valdivia, Temuco, Osorno, Punta Arenas, Coyhaique y más. La distancia no es ningún problema.",
           },
         },
         {
           "@type": "Question",
-          "name": "¿Cómo contratar una página web con AM Tecnología?",
+          "name": "¿Necesito una página web para mi negocio?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Escríbenos por WhatsApp con los detalles de tu proyecto. Te enviamos una cotización en menos de 1 hora, sin compromiso. Una vez aprobada, empezamos el mismo día y entregamos en 48 horas.",
+            "text": "Si tu competencia ya tiene una, cada día sin web es un cliente que pierdes. El 92% de los chilenos busca productos y servicios en Google antes de comprar. Sin sitio web, no existes para ellos.",
           },
         },
       ],
