@@ -14,7 +14,7 @@ export default function GoogleAdsEvents() {
       const link = (e.target as Element).closest("a");
       if (link?.href?.includes("wa.me") || link?.href?.includes("api.whatsapp.com")) {
         window.gtag?.("event", "conversion", {
-          send_to: "AW-18068672063/_M70C0bOn6IcEL-c6KdD",
+          send_to: "AW-18068672063/_M70CObOn6IcEL-c6KdD",
           value: 99990,
           currency: "CLP",
         });

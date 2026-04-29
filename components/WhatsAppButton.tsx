@@ -11,7 +11,10 @@ export default function WhatsAppButton() {
 
   useEffect(() => {
     heroRef.current = document.getElementById("inicio");
-    if (!heroRef.current) { setVisible(true); return; }
+    if (!heroRef.current) {
+      const fallbackTimer = window.setTimeout(() => setVisible(true), 0);
+      return () => window.clearTimeout(fallbackTimer);
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => setVisible(!entry.isIntersecting),

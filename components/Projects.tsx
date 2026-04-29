@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const projects: { url: string; title: string; type: string; img?: string }[] = [
@@ -183,11 +184,13 @@ function ProjectCard({ url, title, type, img, cardW, scale, previewH }: (typeof 
       {/* Screenshot */}
       <div className="relative overflow-hidden bg-am-surf2" style={{ height: imgH }}>
         {img ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
             src={img}
             alt={`Diseño web ${title}`}
-            className="absolute inset-0 w-full h-full object-cover object-top"
+            fill
+            loading="lazy"
+            sizes="(max-width: 767px) calc(100vw - 32px), 520px"
+            className="object-cover object-top"
           />
         ) : (
           <div
