@@ -1,3 +1,4 @@
+import Image from "next/image";
 import TestimonialsCard from "./TestimonialsCard";
 
 const WA =
@@ -15,23 +16,19 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-[72px]"
     >
-      {/* Video background — hidden on mobile to improve LCP */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="none"
-        className="hidden sm:block absolute inset-0 w-full h-full object-cover pointer-events-none scale-110 blur-[5px]"
-      >
-        <source src="/video-hero.mp4" type="video/mp4" />
-      </video>
-
-      {/* Fallback background for mobile */}
-      <div className="sm:hidden absolute inset-0 bg-[#0b1020] pointer-events-none" />
+      {/* Static hero background avoids the startup cost of autoplay video. */}
+      <Image
+        src="/proyectos.png"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        aria-hidden="true"
+        className="absolute inset-0 object-cover object-center pointer-events-none"
+      />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/60 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/75 pointer-events-none" />
 
       {/* Grid background */}
       <div className="absolute inset-0 grid-bg pointer-events-none opacity-40" />
@@ -101,6 +98,7 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4 mb-12">
             <a
               href={WA}
+              data-cta-source="hero"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 text-green-400 hover:text-green-300 font-bold text-[15px] transition-colors duration-200"

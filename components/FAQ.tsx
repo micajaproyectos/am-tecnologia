@@ -119,6 +119,7 @@ export default function FAQ() {
           ¿Tienes otra pregunta?{" "}
           <a
             href="https://wa.me/56985660954?text=Hola%2C%20tengo%20una%20consulta%20sobre%20dise%C3%B1o%20web"
+            data-cta-source="faq"
             target="_blank"
             rel="noopener noreferrer"
             className="text-am-primary hover:text-am-accent font-semibold transition-colors"

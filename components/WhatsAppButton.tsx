@@ -38,6 +38,7 @@ export default function WhatsAppButton() {
       {/* Button */}
       <a
         href={WA}
+        data-cta-source="sticky_whatsapp"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contactar por WhatsApp"

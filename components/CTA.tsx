@@ -50,6 +50,7 @@ export default function CTA() {
 
             <a
               href={WA}
+              data-cta-source="cta_final"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-md border border-white/50 text-white font-bold text-[16px] hover:border-white hover:bg-white/8 hover:-translate-y-0.5 transition-all duration-200"
