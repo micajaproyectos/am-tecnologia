@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Diseño Web Chile | Páginas Web desde $99.990 | AM Tecnología",
+    default: "Diseño Web Chile + Clientes desde Google | $99.990 | AM Tecnología",
     template: "%s | AM Tecnología",
   },
 
