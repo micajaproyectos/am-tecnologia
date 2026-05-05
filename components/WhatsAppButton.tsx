@@ -1,38 +1,17 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-
 const WA =
   "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
 
 export default function WhatsAppButton() {
-  const [visible, setVisible] = useState(false);
-  const heroRef = useRef<Element | null>(null);
-
-  useEffect(() => {
-    heroRef.current = document.getElementById("inicio");
-    if (!heroRef.current) {
-      const fallbackTimer = window.setTimeout(() => setVisible(true), 0);
-      return () => window.clearTimeout(fallbackTimer);
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => setVisible(!entry.isIntersecting),
-      { threshold: 0.2 }
-    );
-    observer.observe(heroRef.current);
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <div
-      className={`fixed bottom-7 right-7 z-50 flex items-center gap-3 transition-all duration-300 ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
-      }`}
+      className="fixed bottom-7 right-7 z-50 flex items-center gap-3"
     >
-      {/* Tooltip */}
-      <span className="hidden sm:block bg-white text-slate-800 text-[13px] font-semibold px-4 py-2 rounded-xl shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-200 pointer-events-none select-none">
-        Cotizar mi proyecto
+      {/* Label fijo */}
+      <span className="bg-white text-slate-800 text-[13px] font-bold px-4 py-2 rounded-xl shadow-xl whitespace-nowrap select-none">
+        Hablemos
       </span>
 
       {/* Button */}
@@ -46,11 +25,6 @@ export default function WhatsAppButton() {
       >
         {/* Pulse ring */}
         <span className="absolute inset-[-4px] rounded-full bg-[#25d366]/30 animate-wa-pulse" />
-
-        {/* Tooltip on hover */}
-        <span className="absolute right-[72px] bg-white text-slate-800 text-[13px] font-semibold px-4 py-2 rounded-xl shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-200 pointer-events-none select-none">
-          Cotizar mi proyecto
-        </span>
 
         <svg
           width="28"

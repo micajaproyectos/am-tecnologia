@@ -5,18 +5,6 @@ import { useEffect, useRef, useState } from "react";
 
 const projects: { url: string; title: string; type: string; img?: string }[] = [
   {
-    url: "https://www.ajonegroaustral.cl",
-    title: "Ajo Negro Austral",
-    type: "Tienda Online",
-    img: "/preview-ajonegro.png",
-  },
-  {
-    url: "https://www.perfumeriasur.cl",
-    title: "Perfumería Sur",
-    type: "E-commerce",
-    img: "/preview-perfumeria.png",
-  },
-  {
     url: "https://www.clinicabeautylab.cl",
     title: "Clínica Beauty Lab",
     type: "Landing Médica",
@@ -29,16 +17,28 @@ const projects: { url: string; title: string; type: string; img?: string }[] = [
     img: "/preview-solange.png",
   },
   {
-    url: "https://www.micajaempresa.cl",
-    title: "Mi Caja Empresa",
-    type: "SaaS / App Web",
-    img: "/preview-micaja.png",
-  },
-  {
     url: "https://www.millanolli.com",
     title: "Millanolli",
     type: "Tienda Online",
     img: "/pre_millanolli.png",
+  },
+  {
+    url: "https://www.ajonegroaustral.cl",
+    title: "Ajo Negro Austral",
+    type: "Tienda Online",
+    img: "/preview-ajonegro.png",
+  },
+  {
+    url: "https://www.perfumeriasur.cl",
+    title: "Perfumería Sur",
+    type: "E-commerce",
+    img: "/preview-perfumeria.png",
+  },
+  {
+    url: "https://www.micajaempresa.cl",
+    title: "Mi Caja Empresa",
+    type: "SaaS / App Web",
+    img: "/preview-micaja.png",
   },
 ];
 

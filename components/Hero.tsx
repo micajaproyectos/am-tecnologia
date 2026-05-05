@@ -44,7 +44,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-am-green animate-pulse-dot" />
             <span className="text-am-accent text-[13px] font-semibold tracking-wide">
-              Diseño Web Chile · +50 Empresas Confían en Nosotros
+              Posicionamiento en Google · +50 Empresas ya Aparecen en Google
             </span>
           </div>
 
@@ -52,12 +52,12 @@ export default function Hero() {
           <h1 className="font-display font-extrabold text-white text-balance leading-[1.15] mb-6"
             style={{ fontSize: "clamp(2.25rem, 5vw, 3.75rem)" }}
           >
-            Cada día que no tienes web, alguien más se queda con{" "}
-            <span className="gradient-text">tus clientes</span>
+            Si te buscan en Google...{" "}
+            <span className="gradient-text">¿Te encuentran?</span>
           </h1>
 
           <p className="text-am-muted text-base leading-snug mb-6 max-w-lg">
-            Tu competencia tiene sitio web y te está quitando clientes. Creamos tu diseño web en Chile en 48 horas, sin mensualidades.
+            Creamos tu página web y la posicionamos en Google para que recibas clientes todos los días. Desde $99.990 pago único.
           </p>
 
           {/* Pricing */}
@@ -104,7 +104,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2.5 text-green-400 hover:text-green-300 font-bold text-[15px] transition-colors duration-200"
             >
               <WaIcon />
-              Empieza a recibir clientes hoy
+              Quiero aparecer en Google
             </a>
             <a
               href="#proyectos"

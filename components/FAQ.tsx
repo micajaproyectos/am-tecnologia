@@ -5,27 +5,31 @@ import { useState } from "react";
 const faqs = [
   {
     q: "¿Cuánto cuesta una página web en Chile?",
-    a: "Nuestros planes parten desde $99.990 pago único, sin mensualidades ni costos ocultos. El precio incluye diseño, desarrollo, dominio y hosting. Sin sorpresas al final.",
+    a: "Con nosotros, desde $99.990 pago único. Incluye diseño profesional, optimización para Google y entrega en 48 horas. El mercado cobra entre $250.000 y $1.000.000 por lo mismo.",
   },
   {
-    q: "¿Cuánto tarda en estar lista mi página web?",
-    a: "Entregamos en 48 horas desde que apruebas la cotización. Es nuestro compromiso con cada cliente. Una vez que nos das el visto bueno, empezamos el mismo día y en dos días tienes tu sitio web funcionando.",
-  },
-  {
-    q: "¿Cuánto cuesta una página web con tienda online?",
-    a: "Una tienda online con Webpay y MercadoPago integrado parte desde $199.990 pago único. Incluye gestión de productos, carrito de compras y panel administrativo completo.",
-  },
-  {
-    q: "¿Cómo es el proceso para contratar?",
-    a: "Es simple: escríbenos por WhatsApp con los detalles de tu negocio. En menos de 1 hora te enviamos una cotización. Si la apruebas, empezamos el mismo día. En 48 horas tienes tu sitio web listo y publicado.",
-  },
-  {
-    q: "¿Trabajan fuera de Santiago?",
-    a: "Sí, atendemos todo Chile de forma 100% remota. Tenemos clientes en Puerto Montt, Valdivia, Temuco, Osorno, Punta Arenas, Coyhaique y más. La distancia no es ningún problema.",
+    q: "¿Cómo hago para que mi negocio aparezca en Google?",
+    a: "Nosotros nos encargamos de todo: creamos tu página web optimizada, configuramos tu perfil en Google Maps, Google Analytics y Search Console. Tu negocio queda visible en Google desde el primer día.",
   },
   {
     q: "¿Necesito una página web para mi negocio?",
-    a: "Si tu competencia ya tiene una, cada día sin web es un cliente que pierdes. El 92% de los chilenos busca productos y servicios en Google antes de comprar. Sin sitio web, no existes para ellos.",
+    a: "Si quieres que tus clientes te encuentren en Google, sí. Hoy más del 80% de las personas busca en internet antes de comprar. Sin página web, esos clientes los encuentra tu competencia.",
+  },
+  {
+    q: "¿Cuánto tarda en estar lista mi página?",
+    a: "48 horas. Recibes tu web publicada con todo configurado y funcionando.",
+  },
+  {
+    q: "¿Necesito saber de tecnología?",
+    a: "No. Nosotros nos encargamos de todo. Tú solo te preocupas de atender a tus nuevos clientes.",
+  },
+  {
+    q: "¿Qué pasa después de la entrega?",
+    a: "Tu web queda funcionando y visible en Google desde el día uno. Si quieres seguir escalando tu posición y captar más clientes, ofrecemos un plan mensual de optimización continua.",
+  },
+  {
+    q: "¿Trabajan en todo Chile?",
+    a: "Sí. Servimos empresas en Puerto Montt, Valdivia, Temuco, Rancagua, Santiago y todo Chile.",
   },
 ];
 
@@ -61,8 +65,7 @@ export default function FAQ() {
             className="font-display font-bold text-white text-balance"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
-            Todo lo que necesitas saber sobre{" "}
-            <span className="gradient-text">diseño web en Chile</span>
+            <span className="gradient-text">Preguntas frecuentes</span>
           </h2>
         </div>
 

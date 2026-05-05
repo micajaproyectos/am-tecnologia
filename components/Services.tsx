@@ -6,15 +6,22 @@ const services = [
   {
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-        <polyline points="9,22 9,12 15,12 15,22" />
+        <circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" />
+        <path d="M11 8v6M8 11h6" strokeWidth="1.6" />
       </svg>
     ),
-    title: "Landing Page de Ventas",
-    desc: "Páginas diseñadas para convertir visitas en clientes. Carrito WhatsApp integrado para cerrar ventas al instante — sin pasarela de pago.",
-    features: ["Carrito por WhatsApp", "Diseño orientado a conversión", "Carga ultra rápida"],
+    title: "Presencia en Google",
+    desc: "Tu página web profesional adaptada a tu nicho, lista para aparecer cuando tus clientes te buscan. Todo configurado desde el día uno.",
+    features: [
+      "Página web profesional para tu nicho",
+      "Tu negocio visible en Google Maps",
+      "Optimización para búsquedas locales",
+      "Google Analytics y Search Console configurados",
+      "Entrega en 48 horas",
+      "Sin costos ocultos",
+    ],
     badge: { text: "Más popular", style: "border-am-primary/30 bg-am-primary/10 text-am-primary" },
-    featured: false,
+    featured: true,
   },
   {
     icon: (
@@ -137,11 +144,11 @@ export default function Services() {
             <h2 className="font-display font-bold text-white text-balance"
               style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}
             >
-              Servicios de{" "}
-              <span className="gradient-text">Diseño Web en Chile</span>
+              Todo lo que necesitas para{" "}
+              <span className="gradient-text">aparecer en Google</span>
             </h2>
             <p className="text-am-muted text-sm leading-relaxed mt-3 max-w-lg">
-              Landing pages, sitios web y tiendas online que convierten visitas en clientes. Servimos empresas en Puerto Montt, Valdivia, Temuco, Osorno y todo Chile.
+              Desde $99.990 pago único · Sin mensualidades
             </p>
           </div>
           {/* Nav arrows */}
