@@ -1,20 +1,77 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const WA =
   "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
 
-export default function CTA() {
-  const [nombre, setNombre] = useState("");
-  const [telefono, setTelefono] = useState("");
-  const [tieneWeb, setTieneWeb] = useState<"si" | "no" | null>(null);
-  const [enviado, setEnviado] = useState(false);
+const SHEET_WEBHOOK_URL =
+  "https://script.google.com/macros/s/AKfycbzL-Ub_JIchX7l-yrHoKFcznn_tBhS6-Ak2k4vUVqPKnQV41VherHQDLt5ZcR5OUaP2/exec";
+const CONVERSION_VALUE = 99990;
+const CONVERSION_NAME  = "lead_formulario_cta";
+const CHILE_TIME_ZONE  = "America/Santiago";
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+export default function CTA() {
+  const [nombre, setNombre]     = useState("");
+  const [telefono, setTelefono] = useState("+569");
+  const [tieneWeb, setTieneWeb] = useState<"si" | "no" | null>(null);
+  const [enviado, setEnviado]   = useState(false);
+  const [enviando, setEnviando] = useState(false);
+  const [error, setError]       = useState("");
+
+  const gclidRef  = useRef<string>("");
+  const leadIdRef = useRef<string>("");
+
+  useEffect(() => {
+    // Capture gclid from URL and persist in sessionStorage so it survives navigation
+    const params = new URLSearchParams(window.location.search);
+    const gclidFromUrl = params.get("gclid") ?? "";
+    if (gclidFromUrl) {
+      sessionStorage.setItem("gclid", gclidFromUrl);
+    }
+    gclidRef.current  = gclidFromUrl || sessionStorage.getItem("gclid") || "";
+    leadIdRef.current = crypto.randomUUID();
+  }, []);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    console.log({ nombre, telefono, tieneWeb });
-    setEnviado(true);
+    setError("");
+
+    if (!tieneWeb) {
+      setError("Selecciona si tienes página web.");
+      return;
+    }
+
+    const payload = {
+      lead_id:          leadIdRef.current,
+      gclid:            gclidRef.current,
+      conversion_time:  formatConversionTimeInChile(new Date()),
+      conversion_value: CONVERSION_VALUE,
+      conversion_name:  CONVERSION_NAME,
+      nombre_negocio:   nombre,
+      contacto:         telefono,
+      tiene_pagina:     tieneWeb,
+    };
+
+    try {
+      setEnviando(true);
+
+      await fetch(SHEET_WEBHOOK_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      setEnviado(true);
+    } catch (err) {
+      console.error("Error sending lead:", err);
+      setError("No pudimos enviar tus datos. Intenta nuevamente o escríbenos por WhatsApp.");
+    } finally {
+      setEnviando(false);
+    }
   }
 
   return (
@@ -124,10 +181,17 @@ export default function CTA() {
                 {/* Submit */}
                 <button
                   type="submit"
-                  className="w-full mt-2 py-4 rounded-xl bg-am-green hover:bg-[#25c068] text-white font-bold text-[16px] shadow-[0_4px_24px_rgba(42,170,110,0.4)] hover:shadow-[0_6px_32px_rgba(42,170,110,0.55)] hover:-translate-y-0.5 transition-all duration-200"
+                  disabled={enviando}
+                  className="w-full mt-2 py-4 rounded-xl bg-am-green hover:bg-[#25c068] disabled:opacity-60 disabled:hover:translate-y-0 text-white font-bold text-[16px] shadow-[0_4px_24px_rgba(42,170,110,0.4)] hover:shadow-[0_6px_32px_rgba(42,170,110,0.55)] hover:-translate-y-0.5 transition-all duration-200"
                 >
-                  Quiero aparecer en Google
+                  {enviando ? "Enviando..." : "Quiero aparecer en Google"}
                 </button>
+
+                {error && (
+                  <p className="text-center text-sm text-red-300">
+                    {error}
+                  </p>
+                )}
               </form>
             )}
 
@@ -177,5 +241,49 @@ function GoogleColorIcon() {
       <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
     </svg>
   );
+}
+
+function formatConversionTimeInChile(date: Date) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: CHILE_TIME_ZONE,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+    hourCycle: "h23",
+    timeZoneName: "shortOffset",
+  }).formatToParts(date);
+
+  const value = (type: Intl.DateTimeFormatPartTypes) =>
+    parts.find((part) => part.type === type)?.value ?? "";
+
+  return [
+    value("year"),
+    "-",
+    value("month"),
+    "-",
+    value("day"),
+    " ",
+    value("hour"),
+    ":",
+    value("minute"),
+    ":",
+    value("second"),
+    normalizeOffset(value("timeZoneName")),
+  ].join("");
+}
+
+function normalizeOffset(timeZoneName: string) {
+  const rawOffset = timeZoneName.replace("GMT", "");
+  if (!rawOffset) return "+00:00";
+
+  const match = rawOffset.match(/^([+-])(\d{1,2})(?::?(\d{2}))?$/);
+  if (!match) return rawOffset;
+
+  const [, sign, hours, minutes = "00"] = match;
+  return `${sign}${hours.padStart(2, "0")}:${minutes}`;
 }
 
