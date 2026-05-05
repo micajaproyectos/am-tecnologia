@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const points = [
   {
     icon: (
@@ -74,8 +76,13 @@ export default function PainPoints() {
 
         {/* Closing line */}
         <p className="text-center text-am-muted text-base" data-reveal>
-          Si te identificas con alguno de estos,{" "}
-          <span className="text-am-text font-semibold">tenemos la solución.</span>
+          Si te identificas con alguno de estos, descubre{" "}
+          <Link
+            href="/aparecer-en-google"
+            className="text-am-accent underline"
+          >
+            cómo aparecer en Google
+          </Link>.
         </p>
       </div>
     </section>

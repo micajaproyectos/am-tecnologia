@@ -15,9 +15,9 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { href: "#servicios", label: "Servicios" },
-    { href: "#proyectos", label: "Proyectos" },
-    { href: "#contacto",  label: "Contacto"  },
+    { href: "/#servicios", label: "Servicios" },
+    { href: "/#proyectos", label: "Proyectos" },
+    { href: "/#contacto",  label: "Contacto"  },
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center gap-8 h-[72px]">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 shrink-0">
+        <a href="/" className="flex items-center gap-2 shrink-0">
           <span className="font-display font-bold text-2xl gradient-text">AM</span>
           <span className="font-display font-bold text-xl text-white">Tecnología</span>
         </a>
