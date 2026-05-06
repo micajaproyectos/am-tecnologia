@@ -5,11 +5,11 @@ import { useState } from "react";
 const faqs = [
   {
     q: "¿Cuánto cuesta una página web en Chile?",
-    a: "Con nosotros, desde $99.990 pago único. Incluye diseño profesional, optimización para Google y entrega en 48 horas. El mercado cobra entre $250.000 y $1.000.000 por lo mismo.",
+    a: "Con nosotros, $99.990 precio de lanzamiento — pago único. Lo que hacemos no es solo crear una página: es posicionar tu marca en Google para que tus clientes te encuentren cuando buscan lo que tú ofreces. Las agencias de marketing cobran entre $400.000 y $600.000 por este mismo resultado. Nosotros lo entregamos desde $99.990.",
   },
   {
     q: "¿Cómo hago para que mi negocio aparezca en Google?",
-    a: "Nosotros nos encargamos de todo: creamos tu página web optimizada, configuramos tu perfil en Google Maps, Google Analytics y Search Console. Tu negocio queda visible en Google desde el primer día.",
+    a: "Nos encargamos de todo el proceso: creamos la estructura de tu sitio, configuramos tu perfil en Google Maps, Google Analytics y Search Console, y optimizamos cada página para que Google entienda a qué clientes debes aparecer. Con la optimización incluida, tu marca ya puede empezar a recibir tráfico orgánico. El seguimiento mensual es opcional, pero te permite seguir escalando tu posición y adelantar a tu competencia con el tiempo.",
   },
   {
     q: "¿Necesito una página web para mi negocio?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tarda en estar lista mi página?",
-    a: "48 horas. Recibes tu web publicada con todo configurado y funcionando.",
+    a: "La estructura de tu sitio queda lista en 48 horas. La optimización SEO completa — para que Google te posicione sobre tu competencia — puede tomar hasta 1 semana. Y para maximizar los resultados a largo plazo, contamos con planes de seguimiento mensual que incluyen: ajuste continuo de palabras clave, análisis de rendimiento en Google Search Console, mejoras de velocidad y experiencia de usuario, reportes de visibilidad y tráfico, y adaptación a los cambios del algoritmo de Google.",
   },
   {
     q: "¿Necesito saber de tecnología?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "¿Qué pasa después de la entrega?",
-    a: "Tu web queda funcionando y visible en Google desde el día uno. Si quieres seguir escalando tu posición y captar más clientes, ofrecemos un plan mensual de optimización continua.",
+    a: "Tu sitio queda publicado y con la optimización SEO activa en los primeros días. Desde ahí, Google empieza a indexar tu marca y puedes comenzar a recibir tráfico orgánico sin pagar publicidad. Si quieres seguir escalando resultados, nuestros planes de seguimiento mensual ajustan la estrategia según cómo evoluciona tu posición, tu competencia y los cambios del algoritmo de Google — pero el tráfico orgánico inicial ya está incluido desde el primer entregable.",
   },
   {
     q: "¿Trabajan en todo Chile?",
