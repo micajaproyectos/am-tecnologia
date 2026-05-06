@@ -163,7 +163,7 @@ function ProjectCard({ url, title, type, img, cardW, scale, previewH }: (typeof 
 
   return (
     <div
-      className="group flex-shrink-0 rounded-2xl border border-white/8 bg-[#0d1120] shadow-[0_8px_32px_rgba(0,0,0,0.5)] hover:border-am-primary/30 hover:shadow-[0_12px_40px_rgba(37,99,235,0.15)] transition-all duration-300"
+      className="flex-shrink-0 rounded-2xl border border-white/8 bg-[#0d1120] shadow-[0_8px_32px_rgba(0,0,0,0.5)] hover:border-am-primary/30 hover:shadow-[0_12px_40px_rgba(37,99,235,0.15)] transition-all duration-300"
       style={{ width: cardW }}
     >
       {/* Browser chrome bar */}
@@ -183,6 +183,16 @@ function ProjectCard({ url, title, type, img, cardW, scale, previewH }: (typeof 
 
       {/* Screenshot */}
       <div className="relative overflow-hidden bg-am-surf2" style={{ height: imgH }}>
+        {/* Ver página button */}
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="absolute top-3 right-3 z-10 px-3 py-1.5 rounded-md bg-am-primary text-white text-[11px] font-semibold hover:bg-am-prim2 transition-all duration-200 pointer-events-auto shadow-lg"
+        >
+          Ver página →
+        </a>
         {img ? (
           <Image
             src={img}
@@ -215,14 +225,6 @@ function ProjectCard({ url, title, type, img, cardW, scale, previewH }: (typeof 
             <span className="block text-[10px] font-bold uppercase tracking-widest text-white/50 mb-0.5">{type}</span>
             <h3 className="font-display font-bold text-white text-base leading-tight">{title}</h3>
           </div>
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 px-3 py-1.5 rounded-md bg-am-primary/90 text-white text-xs font-semibold hover:bg-am-primary transition-all duration-200 pointer-events-auto opacity-0 group-hover:opacity-100 -translate-y-1 group-hover:translate-y-0"
-          >
-            Abrir →
-          </a>
         </div>
       </div>
     </div>
