@@ -15,21 +15,22 @@ export const metadata: Metadata = {
   },
 };
 
-const WA =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20que%20mi%20negocio%20aparezca%20en%20Google";
-
 const reasons = [
   {
-    title: "No tienes página web",
-    desc: "Google indexa páginas web. Sin una, tu negocio es invisible para cualquier búsqueda, sin importar cuántos años llevas operando.",
+    title: "No tienes una página web propia",
+    desc: "Google puede mostrar páginas web con información clara sobre tu negocio. Si hoy dependes solo de Instagram o WhatsApp, es más difícil que Google entienda qué haces y cuándo mostrarte.",
   },
   {
-    title: "Tu web no está optimizada",
-    desc: "Una página sin estructura SEO no aparece aunque exista. Google necesita señales técnicas claras para mostrarla a tus clientes.",
+    title: "Tienes web, pero Google no puede entenderla",
+    desc: "Una web puede verse bien, pero si no explica claramente qué haces, dónde atiendes y a quién ayudas, Google no tiene señales suficientes para mostrarla a las personas correctas.",
   },
   {
-    title: "No tienes presencia local",
-    desc: "Sin Google Maps y datos locales configurados, tu negocio no aparece cuando buscan un servicio cerca tuyo.",
+    title: "Tu negocio no está bien configurado en Google",
+    desc: "Muchas empresas existen, pero no tienen correctamente configurada su presencia en Google Maps, datos de contacto, categoría, ubicación o zona de atención.",
+  },
+  {
+    title: "Tu web no dice lo que tus clientes realmente buscan",
+    desc: "Google necesita conectar tu negocio con las palabras que usan tus clientes. Si tu sitio habla de forma muy genérica, puede perder oportunidades frente a competidores más claros.",
   },
 ];
 
@@ -37,120 +38,165 @@ export default function AparecerEnGooglePage() {
   return (
     <>
       <Navbar />
-      <main className="bg-black text-white">
 
-        {/* ── HERO ── */}
-        <section className="relative min-h-[60vh] flex flex-col justify-center overflow-hidden pt-[72px]">
-          <div className="absolute -top-52 -left-24 w-[600px] h-[600px] rounded-full bg-am-primary/15 blur-[100px] pointer-events-none" />
-          <div className="absolute -bottom-32 -right-16 w-[500px] h-[500px] rounded-full bg-am-accent/10 blur-[90px] pointer-events-none" />
+      {/* ── HERO ── */}
+      <section className="relative min-h-[70vh] flex flex-col justify-center overflow-hidden pt-[72px] bg-black">
+        <div className="absolute -top-52 -left-24 w-[600px] h-[600px] rounded-full bg-am-primary/15 blur-[100px] pointer-events-none" />
+        <div className="absolute -bottom-32 -right-16 w-[500px] h-[500px] rounded-full bg-am-accent/10 blur-[90px] pointer-events-none" />
+        <div className="absolute inset-0 grid-bg pointer-events-none opacity-20" />
 
-          <div className="relative max-w-4xl mx-auto px-6 py-24">
-            <div className="inline-flex items-center gap-2 mb-8">
-              <span className="w-1.5 h-1.5 rounded-full bg-am-green animate-pulse-dot" />
-              <span className="text-am-accent text-[13px] font-semibold tracking-wide">
-                Posicionamiento en Google · Todo Chile
-              </span>
-            </div>
-
-            <h1
-              className="font-display font-extrabold text-white text-balance leading-[1.15] mb-6"
-              style={{ fontSize: "clamp(2.25rem, 5vw, 3.75rem)" }}
-            >
-              ¿Cómo aparecer en{" "}
-              <span className="gradient-text">Google?</span>
-            </h1>
-
-            <p className="text-am-muted text-lg leading-relaxed mb-10 max-w-2xl">
-              Hoy miles de empresas tienen redes sociales, pero no aparecen cuando
-              las buscan en Google. En AM Tecnología ayudamos a negocios y pymes a
-              mejorar su presencia digital mediante páginas web optimizadas y
-              posicionamiento orgánico.
-            </p>
-
-            <a
-              href={WA}
-              data-cta-source="aparecer-google-hero"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 bg-am-primary hover:bg-am-primary/90 text-white font-bold px-7 py-3.5 rounded-xl transition-colors duration-200 text-[15px]"
-            >
-              Quiero aparecer en Google
-            </a>
+        <div className="relative max-w-4xl mx-auto px-6 py-24">
+          <div className="inline-flex items-center gap-2 mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-am-green animate-pulse-dot" />
+            <span className="text-am-accent text-[13px] font-semibold tracking-wide">
+              Posicionamiento en Google · Todo Chile
+            </span>
           </div>
-        </section>
 
-        {/* ── POR QUÉ NO APARECES ── */}
-        <section className="py-24 px-6 border-t border-white/6">
-          <div className="max-w-4xl mx-auto">
-            <h2
-              className="font-display font-bold text-white text-balance mb-4"
-              style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
-            >
-              Por qué tu negocio{" "}
-              <span className="gradient-text">no aparece en Google</span>
-            </h2>
-            <p className="text-am-muted mb-12 max-w-2xl leading-relaxed">
-              El 92% de los chilenos busca en Google antes de comprar. Si no apareces,
-              existes solo para quienes ya te conocen.
-            </p>
+          <h1
+            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-6"
+            style={{ fontSize: "clamp(2.25rem, 5vw, 3.75rem)" }}
+          >
+            Tu negocio existe.{" "}
+            <br className="hidden sm:block" />
+            Que <span className="gradient-text">Google</span> también lo sepa.
+          </h1>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              {reasons.map((item) => (
-                <div
-                  key={item.title}
-                  className="bg-am-surf2 border border-white/6 rounded-2xl p-6 hover:border-am-primary/30 transition-colors duration-300"
-                >
-                  <h3 className="font-display font-bold text-white text-lg mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-am-muted text-sm leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+          <p className="text-am-muted text-lg leading-relaxed max-w-2xl">
+            Aparecer en Google no requiere ser una empresa grande ni pagar
+            publicidad mensual. Requiere una web optimizada y tu negocio
+            configurado correctamente. Eso es exactamente lo que hacemos.
+          </p>
+        </div>
+      </section>
 
-        {/* ── SOLUCIÓN ── */}
-        <section className="py-24 px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="relative rounded-3xl overflow-hidden border border-am-primary/30 bg-gradient-to-br from-am-surf2 to-am-primary/10 shadow-[0_0_60px_rgba(37,99,235,0.10)] px-8 py-14">
-              <div className="absolute -top-40 -left-24 w-80 h-80 rounded-full bg-am-primary/20 blur-[80px] pointer-events-none" />
-              <div className="absolute -bottom-24 -right-16 w-64 h-64 rounded-full bg-am-accent/15 blur-[70px] pointer-events-none" />
+      {/* ── POR QUÉ NO APARECES ── */}
+      <section className="metal-surface relative px-6 py-24">
+        <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-black to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black to-transparent pointer-events-none" />
 
-              <div className="relative">
-                <span className="inline-block px-4 py-1.5 rounded-full border border-white/15 bg-white/8 text-white/70 text-[12px] font-semibold tracking-widest uppercase mb-6">
-                  La solución
-                </span>
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <p className="text-am-accent text-[13px] font-bold tracking-widest uppercase mb-4">
+            Diagnóstico
+          </p>
 
-                <h2
-                  className="font-display font-extrabold text-white text-balance leading-[1.15] mb-4"
-                  style={{ fontSize: "clamp(1.75rem, 4vw, 2.75rem)" }}
-                >
-                  Web profesional +{" "}
-                  <span className="gradient-text-light">posicionamiento desde el día uno</span>
-                </h2>
+          <h2
+            className="font-display font-bold text-white text-balance mb-4"
+            style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
+          >
+            ¿Por qué mi negocio{" "}
+            <span className="gradient-text">no aparece en Google?</span>
+          </h2>
 
-                <p className="text-white/60 text-base leading-relaxed mb-8 max-w-2xl">
-                  En AM Tecnología no solo construimos tu página web — la diseñamos para que Google
-                  la entienda, la indexe y la muestre cuando tus clientes te buscan. Todo desde{" "}
-                  <span className="text-white font-semibold">$99.990 pago único</span>, sin mensualidades.
+          <p className="text-am-muted text-base leading-relaxed mb-12 max-w-2xl">
+            Si llevas tiempo operando y aun así no apareces, no estás solo.
+            Hay razones concretas por las que Google no muestra un negocio,
+            y ninguna tiene que ver con el tamaño de tu empresa.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {reasons.map((item) => (
+              <div
+                key={item.title}
+                className="bg-am-surf2 border border-white/6 rounded-2xl px-6 py-6 hover:border-am-primary/30 transition-colors duration-300"
+              >
+                <h3 className="font-display font-bold text-white text-[17px] mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-am-muted text-[14px] leading-relaxed">
+                  {item.desc}
                 </p>
-
-                <a
-                  href={WA}
-                  data-cta-source="aparecer-google-cta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 bg-am-green hover:bg-[#25c068] text-white font-bold px-7 py-3.5 rounded-xl transition-colors duration-200 text-[15px] shadow-[0_4px_24px_rgba(42,170,110,0.35)]"
-                >
-                  Cotizar ahora por WhatsApp
-                </a>
               </div>
+            ))}
+          </div>
+
+          <p className="text-am-muted text-base leading-relaxed mt-12 max-w-2xl border-t border-white/5 pt-8">
+            La buena noticia es que todo esto se puede ordenar. No necesitas
+            entender cómo funciona Google por dentro; necesitas una presencia
+            digital clara, bien configurada y pensada para que tus clientes
+            te encuentren.
+          </p>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="bg-black px-6 py-24">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-am-accent text-[13px] font-bold tracking-widest uppercase mb-4">
+            Preguntas frecuentes
+          </p>
+
+          <h2
+            className="font-display font-bold text-white text-balance mb-10"
+            style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
+          >
+            Lo que preguntan antes de aparecer en Google
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-12 items-start">
+            <div className="border-b border-white/10 pb-8 pt-6">
+              <h3 className="font-display font-bold text-white text-[18px] mb-3">
+                ¿Cuánto tarda en aparecer mi negocio en Google?
+              </h3>
+              <p className="text-am-muted text-[15px] leading-relaxed">
+                En la mayoría de los casos, los primeros avances pueden verse entre 2 y 8 semanas.
+                Depende del rubro, la ciudad y la competencia que ya exista en Google.
+                Lo importante es empezar con una web clara y una presencia bien configurada.
+              </p>
+            </div>
+
+            <div className="border-b border-white/10 pb-8 pt-6">
+              <h3 className="font-display font-bold text-white text-[18px] mb-3">
+                ¿Hay que pagar publicidad para aparecer en Google?
+              </h3>
+              <p className="text-am-muted text-[15px] leading-relaxed">
+                No necesariamente. Puedes aparecer de forma orgánica si tu negocio tiene una
+                web optimizada y datos claros para Google. La publicidad ayuda a acelerar
+                resultados, pero no reemplaza una buena base digital.
+              </p>
+            </div>
+
+            <div className="border-b border-white/10 pb-8 pt-6">
+              <h3 className="font-display font-bold text-white text-[18px] mb-3">
+                ¿Esto funciona para negocios pequeños?
+              </h3>
+              <p className="text-am-muted text-[15px] leading-relaxed">
+                Sí. De hecho, muchos negocios pequeños pueden ganar visibilidad local cuando
+                explican bien qué hacen, dónde atienden y cómo contactarlos. No necesitas ser
+                una empresa grande para empezar a aparecer mejor.
+              </p>
+            </div>
+
+            <div className="border-b border-white/10 pb-8 pt-6">
+              <h3 className="font-display font-bold text-white text-[18px] mb-3">
+                ¿Qué pasa si ya tengo una página web?
+              </h3>
+              <p className="text-am-muted text-[15px] leading-relaxed">
+                Podemos revisar si tu web actual le está entregando a Google la información
+                correcta. A veces no se trata de crear todo desde cero, sino de ordenar,
+                mejorar y posicionar mejor lo que ya existe.
+              </p>
+            </div>
+
+            <div className="border-b border-white/10 pb-8 pt-6 md:col-span-2">
+              <h3 className="font-display font-bold text-white text-[18px] mb-3">
+                ¿Cuánto cuesta aparecer en Google?
+              </h3>
+              <p className="text-am-muted text-[15px] leading-relaxed">
+                En AM Tecnología trabajamos soluciones desde $99.990 pago único, dependiendo
+                del tipo de negocio y del nivel de presencia digital que necesite. La idea es
+                que tengas una base profesional para empezar a ser encontrado.
+              </p>
             </div>
           </div>
-        </section>
 
-      </main>
+          <p className="text-am-muted text-[15px] leading-relaxed mt-10 border-t border-white/5 pt-8">
+            Si tienes una situación específica que no está aquí, lo más rápido es contarnos
+            por WhatsApp qué negocio tienes y en qué ciudad quieres aparecer.
+          </p>
+        </div>
+      </section>
+
       <Footer />
       <WhatsAppButton />
     </>
