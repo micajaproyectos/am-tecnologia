@@ -7,10 +7,10 @@ const serviceLinks = [
 ];
 
 const companyLinks = [
-  { href: "#inicio",    label: "Inicio"     },
-  { href: "#servicios", label: "Servicios"  },
-  { href: "#proyectos", label: "Proyectos"  },
-  { href: "#contacto",  label: "Contacto"   },
+  { href: "/",          label: "Inicio"     },
+  { href: "/#servicios", label: "Servicios"  },
+  { href: "/#proyectos", label: "Proyectos"  },
+  { href: "/#contacto",  label: "Contacto"   },
 ];
 
 export default function Footer() {
@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <a href="#" className="flex items-center gap-2 mb-4">
+            <a href="/" className="flex items-center gap-2 mb-4">
               <span className="font-display font-bold text-2xl gradient-text">AM</span>
               <span className="font-display font-bold text-xl text-white">Tecnología</span>
             </a>
