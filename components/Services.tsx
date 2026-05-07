@@ -109,7 +109,7 @@ export default function Services() {
     <section id="servicios" className="relative py-28 overflow-hidden">
       {/* Image background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Image src="/proyectos.webp" alt="" fill loading="lazy" className="object-cover object-center" />
+        <Image src="/proyectos.webp" alt="" fill loading="lazy" sizes="100vw" className="object-cover object-center" />
       </div>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/55 pointer-events-none" />

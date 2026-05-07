@@ -41,7 +41,7 @@ export default function FAQ() {
     <section className="relative py-24 overflow-hidden">
       {/* Image background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Image src="/proyectos.webp" alt="" fill loading="lazy" className="object-cover object-center" />
+        <Image src="/proyectos.webp" alt="" fill loading="lazy" sizes="100vw" className="object-cover object-center" />
       </div>
       {/* Overlay opaco para diferenciarlo de Services */}
       <div className="absolute inset-0 bg-black/82 pointer-events-none" />
