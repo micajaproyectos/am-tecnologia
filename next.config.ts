@@ -60,16 +60,6 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: securityHeaders,
       },
-      // Cache inmutable para assets estáticos de Next.js (JS, CSS, fonts)
-      {
-        source: "/_next/static/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
       // Cache de 1 año para imágenes y fuentes en /public
       {
         source: "/:file(.*\\.(?:ico|png|jpg|jpeg|gif|webp|avif|svg|woff|woff2))",
