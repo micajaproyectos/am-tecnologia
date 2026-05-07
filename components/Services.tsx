@@ -5,6 +5,7 @@ import Image from "next/image";
 
 const services = [
   {
+    href: "/aparecer-en-google",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" />
@@ -32,6 +33,7 @@ const services = [
         <line x1="12" y1="17" x2="12" y2="21" />
       </svg>
     ),
+    href: "/servicios/one-page-corporativo",
     title: "One Page Corporativo",
     desc: "Presencia digital elegante en una sola página. Ideal para profesionales, consultoras y pymes que necesitan imagen sólida en internet.",
     features: ["Diseño personalizado", "Formulario de contacto", "SEO básico incluido"],
@@ -45,6 +47,7 @@ const services = [
         <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" />
       </svg>
     ),
+    href: "/servicios/ecommerce",
     title: "E-commerce con Pago",
     desc: "Tienda online completa con pasarela de pago integrada. Vende tus productos las 24 horas con pagos automáticos y gestión de inventario.",
     features: ["Webpay / MercadoPago", "Gestión de productos", "Panel administrativo"],
@@ -58,6 +61,7 @@ const services = [
         <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32" />
       </svg>
     ),
+    href: "/servicios/automatizaciones-ia",
     title: "Automatizaciones con IA",
     desc: "Optimiza tu negocio con inteligencia artificial. Chatbots, respuestas automáticas, análisis de datos y flujos que trabajan mientras tú descansas.",
     features: ["Chatbot inteligente 24/7", "Automatización de WhatsApp", "Reportes con IA"],
@@ -72,6 +76,7 @@ const services = [
         <path d="M7 8h.01M11 8h5M7 12h3m4 0h2" />
       </svg>
     ),
+    href: "/servicios/app-web-saas",
     title: "App Web SaaS",
     desc: "Aplicaciones web a medida diseñadas para tu negocio. Plataformas escalables con acceso desde cualquier dispositivo, sin instalaciones.",
     features: ["Diseño a medida", "Panel administrativo", "Escalable y en la nube"],
@@ -194,8 +199,9 @@ export default function Services() {
         onMouseLeave={stopDrag}
       >
         {services.map((s) => (
-          <div
+          <a
             key={s.title}
+            href={s.href}
             style={{ width: CARD_W, minWidth: CARD_W }}
             className={`relative flex-shrink-0 rounded-2xl p-8 border flex flex-col gap-5 group transition-all duration-300 hover:-translate-y-1 ${
               s.featured
@@ -234,7 +240,7 @@ export default function Services() {
                 </li>
               ))}
             </ul>
-          </div>
+          </a>
         ))}
       </div>
 

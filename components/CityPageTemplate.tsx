@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -56,12 +57,12 @@ export default function CityPageTemplate({ city, jsonLd }: Props) {
             >
               Quiero aparecer en Google en {city.name}
             </a>
-            <a
+            <Link
               href="/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/15 text-am-muted hover:text-white hover:border-white/30 font-semibold text-[15px] transition-all duration-200"
             >
               ← Volver al inicio
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -135,16 +136,17 @@ export default function CityPageTemplate({ city, jsonLd }: Props) {
           {/* Servicios relevantes */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {SERVICES.slice(0, 3).map((s) => (
-              <a
+              <Link
                 key={s.slug}
                 href={`/servicios/${s.slug}`}
+                prefetch={true}
                 className="flex flex-col gap-2 bg-am-bg border border-white/6 rounded-xl px-5 py-5 hover:border-am-primary/30 transition-colors group"
               >
                 <span className="font-semibold text-white text-[14px] group-hover:text-am-primary transition-colors">
                   {s.title}
                 </span>
                 <span className="text-am-muted text-[12px] leading-snug">{s.price}</span>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
