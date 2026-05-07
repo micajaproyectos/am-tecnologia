@@ -4,6 +4,7 @@ const serviceLinks = [
   "E-commerce con Pago",
   "Automatizaciones con IA",
   "App Web SaaS",
+  "Presencia en Google",
 ];
 
 const companyLinks = [

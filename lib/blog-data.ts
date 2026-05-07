@@ -199,6 +199,841 @@ Depende del proveedor. En nuestro caso, aceptamos pago en cuotas con tarjeta de 
       },
     ],
   },
+  {
+    slug: "como-aparecer-en-google-empresa-chile",
+    title: "Cómo Aparecer en Google: Guía Completa para Empresas en Chile",
+    metaTitle:
+      "Cómo Aparecer en Google | Guía para Empresas y Pymes Chile 2026",
+    metaDescription:
+      "Aprende paso a paso cómo hacer que tu negocio aparezca en Google. Guía práctica para empresas y pymes en Chile: web, SEO, Google Maps y más.",
+    canonicalUrl:
+      "https://www.amtecnologia.cl/blog/como-aparecer-en-google-empresa-chile",
+    date: "2026-05-07",
+    readingTime: 11,
+    author: "AM Tecnología",
+    category: "Posicionamiento en Google",
+    tags: ["posicionamiento", "Google", "SEO", "empresas", "pymes", "Chile"],
+    excerpt:
+      "El 92% de los chilenos busca en Google antes de comprar. Si tu negocio no aparece, esos clientes van a tu competencia. Esta guía te explica los 5 pilares para aparecer en Google de verdad: web, SEO, Maps, Analytics y contenido.",
+    content: `## ¿Por qué aparecer en Google es hoy la prioridad número uno?
+
+El 92% de los chilenos busca en Google antes de tomar una decisión de compra o contratar un servicio. Eso incluye a los clientes de tu negocio — los que están buscando exactamente lo que tú ofreces, ahora mismo.
+
+Si tu empresa no aparece cuando hacen esa búsqueda, el cliente no desaparece. Simplemente llama a tu competencia.
+
+La buena noticia: aparecer en Google no es solo para grandes empresas ni requiere un presupuesto enorme. Esta guía te explica los 5 pilares que necesita cualquier negocio en Chile para ser encontrado en Google — sin jerga técnica innecesaria.
+
+## Los 3 lugares donde tu negocio puede aparecer en Google
+
+Antes de entrar a los pilares, es importante entender que "aparecer en Google" no es una sola cosa. Hay tres zonas distintas:
+
+### Resultados orgánicos (SEO)
+
+Son los resultados de búsqueda que no son publicidad. Cuando alguien busca "diseñadora de interiores en Viña del Mar" y aparece una lista de sitios web, esos son resultados orgánicos. Llegar ahí no se paga por clic — se gana con una web bien construida y una estrategia de contenido.
+
+### Google Maps (Local Pack)
+
+Es el mapa con los 3 negocios que aparece en la parte superior de muchas búsquedas locales. Si buscas "ferretería en Temuco", antes de los resultados web aparece un mapa con 3 ferreterías marcadas. Estar ahí es gratuito y genera muchísimas llamadas directas.
+
+### Google Ads (publicidad pagada)
+
+Son los resultados marcados con "Patrocinado" que aparecen arriba de todo. Pagas por cada clic. Es inmediato pero requiere inversión continua — cuando dejas de pagar, desapareces.
+
+**La estrategia ideal**: los tres canales se complementan. Pero los primeros dos son gratuitos y construyen resultados que duran. Este artículo se enfoca en esos.
+
+## Pilar 1: Una página web optimizada para Google
+
+Las redes sociales son útiles, pero no reemplazan una página web. Instagram y Facebook son terreno prestado — si mañana cambian el algoritmo o tu cuenta es bloqueada, pierdes todo. Tu web es tuya.
+
+Además, Google indexa páginas web. No indexa perfiles de Instagram. Si no tienes web, Google simplemente no sabe que existes.
+
+### Qué necesita tu web para que Google la entienda
+
+**Velocidad de carga**: Google premia los sitios rápidos y penaliza los lentos. Un sitio que tarda más de 3 segundos en cargar pierde tanto posiciones en Google como visitantes (el 53% abandona si tarda más de 3 segundos).
+
+**Diseño mobile-first**: más del 65% del tráfico en Chile viene desde celular. Google evalúa tu sitio primero desde móvil. Si se ve mal en celular, te perjudica.
+
+**Estructura técnica correcta**: Google necesita entender de qué trata tu sitio. Eso se logra con títulos bien escritos (H1, H2), URLs descriptivas, etiquetas meta y una jerarquía de contenido clara.
+
+**Certificado SSL (HTTPS)**: el candado en la barra del navegador. Sin él, Google marca tu sitio como "no seguro" y lo penaliza en los rankings.
+
+No basta con "tener" una web. Debe estar [construida para aparecer en Google](/aparecer-en-google) — esa es la diferencia entre un sitio que trabaja por ti y uno que solo existe.
+
+## Pilar 2: SEO — el posicionamiento orgánico
+
+SEO son las siglas de Search Engine Optimization, pero en términos simples significa esto: hacer que Google entienda de qué trata tu negocio y a qué búsquedas debes aparecer como respuesta.
+
+### Keywords: las palabras que tus clientes escriben
+
+Las keywords son las frases que tu cliente potencial escribe en Google. "Contador tributario Santiago", "taller mecánico Concepción", "diseño de páginas web pymes" — cada una de esas frases es una oportunidad de aparecer.
+
+La clave está en identificar las keywords exactas que usa tu cliente, no las que tú crees que usa. Muchos negocios optimizan para palabras que nadie busca.
+
+### SEO on-page: lo que va dentro de tu web
+
+El SEO on-page es todo lo que se hace dentro de tu sitio:
+
+**Título de la página (title tag)**: es lo que aparece como título del resultado en Google. Debe incluir la keyword principal y el nombre de tu ciudad.
+
+**Meta descripción**: el texto de 2 líneas que aparece bajo el título en Google. No afecta directamente el ranking, pero sí afecta si el usuario hace clic o no.
+
+**Contenido con keywords naturales**: Google lee el texto de tu sitio. Si eres un dentista en Puerto Montt, tu página debe mencionar "dentista Puerto Montt" de forma natural en el contenido, no forzada.
+
+### SEO local: el más valioso para pymes chilenas
+
+El SEO local es el posicionamiento para búsquedas con una ciudad o zona geográfica. Para la mayoría de las pymes, es más valioso que el SEO nacional.
+
+"Gasfiter en [Rancagua](/posicionamiento-google-santiago)" tiene mucho menos competencia que "gasfiter en Chile" — y el que busca especifica ciudad tiene más intención de contratar pronto.
+
+### ¿Cuánto tarda en funcionar el SEO?
+
+Las expectativas realistas: entre 1 y 3 meses para búsquedas locales con poca competencia, y entre 3 y 6 meses para búsquedas más competitivas. El SEO no es inmediato — pero una vez que funciona, el tráfico llega solo, sin pagar por cada visita.
+
+## Pilar 3: Google Business Profile (Google Maps)
+
+Google Business Profile es la herramienta gratuita de Google para que los negocios locales aparezcan en Google Maps y en el "Local Pack" (el mapa con 3 resultados que sale arriba de las búsquedas locales).
+
+Si aún no tienes tu perfil, créalo en [business.google.com](https://business.google.com) — es gratis.
+
+### Qué información completar sí o sí
+
+**Nombre del negocio**: exactamente como aparece en tu web y en todos tus materiales. Consistencia es clave.
+
+**Categoría principal**: elige la más específica posible. "Dentista" es mejor que "Salud". "Abogado tributario" es mejor que "Abogado".
+
+**Dirección y área de servicio**: si atiendes clientes en sus domicilios o de forma remota (como nosotros), puedes ocultar la dirección física y configurar las ciudades donde operas.
+
+**Horarios**: completos y actualizados. Si Google muestra que estás cerrado cuando en realidad estás disponible, pierdes clientes.
+
+**Fotos**: los perfiles con fotos reciben hasta un 42% más de solicitudes de ruta y un 35% más de clics al sitio web, según datos de Google.
+
+**Descripción**: 750 caracteres para explicar qué haces, a quién sirves y en qué ciudad. Incluye tus keywords naturalmente.
+
+### Las reseñas son oro
+
+Las reseñas en Google no solo generan confianza — también afectan directamente tu posición en el Local Pack. Un negocio con 20 reseñas de 5 estrellas aparece antes que uno con ninguna, aunque el segundo tenga mejor SEO.
+
+Pide reseñas a tus clientes satisfechos con un link directo. Responde siempre — tanto las positivas como las negativas.
+
+### Conecta tu perfil con tu web
+
+En la sección "Sitio web" de tu perfil, agrega la URL de tu página. Esto crea una señal de consistencia que Google valora para el posicionamiento local.
+
+## Pilar 4: Google Search Console y Analytics
+
+Muchos negocios tienen web pero no saben si alguien la visita, de dónde vienen esas visitas ni qué páginas funcionan mejor. Sin esos datos, estás tomando decisiones a ciegas.
+
+### Google Search Console: el radar de Google
+
+Search Console es la herramienta oficial y gratuita de Google que te muestra cómo ve Google tu sitio. Puedes ver:
+
+- Qué búsquedas llevan personas a tu web
+- En qué posición apareces para cada búsqueda
+- Si hay errores que impiden que Google indexe tus páginas
+- Cuántos clics recibes por mes desde Google
+
+Es esencial que tu proveedor web configure esto desde el primer día.
+
+### Google Analytics: las métricas de tu negocio
+
+Analytics te muestra qué pasa cuando alguien llega a tu sitio: cuánto tiempo pasa, qué páginas visita, desde qué ciudad viene, si llegó desde Google o desde Instagram.
+
+Las métricas que más importan para una pyme:
+
+**Usuarios orgánicos**: visitantes que llegaron desde Google (sin pagar publicidad). Este número debe crecer mes a mes si tu estrategia SEO funciona.
+
+**Tasa de conversión**: qué porcentaje de visitantes hace lo que quieres (llamar, escribir al WhatsApp, comprar). De nada sirve tener visitas si no se convierten en clientes.
+
+**Fuente del tráfico**: ¿de dónde vienen tus visitas? Google, redes sociales, directo. Esto te dice dónde concentrar esfuerzos.
+
+## Pilar 5: Contenido que atrae nuevos clientes
+
+Los 4 pilares anteriores te dan la base. El contenido es lo que te hace crecer con el tiempo.
+
+Cada artículo de blog, cada guía, cada respuesta a una pregunta frecuente que publicas en tu web es una nueva oportunidad de aparecer en Google para una búsqueda distinta.
+
+### La estrategia más simple y efectiva
+
+Responde las preguntas que tus clientes hacen. Si eres contador y tus clientes siempre preguntan "¿cuándo vence la declaración de IVA?", ese es un artículo. Si eres veterinario y te preguntan "¿qué vacunas necesita un perro en Chile?", eso es otro artículo.
+
+Cada pregunta respondida es una keyword capturada. Cada keyword es un nuevo cliente potencial que llega sin que pagues publicidad.
+
+### Consistencia sobre volumen
+
+No necesitas publicar todos los días. Un artículo bien escrito por mes tiene más impacto que diez publicaciones apresuradas. Google premia el contenido útil y completo, no la frecuencia por sí sola.
+
+## El error más común: depender solo de redes sociales
+
+Muchos dueños de pymes invierten horas en Instagram o Facebook pensando que eso los va a posicionar en Google. No funciona así.
+
+Las redes sociales tienen sus ventajas: construyen comunidad, muestran el lado humano del negocio, generan confianza. Pero no te posicionan en Google para búsquedas de compra.
+
+Cuando alguien busca "plomero en Osorno" en Google, los resultados que aparecen son páginas web y perfiles de Google Maps — no perfiles de Instagram.
+
+Además, las redes son prestadas. El algoritmo de Instagram cambió en 2022 y muchos negocios perdieron el 60% de su alcance orgánico de un día para otro. Tu web es propia — nadie puede cambiarte las reglas a mitad del camino.
+
+## ¿Cuánto cuesta aparecer en Google?
+
+Depende de qué canal:
+
+**Google Maps**: completamente gratis. Solo requiere tiempo para configurarlo bien.
+
+**Posicionamiento orgánico con web optimizada**: desde $99.990 pago único con una [landing page](/servicios/landing-page) bien construida. Es la inversión base — sin web optimizada, ninguna otra estrategia funciona.
+
+**SEO avanzado con seguimiento mensual**: variable según industria y objetivos. Para la mayoría de las pymes en Chile, el SEO local con una web bien estructurada es suficiente para resultados concretos.
+
+**Google Ads**: variable según la competencia de tu rubro y ciudad. Algunos rubros pagan $200 por clic, otros $2.000. Úsalo para resultados inmediatos mientras construyes tu posicionamiento orgánico.
+
+Para una guía detallada de precios, revisa [cuánto cuesta una página web en Chile](/blog/cuanto-cuesta-una-pagina-web-en-chile).
+
+## Preguntas frecuentes
+
+### ¿Cuánto tiempo tarda en aparecer mi negocio en Google?
+
+Para Google Maps, si configuras bien tu perfil, puedes aparecer en pocas semanas. Para resultados orgánicos (SEO), lo realista es entre 1 y 3 meses para búsquedas locales con poca competencia, y 3 a 6 meses para búsquedas más competitivas. Depende mucho de cuántos competidores ya están posicionados.
+
+### ¿Puedo aparecer en Google sin página web?
+
+Puedes aparecer en Google Maps sin web, sí. Pero para los resultados orgánicos de búsqueda, necesitas una página web. Además, los perfiles de Google Maps sin web asociada tienen menor peso en el algoritmo local de Google.
+
+### ¿Google cobra por aparecer en los resultados?
+
+Los resultados orgánicos y Google Maps son completamente gratuitos. Solo pagas si usas Google Ads (la publicidad marcada como "Patrocinado"). El posicionamiento orgánico no tiene costo por clic.
+
+### ¿Qué es mejor, SEO o Google Ads?
+
+Son herramientas distintas para objetivos distintos. Google Ads da resultados en días pero requiere inversión continua. El SEO tarda más en dar resultados pero son gratis y duraderos. La estrategia óptima es Ads para generar clientes mientras el SEO madura — y una vez posicionado, reducir la dependencia de Ads.
+
+### ¿Necesito un experto o puedo hacerlo yo mismo?
+
+Lo básico (configurar Google Business Profile, instalar Analytics) lo puedes hacer tú mismo con guías como esta. Para el SEO técnico de tu web, construir la estructura correcta desde el inicio ahorra mucho tiempo y errores. Un sitio mal construido puede tardar el doble en posicionarse.`,
+    faqSchema: [
+      {
+        q: "¿Cuánto tiempo tarda en aparecer mi negocio en Google?",
+        a: "Para Google Maps, si configuras bien tu perfil, puedes aparecer en pocas semanas. Para resultados orgánicos (SEO), lo realista es entre 1 y 3 meses para búsquedas locales con poca competencia, y 3 a 6 meses para búsquedas más competitivas.",
+      },
+      {
+        q: "¿Puedo aparecer en Google sin página web?",
+        a: "Puedes aparecer en Google Maps sin web. Pero para los resultados orgánicos de búsqueda necesitas una página web. Además, los perfiles de Google Maps sin web asociada tienen menor peso en el algoritmo local de Google.",
+      },
+      {
+        q: "¿Google cobra por aparecer en los resultados de búsqueda?",
+        a: "Los resultados orgánicos y Google Maps son completamente gratuitos. Solo pagas si usas Google Ads (la publicidad marcada como 'Patrocinado'). El posicionamiento orgánico no tiene costo por clic.",
+      },
+      {
+        q: "¿Qué es mejor para una pyme en Chile, SEO o Google Ads?",
+        a: "Son herramientas complementarias. Google Ads da resultados en días pero requiere inversión continua. El SEO tarda más en dar frutos pero el tráfico es gratuito y duradero. La estrategia ideal es usar Ads mientras el SEO madura, y luego reducir la dependencia de publicidad pagada.",
+      },
+      {
+        q: "¿Necesito contratar un experto para aparecer en Google?",
+        a: "Lo básico como configurar Google Business Profile e instalar Analytics lo puedes hacer tú mismo. Para el SEO técnico de la web, construir la estructura correcta desde el inicio ahorra tiempo y errores costosos. Un sitio mal construido puede tardar el doble en posicionarse.",
+      },
+    ],
+  },
+  {
+    slug: "como-digitalizar-tu-pyme-en-chile",
+    title: "Cómo Digitalizar Tu Pyme en Chile: Primeros Pasos en 2026",
+    metaTitle: "Cómo Digitalizar Tu Pyme en Chile | Guía Paso a Paso 2026",
+    metaDescription:
+      "Guía práctica para digitalizar tu pyme en Chile. Desde crear tu página web hasta aparecer en Google, paso a paso y sin conocimientos técnicos.",
+    canonicalUrl:
+      "https://www.amtecnologia.cl/blog/como-digitalizar-tu-pyme-en-chile",
+    date: "2026-05-07",
+    readingTime: 9,
+    author: "AM Tecnología",
+    category: "Transformación Digital",
+    tags: ["digitalización", "pymes", "Chile", "emprendimiento", "transformación digital"],
+    excerpt:
+      "El 98% de las pymes en Chile planea invertir en digitalización, pero muchas no saben por dónde empezar. Esta guía te muestra los pasos concretos, sin jerga técnica y sin gastar millones.",
+    content: `## ¿Por qué la digitalización no puede esperar?
+
+Chile es uno de los países más avanzados en digitalización de Latinoamérica — a nivel país. Pero si miramos solo a las pymes, el panorama es distinto. Muchos negocios pequeños y medianos todavía dependen de métodos que los están dejando atrás.
+
+La buena noticia: digitalizar tu pyme no significa gastar millones ni contratar un equipo de tecnología. Significa dar pasos concretos, en orden, usando herramientas que ya existen — muchas de ellas gratuitas.
+
+Esta guía te muestra cómo hacerlo, desde cero, sin conocimientos técnicos previos.
+
+## ¿Qué significa realmente "digitalizar" tu pyme?
+
+Antes de los pasos, hay que aclarar qué es y qué no es digitalización. Porque muchos dueños de pyme creen que ya están digitalizados porque tienen Instagram. No es lo mismo.
+
+**No es digitalización**:
+Tener solo redes sociales. Comprar un software caro que nadie de tu equipo sabe usar. Tener una web desactualizada que nadie visita.
+
+**Sí es digitalización**:
+Estar presente donde tus clientes te buscan — principalmente Google. Automatizar lo repetitivo para liberar tu tiempo. Medir qué funciona y qué no, para tomar mejores decisiones.
+
+Piénsalo así: digitalizar es pasar de la libreta de pedidos al sistema que trabaja por ti mientras tú duermes. No es complicado — es ordenado.
+
+## Paso 1: Tu página web — la base de todo
+
+Sin página web, no existes en Google. Las redes sociales no reemplazan esto.
+
+Instagram es terreno prestado — mañana pueden cambiar el algoritmo, suspender tu cuenta o simplemente cerrar el servicio. Tu web es tuya. Nadie puede quitártela.
+
+Además, cuando alguien busca "gasfiter en Valdivia" o "dentista en Antofagasta", Google muestra páginas web — no perfiles de Instagram. Sin web, esas búsquedas no te encuentran.
+
+### ¿Qué necesita tu web como mínimo?
+
+No necesitas algo elaborado para empezar. Una [landing page profesional](/servicios/landing-page) bien hecha hace el trabajo:
+
+**Que cargue rápido en celular**: más del 65% de las búsquedas en Chile se hacen desde el teléfono. Si tu web tarda más de 3 segundos en cargar, la persona se va.
+
+**Que Google la entienda**: título claro, descripción de tus servicios, nombre de tu ciudad. Sin esto, Google no sabe a qué búsquedas mostrarte.
+
+**Que tenga HTTPS**: el candado de seguridad. Sin él, Google advierte a los visitantes que el sitio "no es seguro" — lo que destruye la confianza antes de que lean una sola palabra.
+
+### Lo que muchos no te dicen
+
+Verifica siempre que el dominio (.cl o .com) quede registrado **a tu nombre**, no al de la agencia. Si en algún momento cambias de proveedor, el dominio debe ser tuyo. También revisa que tengas acceso al panel de administración del sitio — no debes depender de terceros para un cambio de texto.
+
+Para tener claro cuánto cuesta esto en el mercado chileno, revisa nuestra guía de [precios reales de páginas web en Chile](/blog/cuanto-cuesta-una-pagina-web-en-chile).
+
+## Paso 2: Google Business Profile (Google Maps)
+
+Es la herramienta más poderosa y completamente gratuita que Google ofrece para negocios locales. Cuando alguien busca tu rubro en tu ciudad, Google muestra un mapa con 3 negocios antes de los resultados web. Eso es el "Local Pack" — y estar ahí genera llamadas directas, mensajes y visitas.
+
+### Cómo crear tu perfil en 4 pasos
+
+**1.** Ve a [business.google.com](https://business.google.com) e inicia sesión con tu cuenta de Google.
+
+**2.** Agrega el nombre de tu negocio y selecciona la categoría más específica posible. "Dentista" es mejor que "Salud". "Taller mecánico" es mejor que "Automotriz".
+
+**3.** Completa la dirección o, si atiendes a domicilio o trabajas de forma remota, configura el área de servicio por ciudad o región.
+
+**4.** Verifica tu negocio. Google te envía un código por correo postal, llamada o video — depende del tipo de negocio.
+
+### Qué completar para destacar
+
+**Fotos**: los perfiles con fotos reciben hasta 42% más solicitudes de ruta. Sube al menos 5 fotos de tu local, productos o equipo.
+
+**Descripción**: tienes 750 caracteres. Úsalos para explicar qué haces, a quién le sirves y en qué ciudad. Menciona tus servicios principales de forma natural.
+
+**Horarios**: mantenlos siempre actualizados. Si Google te muestra como "cerrado" cuando en realidad estás disponible, pierdes esa llamada.
+
+**Reseñas**: son el factor más poderoso para el posicionamiento en Maps. Pide a tus clientes satisfechos que te dejen una reseña con el link directo a tu perfil. Responde siempre — tanto las positivas como las negativas muestran que estás activo.
+
+## Paso 3: Herramientas gratuitas que deberías usar
+
+Antes de gastar en software, agota lo que existe gratis. La mayoría de las pymes no necesita más que esto para empezar:
+
+**Google Search Console**: la herramienta oficial de Google que te muestra para qué búsquedas apareces, cuántos clics recibes y si hay errores en tu sitio. Gratuita. Tu proveedor web debería configurarla al momento de lanzar tu sitio. Para entender mejor cómo funciona, revisa [esta guía de posicionamiento en Google](/blog/como-aparecer-en-google-empresa-chile).
+
+**Google Analytics**: mide cuántas personas visitan tu web, desde dónde vienen, qué páginas ven y cuánto tiempo pasan. Gratuita. Con estos datos sabes si tu estrategia digital está funcionando o no.
+
+**WhatsApp Business**: la versión profesional de WhatsApp. Permite configurar respuestas automáticas, horario de atención, catálogo de productos y un perfil de negocio. Gratuita y esencial si usas WhatsApp para atender clientes — que en Chile, casi todos lo hacen.
+
+**Google Workspace básico** (Drive, Sheets, Calendar): para organización interna sin comprar software. Compartir documentos, llevar registros, agendar reuniones — todo gratis hasta cierto volumen.
+
+**Canva**: para crear imágenes para redes sociales, presentaciones y materiales de marketing sin ser diseñador. La versión gratuita es más que suficiente para la mayoría de las pymes.
+
+## Paso 4: Redes sociales con estrategia (no por obligación)
+
+Las redes sociales tienen su lugar — pero no es el que muchos creen. Instagram y Facebook sirven principalmente para **mantener relación** con clientes que ya te conocen, no para capturar clientes nuevos que están buscando tu servicio.
+
+El cliente que busca "plomero urgente en Temuco" no va a Instagram — va a Google.
+
+### Cómo hacerlo bien sin agotarte
+
+**Elige 1 o 2 redes** donde está tu cliente específico. Si eres un restaurante, Instagram tiene sentido. Si eres una empresa B2B, LinkedIn es más relevante. No intentes estar en todas partes — es mejor una red bien mantenida que cinco abandonadas.
+
+**Publica con consistencia, no con perfeccionismo**. Tres publicaciones por semana de contenido útil valen más que una publicación perfecta al mes. El algoritmo premia la constancia.
+
+**Las redes complementan tu web, no la reemplazan**. Usa tus redes para dirigir tráfico a tu web y WhatsApp — donde ocurre la conversión real.
+
+## Paso 5: Automatizaciones simples que ahorran tiempo
+
+Una vez que tienes la base digital funcionando, las automatizaciones son el siguiente nivel. No requieren conocimientos técnicos — son configuraciones dentro de herramientas que ya existen:
+
+**Respuestas automáticas en WhatsApp Business**: cuando alguien te escribe fuera de horario o por primera vez, recibe un mensaje automático con tus horarios y cómo contactarte.
+
+**Formularios de contacto en tu web**: en lugar de que el cliente tenga que buscarte en redes, completa un formulario en tu web y te llega directamente al correo o WhatsApp. Sin perder ningún lead.
+
+**Agenda online**: herramientas como Calendly (gratuita hasta cierto volumen) permiten que tus clientes agenden una hora sin necesidad de llamar. Ideal para profesionales como dentistas, abogados, consultores o peluqueros.
+
+**Catálogo digital**: si vendes productos, un catálogo en PDF o en tu web ahorra el tiempo de responder "¿cuánto cuesta X?" por WhatsApp decenas de veces al día.
+
+## Programas de apoyo del gobierno para pymes
+
+En Chile existen fondos y programas específicos para apoyar la digitalización de pymes. Muchos no los conocen o creen que son difíciles de acceder:
+
+**Ruta Digital de Sercotec**: cursos gratuitos en línea sobre digitalización, marketing digital y herramientas tecnológicas para pymes. No requiere postulación — solo registro.
+
+**Kit Digital de Corfo**: cofinanciamiento para adoptar herramientas digitales en tu negocio. Cubre software, páginas web y capacitación. Los montos y requisitos varían según convocatoria.
+
+**Capital Semilla Emprende (Sercotec)**: hasta $3.500.000 para pymes que quieran formalizar o crecer. La creación de una página web es un gasto elegible.
+
+**Portal Mi Portal Emprendimiento** (miportalemprendimiento.gob.cl): centraliza toda la oferta de programas gubernamentales para emprendedores. Vale la pena revisarlo periódicamente para no perder convocatorias.
+
+**Tip práctico**: muchos de estos fondos aceptan la creación de una página web profesional como gasto elegible. Si estás pensando en postular, asegúrate de que el proveedor pueda emitir factura y entregar documentación del servicio.
+
+## Los errores más comunes al digitalizar una pyme
+
+Para cerrar, los errores que más vemos — y que puedes evitar:
+
+**Empezar por las redes antes de tener web**: es el error número uno. Primero la base (web y Google), después las redes.
+
+**Comprar herramientas caras sin saber usarlas**: hay software que cuesta $200.000 al mes y termina sin abrir. Empieza gratis, paga solo cuando realmente necesites más funcionalidad.
+
+**No medir nada**: publicar sin revisar si funciona es publicar a ciegas. Analytics y Search Console son gratuitos — úsalos.
+
+**Dejar el dominio a nombre del proveedor**: ya lo mencionamos, pero es tan importante que merece repetirse. El dominio es tu identidad digital — debe ser tuyo.
+
+**Pensar que es un gasto, no una inversión**: una web que [aparece en Google](/aparecer-en-google) y te trae 5 clientes al mes tiene un retorno concreto. Calculable. No es lo mismo que una publicación de Instagram que nadie recuerda en 48 horas.
+
+## Preguntas frecuentes
+
+### ¿Cuánto cuesta digitalizar una pyme en Chile?
+
+Depende de qué tan lejos quieras llegar. El punto de partida — una web profesional con SEO básico — parte desde $99.990 pago único. Herramientas como Google Analytics, Search Console, Google Business Profile y WhatsApp Business son completamente gratuitas. Si quieres aprovechar fondos del gobierno, Sercotec y Corfo tienen programas que pueden cubrir parte o todo el costo.
+
+### ¿Necesito saber de tecnología para digitalizar mi negocio?
+
+No. Los pasos de esta guía están diseñados para personas sin conocimientos técnicos. Crear un perfil en Google Maps, instalar WhatsApp Business o usar Google Sheets no requiere más que seguir instrucciones. Para la página web, trabajas con un proveedor que se encarga de lo técnico.
+
+### ¿Por dónde empiezo si no tengo nada digital todavía?
+
+En orden: primero crea tu perfil de Google Business Profile (es gratis y lo puedes hacer hoy). Luego encarga tu página web profesional. Con esas dos cosas ya tienes la base para aparecer en Google. El resto lo construyes encima.
+
+### ¿Las redes sociales son suficientes para mi negocio?
+
+Para mantener relación con clientes que ya te conocen, sí. Para conseguir clientes nuevos que están buscando tu servicio en Google, no. Las redes no te posicionan en resultados de búsqueda — para eso necesitas web y SEO.
+
+### ¿Hay fondos del gobierno para digitalizar mi pyme en Chile?
+
+Sí. Sercotec tiene la Ruta Digital con cursos gratuitos y el Capital Semilla con financiamiento. Corfo tiene el Kit Digital. Todos están disponibles en miportalemprendimiento.gob.cl. Muchos de estos fondos aceptan la creación de una página web como gasto elegible.`,
+    faqSchema: [
+      {
+        q: "¿Cuánto cuesta digitalizar una pyme en Chile?",
+        a: "El punto de partida — una web profesional con SEO básico — parte desde $99.990 pago único. Herramientas como Google Analytics, Search Console y Google Business Profile son completamente gratuitas. Sercotec y Corfo tienen programas que pueden cubrir parte del costo.",
+      },
+      {
+        q: "¿Necesito saber de tecnología para digitalizar mi negocio en Chile?",
+        a: "No. Los pasos básicos como crear un perfil en Google Maps, instalar WhatsApp Business o usar Google Sheets no requieren conocimientos técnicos. Para la página web, trabajas con un proveedor que se encarga de lo técnico.",
+      },
+      {
+        q: "¿Por dónde empiezo si no tengo nada digital todavía?",
+        a: "En orden: primero crea tu perfil de Google Business Profile (es gratis y lo puedes hacer hoy). Luego encarga tu página web profesional. Con esas dos cosas ya tienes la base para aparecer en Google.",
+      },
+      {
+        q: "¿Las redes sociales son suficientes para digitalizar mi pyme?",
+        a: "Para mantener relación con clientes que ya te conocen, sí. Para conseguir clientes nuevos que buscan tu servicio en Google, no. Las redes no te posicionan en resultados de búsqueda — para eso necesitas web y SEO.",
+      },
+      {
+        q: "¿Hay fondos del gobierno para digitalizar una pyme en Chile?",
+        a: "Sí. Sercotec tiene la Ruta Digital con cursos gratuitos y Capital Semilla con financiamiento. Corfo tiene el Kit Digital. Todos disponibles en miportalemprendimiento.gob.cl. Muchos aceptan la creación de una página web como gasto elegible.",
+      },
+    ],
+  },
+  {
+    slug: "google-maps-para-negocios-chile-guia-completa",
+    title: "Google Maps para Negocios en Chile: Guía Completa 2026",
+    metaTitle: "Google Maps para Negocios en Chile | Guía Paso a Paso 2026",
+    metaDescription:
+      "Aprende a registrar y optimizar tu negocio en Google Maps gratis. Guía completa para empresas y pymes en Chile con pasos, tips y errores comunes.",
+    canonicalUrl:
+      "https://www.amtecnologia.cl/blog/google-maps-para-negocios-chile-guia-completa",
+    date: "2026-05-07",
+    readingTime: 9,
+    author: "AM Tecnología",
+    category: "Google Maps",
+    tags: ["Google Maps", "Google Business Profile", "SEO local", "Chile", "pymes"],
+    excerpt:
+      "El 76% de las búsquedas locales terminan en una visita al negocio en 24 horas. Google Maps es completamente gratis y te pone frente a clientes que ya están buscando tu servicio. Esta es la guía más completa para aparecer ahí, paso a paso.",
+    content: `## La oportunidad que la mayoría de las pymes en Chile está perdiendo
+
+Cuando alguien busca "dentista cerca de mí" o "restaurante en Temuco", los primeros resultados que ve no son páginas web — son fichas de Google Maps. Un mapa con tres negocios marcados, sus horarios, su nota de reseñas y un botón para llamar directamente.
+
+Ese espacio es gratuito. Y el 76% de las personas que hacen una búsqueda local visitan el negocio en las siguientes 24 horas.
+
+Si tu negocio no está ahí, le estás regalando esos clientes a quien sí lo está. Esta guía te explica cómo aparecer en Google Maps, paso a paso, y cómo optimizar tu perfil para aparecer antes que tu competencia.
+
+## ¿Qué es Google Business Profile?
+
+Google Business Profile (antes llamado Google My Business) es tu ficha de negocio en Google. Es lo que aparece cuando alguien busca tu empresa por nombre, o cuando Google decide mostrarte como resultado relevante para una búsqueda local.
+
+Tu ficha incluye: nombre del negocio, dirección o zona de servicio, horarios, teléfono, sitio web, fotos, categoría y reseñas de clientes.
+
+Aparece en dos lugares: en **Google Maps** cuando alguien busca negocios en un mapa, y en el **Local Pack**, que es el bloque con mapa y 3 resultados que aparece en la parte superior de muchas búsquedas locales en Google — antes incluso de los resultados orgánicos normales.
+
+Es 100% gratis. No hay plan de pago, no hay suscripción. La única inversión es el tiempo de configurarlo bien.
+
+## Paso a paso: registrar tu negocio en Google Maps
+
+### Paso 1: Crear tu perfil
+
+Ve a [business.google.com](https://business.google.com) e inicia sesión con tu cuenta de Google. Si no tienes una, créala — es el mismo correo de Gmail.
+
+Haz clic en "Agregar tu negocio" e ingresa el nombre exacto de tu empresa. Usa el nombre real — sin agregar keywords como "— el mejor dentista de Santiago". Google penaliza eso y puede suspender tu perfil.
+
+### Paso 2: Elegir la categoría principal
+
+Esta es la decisión más importante de todo el proceso. La categoría le dice a Google en qué búsquedas mostrarte.
+
+Elige la más específica posible. Si eres abogado, no elijas "Abogado" — elige "Abogado de derecho tributario" o "Abogado laboralista" si es tu especialidad. Si tienes un café, no elijas "Restaurante" — elige "Cafetería".
+
+Puedes agregar categorías secundarias después. Pero la principal es la que más pesa.
+
+### Paso 3: Dirección o zona de servicio
+
+Si tienes local físico, agrega la dirección completa. Si trabajas a domicilio o de forma remota — como nosotros en AM Tecnología, que atendemos todo Chile — oculta la dirección y configura las ciudades o regiones donde operas.
+
+No necesitas local físico para aparecer en Google Maps.
+
+### Paso 4: Teléfono y sitio web
+
+Agrega tu número de teléfono con código de área (+56 o el prefijo de tu ciudad) y la URL de tu página web. Si aún no tienes web, este es el momento de considerar una [landing page profesional](/servicios/landing-page) — los perfiles con web asociada tienen significativamente más peso en el ranking local de Google.
+
+### Paso 5: Verificar tu negocio
+
+Google necesita confirmar que eres el dueño real del negocio. En Chile, el método más común es un código enviado por correo postal (tarda entre 5 y 14 días hábiles). Algunos negocios pueden verificar por teléfono, video o email — depende del tipo de actividad.
+
+Hasta no verificar, tu perfil existe pero con visibilidad limitada. Prioriza este paso.
+
+## Cómo optimizar tu perfil para aparecer antes que tu competencia
+
+Tener el perfil creado es solo el principio. La diferencia entre aparecer en el Top 3 y aparecer en la página 2 está en la optimización.
+
+### Descripción del negocio
+
+Tienes 750 caracteres. Úsalos para explicar qué haces, a quién sirves y en qué ciudades operas. Incluye las palabras que tus clientes escribirían en Google, de forma natural — no como lista de keywords.
+
+Ejemplo malo: "Dentista. Servicio dental. Odontología. Santiago."
+Ejemplo bueno: "Clínica dental en Providencia, Santiago. Atendemos urgencias dentales, blanqueamiento y ortodoncia. Más de 10 años sirviendo a familias en la Región Metropolitana."
+
+### Fotos: más de lo que crees
+
+Los perfiles con fotos reciben hasta un 42% más de solicitudes de ruta y un 35% más de clics al sitio web, según Google. Sube mínimo 10 fotos reales:
+
+- Fachada del local (para que te reconozcan al llegar)
+- Interior del espacio de trabajo
+- Equipo humano (genera confianza)
+- Productos o trabajos realizados
+- Fotos del servicio en acción
+
+Evita fotos de stock — Google y los usuarios las detectan fácilmente.
+
+### Horarios actualizados siempre
+
+Si Google muestra que estás cerrado cuando en realidad estás disponible, esa persona llama a tu competencia. Actualiza los horarios para feriados, vacaciones y cualquier cambio temporal.
+
+### Atributos y características
+
+Google permite marcar atributos como: acepta tarjetas, tiene estacionamiento, accesible para sillas de ruedas, tiene wifi, servicio a domicilio. Marca todo lo que aplique — esto aparece en tu ficha y afecta en qué búsquedas filtradas apareces.
+
+### Publicaciones de Google
+
+Una función que pocos usan: puedes publicar novedades, ofertas y eventos directamente en tu perfil, como si fuera una red social. Estas publicaciones aparecen en tu ficha durante 7 días. Publicar regularmente es una señal de actividad que Google valora.
+
+## Las reseñas: el factor que más impacta tu posición
+
+No hay atajos aquí. Google favorece negocios con más reseñas, mejor nota y respuestas activas del dueño. Un negocio con 30 reseñas de 4.8 estrellas aparece antes que uno con 0 reseñas, aunque el segundo tenga mejor web.
+
+### Cómo pedir reseñas sin incomodar
+
+El momento ideal es justo después de un servicio exitoso. Envía el link directo a tu ficha de Google con un mensaje simple: "¿Quedaste conforme con el servicio? Si puedes dejar una reseña en Google, nos ayuda mucho."
+
+Para obtener el link directo: en tu perfil de Google Business, ve a "Obtener más reseñas" y copia el enlace. Puedes acortarlo con bit.ly para enviarlo por WhatsApp.
+
+### Cómo responder reseñas
+
+**Reseñas positivas**: agradece de forma personalizada. No uses siempre la misma respuesta — Google nota la falta de autenticidad.
+
+**Reseñas negativas**: responde siempre, con calma y sin ponerte a la defensiva. Reconoce el problema si lo hubo, ofrece una solución o explica el contexto. Otros clientes potenciales leen esas respuestas — demuestran cómo manejas los problemas.
+
+**Lo que nunca debes hacer**: comprar reseñas falsas. Google tiene algoritmos sofisticados para detectarlas. Las consecuencias van desde eliminar las reseñas hasta suspender el perfil completo.
+
+## Cómo conectar Google Maps con tu página web
+
+Google Maps y tu página web no son sistemas separados — deben funcionar juntos como un sistema integrado. Esta conexión se llama **consistencia NAP** (Name, Address, Phone): el nombre, dirección y teléfono de tu negocio deben ser **exactamente iguales** en tu web, en Google Business Profile y en cualquier otra plataforma donde aparezcas.
+
+Incluso una diferencia pequeña — "Av. Independencia" vs "Avenida Independencia" — puede afectar tu posicionamiento local. Google usa esta consistencia para verificar que la información es confiable.
+
+### Acciones concretas para esta conexión
+
+**En tu perfil de Business Profile**: agrega la URL completa de tu sitio web.
+
+**En tu página de contacto**: inserta el mapa de Google Maps con un widget embebido. Los visitantes pueden ver dónde estás sin salir de tu sitio.
+
+**En el código de tu web**: el Schema.org LocalBusiness es un fragmento de código estructurado que le dice a Google explícitamente que tu web y tu ficha de Maps pertenecen al mismo negocio. En AM Tecnología lo incluimos en todas las webs que desarrollamos — es parte del por qué nuestros clientes se posicionan más rápido.
+
+Para entender cómo funciona esto como parte de una estrategia completa, lee [cómo aparecer en Google paso a paso](/blog/como-aparecer-en-google-empresa-chile).
+
+## Los 3 factores que determinan tu posición en Google Maps
+
+Google usa tres factores principales para decidir qué negocios mostrar en el Local Pack:
+
+### Relevancia
+
+¿Qué tan bien coincide tu perfil con lo que el usuario está buscando? Si alguien busca "peluquería canina en Valdivia" y tu categoría es "Peluquería Canina" con esa ciudad en tu zona de servicio y esa frase en tu descripción, tu relevancia es alta.
+
+Puedes mejorar la relevancia con: categoría correcta, descripción con keywords, y una web con contenido relevante para tu rubro y ciudad. Por ejemplo, si estás en Valdivia, revisa cómo trabajamos el [posicionamiento en Google en Valdivia](/posicionamiento-google-valdivia) como referencia.
+
+### Distancia
+
+Qué tan cerca está tu negocio de la persona que busca. Google asume que el usuario prefiere negocios más cercanos para búsquedas locales.
+
+No puedes cambiar tu ubicación real, pero sí puedes configurar bien tu zona de servicio para aparecer en todas las ciudades donde realmente atiendes.
+
+### Prominencia
+
+Qué tan conocido y confiable considera Google que es tu negocio. Se mide con: número y calidad de reseñas, antigüedad del perfil, si tienes web, si hay menciones de tu negocio en otras páginas, y la actividad reciente en tu perfil.
+
+La prominencia toma tiempo — pero sí puedes influir en ella activamente con reseñas, publicaciones regulares y una web bien conectada.
+
+## Errores comunes que arruinan tu posición en Maps
+
+**Nombre con keywords forzadas**: "Dentista Santiago Económico Juan González" viola las políticas de Google. Usa solo el nombre real de tu negocio.
+
+**No responder reseñas negativas**: silencio ante una crítica pública es peor que una mala respuesta. Responde siempre.
+
+**Horarios desactualizados**: si Google dice que estás abierto y llegas y estás cerrado, la reseña que te dejan no será buena. Mantén los horarios al día, especialmente en feriados.
+
+**Fotos de stock o de baja calidad**: las fotos son la primera impresión. Invierte 30 minutos en sacar fotos reales con tu celular — son mejor que cualquier imagen de banco.
+
+**Sin página web enlazada**: los perfiles sin web tienen menor prominencia. Una [landing page optimizada](/servicios/landing-page) conectada a tu perfil de Maps puede cambiar significativamente tu posición.
+
+**Datos distintos entre web y Maps**: como explicamos antes, la inconsistencia NAP confunde a Google. Revisa que nombre, dirección y teléfono sean idénticos en todos lados.
+
+Si quieres ver estos conceptos en el contexto más amplio de la digitalización de tu negocio, revisa [cómo digitalizar tu pyme en Chile](/blog/como-digitalizar-tu-pyme-en-chile).
+
+## Preguntas frecuentes
+
+### ¿Cuánto cuesta aparecer en Google Maps?
+
+Completamente gratis. Crear y mantener tu perfil de Google Business Profile no tiene ningún costo. Solo requiere tiempo para configurarlo correctamente y mantenerlo activo.
+
+### ¿Puedo aparecer en Google Maps sin tener local físico?
+
+Sí. Si tu negocio presta servicios a domicilio o trabaja de forma remota, puedes ocultar tu dirección y configurar una "zona de servicio" con las ciudades o comunas donde atiendes. Tu ficha aparecerá para búsquedas en esas zonas.
+
+### ¿Cuánto tarda en verificarse mi negocio en Google en Chile?
+
+El método más común en Chile es el código por correo postal, que tarda entre 5 y 14 días hábiles. Algunos negocios tienen disponible verificación por teléfono o video, que es inmediata. Una vez verificado, tu perfil gana visibilidad completa en 2 a 3 días adicionales.
+
+### ¿Cómo puedo subir de posición en Google Maps?
+
+Las acciones más efectivas son: conseguir más reseñas genuinas (y responderlas), mantener el perfil actualizado con publicaciones regulares, conectar una página web optimizada a tu perfil, y asegurarte de que la categoría sea la más específica y correcta para tu negocio.
+
+### ¿Google Maps y Google Business Profile son lo mismo?
+
+Son distintos pero están conectados. Google Maps es el mapa donde apareces. Google Business Profile es el panel donde administras tu ficha — desde ahí controlas lo que se muestra en Google Maps y en los resultados de búsqueda local.`,
+    faqSchema: [
+      {
+        q: "¿Cuánto cuesta aparecer en Google Maps?",
+        a: "Completamente gratis. Crear y mantener tu perfil de Google Business Profile no tiene ningún costo. Solo requiere tiempo para configurarlo correctamente y mantenerlo activo.",
+      },
+      {
+        q: "¿Puedo aparecer en Google Maps sin tener local físico en Chile?",
+        a: "Sí. Si tu negocio presta servicios a domicilio o trabaja de forma remota, puedes ocultar tu dirección y configurar una zona de servicio con las ciudades donde atiendes. Tu ficha aparecerá para búsquedas en esas zonas.",
+      },
+      {
+        q: "¿Cuánto tarda en verificarse un negocio en Google Maps en Chile?",
+        a: "El método más común en Chile es el código por correo postal, que tarda entre 5 y 14 días hábiles. Algunos negocios tienen disponible verificación por teléfono o video, que es inmediata.",
+      },
+      {
+        q: "¿Cómo puedo subir de posición en Google Maps?",
+        a: "Las acciones más efectivas son: conseguir más reseñas genuinas y responderlas, mantener el perfil activo con publicaciones regulares, conectar una página web optimizada y asegurarte de que la categoría sea la más específica y correcta para tu negocio.",
+      },
+      {
+        q: "¿Google Maps y Google Business Profile son lo mismo?",
+        a: "Son distintos pero están conectados. Google Maps es el mapa donde apareces. Google Business Profile es el panel donde administras tu ficha — desde ahí controlas lo que se muestra en Google Maps y en los resultados de búsqueda local.",
+      },
+    ],
+  },
+  {
+    slug: "whatsapp-business-para-empresas-chile",
+    title: "WhatsApp Business para Empresas en Chile: Guía Completa 2026",
+    metaTitle: "WhatsApp Business para Empresas Chile | Guía Completa 2026",
+    metaDescription:
+      "Aprende a configurar y sacarle el máximo provecho a WhatsApp Business para tu empresa o pyme en Chile. Catálogo, respuestas automáticas, links directos y más.",
+    canonicalUrl:
+      "https://www.amtecnologia.cl/blog/whatsapp-business-para-empresas-chile",
+    date: "2026-05-07",
+    readingTime: 9,
+    author: "AM Tecnología",
+    category: "Herramientas Digitales",
+    tags: ["WhatsApp Business", "herramientas digitales", "pymes", "Chile", "ventas"],
+    excerpt:
+      "WhatsApp es el canal de venta número uno para pymes en Chile. Pero hay una diferencia enorme entre usarlo de forma personal y usar WhatsApp Business. La versión Business es gratis y tiene herramientas que te hacen ver profesional desde el primer mensaje.",
+    content: `## WhatsApp: el canal de ventas que ya tienes en tu bolsillo
+
+WhatsApp es la aplicación más usada en Chile. Prácticamente todos la tienen, la revisan varias veces al día y la usan para tomar decisiones de compra. Para una pyme, eso es una oportunidad enorme.
+
+El problema es que la mayoría de los negocios usa WhatsApp como si fuera un chat personal — sin perfil de empresa, sin catálogo, sin respuestas automáticas, sin medir nada. Y eso tiene un costo real: clientes que escriben fuera de horario y no reciben respuesta, cotizaciones que se pierden en el chat, y ninguna forma de saber cuántos contactos nuevos llegaron esta semana.
+
+WhatsApp Business resuelve todo eso. Es gratis, se instala en el mismo celular y convierte tu WhatsApp en una herramienta de ventas profesional. Esta guía te explica cómo configurarlo bien y cómo conectarlo con tu página web para cerrar más ventas.
+
+## WhatsApp personal vs WhatsApp Business: las diferencias clave
+
+Ambas apps son gratuitas. La diferencia está en las herramientas que incluye la versión Business:
+
+**WhatsApp Business incluye**: perfil de empresa con nombre, categoría, dirección, horario y web. Catálogo de productos y servicios con fotos y precios. Respuestas rápidas con atajos de teclado. Mensajes automáticos de bienvenida y ausencia. Etiquetas para organizar conversaciones. Estadísticas de mensajes enviados y leídos.
+
+**WhatsApp personal no tiene nada de eso** — solo el chat básico.
+
+Además, puedes tener ambas apps en el mismo celular usando dos números distintos: tu número personal en WhatsApp normal y un número dedicado al negocio en WhatsApp Business. No se mezclan.
+
+**Importante**: no confundas WhatsApp Business (la app gratuita) con WhatsApp Business API, que es una solución de pago para grandes empresas con miles de conversaciones al día. Esta guía habla de la app gratuita, que es lo que necesita la gran mayoría de las pymes en Chile.
+
+## Paso a paso: configurar WhatsApp Business desde cero
+
+### Paso 1: Descarga la app
+
+Disponible gratis en Google Play (Android) y App Store (iOS). Busca "WhatsApp Business" — tiene un ícono verde con una "B".
+
+### Paso 2: Registra con un número dedicado al negocio
+
+Usa un número que sea solo para el negocio, no tu número personal. Puede ser una línea adicional o una SIM prepago. Esto separa vida personal de trabajo y permite que distintas personas del equipo accedan si es necesario.
+
+### Paso 3: Completa el perfil de empresa
+
+Aquí está la mayoría del valor. Completa todo:
+
+**Nombre del negocio**: el nombre real, sin keywords forzadas.
+**Categoría**: elige la que mejor describe tu rubro.
+**Descripción**: 256 caracteres para explicar qué haces y dónde. Menciona tu ciudad — "Servicio de diseño web para pymes en todo Chile" es mejor que solo "Diseño web".
+**Dirección y horario**: inclúyelos si son relevantes para tus clientes.
+**Correo electrónico y sitio web**: agrega la URL de tu página web aquí.
+
+### Paso 4: Foto de perfil profesional
+
+Usa el logo de tu empresa o una foto profesional si eres independiente. Evita fotos informales — es lo primero que ve el cliente antes de leer un solo mensaje tuyo.
+
+**Tip de consistencia**: usa el mismo nombre, descripción y datos que tienes en [Google Business Profile](/blog/google-maps-para-negocios-chile-guia-completa). Esa coherencia entre plataformas construye confianza y refuerza tu posicionamiento local.
+
+## Las 7 funciones que deberías activar hoy
+
+### 1. Catálogo de productos y servicios
+
+Ve a Configuración → Herramientas de empresa → Catálogo. Agrega cada servicio o producto con foto, nombre, precio y descripción.
+
+El catálogo aparece en tu perfil de WhatsApp y los clientes pueden verlo antes de escribirte. Elimina el intercambio eterno de "¿cuánto cuesta X?" y "¿qué servicios tienes?" — toda esa información está disponible desde el inicio.
+
+### 2. Respuestas rápidas
+
+Son atajos para mensajes que envías frecuentemente. Defines una palabra clave precedida de "/" y el texto completo que se despliega.
+
+Ejemplo: escribes "/precio" y se envía automáticamente tu lista de servicios con precios. O "/horario" envía tu horario de atención. Ahorra tiempo y garantiza consistencia en la información que entregas.
+
+### 3. Mensaje de bienvenida
+
+Se envía automáticamente cuando alguien te escribe por primera vez o después de 14 días sin contacto. Configúralo en Herramientas de empresa → Mensaje de bienvenida.
+
+Un mensaje efectivo: "Hola, gracias por contactar a [nombre del negocio]. Estamos disponibles de lunes a sábado de 9:00 a 20:00. En menos de 1 hora te respondemos con toda la información que necesitas."
+
+### 4. Mensaje de ausencia
+
+Se activa automáticamente fuera de tu horario de atención configurado. Así el cliente sabe que lo viste y que le responderás, en lugar de pensar que lo estás ignorando.
+
+Ejemplo: "Estamos fuera de horario por ahora. Te respondemos el próximo día hábil a primera hora. Si es urgente, también puedes ver nuestros servicios en [URL de tu web]."
+
+### 5. Etiquetas para organizar conversaciones
+
+Las etiquetas te permiten clasificar cada chat por estado. Crea las tuyas según tu proceso de ventas:
+
+🟡 Nuevo contacto → 🔵 Cotización enviada → 🟢 Pagado → 🔄 Seguimiento pendiente
+
+Así nada se pierde. Puedes filtrar por etiqueta y ver de un vistazo en qué estado está cada prospecto.
+
+### 6. Link directo wa.me
+
+Este es uno de los elementos más útiles para conectar con tu web y redes. Tu link directo es: wa.me/56XXXXXXXXX (reemplaza con tu número sin el +).
+
+Puedes agregar un mensaje predefinido para contextualizar el contacto: wa.me/56XXXXXXXXX?text=Hola,%20quiero%20cotizar%20una%20pagina%20web
+
+Ese link va en tu página web (botón flotante y CTAs), en tu perfil de Instagram, en tu firma de correo, en tu tarjeta de presentación digital. Cualquier lugar donde aparezca tu negocio.
+
+### 7. Estadísticas
+
+En Configuración → Estadísticas puedes ver cuántos mensajes enviaste, cuántos llegaron, cuántos fueron leídos y cuántos recibiste. Es básico, pero te da una idea del volumen de comunicación y si tus mensajes están siendo leídos.
+
+## Cómo conectar WhatsApp Business con tu página web
+
+Aquí está el verdadero potencial. Cuando WhatsApp y tu web funcionan juntos como sistema, el proceso de captación de clientes se vuelve automático:
+
+**Botón flotante de WhatsApp**: un botón verde visible en todas las páginas de tu sitio, siempre accesible. Cuando el visitante hace clic, se abre directamente la conversación en WhatsApp. En AM Tecnología lo incluimos en todos los sitios que desarrollamos — es uno de los elementos que más conversiones genera.
+
+**CTAs con link directo**: cada llamada a la acción de tu web ("Cotiza ahora", "Contáctanos") puede abrir WhatsApp directamente, con un mensaje predefinido que indique de qué página viene el cliente. Así sabes si llegó desde la página de inicio, desde una página de servicio o desde el blog.
+
+**Tracking de conversiones**: cuando el link de WhatsApp tiene parámetros rastreables, puedes medir en Google Analytics exactamente cuántos clics a WhatsApp generó cada página. Esto te dice qué contenido convierte mejor — información que vale oro para mejorar tu web.
+
+Todo eso es exactamente lo que hace la conexión entre una [landing page profesional](/servicios/landing-page) y WhatsApp Business.
+
+## WhatsApp Business + Google: el ciclo completo de ventas
+
+Este es el sistema que usa AM Tecnología y que recomendamos a cada cliente:
+
+**1.** Tu web [aparece en Google](/aparecer-en-google) cuando alguien busca tu servicio.
+**2.** El cliente entra a tu web y ve lo que necesita.
+**3.** El CTA de tu web abre WhatsApp con un mensaje predefinido.
+**4.** WhatsApp Business te notifica, el cliente recibe tu mensaje de bienvenida automático.
+**5.** Cierras la venta en una conversación de WhatsApp.
+
+Sin web no hay Google. Sin Google no hay clientes nuevos orgánicos. Sin WhatsApp configurado no hay cierre eficiente. Los tres deben funcionar juntos.
+
+Este ciclo es la diferencia entre una pyme que "tiene presencia digital" y una que realmente vende gracias a lo digital. Para entender cómo funciona la parte de Google de este sistema, revisa la guía completa de [cómo aparecer en Google](/blog/como-aparecer-en-google-empresa-chile).
+
+## Errores comunes al usar WhatsApp Business
+
+**Mezclar el número personal con el del negocio**: confunde a los clientes y no te permite desconectar fuera de horario.
+
+**No configurar el mensaje de ausencia**: para un cliente que escribe a las 11 pm, el silencio parece abandono. Un mensaje automático que promete respuesta genera confianza.
+
+**No tener catálogo**: enviar fotos sueltas por chat es informal y desorganizado. El catálogo muestra profesionalismo desde el primer contacto.
+
+**No tener link directo en la web y redes**: si el cliente tiene que buscar tu número para escribirte, ya perdiste parte del impulso. El link directo elimina esa fricción.
+
+**Demorar en responder**: el 60% de los clientes espera respuesta en menos de una hora. Si no puedes responder rápido siempre, configura bien tu mensaje de bienvenida para que al menos el cliente sepa que recibiste su mensaje.
+
+**No usar etiquetas**: sin organización, los prospectos se pierden en el chat. Una venta que no se sigue no se cierra.
+
+Para ver cómo WhatsApp encaja en el plan completo de digitalización de tu negocio, revisa [cómo digitalizar tu pyme en Chile](/blog/como-digitalizar-tu-pyme-en-chile).
+
+## Preguntas frecuentes
+
+### ¿WhatsApp Business es gratis?
+
+Sí, completamente gratis. La app de WhatsApp Business para pymes no tiene ningún costo. Existe una versión de pago llamada WhatsApp Business API, pero está diseñada para grandes empresas con miles de conversaciones simultáneas — no es lo que necesita una pyme común.
+
+### ¿Puedo usar WhatsApp personal y Business en el mismo celular?
+
+Sí. Puedes tener ambas apps instaladas al mismo tiempo, siempre que uses números de teléfono distintos para cada una. La mayoría de los smartphones Android permiten esto con una segunda SIM o con un número virtual.
+
+### ¿Puedo migrar mi número personal de WhatsApp a Business?
+
+Sí. WhatsApp permite migrar tu historial y número desde la app personal a Business. Sin embargo, te recomendamos usar un número distinto para el negocio para mantener separados los contactos personales y comerciales.
+
+### ¿Cómo creo el link directo a mi WhatsApp Business?
+
+Tu link directo es wa.me/56 seguido de tu número sin espacios ni guiones. Por ejemplo: wa.me/56985660954. Puedes agregar un mensaje predefinido añadiendo ?text= y el mensaje codificado. Hay generadores gratuitos en línea que lo hacen automáticamente.
+
+### ¿WhatsApp Business sirve si trabajo solo?
+
+Absolutamente. De hecho, es donde más valor tiene: las respuestas automáticas y el catálogo hacen que parezcas más grande y organizado de lo que serías sin estas herramientas. Un mensaje de bienvenida bien redactado genera confianza desde el primer segundo.`,
+    faqSchema: [
+      {
+        q: "¿WhatsApp Business es gratis?",
+        a: "Sí, completamente gratis. La app de WhatsApp Business para pymes no tiene ningún costo. Existe una versión de pago llamada WhatsApp Business API, pero está diseñada para grandes empresas con miles de conversaciones simultáneas.",
+      },
+      {
+        q: "¿Puedo usar WhatsApp personal y Business en el mismo celular?",
+        a: "Sí. Puedes tener ambas apps instaladas al mismo tiempo, siempre que uses números de teléfono distintos para cada una. La mayoría de los smartphones Android permiten esto con una segunda SIM o un número virtual.",
+      },
+      {
+        q: "¿Puedo migrar mi número personal de WhatsApp a WhatsApp Business?",
+        a: "Sí. WhatsApp permite migrar tu historial y número desde la app personal a Business. Sin embargo, se recomienda usar un número distinto para el negocio para mantener separados los contactos personales y comerciales.",
+      },
+      {
+        q: "¿Cómo creo el link directo a mi WhatsApp Business?",
+        a: "Tu link directo es wa.me/56 seguido de tu número sin espacios ni guiones. Por ejemplo: wa.me/56985660954. Puedes agregar un mensaje predefinido añadiendo ?text= y el mensaje codificado. Hay generadores gratuitos en línea que lo hacen automáticamente.",
+      },
+      {
+        q: "¿WhatsApp Business sirve si trabajo solo o tengo una microempresa?",
+        a: "Absolutamente. Las respuestas automáticas y el catálogo hacen que parezcas más organizado y profesional desde el primer contacto. Un mensaje de bienvenida bien redactado genera confianza incluso cuando no puedes responder de inmediato.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts(): BlogPost[] {
