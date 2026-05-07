@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const faqs = [
   {
@@ -39,10 +40,9 @@ export default function FAQ() {
   return (
     <section className="relative py-24 overflow-hidden">
       {/* Image background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center pointer-events-none"
-        style={{ backgroundImage: "url('/proyectos.png')" }}
-      />
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <Image src="/proyectos.webp" alt="" fill loading="lazy" className="object-cover object-center" />
+      </div>
       {/* Overlay opaco para diferenciarlo de Services */}
       <div className="absolute inset-0 bg-black/82 pointer-events-none" />
 

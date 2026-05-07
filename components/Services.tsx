@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Image from "next/image";
 
 const services = [
   {
@@ -107,7 +108,9 @@ export default function Services() {
   return (
     <section id="servicios" className="relative py-28 overflow-hidden">
       {/* Image background */}
-      <div className="absolute inset-0 bg-cover bg-center pointer-events-none" style={{ backgroundImage: "url('/proyectos.png')" }} />
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <Image src="/proyectos.webp" alt="" fill loading="lazy" className="object-cover object-center" />
+      </div>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/55 pointer-events-none" />
 

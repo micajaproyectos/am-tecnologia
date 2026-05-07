@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import Script from "next/script";
-import MetaPixelEvents from "@/components/MetaPixelEvents";
 import GoogleAdsEvents from "@/components/GoogleAdsEvents";
 import "./globals.css";
 
@@ -118,8 +117,6 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
 };
-
-const PIXEL_ID = "2526160884471265";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -281,7 +278,6 @@ export default function RootLayout({
     >
       <body className="font-sans">
         {children}
-        <MetaPixelEvents />
         <GoogleAdsEvents />
         {/* JSON-LD Structured Data */}
         <script
@@ -291,10 +287,10 @@ export default function RootLayout({
         {/* Google Ads Tag */}
         <Script
           id="google-ads-tag"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=AW-18068672063"
         />
-        <Script id="google-ads-config" strategy="afterInteractive">
+        <Script id="google-ads-config" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -314,30 +310,6 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Meta Pixel */}
-        <Script id="meta-pixel" strategy="afterInteractive">
-          {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '${PIXEL_ID}');
-            fbq('track', 'PageView');
-          `}
-        </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src={`https://www.facebook.com/tr?id=${PIXEL_ID}&ev=PageView&noscript=1`}
-            alt=""
-          />
-        </noscript>
       </body>
     </html>
   );
