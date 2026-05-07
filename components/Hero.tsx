@@ -57,7 +57,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-am-muted text-base leading-snug mb-6 max-w-lg">
-            Creamos tu página web y la posicionamos en Google para que recibas clientes todos los días. Desde $99.990 pago único.
+            Nos especializamos en posicionamiento en Google Chile para empresas y pymes. Creamos tu página web y la optimizamos para que tus clientes te encuentren antes que a tu competencia, todos los días. Desde $99.990 pago único.
           </p>
 
           {/* Pricing */}

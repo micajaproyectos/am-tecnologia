@@ -198,7 +198,7 @@ function ProjectCard({ url, title, type, img, cardW, scale, previewH }: (typeof 
         {img ? (
           <Image
             src={img}
-            alt={`Diseño web ${title}`}
+            alt={`Sitio web ${title} — posicionamiento en Google Chile`}
             fill
             loading="lazy"
             sizes="(max-width: 767px) calc(100vw - 32px), 520px"

@@ -41,6 +41,12 @@ export default function GoogleAdsEvents() {
           currency: "CLP",
           cta_source: ctaSource,
         });
+
+        window.gtag?.("event", "whatsapp_click", {
+          cta_source: ctaSource,
+          value: 99990,
+          currency: "CLP",
+        });
       }
     }
     document.addEventListener("click", handleClick);

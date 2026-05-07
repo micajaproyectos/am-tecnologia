@@ -27,8 +27,8 @@ export default function Footer() {
               <span className="font-display font-bold text-xl text-white">Tecnología</span>
             </a>
             <p className="text-am-muted text-sm leading-[1.7] max-w-[260px]">
-              Soluciones digitales diseñadas por Ingenieros Civiles para impulsar
-              tu negocio en internet.
+              Posicionamiento en Google y soluciones digitales diseñadas por
+              Ingenieros Civiles para impulsar tu negocio en Chile.
             </p>
             {/* Social */}
             <div className="flex gap-3 mt-6">

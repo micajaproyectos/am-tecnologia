@@ -2,6 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 const WA =
   "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
 
@@ -66,6 +72,12 @@ export default function CTA() {
       });
 
       setEnviado(true);
+
+      window.gtag?.("event", "generate_lead", {
+        value: CONVERSION_VALUE,
+        currency: "CLP",
+        conversion_name: CONVERSION_NAME,
+      });
     } catch (err) {
       console.error("Error sending lead:", err);
       setError("No pudimos enviar tus datos. Intenta nuevamente o escríbenos por WhatsApp.");
