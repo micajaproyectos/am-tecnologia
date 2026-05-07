@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "¿Trabajan en todo Chile?",
-    a: "Sí. Servimos empresas en Puerto Montt, Valdivia, Temuco, Rancagua, Santiago y todo Chile.",
+    a: "Sí, trabajamos 100% remoto en todo Chile. Tenemos clientes en Santiago, Concepción, Valparaíso, Viña del Mar, Temuco, Rancagua, Antofagasta, La Serena, Talca, Iquique, Puerto Montt, Valdivia, Osorno, Punta Arenas y Coyhaique. La distancia no es ningún problema.",
   },
 ];
 

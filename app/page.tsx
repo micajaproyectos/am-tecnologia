@@ -4,6 +4,7 @@ import Hero          from "@/components/Hero";
 import PainPoints    from "@/components/PainPoints";
 import Services      from "@/components/Services";
 import HowItWorks    from "@/components/HowItWorks";
+import Coverage      from "@/components/Coverage";
 import CTA           from "@/components/CTA";
 import Footer        from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -22,6 +23,7 @@ export default function Home() {
         <Projects />
         <Services />
         <HowItWorks />
+        <Coverage />
         <FAQ />
         <CTA />
       </main>
