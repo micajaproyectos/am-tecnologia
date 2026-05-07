@@ -128,13 +128,16 @@ const jsonLd = {
       "description":
         "Agencia de desarrollo web profesional en Chile. Creamos páginas web, tiendas online y automatizaciones con IA para empresas. Diseñadas por Ingenieros Civiles. Entrega en 48 horas.",
       "url": "https://www.amtecnologia.cl",
+      "image": "https://www.amtecnologia.cl/og-image.jpg",
       "telephone": "+56985660954",
       "email": "contacto@amconsultora.cl",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "General del Canto 112, Depto. 301",
+        "addressLocality": "Providencia",
+        "addressRegion": "Región Metropolitana",
+        "postalCode": "7500000",
         "addressCountry": "CL",
-        "addressRegion": "Los Lagos",
-        "addressLocality": "Futaleufú",
       },
       "areaServed": [
         { "@type": "Country", "name": "Chile" },
