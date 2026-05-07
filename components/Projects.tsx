@@ -20,7 +20,7 @@ const projects: { url: string; title: string; type: string; img?: string }[] = [
     url: "https://www.millanolli.com",
     title: "Millanolli",
     type: "Tienda Online",
-    img: "/pre_millanolli.png",
+    img: "/preview-millanolli.png",
   },
   {
     url: "https://www.ajonegroaustral.cl",
@@ -149,8 +149,6 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* Hide scrollbar webkit */}
-      <style>{`.overflow-x-auto::-webkit-scrollbar { display: none; }`}</style>
 
       {/* Fade inferior hacia Services */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none z-10" />

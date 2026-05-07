@@ -1,5 +1,3 @@
-"use client";
-
 const WA =
   "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
 

@@ -238,8 +238,6 @@ export default function Services() {
         ))}
       </div>
 
-      <style>{`.overflow-x-auto::-webkit-scrollbar { display: none; }`}</style>
-
       {/* Fade inferior hacia Footer */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none z-10" />
     </section>
