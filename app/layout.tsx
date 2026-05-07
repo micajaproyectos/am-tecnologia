@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Diseño Web Chile + Clientes desde Google | $99.990 | AM Tecnología",
+    default: "Posicionamiento en Google Chile | AM Tecnología",
     template: "%s | AM Tecnología",
   },
 
   description:
-    "Diseño web Chile desde $99.990 pago único. Cotiza hoy y recibe tu sitio web en 48h. Landing pages, tiendas online y sitios corporativos para empresas en todo Chile. Sin mensualidades.",
+    "Ayudamos a empresas de Chile a aparecer en Google con su página web. Presencia orgánica para que tus clientes te encuentren antes que a tu competencia.",
 
   keywords: [
     // Transaccionales — intención de compra
@@ -212,15 +212,47 @@ const jsonLd = {
           "name": "¿Cuánto cuesta una página web en Chile?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nuestros planes parten desde $99.990 pago único, sin mensualidades ni costos ocultos. El precio incluye diseño, desarrollo, dominio y hosting. Sin sorpresas al final.",
+            "text": "Con nosotros, $99.990 precio de lanzamiento — pago único. Lo que hacemos no es solo crear una página: es posicionar tu marca en Google para que tus clientes te encuentren cuando buscan lo que tú ofreces. Las agencias de marketing cobran entre $400.000 y $600.000 por este mismo resultado. Nosotros lo entregamos desde $99.990.",
           },
         },
         {
           "@type": "Question",
-          "name": "¿Cuánto tarda en estar lista mi página web?",
+          "name": "¿Cómo hago para que mi negocio aparezca en Google?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Entregamos en 48 horas desde que apruebas la cotización. Es nuestro compromiso con cada cliente. Una vez que nos das el visto bueno, empezamos el mismo día y en dos días tienes tu sitio web funcionando.",
+            "text": "Nos encargamos de todo el proceso: creamos la estructura de tu sitio, configuramos tu perfil en Google Maps, Google Analytics y Search Console, y optimizamos cada página para que Google entienda a qué clientes debes aparecer. Con la optimización incluida, tu marca ya puede empezar a recibir tráfico orgánico. El seguimiento mensual es opcional, pero te permite seguir escalando tu posición y adelantar a tu competencia con el tiempo.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito una página web para mi negocio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Si quieres que tus clientes te encuentren en Google, sí. Hoy más del 80% de las personas busca en internet antes de comprar. Sin página web, esos clientes los encuentra tu competencia.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tarda en estar lista mi página?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La estructura de tu sitio queda lista en 48 horas. La optimización SEO completa — para que Google te posicione sobre tu competencia — puede tomar hasta 1 semana. Y para maximizar los resultados a largo plazo, contamos con planes de seguimiento mensual que incluyen: ajuste continuo de palabras clave, análisis de rendimiento en Google Search Console, mejoras de velocidad y experiencia de usuario, reportes de visibilidad y tráfico, y adaptación a los cambios del algoritmo de Google.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito saber de tecnología?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nosotros nos encargamos de todo. Tú solo te preocupas de atender a tus nuevos clientes.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa después de la entrega?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tu sitio queda publicado y con la optimización SEO activa en los primeros días. Desde ahí, Google empieza a indexar tu marca y puedes comenzar a recibir tráfico orgánico sin pagar publicidad. Si quieres seguir escalando resultados, nuestros planes de seguimiento mensual ajustan la estrategia según cómo evoluciona tu posición, tu competencia y los cambios del algoritmo de Google — pero el tráfico orgánico inicial ya está incluido desde el primer entregable.",
           },
         },
         {
@@ -241,18 +273,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          "name": "¿Trabajan fuera de Santiago?",
+          "name": "¿Trabajan en todo Chile?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí, atendemos todo Chile de forma 100% remota. Tenemos clientes en Puerto Montt, Valdivia, Temuco, Osorno, Punta Arenas, Coyhaique y más. La distancia no es ningún problema.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "¿Necesito una página web para mi negocio?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Si tu competencia ya tiene una, cada día sin web es un cliente que pierdes. El 92% de los chilenos busca productos y servicios en Google antes de comprar. Sin sitio web, no existes para ellos.",
+            "text": "Sí. Servimos empresas en Puerto Montt, Valdivia, Temuco, Rancagua, Santiago y todo Chile.",
           },
         },
       ],
