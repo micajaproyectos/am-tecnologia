@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -103,12 +104,12 @@ export default async function ServicePage({
             >
               Cotizar ahora
             </a>
-            <a
+            <Link
               href="/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/15 text-am-muted hover:text-white hover:border-white/30 font-semibold text-[15px] transition-all duration-200"
             >
               ← Volver al inicio
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -276,13 +277,14 @@ export default async function ServicePage({
             <p className="text-am-muted text-sm mb-4">También puede interesarte:</p>
             <div className="flex flex-wrap gap-3">
               {SERVICES.filter((s) => s.slug !== service.slug).map((s) => (
-                <a
+                <Link
                   key={s.slug}
                   href={`/servicios/${s.slug}`}
+                  prefetch={true}
                   className="text-am-primary hover:text-am-accent text-sm font-semibold transition-colors"
                 >
                   {s.title} →
-                </a>
+                </Link>
               ))}
             </div>
           </div>

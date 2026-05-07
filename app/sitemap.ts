@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getAllPosts } from "@/lib/blog-data";
 
 const BASE = "https://www.amtecnologia.cl";
 
@@ -53,5 +54,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...corePages, ...servicePages, ...cityPages];
+  const blogIndex: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE}/blog`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+  ];
+
+  const blogPosts: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
+    url: `${BASE}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [...corePages, ...servicePages, ...cityPages, ...blogIndex, ...blogPosts];
 }
