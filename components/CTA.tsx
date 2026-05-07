@@ -18,8 +18,8 @@ const CONVERSION_NAME  = "lead_formulario_cta";
 const CHILE_TIME_ZONE  = "America/Santiago";
 
 export default function CTA() {
-  const [nombre, setNombre]     = useState("");
-  const [telefono, setTelefono] = useState("+569");
+  const [nombre, setNombre]   = useState("");
+  const [numero, setNumero]   = useState("");
   const [tieneWeb, setTieneWeb] = useState<"si" | "no" | null>(null);
   const [enviado, setEnviado]   = useState(false);
   const [enviando, setEnviando] = useState(false);
@@ -55,7 +55,7 @@ export default function CTA() {
       conversion_value: CONVERSION_VALUE,
       conversion_name:  CONVERSION_NAME,
       nombre_negocio:   nombre,
-      contacto:         telefono,
+      contacto:         numero,
       tiene_pagina:     tieneWeb,
     };
 
@@ -147,7 +147,7 @@ export default function CTA() {
                     required
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
-                    placeholder="Ej: Panadería Don Pedro"
+                    placeholder="Ej: Empresa S.A."
                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-[15px] placeholder-white/25 focus:outline-none focus:border-am-primary/50 focus:bg-white/8 transition-all duration-200"
                   />
                 </div>
@@ -157,14 +157,22 @@ export default function CTA() {
                   <label className="block text-white/70 text-[13px] font-semibold mb-2">
                     WhatsApp de contacto
                   </label>
-                  <input
-                    type="tel"
-                    required
-                    value={telefono}
-                    onChange={(e) => setTelefono(e.target.value)}
-                    placeholder="+56 9 XXXX XXXX"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-[15px] placeholder-white/25 focus:outline-none focus:border-am-primary/50 focus:bg-white/8 transition-all duration-200"
-                  />
+                  <div className="flex items-center bg-white/5 border border-white/10 rounded-xl overflow-hidden focus-within:border-am-primary/50 focus-within:bg-white/8 transition-all duration-200">
+                    <span className="px-4 py-3 text-white/50 text-[15px] font-mono select-none shrink-0 border-r border-white/10">
+                      +569
+                    </span>
+                    <input
+                      type="text"
+                      inputMode="numeric"
+                      autoComplete="off"
+                      required
+                      value={numero}
+                      onChange={(e) => setNumero(e.target.value.replace(/\D/g, ""))}
+                      placeholder="8566 0954"
+                      maxLength={8}
+                      className="flex-1 bg-transparent px-4 py-3 text-white text-[15px] placeholder-white/25 focus:outline-none"
+                    />
+                  </div>
                 </div>
 
                 {/* ¿Tienes web? */}
