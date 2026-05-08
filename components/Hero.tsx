@@ -32,30 +32,30 @@ export default function Hero() {
       <div className="absolute -top-52 -left-24 w-[600px] h-[600px] rounded-full bg-am-primary/15 blur-[100px] pointer-events-none" />
       <div className="absolute -bottom-32 -right-16 w-[500px] h-[500px] rounded-full bg-am-accent/10 blur-[90px] pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* ── COPY ── */}
         <div>
           {/* Headline */}
           <h1
-            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-6"
-            style={{ fontSize: "clamp(2.25rem, 5vw, 3.75rem)" }}
+            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-4"
+            style={{ fontSize: "clamp(2rem, 4.5vw, 3.5rem)" }}
           >
             Sube tu negocio a Google{" "}
-            <span className="gradient-text">y recibe clientes todos los días.</span>
+            <span className="gradient-text">y recibe clientes hoy.</span>
           </h1>
 
           {/* Sub */}
-          <p className="text-am-muted text-base leading-relaxed mb-5 max-w-lg">
+          <p className="text-am-muted text-base leading-relaxed mb-3 max-w-lg">
             Creamos tu landing y la posicionamos en las búsquedas para que Google trabaje por ti buscando clientes potenciales, sin pagar nada.
           </p>
 
           {/* Price */}
-          <p className="font-display font-extrabold text-white text-3xl mb-7">
+          <p className="font-display font-extrabold text-white text-3xl mb-4">
             $99.990
           </p>
 
           {/* Bullets */}
-          <ul className="flex flex-col gap-3 mb-8">
+          <ul className="flex flex-col gap-2 mb-5">
             {bullets.map((b) => (
               <li key={b} className="flex items-start gap-3 text-am-text text-[15px]">
                 <CheckIcon />
@@ -65,7 +65,7 @@ export default function Hero() {
           </ul>
 
           {/* Actions */}
-          <div className="flex flex-wrap gap-4 mb-10">
+          <div className="flex flex-wrap gap-4 mb-6">
             <a
               href={WA}
               data-cta-source="hero"
