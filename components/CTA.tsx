@@ -21,9 +21,8 @@ export default function CTA() {
   const [nombre, setNombre]   = useState("");
   const [numero, setNumero]   = useState("");
   const [tieneWeb, setTieneWeb] = useState<"si" | "no" | null>(null);
-  const [enviado, setEnviado]   = useState(false);
-  const [enviando, setEnviando] = useState(false);
-  const [error, setError]       = useState("");
+  const [enviado, setEnviado] = useState(false);
+  const [error, setError]     = useState("");
 
   const gclidRef  = useRef<string>("");
   const leadIdRef = useRef<string>("");
@@ -39,7 +38,7 @@ export default function CTA() {
     leadIdRef.current = crypto.randomUUID();
   }, []);
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
     setError("");
 
@@ -59,31 +58,20 @@ export default function CTA() {
       tiene_pagina:     tieneWeb,
     };
 
-    try {
-      setEnviando(true);
+    setEnviado(true);
 
-      await fetch(SHEET_WEBHOOK_URL, {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "text/plain;charset=utf-8",
-        },
-        body: JSON.stringify(payload),
-      });
+    fetch(SHEET_WEBHOOK_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload),
+    }).catch(() => {});
 
-      setEnviado(true);
-
-      window.gtag?.("event", "generate_lead", {
-        value: CONVERSION_VALUE,
-        currency: "CLP",
-        conversion_name: CONVERSION_NAME,
-      });
-    } catch (err) {
-      console.error("Error sending lead:", err);
-      setError("No pudimos enviar tus datos. Intenta nuevamente o escríbenos por WhatsApp.");
-    } finally {
-      setEnviando(false);
-    }
+    window.gtag?.("event", "generate_lead", {
+      value: CONVERSION_VALUE,
+      currency: "CLP",
+      conversion_name: CONVERSION_NAME,
+    });
   }
 
   return (
@@ -148,6 +136,7 @@ export default function CTA() {
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                     placeholder="Ej: Empresa S.A."
+                    suppressHydrationWarning
                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-[15px] placeholder-white/25 focus:outline-none focus:border-am-primary/50 focus:bg-white/8 transition-all duration-200"
                   />
                 </div>
@@ -170,6 +159,7 @@ export default function CTA() {
                       onChange={(e) => setNumero(e.target.value.replace(/\D/g, ""))}
                       placeholder="8566 0954"
                       maxLength={8}
+                      suppressHydrationWarning
                       className="flex-1 bg-transparent px-4 py-3 text-white text-[15px] placeholder-white/25 focus:outline-none"
                     />
                   </div>
@@ -201,10 +191,9 @@ export default function CTA() {
                 {/* Submit */}
                 <button
                   type="submit"
-                  disabled={enviando}
-                  className="w-full mt-2 py-4 rounded-xl bg-am-green hover:bg-[#25c068] disabled:opacity-60 disabled:hover:translate-y-0 text-white font-bold text-[16px] shadow-[0_4px_24px_rgba(42,170,110,0.4)] hover:shadow-[0_6px_32px_rgba(42,170,110,0.55)] hover:-translate-y-0.5 transition-all duration-200"
+                  className="w-full mt-2 py-4 rounded-xl bg-am-green hover:bg-[#25c068] text-white font-bold text-[16px] shadow-[0_4px_24px_rgba(42,170,110,0.4)] hover:shadow-[0_6px_32px_rgba(42,170,110,0.55)] hover:-translate-y-0.5 transition-all duration-200"
                 >
-                  {enviando ? "Enviando..." : "Quiero aparecer en Google"}
+                  Quiero aparecer en Google
                 </button>
 
                 {error && (
