@@ -4,10 +4,10 @@ import TestimonialsCard from "./TestimonialsCard";
 const WA =
   "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
 
-const stats = [
-  { num: "+50", label: "Proyectos" },
-  { num: "100%", label: "Satisfacción" },
-  { num: "48h", label: "Entrega express" },
+const bullets = [
+  "Google te recomienda cuando buscan servicios como el tuyo.",
+  "Haz que Google te envíe clientes directo a tu WhatsApp.",
+  "Aparece antes que tu competencia.",
 ];
 
 export default function Hero() {
@@ -16,7 +16,6 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-[72px]"
     >
-      {/* Static hero background avoids the startup cost of autoplay video. */}
       <Image
         src="/proyectos.png"
         alt=""
@@ -27,128 +26,96 @@ export default function Hero() {
         className="absolute inset-0 object-cover object-center pointer-events-none"
       />
 
-      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/75 pointer-events-none" />
-
-      {/* Grid background */}
       <div className="absolute inset-0 grid-bg pointer-events-none opacity-40" />
 
-      {/* Orbs */}
       <div className="absolute -top-52 -left-24 w-[600px] h-[600px] rounded-full bg-am-primary/15 blur-[100px] pointer-events-none" />
       <div className="absolute -bottom-32 -right-16 w-[500px] h-[500px] rounded-full bg-am-accent/10 blur-[90px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* ── COPY ── */}
         <div>
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-am-green animate-pulse-dot" />
-            <span className="text-am-accent text-[13px] font-semibold tracking-wide">
-              Posicionamiento en Google · +50 Empresas ya Aparecen en Google
-            </span>
-          </div>
-
           {/* Headline */}
-          <h1 className="font-display font-extrabold text-white text-balance leading-[1.15] mb-6"
+          <h1
+            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-6"
             style={{ fontSize: "clamp(2.25rem, 5vw, 3.75rem)" }}
           >
-            Si te buscan en Google...{" "}
-            <span className="gradient-text">¿Te encuentran?</span>
+            Sube tu negocio a Google{" "}
+            <span className="gradient-text">y recibe clientes todos los días.</span>
           </h1>
 
-          <p className="text-am-muted text-base leading-snug mb-6 max-w-lg">
-            Nos especializamos en posicionamiento en Google Chile para empresas y pymes. Creamos tu página web y la optimizamos para que tus clientes te encuentren antes que a tu competencia, todos los días. Desde $99.990 pago único.
+          {/* Sub */}
+          <p className="text-am-muted text-base leading-relaxed mb-5 max-w-lg">
+            Creamos tu landing y la posicionamos en las búsquedas para que Google trabaje por ti buscando clientes potenciales, sin pagar nada.
           </p>
 
-          {/* Pricing */}
-          <div className="relative flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 mb-4 w-full max-w-md px-4 py-4 sm:px-5 rounded-xl overflow-hidden shadow-[0_0_32px_rgba(251,146,60,0.35),0_4px_24px_rgba(0,0,0,0.4)]">
-            {/* Fondo degradado urgencia */}
-            <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-orange-500 to-amber-400" />
-
-            {/* Fila superior: etiqueta + precio anterior */}
-            <div className="relative flex sm:flex-col gap-3 sm:gap-0 items-center sm:items-start">
-              <span className="text-white/90 text-[10px] uppercase tracking-widest font-bold leading-none sm:mb-1.5">
-                {"\u26A1"} Oferta de lanzamiento
-              </span>
-              <span className="text-white/60 line-through text-xs leading-none">Antes $199.990</span>
-            </div>
-
-            <div className="relative hidden sm:block w-px self-stretch bg-white/25" />
-
-            {/* Precio principal */}
-            <div className="relative flex flex-col">
-              <span className="font-display font-extrabold text-white text-[2rem] sm:text-[2.1rem] leading-none tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">$99.990</span>
-              <span className="text-white/80 text-[11px] font-bold uppercase tracking-wide mt-0.5">Pago único · sin mensualidad</span>
-            </div>
-
-            {/* Badge ahorro */}
-            <div className="relative sm:ml-auto flex flex-col items-center justify-center px-2.5 py-1.5 rounded-lg bg-white/20 border border-white/30 self-start sm:self-auto">
-              <span className="text-white text-[10px] font-bold uppercase tracking-wide leading-none">¡Ahorra HOY!</span>
-              <span className="text-white font-extrabold text-base leading-tight">$100.000</span>
-            </div>
-          </div>
-
-          {/* Scarcity */}
-          <p className="flex items-center gap-2 text-amber-400 text-sm font-bold mb-2">
-            <span>{"\uD83D\uDD25"}</span>
-            Solo 5 cupos esta semana.
+          {/* Price */}
+          <p className="font-display font-extrabold text-white text-3xl mb-7">
+            $99.990
           </p>
+
+          {/* Bullets */}
+          <ul className="flex flex-col gap-3 mb-8">
+            {bullets.map((b) => (
+              <li key={b} className="flex items-start gap-3 text-am-text text-[15px]">
+                <CheckIcon />
+                {b}
+              </li>
+            ))}
+          </ul>
 
           {/* Actions */}
-          <div className="flex flex-wrap gap-4 mb-12">
+          <div className="flex flex-wrap gap-4 mb-10">
             <a
               href={WA}
               data-cta-source="hero"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 text-green-400 hover:text-green-300 font-bold text-[15px] transition-colors duration-200"
+              className="inline-flex items-center gap-2.5 bg-green-500 hover:bg-green-400 text-white font-bold text-[15px] px-6 py-3 rounded-xl transition-colors duration-200"
             >
               <WaIcon />
-              Quiero aparecer en Google
+              Cotizar mi proyecto
             </a>
             <a
               href="#proyectos"
-              className="inline-flex items-center gap-2 text-am-muted hover:text-am-text font-semibold text-[15px] transition-all duration-200"
+              className="inline-flex items-center gap-2 border border-white/20 hover:border-white/40 text-am-text hover:text-white font-semibold text-[15px] px-6 py-3 rounded-xl transition-all duration-200"
             >
-              Ver Proyectos
+              Ver proyectos
             </a>
           </div>
 
           {/* Stats */}
-          <div className="flex items-center gap-4 sm:gap-8">
-            {stats.map((s, i) => (
-              <div key={s.num} className="flex items-center gap-4 sm:gap-8">
-                <div className="text-center">
-                  <span className="block font-display font-bold text-white text-3xl leading-none">
-                    {s.num}
-                  </span>
-                  <span className="block text-am-muted text-xs uppercase tracking-widest mt-1.5">
-                    {s.label}
-                  </span>
-                </div>
-                {i < stats.length - 1 && (
-                  <div className="h-10 w-px bg-white/8" />
-                )}
-              </div>
-            ))}
+          <div className="flex items-center gap-4">
+            <span className="text-am-muted text-sm font-semibold">100% Satisfacción</span>
+            <span className="text-white/20 select-none">·</span>
+            <span className="text-am-muted text-sm font-semibold">Posicionamiento en Google orgánico</span>
+            <span className="text-white/20 select-none">·</span>
+            <span className="text-am-muted text-sm font-semibold">+50 proyectos en Google</span>
           </div>
         </div>
 
-        {/* ── PROMO CARD ── */}
+        {/* ── TESTIMONIALS CARD ── */}
         <div className="flex justify-center lg:justify-end">
           <TestimonialsCard />
         </div>
       </div>
 
-      {/* Section fade */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent pointer-events-none" />
 
-      {/* Scroll hint */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-am-muted text-[11px] uppercase tracking-[0.1em] animate-float pointer-events-none">
         <span>Desliza</span>
         <div className="w-4 h-4 border-r-2 border-b-2 border-am-muted rotate-45 -mt-1" />
       </div>
     </section>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" className="shrink-0 mt-0.5">
+      <circle cx="12" cy="12" r="12" fill="rgba(42,170,110,0.15)" />
+      <path d="M7 12l3.5 3.5L17 8.5" stroke="#2aaa6e" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }
 

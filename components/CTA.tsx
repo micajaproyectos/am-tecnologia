@@ -188,8 +188,8 @@ export default function CTA() {
                         onClick={() => setTieneWeb(val)}
                         className={`flex-1 py-3 rounded-xl border text-[15px] font-semibold transition-all duration-200 ${
                           tieneWeb === val
-                            ? "border-am-primary bg-am-primary/20 text-white"
-                            : "border-white/10 bg-white/4 text-white/50 hover:border-white/25 hover:text-white/80"
+                            ? "border-am-primary bg-am-primary text-white"
+                            : "border-white/10 bg-white/5 text-white/50 hover:border-white/25 hover:text-white/80"
                         }`}
                       >
                         {val === "si" ? "Sí" : "No"}
