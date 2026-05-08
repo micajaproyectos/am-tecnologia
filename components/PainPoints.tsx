@@ -3,40 +3,51 @@ import Link from "next/link";
 const points = [
   {
     icon: (
+      // Lupa con X — búsqueda sin resultados
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" />
-        <path d="M11 8v6M8 11h6" strokeWidth="1.5" opacity="0.5" />
+        <circle cx="11" cy="11" r="8"/>
+        <path d="M21 21l-4.35-4.35"/>
+        <path d="M8.5 8.5l5 5M13.5 8.5l-5 5"/>
       </svg>
     ),
     text: "Buscas tu negocio en Google y no apareces",
   },
   {
     icon: (
+      // Barras descendentes separadas de la flecha caída
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 17l4-8 4 4 4-6 4 3" /><path d="M21 7h-4v4" />
+        <path d="M2 20h13"/>
+        <path d="M4 20V5"/>
+        <path d="M8 20V10"/>
+        <path d="M12 20V15"/>
+        <path d="M19 5v13"/>
+        <path d="M16.5 15.5l2.5 3 2.5-3"/>
       </svg>
     ),
     text: "Tu competencia sale antes que tú en los resultados",
   },
   {
     icon: (
+      // Billetera con dinero escapando hacia arriba
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="2" width="20" height="20" rx="5" />
-        <circle cx="12" cy="10" r="3" />
-        <path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+        <rect x="2" y="9" width="20" height="12" rx="2"/>
+        <path d="M2 13h20"/>
+        <path d="M16 17h.01"/>
+        <path d="M7 9V5M12 9V4M17 9V6"/>
       </svg>
     ),
-    text: "Tienes redes sociales pero no te llegan clientes nuevos",
+    text: "Inviertes en anuncios pero cuando dejas de pagar, desapareces.",
   },
   {
     icon: (
+      // Signo menos + $ — dinero negativo / sin ingresos
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-        <circle cx="9" cy="7" r="4" />
-        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+        <path d="M1 12h6" strokeWidth="2.4"/>
+        <path d="M16 2v20"/>
+        <path d="M21 5H14a3.5 3.5 0 000 7h4a3.5 3.5 0 010 7H11"/>
       </svg>
     ),
-    text: "Dependes solo de referidos para conseguir clientes",
+    text: "Dependes de referidos porque Google no sabe que existes.",
   },
 ];
 
