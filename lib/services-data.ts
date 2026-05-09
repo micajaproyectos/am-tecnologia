@@ -104,6 +104,81 @@ export const SERVICES: ServiceData[] = [
       "Landing page profesional optimizada para posicionamiento en Google Chile. Diseño orientado a conversión, entrega en 48 horas.",
   },
   {
+    slug: "presencia-redes-sociales",
+    title: "Presencia en Redes Sociales",
+    metaTitle: "Gestión de Redes Sociales Chile | Administración Mensual | AM Tecnología",
+    metaDescription:
+      "Administramos tus redes sociales mes a mes con branding unificado, contenido profesional y seguimiento de resultados. Instagram, Facebook, TikTok y Google. Pymes en Chile.",
+    badge: "Gestión continua",
+    headline: "Tu marca activa",
+    headlineAccent: "en todas las redes.",
+    intro:
+      "Administramos tus redes sociales mes a mes para que tu negocio tenga presencia profesional y coherente en Instagram, Facebook, TikTok y Google Business Profile, sin que tengas que preocuparte por el contenido.",
+    whatIs:
+      "La gestión de redes sociales es un servicio mensual donde nos encargamos de crear y publicar contenido, mantener la imagen de marca unificada en todos los perfiles y hacer seguimiento de los resultados. No solo publicamos por publicar: cada pieza de contenido responde a la identidad de tu negocio y está pensada para que tu audiencia te reconozca, confíe en ti y eventualmente te contacte. En AM Tecnología conectamos todos tus perfiles sociales bajo una misma línea visual y de comunicación, para que Instagram, Facebook, TikTok y Google Business Profile cuenten la misma historia de forma coherente.",
+    idealFor: [
+      "Negocios que quieren aparecer profesionalmente en redes pero no tienen tiempo para gestionarlas",
+      "Pymes que publican de forma irregular y sin una línea de marca definida",
+      "Emprendedores que dependen del boca a boca y quieren escalar su visibilidad",
+      "Empresas que acaban de abrir y necesitan construir presencia digital desde cero",
+      "Negocios locales que quieren mantenerse activos en la mente de sus clientes",
+    ],
+    features: [
+      {
+        title: "Gestión mensual de Instagram, Facebook y TikTok",
+        desc: "Planificamos, creamos y publicamos contenido de forma consistente en tus perfiles, manteniendo el ritmo y la frecuencia que el algoritmo necesita para favorecerte.",
+      },
+      {
+        title: "Google Business Profile activo",
+        desc: "Mantenemos tu ficha de Google actualizada con publicaciones, fotos y respuesta a reseñas para mejorar tu visibilidad en búsquedas locales.",
+      },
+      {
+        title: "Branding unificado en todos los perfiles",
+        desc: "Foto de perfil, portada, bio y paleta de colores coherentes en todas las plataformas. Tu marca se ve profesional y reconocible en cualquier canal.",
+      },
+      {
+        title: "Creación de contenido con identidad de marca",
+        desc: "Diseño de piezas visuales y redacción de textos adaptados a tu tono de comunicación y a lo que le importa a tu audiencia.",
+      },
+      {
+        title: "Reporte mensual de resultados",
+        desc: "Informe con las métricas clave de cada plataforma: alcance, interacciones, crecimiento de seguidores y contenido con mejor rendimiento.",
+      },
+      {
+        title: "Respuesta a comentarios y mensajes",
+        desc: "Gestionamos la interacción con tu comunidad para que ningún cliente quede sin respuesta y tu perfil se mantenga activo.",
+      },
+    ],
+    process: [
+      { step: "01", title: "Auditoría y diagnóstico", desc: "Revisamos el estado actual de tus perfiles, definimos la línea de marca y establecemos los objetivos del primer mes." },
+      { step: "02", title: "Creación o ajuste de perfiles", desc: "Unificamos el branding en todas las plataformas: foto de perfil, portada, bio y configuración inicial." },
+      { step: "03", title: "Planificación de contenido", desc: "Armamos el calendario editorial mensual con los temas, formatos y frecuencia de publicación para cada red." },
+      { step: "04", title: "Publicación y seguimiento", desc: "Publicamos según el plan, respondemos interacciones y al cierre del mes te entregamos el reporte de resultados." },
+    ],
+    price: "Desde $99.990 / mes",
+    priceNote: "El valor varía según tus necesidades: desde 2 piezas de contenido al mes hasta producción continua para abastecer todas tus redes · Sin permanencia mínima",
+    faqs: [
+      {
+        q: "¿Cuántas publicaciones incluye el plan mensual?",
+        a: "Depende del plan. Partimos desde 2 piezas de contenido al mes y escalamos hasta producción continua según tus objetivos y presupuesto. Te lo detallamos en la cotización.",
+      },
+      {
+        q: "¿Necesito tener ya las cuentas creadas?",
+        a: "No es necesario. Si no tienes los perfiles, los creamos y configuramos como parte del proceso inicial sin costo adicional.",
+      },
+      {
+        q: "¿Ustedes crean todo el contenido o necesito enviarles material?",
+        a: "Nos encargamos del diseño y la redacción. Si tienes fotos o videos de tu negocio, los usamos para personalizar más el contenido. Si no, trabajamos con recursos de marca.",
+      },
+      {
+        q: "¿Puedo cancelar cuando quiera?",
+        a: "Sí. No exigimos permanencia mínima. Si en algún momento decides pausar o cancelar, lo haces sin penalidad.",
+      },
+    ],
+    schemaDescription:
+      "Gestión mensual de redes sociales para pymes en Chile. Branding unificado en Instagram, Facebook, TikTok y Google Business Profile.",
+  },
+  {
     slug: "one-page-corporativo",
     title: "One Page Corporativo",
     metaTitle: "One Page Corporativo Chile | Presencia Profesional en Google | AM Tecnología",

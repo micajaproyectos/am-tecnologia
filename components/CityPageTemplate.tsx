@@ -135,7 +135,7 @@ export default function CityPageTemplate({ city, jsonLd }: Props) {
 
           {/* Servicios relevantes */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {SERVICES.slice(0, 3).map((s) => (
+            {SERVICES.filter((s) => ["landing-page", "one-page-corporativo", "ecommerce"].includes(s.slug)).map((s) => (
               <Link
                 key={s.slug}
                 href={`/servicios/${s.slug}`}

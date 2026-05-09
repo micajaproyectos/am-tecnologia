@@ -28,6 +28,28 @@ const services = [
   {
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z" />
+        <circle cx="12" cy="12" r="3" />
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+    href: "/servicios/presencia-redes-sociales",
+    title: "Presencia en Redes Sociales",
+    desc: "Administramos tus redes sociales mes a mes con contenido, branding unificado y seguimiento. Tu marca activa y coherente en Instagram, Facebook, TikTok y Google sin que tengas que preocuparte.",
+    features: [
+      "Gestión mensual de Instagram, Facebook y TikTok",
+      "Google Business Profile activo y actualizado",
+      "Creación de contenido con identidad de marca",
+      "Branding unificado en todos los perfiles",
+      "Reporte mensual de resultados",
+      "Respuesta a comentarios y mensajes",
+    ],
+    badge: { text: "Gestión continua", style: "border-am-accent/30 bg-am-accent/8 text-am-accent" },
+    featured: false,
+  },
+  {
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <rect x="2" y="3" width="20" height="14" rx="2" />
         <line x1="8" y1="21" x2="16" y2="21" />
         <line x1="12" y1="17" x2="12" y2="21" />
