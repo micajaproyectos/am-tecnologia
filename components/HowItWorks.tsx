@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const steps = [
   {
     number: "1",
@@ -6,8 +8,8 @@ const steps = [
         <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
       </svg>
     ),
-    title: "Cuéntanos sobre tu negocio",
-    desc: "Nos escribes por WhatsApp. En menos de 1 hora tienes tu cotización y empezamos el mismo día.",
+    title: "Nos cuentas a qué te dedicas",
+    desc: "Una conversación por WhatsApp es suficiente. Entendemos tu rubro, tu ciudad y tu cliente ideal para saber exactamente cómo posicionarte en Google.",
   },
   {
     number: "2",
@@ -17,8 +19,8 @@ const steps = [
         <path d="M3 9h18M9 21V9" />
       </svg>
     ),
-    title: "Tu web lista en 48 horas",
-    desc: "En dos días tienes tu página web profesional publicada, adaptada a tu nicho y lista para recibir visitas.",
+    title: "Creamos tu presencia en Google",
+    desc: "Diseñamos y publicamos tu página web optimizada para que Google la recomiende cuando alguien busca lo que tú ofreces en tu ciudad. Sin publicidad pagada.",
   },
   {
     number: "3",
@@ -28,8 +30,8 @@ const steps = [
         <path d="M11 8v3h3" strokeWidth="1.6" />
       </svg>
     ),
-    title: "Empiezas a recibir clientes",
-    desc: "Tu negocio aparece cuando buscan lo que ofreces en tu ciudad. Recibes contactos reales desde Google.",
+    title: "Tus clientes llegan solos",
+    desc: "Apareces antes que tu competencia cuando buscan tu servicio. Los interesados te contactan directo por WhatsApp, sin que pagues un peso en pauta.",
   },
 ];
 
@@ -38,7 +40,7 @@ export default function HowItWorks() {
     <section className="metal-surface relative py-24 px-6">
       <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
       <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
-      <div className="max-w-5xl mx-auto relative z-20">
+      <div className="max-w-6xl mx-auto relative z-20">
         {/* Header */}
         <div className="text-center mb-16" data-reveal>
           <h2
@@ -49,39 +51,54 @@ export default function HowItWorks() {
           </h2>
         </div>
 
-        {/* Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-          {/* Connector line (desktop) */}
-          <div className="hidden md:block absolute top-10 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-px bg-gradient-to-r from-am-primary/20 via-am-primary/40 to-am-primary/20 pointer-events-none" />
+        {/* Two-column: steps | founder */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-12 items-center">
 
-          {steps.map((s, i) => (
-            <div key={i} className="relative flex flex-col items-center text-center" data-reveal>
-              {/* Number + icon stack */}
-              <div className="relative mb-6">
-                {/* Big number */}
-                <span className="font-display font-extrabold text-white/5 leading-none select-none pointer-events-none"
-                  style={{ fontSize: "clamp(5rem, 10vw, 7rem)", lineHeight: 1 }}
-                >
-                  {s.number}
-                </span>
-                {/* Icon circle — centered over the number */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-2xl bg-am-primary/12 border border-am-primary/25 flex items-center justify-center text-am-primary shadow-[0_0_24px_rgba(37,99,235,0.15)]">
-                    {s.icon}
-                  </div>
+          {/* Steps */}
+          <div className="flex flex-col gap-6 lg:order-1">
+            {steps.map((s, i) => (
+              <div key={i} className="flex items-start gap-5" data-reveal>
+                <div className="shrink-0 w-14 h-14 rounded-2xl bg-am-primary/12 border border-am-primary/25 flex items-center justify-center text-am-primary shadow-[0_0_24px_rgba(37,99,235,0.15)]">
+                  {s.icon}
+                </div>
+                <div>
+                  <p className="text-am-muted text-[11px] font-bold uppercase tracking-widest mb-1">Paso {s.number}</p>
+                  <h3 className="font-display font-bold text-white text-[17px] leading-snug mb-1">
+                    {s.title}
+                  </h3>
+                  <p className="text-am-muted text-[14px] leading-relaxed">
+                    {s.desc}
+                  </p>
                 </div>
               </div>
+            ))}
+          </div>
 
-              <h3 className="font-display font-bold text-white text-lg mb-3 leading-snug">
-                {s.title}
-              </h3>
-              <p className="text-am-muted text-[14px] leading-relaxed max-w-xs">
-                {s.desc}
-              </p>
+          {/* Founder */}
+          <div className="flex justify-center lg:justify-end lg:order-2" data-reveal>
+            <div className="flex flex-col items-center text-center bg-white/4 border border-white/10 rounded-3xl overflow-hidden w-full max-w-[260px] shadow-[0_0_60px_rgba(37,99,235,0.08)]">
+              {/* Image flush to top */}
+              <div className="relative w-full">
+                <Image
+                  src="/fundador.webp"
+                  alt="Allan Milla – Fundador AM Tecnología"
+                  width={260}
+                  height={300}
+                  sizes="260px"
+                  className="w-full h-[300px] object-cover object-top"
+                />
+                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-[#0d0d0d]/80 to-transparent pointer-events-none" />
+              </div>
+              {/* Info */}
+              <div className="px-6 py-5">
+                <p className="text-white font-bold text-[16px] leading-snug">Allan Milla</p>
+                <p className="text-am-primary font-semibold text-[13px] mt-0.5">Fundador · AM Tecnología</p>
+                <p className="text-am-muted text-[12px] mt-1">Ingeniero Civil</p>
+              </div>
             </div>
-          ))}
-        </div>
+          </div>
 
+        </div>
       </div>
     </section>
   );
