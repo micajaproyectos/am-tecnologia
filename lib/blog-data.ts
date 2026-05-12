@@ -19,7 +19,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "cuanto-cuesta-una-pagina-web-en-chile",
     title: "¿Cuánto Cuesta una Página Web en Chile en 2026? Precios Reales",
     metaTitle:
-      "¿Cuánto Cuesta una Página Web en Chile? Precios 2026 | AM Tecnología",
+      "¿Cuánto Cuesta una Página Web en Chile? 2026",
     metaDescription:
       "Conoce los precios reales de una página web en Chile en 2026. Comparamos costos de landing pages, sitios corporativos y tiendas online. Desde $99.990.",
     canonicalUrl:
@@ -203,7 +203,7 @@ Depende del proveedor. En nuestro caso, aceptamos pago en cuotas con tarjeta de 
     slug: "como-aparecer-en-google-empresa-chile",
     title: "Cómo Aparecer en Google: Guía Completa para Empresas en Chile",
     metaTitle:
-      "Cómo Aparecer en Google | Guía para Empresas y Pymes Chile 2026",
+      "Cómo Aparecer en Google | Guía Chile 2026",
     metaDescription:
       "Aprende paso a paso cómo hacer que tu negocio aparezca en Google. Guía práctica para empresas y pymes en Chile: web, SEO, Google Maps y más.",
     canonicalUrl:

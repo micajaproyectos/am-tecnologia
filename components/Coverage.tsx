@@ -39,7 +39,10 @@ export default function Coverage() {
             <span className="gradient-text">empresas en todo Chile</span>
           </h2>
           <p className="text-am-muted text-sm mt-4 max-w-xl mx-auto leading-relaxed">
-            Trabajamos 100% remoto. Da igual si estás en el norte, el centro o la Patagonia — tu negocio puede aparecer en Google desde cualquier ciudad.
+            Trabajamos 100% remoto con negocios en todo Chile. Sin importar si estás en el norte, el centro o la Patagonia, aplicamos la misma metodología de SEO local que ha llevado a más de 50 pymes chilenas a las primeras posiciones de Google.
+          </p>
+          <p className="text-am-muted text-sm mt-3 max-w-xl mx-auto leading-relaxed">
+            Para los negocios fuera de Santiago, el posicionamiento local en Google representa una ventaja enorme: menos competencia digital significa mayor oportunidad de aparecer primero. Un servicio en Rancagua, La Serena o Temuco puede superar a empresas más grandes con la estrategia correcta.
           </p>
         </div>
 

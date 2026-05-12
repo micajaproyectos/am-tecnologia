@@ -31,7 +31,7 @@ export const SERVICES: ServiceData[] = [
   {
     slug: "landing-page",
     title: "Landing Page de Ventas",
-    metaTitle: "Landing Page de Ventas Chile | Páginas que Convierten | AM Tecnología",
+    metaTitle: "Landing Page Chile | Páginas que Convierten",
     metaDescription:
       "Creamos landing pages optimizadas para convertir visitas en clientes. Entrega en 48h, desde $99.990 pago único. Posicionamiento en Google incluido.",
     badge: "Más contratado",
@@ -106,7 +106,7 @@ export const SERVICES: ServiceData[] = [
   {
     slug: "presencia-redes-sociales",
     title: "Presencia en Redes Sociales",
-    metaTitle: "Gestión de Redes Sociales Chile | Administración Mensual | AM Tecnología",
+    metaTitle: "Gestión de Redes Sociales Chile",
     metaDescription:
       "Administramos tus redes sociales mes a mes con branding unificado, contenido profesional y seguimiento de resultados. Instagram, Facebook, TikTok y Google. Pymes en Chile.",
     badge: "Gestión continua",
@@ -181,7 +181,7 @@ export const SERVICES: ServiceData[] = [
   {
     slug: "one-page-corporativo",
     title: "One Page Corporativo",
-    metaTitle: "One Page Corporativo Chile | Presencia Profesional en Google | AM Tecnología",
+    metaTitle: "One Page Corporativo | Diseño Web Chile",
     metaDescription:
       "Sitio web corporativo en una página, elegante y optimizado para Google. Ideal para profesionales y pymes en Chile. Desde $99.990 pago único.",
     badge: "Para profesionales",
@@ -252,7 +252,7 @@ export const SERVICES: ServiceData[] = [
   {
     slug: "ecommerce",
     title: "E-commerce con Pago",
-    metaTitle: "Tienda Online Chile | E-commerce con Webpay y MercadoPago | AM Tecnología",
+    metaTitle: "Tienda Online Chile | Webpay y MercadoPago",
     metaDescription:
       "Creamos tu tienda online con Webpay y MercadoPago integrado. Vende 24/7 con gestión de inventario y posicionamiento en Google. Desde $199.990 pago único.",
     badge: "Vende 24/7",
@@ -327,7 +327,7 @@ export const SERVICES: ServiceData[] = [
   {
     slug: "automatizaciones-ia",
     title: "Automatizaciones con IA",
-    metaTitle: "Automatizaciones con IA Chile | Chatbots y WhatsApp Business | AM Tecnología",
+    metaTitle: "Automatizaciones con IA Chile | Chatbots",
     metaDescription:
       "Automatiza tu negocio con inteligencia artificial: chatbots, respuestas automáticas en WhatsApp y flujos que trabajan mientras tú descansas. Pymes en Chile.",
     badge: "IA Powered",
@@ -398,7 +398,7 @@ export const SERVICES: ServiceData[] = [
   {
     slug: "app-web-saas",
     title: "App Web SaaS",
-    metaTitle: "Desarrollo App Web SaaS Chile | Plataformas a Medida | AM Tecnología",
+    metaTitle: "App Web SaaS Chile | Plataformas a Medida",
     metaDescription:
       "Desarrollamos aplicaciones web SaaS a medida para tu negocio en Chile. Plataformas escalables, panel administrativo y acceso desde cualquier dispositivo.",
     badge: "A medida",

@@ -18,7 +18,7 @@ export const CITIES: CityData[] = [
     slug: "puerto-montt",
     name: "Puerto Montt",
     region: "Región de Los Lagos",
-    metaTitle: "Posicionamiento en Google Puerto Montt | AM Tecnología",
+    metaTitle: "Posicionamiento en Google Puerto Montt",
     metaDescription:
       "Ayudamos a empresas de Puerto Montt a aparecer en Google con páginas web optimizadas. Presencia digital para negocios en la Región de Los Lagos.",
     headline: "Tu empresa en Puerto Montt,",
@@ -66,7 +66,7 @@ export const CITIES: CityData[] = [
     slug: "temuco",
     name: "Temuco",
     region: "Región de La Araucanía",
-    metaTitle: "Posicionamiento en Google Temuco | AM Tecnología",
+    metaTitle: "Posicionamiento en Google Temuco",
     metaDescription:
       "Posicionamiento en Google para empresas y pymes en Temuco. Páginas web optimizadas para aparecer en búsquedas locales en La Araucanía.",
     headline: "Más clientes en Temuco",
@@ -110,7 +110,7 @@ export const CITIES: CityData[] = [
     slug: "valdivia",
     name: "Valdivia",
     region: "Región de Los Ríos",
-    metaTitle: "Posicionamiento en Google Valdivia | AM Tecnología",
+    metaTitle: "Posicionamiento en Google Valdivia",
     metaDescription:
       "Páginas web optimizadas para posicionamiento en Google en Valdivia. Presencia digital para empresas de la Región de Los Ríos desde $99.990.",
     headline: "Tu negocio en Valdivia,",
@@ -154,7 +154,7 @@ export const CITIES: CityData[] = [
     slug: "osorno",
     name: "Osorno",
     region: "Región de Los Lagos",
-    metaTitle: "Posicionamiento en Google Osorno | AM Tecnología",
+    metaTitle: "Posicionamiento en Google Osorno",
     metaDescription:
       "Posicionamiento en Google para negocios en Osorno. Páginas web optimizadas para aparecer en búsquedas locales en la Región de Los Lagos.",
     headline: "Osorno en Google —",
@@ -198,7 +198,7 @@ export const CITIES: CityData[] = [
     slug: "concepcion",
     name: "Concepción",
     region: "Región del Biobío",
-    metaTitle: "Posicionamiento en Google Concepción | AM Tecnología",
+    metaTitle: "Posicionamiento en Google Concepción",
     metaDescription:
       "Posicionamiento en Google para empresas en Concepción y el Gran Concepción. Páginas web optimizadas para aparecer en búsquedas locales en el Biobío.",
     headline: "Concepción busca",
@@ -242,7 +242,7 @@ export const CITIES: CityData[] = [
     slug: "santiago",
     name: "Santiago",
     region: "Región Metropolitana",
-    metaTitle: "Posicionamiento en Google Santiago | AM Tecnología",
+    metaTitle: "Posicionamiento en Google Santiago",
     metaDescription:
       "Posicionamiento en Google para empresas en Santiago. Páginas web optimizadas para aparecer en búsquedas locales en la Región Metropolitana de Chile.",
     headline: "Santiago es enorme.",
@@ -290,7 +290,7 @@ export const CITIES: CityData[] = [
     slug: "coyhaique",
     name: "Coyhaique",
     region: "Región de Aysén",
-    metaTitle: "Posicionamiento en Google Coyhaique | AM Tecnología",
+    metaTitle: "Posicionamiento en Google Coyhaique",
     metaDescription:
       "Páginas web y posicionamiento en Google para negocios en Coyhaique y la Región de Aysén. Presencia digital para empresas en la Patagonia chilena.",
     headline: "Coyhaique en Google —",
@@ -334,7 +334,7 @@ export const CITIES: CityData[] = [
     slug: "punta-arenas",
     name: "Punta Arenas",
     region: "Región de Magallanes",
-    metaTitle: "Posicionamiento en Google Punta Arenas | AM Tecnología",
+    metaTitle: "Posicionamiento en Google Punta Arenas",
     metaDescription:
       "Páginas web y posicionamiento en Google para empresas en Punta Arenas. Presencia digital para negocios en la Región de Magallanes.",
     headline: "Punta Arenas al mundo",

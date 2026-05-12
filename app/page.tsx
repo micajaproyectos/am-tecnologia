@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import Navbar        from "@/components/Navbar";
 import Hero          from "@/components/Hero";
+import AboutService  from "@/components/AboutService";
 import PainPoints    from "@/components/PainPoints";
 import Services      from "@/components/Services";
 import HowItWorks    from "@/components/HowItWorks";
@@ -19,6 +20,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <AboutService />
         <PainPoints />
         <Projects />
         <Services />

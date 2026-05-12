@@ -9,7 +9,7 @@ const steps = [
       </svg>
     ),
     title: "Nos cuentas a qué te dedicas",
-    desc: "Una conversación por WhatsApp es suficiente. Entendemos tu rubro, tu ciudad y tu cliente ideal para saber exactamente cómo posicionarte en Google.",
+    desc: "Una conversación por WhatsApp es suficiente. Nos cuentas tu rubro, tu ciudad y quiénes son tus clientes. Con esa información definimos las palabras clave exactas que tu público usa en Google para encontrar negocios como el tuyo.",
   },
   {
     number: "2",
@@ -20,7 +20,7 @@ const steps = [
       </svg>
     ),
     title: "Creamos tu presencia en Google",
-    desc: "Diseñamos y publicamos tu página web optimizada para que Google la recomiende cuando alguien busca lo que tú ofreces en tu ciudad. Sin publicidad pagada.",
+    desc: "Diseñamos y publicamos tu página web con la estructura técnica y el contenido que Google necesita para posicionarte. Activamos tu perfil en Google Maps, configuramos Search Console y aplicamos SEO local para que aparezcas en búsquedas de tu ciudad. Sin publicidad pagada.",
   },
   {
     number: "3",
@@ -31,7 +31,7 @@ const steps = [
       </svg>
     ),
     title: "Tus clientes llegan solos",
-    desc: "Apareces antes que tu competencia cuando buscan tu servicio. Los interesados te contactan directo por WhatsApp, sin que pagues un peso en pauta.",
+    desc: "Una vez posicionado, apareces antes que tu competencia cada vez que alguien busca tu servicio en Google. Los clientes interesados te contactan directo por WhatsApp sin intermediarios y sin pagar publicidad. El posicionamiento orgánico sigue trabajando para ti todos los días.",
   },
 ];
 

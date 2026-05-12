@@ -6,7 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { getAllPosts, formatDate } from "@/lib/blog-data";
 
 export const metadata: Metadata = {
-  title: "Blog — Posicionamiento en Google y Diseño Web en Chile | AM Tecnología",
+  title: "Blog | Posicionamiento en Google Chile",
   description:
     "Artículos sobre posicionamiento en Google, diseño web y estrategias digitales para empresas en Chile. Escrito por el equipo de AM Tecnología.",
   alternates: {

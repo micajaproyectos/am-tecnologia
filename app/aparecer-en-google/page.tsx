@@ -4,8 +4,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title:
-    "¿Cómo Aparecer en Google? | Posicionamiento para Empresas | AM Tecnología",
+  title: "Aparecer en Google | Posicionamiento Chile",
 
   description:
     "Ayudamos a empresas y pymes a aparecer en Google mediante páginas web optimizadas, presencia digital y posicionamiento orgánico.",
