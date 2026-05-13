@@ -53,15 +53,18 @@ export default function AparecerEnGooglePage() {
           </div>
 
           <h1
-            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-6"
+            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-3"
             style={{ fontSize: "clamp(2.25rem, 5vw, 3.75rem)" }}
           >
-            Tu negocio existe.{" "}
-            <br className="hidden sm:block" />
-            Que <span className="gradient-text">Google</span> también lo sepa.
+            Cómo Aparecer en Google:{" "}
+            <span className="gradient-text">Guía para Empresas en Chile</span>
           </h1>
 
-          <p className="text-am-muted text-lg leading-relaxed max-w-2xl">
+          <p className="text-am-muted text-xl leading-snug max-w-2xl mb-4">
+            Tu negocio existe. Que Google también lo sepa.
+          </p>
+
+          <p className="text-am-muted text-base leading-relaxed max-w-2xl">
             Aparecer en Google no requiere ser una empresa grande ni pagar
             publicidad mensual. Requiere una web optimizada y tu negocio
             configurado correctamente. Eso es exactamente lo que hacemos.
@@ -224,6 +227,29 @@ export default function AparecerEnGooglePage() {
             Si tienes una situación específica que no está aquí, lo más rápido es contarnos
             por WhatsApp qué negocio tienes y en qué ciudad quieres aparecer.
           </p>
+        </div>
+      </section>
+
+      {/* ── INTERLINKING ── */}
+      <section className="bg-black px-6 pb-20">
+        <div className="max-w-4xl mx-auto border-t border-white/6 pt-12">
+          <p className="text-am-accent text-[13px] font-bold tracking-widest uppercase mb-6">
+            También puede interesarte
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="/servicios/landing-page" className="flex flex-col gap-1 bg-am-surf2 border border-white/6 rounded-xl px-5 py-4 hover:border-am-primary/30 transition-colors group">
+              <span className="font-semibold text-white text-[14px] group-hover:text-am-primary transition-colors">Landing Page de Ventas →</span>
+              <span className="text-am-muted text-[12px]">Página optimizada para convertir visitas en clientes</span>
+            </a>
+            <a href="/servicios/one-page-corporativo" className="flex flex-col gap-1 bg-am-surf2 border border-white/6 rounded-xl px-5 py-4 hover:border-am-primary/30 transition-colors group">
+              <span className="font-semibold text-white text-[14px] group-hover:text-am-primary transition-colors">One Page Corporativo →</span>
+              <span className="text-am-muted text-[12px]">Presencia digital profesional en una sola página</span>
+            </a>
+            <a href="/blog/como-aparecer-en-google-empresa-chile" className="flex flex-col gap-1 bg-am-surf2 border border-white/6 rounded-xl px-5 py-4 hover:border-am-primary/30 transition-colors group">
+              <span className="font-semibold text-white text-[14px] group-hover:text-am-primary transition-colors">Guía: Aparecer en Google →</span>
+              <span className="text-am-muted text-[12px]">Guía completa para empresas y pymes en Chile</span>
+            </a>
+          </div>
         </div>
       </section>
 

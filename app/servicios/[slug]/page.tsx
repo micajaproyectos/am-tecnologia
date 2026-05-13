@@ -83,14 +83,18 @@ export default async function ServicePage({
           </div>
 
           <h1
-            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-6"
+            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-3"
             style={{ fontSize: "clamp(2.25rem, 5vw, 3.75rem)" }}
           >
-            {service.headline}{" "}
-            <span className="gradient-text">{service.headlineAccent}</span>
+            {service.seoTitle}
           </h1>
 
-          <p className="text-am-muted text-lg leading-relaxed max-w-2xl mb-8">
+          <p className="text-am-muted text-xl leading-snug max-w-2xl mb-4">
+            {service.headline}{" "}
+            <span className="text-white">{service.headlineAccent}</span>
+          </p>
+
+          <p className="text-am-muted text-base leading-relaxed max-w-2xl mb-8">
             {service.intro}
           </p>
 

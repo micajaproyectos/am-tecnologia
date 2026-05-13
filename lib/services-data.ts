@@ -13,6 +13,7 @@ export interface ServiceData {
   title: string;
   metaTitle: string;
   metaDescription: string;
+  seoTitle: string;
   badge: string;
   headline: string;
   headlineAccent: string;
@@ -34,6 +35,7 @@ export const SERVICES: ServiceData[] = [
     metaTitle: "Landing Page Chile | Páginas que Convierten",
     metaDescription:
       "Creamos landing pages optimizadas para convertir visitas en clientes. Entrega en 48h, desde $99.990 pago único. Posicionamiento en Google incluido.",
+    seoTitle: "Landing Page de Ventas Chile",
     badge: "Más contratado",
     headline: "Una página que vende",
     headlineAccent: "las 24 horas.",
@@ -109,6 +111,7 @@ export const SERVICES: ServiceData[] = [
     metaTitle: "Gestión de Redes Sociales Chile",
     metaDescription:
       "Administramos tus redes sociales mes a mes con branding unificado, contenido profesional y seguimiento de resultados. Instagram, Facebook, TikTok y Google. Pymes en Chile.",
+    seoTitle: "Gestión de Redes Sociales Chile",
     badge: "Gestión continua",
     headline: "Tu marca activa",
     headlineAccent: "en todas las redes.",
@@ -184,6 +187,7 @@ export const SERVICES: ServiceData[] = [
     metaTitle: "One Page Corporativo | Diseño Web Chile",
     metaDescription:
       "Sitio web corporativo en una página, elegante y optimizado para Google. Ideal para profesionales y pymes en Chile. Desde $99.990 pago único.",
+    seoTitle: "One Page Corporativo Chile",
     badge: "Para profesionales",
     headline: "Tu empresa, presentada",
     headlineAccent: "con autoridad.",
@@ -255,6 +259,7 @@ export const SERVICES: ServiceData[] = [
     metaTitle: "Tienda Online Chile | Webpay y MercadoPago",
     metaDescription:
       "Creamos tu tienda online con Webpay y MercadoPago integrado. Vende 24/7 con gestión de inventario y posicionamiento en Google. Desde $199.990 pago único.",
+    seoTitle: "Tienda Online Chile con Webpay y MercadoPago",
     badge: "Vende 24/7",
     headline: "Tu tienda online,",
     headlineAccent: "lista para vender.",
@@ -330,6 +335,7 @@ export const SERVICES: ServiceData[] = [
     metaTitle: "Automatizaciones con IA Chile | Chatbots",
     metaDescription:
       "Automatiza tu negocio con inteligencia artificial: chatbots, respuestas automáticas en WhatsApp y flujos que trabajan mientras tú descansas. Pymes en Chile.",
+    seoTitle: "Automatizaciones con IA Chile",
     badge: "IA Powered",
     headline: "Tu negocio trabajando",
     headlineAccent: "mientras duermes.",
@@ -401,6 +407,7 @@ export const SERVICES: ServiceData[] = [
     metaTitle: "App Web SaaS Chile | Plataformas a Medida",
     metaDescription:
       "Desarrollamos aplicaciones web SaaS a medida para tu negocio en Chile. Plataformas escalables, panel administrativo y acceso desde cualquier dispositivo.",
+    seoTitle: "Desarrollo App Web SaaS Chile",
     badge: "A medida",
     headline: "La plataforma que tu",
     headlineAccent: "negocio necesita.",

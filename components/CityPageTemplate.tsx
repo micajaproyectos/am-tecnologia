@@ -36,14 +36,19 @@ export default function CityPageTemplate({ city, jsonLd }: Props) {
           </div>
 
           <h1
-            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-6"
+            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-3"
             style={{ fontSize: "clamp(2.25rem, 5vw, 3.75rem)" }}
           >
-            {city.headline}{" "}
-            <span className="gradient-text">{city.headlineAccent}</span>
+            Posicionamiento en Google{" "}
+            <span className="gradient-text">{city.name}</span>
           </h1>
 
-          <p className="text-am-muted text-lg leading-relaxed max-w-2xl mb-8">
+          <p className="text-am-muted text-xl leading-snug max-w-2xl mb-4">
+            {city.headline}{" "}
+            <span className="text-white">{city.headlineAccent}</span>
+          </p>
+
+          <p className="text-am-muted text-base leading-relaxed max-w-2xl mb-8">
             {city.intro}
           </p>
 
@@ -159,7 +164,7 @@ export default function CityPageTemplate({ city, jsonLd }: Props) {
           </p>
 
           {/* Servicios relevantes */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
             {SERVICES.filter((s) => ["landing-page", "one-page-corporativo", "ecommerce"].includes(s.slug)).map((s) => (
               <Link
                 key={s.slug}
@@ -173,6 +178,19 @@ export default function CityPageTemplate({ city, jsonLd }: Props) {
                 <span className="text-am-muted text-[12px] leading-snug">{s.price}</span>
               </Link>
             ))}
+          </div>
+
+          {/* Links editoriales */}
+          <div className="flex flex-wrap gap-4 pt-2 border-t border-white/6">
+            <Link href="/aparecer-en-google" className="text-am-primary hover:text-am-accent text-sm font-semibold transition-colors">
+              ¿Cómo aparecer en Google? →
+            </Link>
+            <Link href="/blog/como-aparecer-en-google-empresa-chile" className="text-am-primary hover:text-am-accent text-sm font-semibold transition-colors">
+              Guía completa de posicionamiento →
+            </Link>
+            <Link href="/blog/cuanto-cuesta-una-pagina-web-en-chile" className="text-am-primary hover:text-am-accent text-sm font-semibold transition-colors">
+              ¿Cuánto cuesta una página web? →
+            </Link>
           </div>
         </div>
       </section>

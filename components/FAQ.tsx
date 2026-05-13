@@ -73,7 +73,8 @@ export default function FAQ() {
             className="font-display font-bold text-white text-balance"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
-            <span className="gradient-text">Preguntas frecuentes</span>
+            Preguntas frecuentes sobre{" "}
+            <span className="gradient-text">posicionamiento en Google</span>
           </h2>
         </div>
 
@@ -88,6 +89,7 @@ export default function FAQ() {
                   : "border-white/6 bg-white/2 hover:border-white/12"
               }`}
             >
+              <h3 className="m-0">
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
@@ -113,6 +115,7 @@ export default function FAQ() {
                   </svg>
                 </span>
               </button>
+              </h3>
 
               {open === i && (
                 <div className="px-6 pb-6">

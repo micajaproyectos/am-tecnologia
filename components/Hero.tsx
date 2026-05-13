@@ -37,16 +37,20 @@ export default function Hero() {
         <div>
           {/* Headline */}
           <h1
-            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-4"
+            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-3"
             style={{ fontSize: "clamp(2rem, 4.5vw, 3.5rem)" }}
           >
-            Sube tu negocio a Google{" "}
-            <span className="gradient-text">y recibe clientes hoy.</span>
+            Posicionamiento en Google para{" "}
+            <span className="gradient-text">Empresas en Chile</span>
           </h1>
 
           {/* Sub */}
+          <p className="text-am-muted text-xl leading-snug mb-3 max-w-lg">
+            Sube tu negocio a Google y recibe clientes hoy.
+          </p>
+
           <p className="text-am-muted text-base leading-relaxed mb-3 max-w-lg">
-            Creamos tu página y hacemos que Google te envíe clientes reales directo a tu whatsapp.
+            Diseñamos y publicamos tu página web profesional, optimizada para posicionarte desde el primer día — sin publicidad pagada, sin mensualidades.
           </p>
 
           {/* Price */}
