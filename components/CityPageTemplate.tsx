@@ -88,6 +88,31 @@ export default function CityPageTemplate({ city, jsonLd }: Props) {
         </div>
       </section>
 
+      {/* ── EDITORIAL ── */}
+      <section className="bg-black px-6 py-16">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-10 lg:gap-16 items-start">
+          <header>
+            <h2
+              className="font-display font-bold text-white text-balance leading-snug"
+              style={{ fontSize: "clamp(1.5rem, 2.5vw, 2rem)" }}
+            >
+              Posicionamiento orgánico en Google para negocios en {city.name}
+            </h2>
+          </header>
+          <div className="flex flex-col gap-5 text-am-muted text-[15px] leading-relaxed">
+            <p>
+              En {city.name}, cuando alguien busca un servicio en Google, los negocios que aparecen en las primeras posiciones se llevan la gran mayoría de los contactos. No porque sean los más grandes ni los más conocidos, sino porque tienen una presencia digital que Google puede leer y recomendar.
+            </p>
+            <p>
+              El posicionamiento orgánico no requiere pagar por cada clic. A diferencia de Google Ads, una vez que tu negocio está bien posicionado, sigue apareciendo sin costo adicional. Para lograrlo se necesita una página web optimizada, un perfil de Google Maps configurado correctamente y contenido que conecte tu negocio con las búsquedas reales de tus clientes en {city.name}.
+            </p>
+            <p>
+              AM Tecnología trabaja 100% remoto con pymes y emprendedores en {city.region}. Diseñamos tu presencia digital desde cero, adaptada a tu rubro y ciudad, para que Google comience a recomendarte cuando alguien busca lo que ofreces — sin que tengas que entender de tecnología ni invertir en publicidad mensual.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ── POR QUÉ IMPORTA ── */}
       <section className="bg-black px-6 py-20">
         <div className="max-w-4xl mx-auto">
@@ -166,7 +191,7 @@ export default function CityPageTemplate({ city, jsonLd }: Props) {
             <span className="gradient-text">en Google mañana.</span>
           </h2>
           <p className="text-am-muted text-base mb-8">
-            Entrega en 48 horas · Desde $99.990 pago único · Sin mensualidades
+            Desde $99.990 pago único · Sin mensualidades · Sin publicidad pagada
           </p>
           <a
             href={WA}

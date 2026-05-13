@@ -129,6 +129,12 @@ const jsonLd = {
         "Agencia de desarrollo web profesional en Chile. Creamos páginas web, tiendas online y automatizaciones con IA para empresas. Diseñadas por Ingenieros Civiles. Entrega en 48 horas.",
       "url": "https://www.amtecnologia.cl",
       "image": "https://www.amtecnologia.cl/og-image.jpg",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.amtecnologia.cl/og-image.jpg",
+        "width": 1200,
+        "height": 630,
+      },
       "telephone": "+56985660954",
       "email": "contacto@amconsultora.cl",
       "address": {
@@ -172,6 +178,8 @@ const jsonLd = {
         "itemListElement": [
           {
             "@type": "Offer",
+            "price": "99990",
+            "priceCurrency": "CLP",
             "itemOffered": {
               "@type": "Service",
               "name": "Landing Page de Ventas",
@@ -180,6 +188,8 @@ const jsonLd = {
           },
           {
             "@type": "Offer",
+            "price": "99990",
+            "priceCurrency": "CLP",
             "itemOffered": {
               "@type": "Service",
               "name": "One Page Corporativo",
@@ -188,6 +198,8 @@ const jsonLd = {
           },
           {
             "@type": "Offer",
+            "price": "199990",
+            "priceCurrency": "CLP",
             "itemOffered": {
               "@type": "Service",
               "name": "E-commerce con Pago",
@@ -196,6 +208,8 @@ const jsonLd = {
           },
           {
             "@type": "Offer",
+            "price": "199990",
+            "priceCurrency": "CLP",
             "itemOffered": {
               "@type": "Service",
               "name": "Automatizaciones con IA",
@@ -204,6 +218,8 @@ const jsonLd = {
           },
           {
             "@type": "Offer",
+            "price": "500000",
+            "priceCurrency": "CLP",
             "itemOffered": {
               "@type": "Service",
               "name": "App Web SaaS",
@@ -212,84 +228,6 @@ const jsonLd = {
           },
         ],
       },
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.amtecnologia.cl/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Cuánto cuesta una página web en Chile?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Con nosotros, $99.990 precio de lanzamiento — pago único. Lo que hacemos no es solo crear una página: es posicionar tu marca en Google para que tus clientes te encuentren cuando buscan lo que tú ofreces. Las agencias de marketing cobran entre $400.000 y $600.000 por este mismo resultado. Nosotros lo entregamos desde $99.990.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cómo hago para que mi negocio aparezca en Google?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nos encargamos de todo el proceso: creamos la estructura de tu sitio, configuramos tu perfil en Google Maps, Google Analytics y Search Console, y optimizamos cada página para que Google entienda a qué clientes debes aparecer. Con la optimización incluida, tu marca ya puede empezar a recibir tráfico orgánico. El seguimiento mensual es opcional, pero te permite seguir escalando tu posición y adelantar a tu competencia con el tiempo.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "¿Necesito una página web para mi negocio?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Si quieres que tus clientes te encuentren en Google, sí. Hoy más del 80% de las personas busca en internet antes de comprar. Sin página web, esos clientes los encuentra tu competencia.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cuánto tarda en estar lista mi página?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "La estructura de tu sitio queda lista en 48 horas. La optimización SEO completa — para que Google te posicione sobre tu competencia — puede tomar hasta 1 semana. Y para maximizar los resultados a largo plazo, contamos con planes de seguimiento mensual que incluyen: ajuste continuo de palabras clave, análisis de rendimiento en Google Search Console, mejoras de velocidad y experiencia de usuario, reportes de visibilidad y tráfico, y adaptación a los cambios del algoritmo de Google.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "¿Necesito saber de tecnología?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Nosotros nos encargamos de todo. Tú solo te preocupas de atender a tus nuevos clientes.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué pasa después de la entrega?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tu sitio queda publicado y con la optimización SEO activa en los primeros días. Desde ahí, Google empieza a indexar tu marca y puedes comenzar a recibir tráfico orgánico sin pagar publicidad. Si quieres seguir escalando resultados, nuestros planes de seguimiento mensual ajustan la estrategia según cómo evoluciona tu posición, tu competencia y los cambios del algoritmo de Google — pero el tráfico orgánico inicial ya está incluido desde el primer entregable.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cuánto cuesta una página web con tienda online?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Una tienda online con Webpay y MercadoPago integrado parte desde $199.990 pago único. Incluye gestión de productos, carrito de compras y panel administrativo completo.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cómo es el proceso para contratar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Es simple: escríbenos por WhatsApp con los detalles de tu negocio. En menos de 1 hora te enviamos una cotización. Si la apruebas, empezamos el mismo día. En 48 horas tienes tu sitio web listo y publicado.",
-          },
-        },
-        {
-          "@type": "Question",
-          "name": "¿Trabajan en todo Chile?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí. Servimos empresas en Puerto Montt, Valdivia, Temuco, Rancagua, Santiago y todo Chile.",
-          },
-        },
-      ],
     },
     {
       "@type": "WebSite",

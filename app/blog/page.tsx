@@ -47,6 +47,28 @@ export default function BlogIndexPage() {
         </div>
       </section>
 
+      {/* ── INTRO EDITORIAL ── */}
+      <section className="bg-black px-6 pt-4 pb-12">
+        <div className="max-w-4xl mx-auto border-b border-white/6 pb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-10 items-start">
+            <h2
+              className="font-display font-bold text-white text-balance leading-snug"
+              style={{ fontSize: "clamp(1.3rem, 2vw, 1.7rem)" }}
+            >
+              Recursos para hacer crecer tu negocio en Google
+            </h2>
+            <div className="flex flex-col gap-4 text-am-muted text-[15px] leading-relaxed">
+              <p>
+                Este blog reúne guías prácticas sobre posicionamiento en Google, diseño web y estrategias digitales para pymes y emprendedores en Chile. Cada artículo está escrito para ser accionable: sin tecnicismos innecesarios, con pasos concretos que puedes aplicar a tu negocio.
+              </p>
+              <p>
+                Cubrimos temas como cuánto cuesta una página web en Chile, cómo configurar Google Maps para tu negocio, cómo aparecer antes que tu competencia en búsquedas locales y cómo aprovechar herramientas como WhatsApp Business para captar y atender más clientes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── ARTÍCULOS ── */}
       <section className="bg-black px-6 py-20">
         <div className="max-w-4xl mx-auto">

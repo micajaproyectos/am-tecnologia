@@ -118,6 +118,37 @@ export default function AparecerEnGooglePage() {
         </div>
       </section>
 
+      {/* ── METODOLOGÍA ── */}
+      <section className="bg-black px-6 py-20">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-am-accent text-[13px] font-bold tracking-widest uppercase mb-4">
+            Nuestra metodología
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-10 lg:gap-16 items-start">
+            <h2
+              className="font-display font-bold text-white text-balance leading-snug"
+              style={{ fontSize: "clamp(1.5rem, 2.5vw, 2rem)" }}
+            >
+              Cómo hacemos que Google recomiende tu negocio
+            </h2>
+            <div className="flex flex-col gap-5 text-am-muted text-[15px] leading-relaxed">
+              <p>
+                Aparecer en Google de forma orgánica no es cuestión de suerte. Es el resultado de construir una presencia digital que Google pueda leer, entender y recomendar a las personas correctas en el momento en que buscan lo que ofreces. Trabajamos en tres frentes: la página web, la presencia en Google Maps y las palabras clave correctas para tu rubro y ciudad.
+              </p>
+              <p>
+                La página web es la base. Diseñamos cada sitio con la estructura técnica y el contenido específico que Google necesita para entender tu rubro, tu ciudad y tu cliente ideal. No se trata de una página genérica: cada elemento está pensado para conectar tu negocio con búsquedas reales de personas que ya están listas para contratar.
+              </p>
+              <p>
+                Google Maps es el segundo pilar. Tu perfil en Google Business Profile es lo que aparece cuando alguien busca tu tipo de negocio cerca de su ubicación. Un perfil bien configurado — con categorías correctas, horarios, zona de atención y reseñas — aumenta significativamente tu visibilidad local sin necesidad de pagar publicidad.
+              </p>
+              <p>
+                Finalmente, las palabras clave determinan ante qué búsquedas apareces. Investigamos qué términos usan tus clientes en tu ciudad y construimos tu presencia digital alrededor de esas búsquedas específicas. Así Google sabe cuándo y a quién recomendarte, y tú recibes contactos de personas que ya están buscando lo que ofreces.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── FAQ ── */}
       <section className="bg-black px-6 py-24">
         <div className="max-w-4xl mx-auto">
