@@ -130,8 +130,7 @@ export default async function ServicePage({
             className="font-display font-bold text-white text-balance mb-6"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
-            {service.title} en Chile —{" "}
-            <span className="gradient-text">todo lo que necesitas saber</span>
+            {service.whatIsTitle}
           </h2>
           <p className="text-am-muted text-base leading-[1.85] max-w-3xl">
             {service.whatIs}

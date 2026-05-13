@@ -20,7 +20,7 @@ export const CITIES: CityData[] = [
     region: "Región de Los Lagos",
     metaTitle: "Posicionamiento en Google Puerto Montt",
     metaDescription:
-      "Ayudamos a empresas de Puerto Montt a aparecer en Google con páginas web optimizadas. Presencia digital para negocios en la Región de Los Lagos.",
+      "Posicionamiento web para empresas de Puerto Montt y el sur de Chile. Creamos páginas optimizadas para aparecer en Google y captar nuevos clientes.",
     headline: "Tu empresa en Puerto Montt,",
     headlineAccent: "visible en Google.",
     intro:
@@ -68,7 +68,7 @@ export const CITIES: CityData[] = [
     region: "Región de La Araucanía",
     metaTitle: "Posicionamiento en Google Temuco",
     metaDescription:
-      "Posicionamiento en Google para empresas y pymes en Temuco. Páginas web optimizadas para aparecer en búsquedas locales en La Araucanía.",
+      "Posicionamiento en Google para negocios en Temuco y La Araucanía. Tu empresa visible cuando tus clientes te buscan, antes que tu competencia regional.",
     headline: "Más clientes en Temuco",
     headlineAccent: "desde Google.",
     intro:
@@ -112,7 +112,7 @@ export const CITIES: CityData[] = [
     region: "Región de Los Ríos",
     metaTitle: "Posicionamiento en Google Valdivia",
     metaDescription:
-      "Páginas web optimizadas para posicionamiento en Google en Valdivia. Presencia digital para empresas de la Región de Los Ríos desde $99.990.",
+      "Posicionamiento en Google para empresas en Valdivia. Páginas web que te ubican en la Región de Los Ríos y atraen clientes desde el primer día.",
     headline: "Tu negocio en Valdivia,",
     headlineAccent: "en Google hoy.",
     intro:
@@ -156,7 +156,7 @@ export const CITIES: CityData[] = [
     region: "Región de Los Lagos",
     metaTitle: "Posicionamiento en Google Osorno",
     metaDescription:
-      "Posicionamiento en Google para negocios en Osorno. Páginas web optimizadas para aparecer en búsquedas locales en la Región de Los Lagos.",
+      "Posicionamiento en Google para empresas en Osorno. Tu negocio visible en la Región de Los Lagos y en la ruta entre el sur y la Patagonia chilena.",
     headline: "Osorno en Google —",
     headlineAccent: "primero que tu competencia.",
     intro:
@@ -200,7 +200,7 @@ export const CITIES: CityData[] = [
     region: "Región del Biobío",
     metaTitle: "Posicionamiento en Google Concepción",
     metaDescription:
-      "Posicionamiento en Google para empresas en Concepción y el Gran Concepción. Páginas web optimizadas para aparecer en búsquedas locales en el Biobío.",
+      "Posicionamiento en Google para empresas en Concepción y el Gran Biobío. Páginas web que te destacan en la segunda ciudad más grande de Chile.",
     headline: "Concepción busca",
     headlineAccent: "tu negocio en Google.",
     intro:
@@ -244,7 +244,7 @@ export const CITIES: CityData[] = [
     region: "Región Metropolitana",
     metaTitle: "Posicionamiento en Google Santiago",
     metaDescription:
-      "Posicionamiento en Google para empresas en Santiago. Páginas web optimizadas para aparecer en búsquedas locales en la Región Metropolitana de Chile.",
+      "Posicionamiento en Google para pymes en Santiago. Páginas web que te destacan en el mercado digital más competitivo de Chile. Desde $99.990.",
     headline: "Santiago es enorme.",
     headlineAccent: "Tu nicho, no.",
     intro:
@@ -292,7 +292,7 @@ export const CITIES: CityData[] = [
     region: "Región de Aysén",
     metaTitle: "Posicionamiento en Google Coyhaique",
     metaDescription:
-      "Páginas web y posicionamiento en Google para negocios en Coyhaique y la Región de Aysén. Presencia digital para empresas en la Patagonia chilena.",
+      "Posicionamiento en Google para empresas en Coyhaique y Aysén. Páginas web que conectan tu negocio con clientes locales y turistas de la Patagonia chilena.",
     headline: "Coyhaique en Google —",
     headlineAccent: "sin barreras de distancia.",
     intro:
@@ -336,7 +336,7 @@ export const CITIES: CityData[] = [
     region: "Región de Magallanes",
     metaTitle: "Posicionamiento en Google Punta Arenas",
     metaDescription:
-      "Páginas web y posicionamiento en Google para empresas en Punta Arenas. Presencia digital para negocios en la Región de Magallanes.",
+      "Posicionamiento en Google para empresas en Punta Arenas y Magallanes. Tu negocio visible en el extremo sur del mundo, captando clientes y turistas.",
     headline: "Punta Arenas al mundo",
     headlineAccent: "a través de Google.",
     intro:
