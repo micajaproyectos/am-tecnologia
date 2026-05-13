@@ -262,7 +262,7 @@ export const SERVICES: ServiceData[] = [
     title: "E-commerce con Pago",
     metaTitle: "Tienda Online Chile | Webpay y MercadoPago",
     metaDescription:
-      "Creamos tu tienda online con Webpay y MercadoPago integrado. Vende 24/7 con gestión de inventario y posicionamiento en Google. Desde $199.990 pago único.",
+      "Creamos tu tienda online con Webpay y MercadoPago integrado. Vende 24/7 con gestión de inventario y posicionamiento en Google. Desde $199.990 a $399.990 pago único.",
     seoTitle: "Tienda Online Chile con Webpay y MercadoPago",
     whatIsTitle: "Cómo funciona un E-commerce con Webpay y MercadoPago",
     badge: "Vende 24/7",
@@ -311,7 +311,7 @@ export const SERVICES: ServiceData[] = [
       { step: "03", title: "Optimización SEO", desc: "Cada producto y categoría queda optimizado para Google. Schema de producto, metadata y velocidad configurados." },
       { step: "04", title: "Pruebas y lanzamiento", desc: "Hacemos compras de prueba para verificar el flujo completo antes de publicar. Lanzamos cuando todo está impecable." },
     ],
-    price: "$199.990",
+    price: "$199.990 a $399.990",
     priceNote: "Pago único · Sin mensualidades · Dominio y hosting incluidos el primer año",
     faqs: [
       {

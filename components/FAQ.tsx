@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto cuesta una página web con tienda online?",
-    a: "Una tienda online con Webpay y MercadoPago integrado parte desde $199.990 pago único. Incluye gestión de productos, carrito de compras y panel administrativo completo.",
+    a: "Una tienda online con Webpay y MercadoPago integrado parte desde $199.990 a $399.990 pago único. Incluye gestión de productos, carrito de compras y panel administrativo completo.",
   },
   {
     q: "¿Cómo es el proceso para contratar?",
@@ -49,7 +49,7 @@ export default function FAQ() {
     <section className="relative py-24 overflow-hidden">
       {/* Image background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Image src="/proyectos.webp" alt="" fill loading="lazy" sizes="100vw" className="object-cover object-center" />
+        <Image src="/proyectos.webp" alt="Diseño web profesional para negocios y pymes en Chile" fill loading="lazy" sizes="100vw" className="object-cover object-center" />
       </div>
       {/* Overlay opaco para diferenciarlo de Services */}
       <div className="absolute inset-0 bg-black/82 pointer-events-none" />

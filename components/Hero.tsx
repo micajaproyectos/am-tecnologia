@@ -18,7 +18,7 @@ export default function Hero() {
     >
       <Image
         src="/proyectos.png"
-        alt=""
+        alt="Muestra de proyectos web para empresas y pymes en Chile"
         fill
         priority
         sizes="100vw"

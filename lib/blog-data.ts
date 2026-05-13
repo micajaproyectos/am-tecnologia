@@ -125,7 +125,7 @@ Antes de firmar, considera estos costos adicionales que a veces no aparecen en e
 
 Es la pregunta que más nos hacen. La respuesta es directa: no vendemos diseño web — vendemos la herramienta completa para que tu negocio aparezca en Google.
 
-Nuestro proceso está optimizado para entregar en 48 horas sin reuniones innecesarias. Usamos tecnología moderna que carga rápido y que Google puede leer correctamente. Y configuramos desde el día uno todo lo que hace que un sitio sea efectivo.
+Nuestro proceso está optimizado para entregar en 48 horas sin reuniones innecesarias. Usamos tecnología moderna que carga rápido y que Google puede leer correctamente. Y configuramos desde el día uno todo lo que hace que un sitio sea efectivo. Si quieres entender por qué el posicionamiento es el objetivo real —no solo tener una web bonita—, revisa [cómo aparecer en Google en Chile](/aparecer-en-google).
 
 Lo que incluye cada sitio que entregamos:
 
@@ -384,7 +384,7 @@ Depende de qué canal:
 
 **Google Ads**: variable según la competencia de tu rubro y ciudad. Algunos rubros pagan $200 por clic, otros $2.000. Úsalo para resultados inmediatos mientras construyes tu posicionamiento orgánico.
 
-Para una guía detallada de precios, revisa [cuánto cuesta una página web en Chile](/blog/cuanto-cuesta-una-pagina-web-en-chile).
+Para una guía detallada de precios, revisa [cuánto cuesta una página web en Chile](/blog/cuanto-cuesta-una-pagina-web-en-chile). Si quieres comparar métodos, tiempos y costos de posicionamiento, visita la [guía de posicionamiento en Google para empresas chilenas](/aparecer-en-google).
 
 ## Preguntas frecuentes
 
@@ -433,7 +433,7 @@ Lo básico (configurar Google Business Profile, instalar Analytics) lo puedes ha
   {
     slug: "como-digitalizar-tu-pyme-en-chile",
     title: "Cómo Digitalizar Tu Pyme en Chile: Primeros Pasos en 2026",
-    metaTitle: "Cómo Digitalizar Tu Pyme en Chile | Guía Paso a Paso 2026",
+    metaTitle: "Cómo Digitalizar Tu Pyme en Chile | Guía 2026",
     metaDescription:
       "Guía práctica para digitalizar tu pyme en Chile. Desde crear tu página web hasta aparecer en Google, paso a paso y sin conocimientos técnicos.",
     canonicalUrl:
@@ -628,7 +628,7 @@ Sí. Sercotec tiene la Ruta Digital con cursos gratuitos y el Capital Semilla co
   {
     slug: "google-maps-para-negocios-chile-guia-completa",
     title: "Google Maps para Negocios en Chile: Guía Completa 2026",
-    metaTitle: "Google Maps para Negocios en Chile | Guía Paso a Paso 2026",
+    metaTitle: "Google Maps para Negocios en Chile | Guía 2026",
     metaDescription:
       "Aprende a registrar y optimizar tu negocio en Google Maps gratis. Guía completa para empresas y pymes en Chile con pasos, tips y errores comunes.",
     canonicalUrl:
@@ -797,6 +797,8 @@ La prominencia toma tiempo — pero sí puedes influir en ella activamente con r
 
 Si quieres ver estos conceptos en el contexto más amplio de la digitalización de tu negocio, revisa [cómo digitalizar tu pyme en Chile](/blog/como-digitalizar-tu-pyme-en-chile).
 
+Para una guía completa sobre todos los canales de posicionamiento — SEO orgánico, Google Maps y Google Ads —, revisa [cómo aparecer en Google en Chile](/aparecer-en-google).
+
 ## Preguntas frecuentes
 
 ### ¿Cuánto cuesta aparecer en Google Maps?
@@ -844,7 +846,7 @@ Son distintos pero están conectados. Google Maps es el mapa donde apareces. Goo
   {
     slug: "whatsapp-business-para-empresas-chile",
     title: "WhatsApp Business para Empresas en Chile: Guía Completa 2026",
-    metaTitle: "WhatsApp Business para Empresas Chile | Guía Completa 2026",
+    metaTitle: "WhatsApp Business para Empresas en Chile 2026",
     metaDescription:
       "Aprende a configurar y sacarle el máximo provecho a WhatsApp Business para tu empresa o pyme en Chile. Catálogo, respuestas automáticas, links directos y más.",
     canonicalUrl:
@@ -1031,6 +1033,394 @@ Absolutamente. De hecho, es donde más valor tiene: las respuestas automáticas 
       {
         q: "¿WhatsApp Business sirve si trabajo solo o tengo una microempresa?",
         a: "Absolutamente. Las respuestas automáticas y el catálogo hacen que parezcas más organizado y profesional desde el primer contacto. Un mensaje de bienvenida bien redactado genera confianza incluso cuando no puedes responder de inmediato.",
+      },
+    ],
+  },
+  {
+    slug: "google-ads-vs-seo-chile",
+    title: "Google Ads vs SEO en Chile: Cuál Conviene Realmente",
+    metaTitle: "Google Ads vs SEO en Chile: cuál conviene",
+    metaDescription:
+      "Comparativa honesta entre Google Ads y SEO para empresas en Chile. Costos reales, tiempos, rentabilidad y cuándo combinar ambas estrategias.",
+    canonicalUrl:
+      "https://www.amtecnologia.cl/blog/google-ads-vs-seo-chile",
+    date: "2026-05-13",
+    readingTime: 11,
+    author: "AM Tecnología",
+    category: "Posicionamiento en Google",
+    tags: ["Google Ads", "SEO", "posicionamiento", "marketing digital", "pymes", "Chile"],
+    excerpt:
+      "Google Ads te da visibilidad hoy. SEO te la construye para siempre. Son herramientas distintas con objetivos distintos — y entender la diferencia puede ahorrarte mucho dinero.",
+    content: `## La diferencia real entre SEO y Google Ads
+
+Ambos aparecen en Google. Ambos atraen clientes. Pero funcionan de formas completamente distintas — y confundirlos es uno de los errores más costosos que puede cometer un negocio en Chile.
+
+**Google Ads** es publicidad pagada. Pagas por aparecer arriba del todo en Google, marcado con la etiqueta "Patrocinado". Cada vez que alguien hace clic, pagas. Cuando dejas de pagar, desapareces al instante. Es visibilidad comprada.
+
+**SEO** (Search Engine Optimization) es posicionamiento orgánico. Es el trabajo de construir tu presencia en Google de forma que el buscador te muestre de manera natural — sin pagar por clic — cuando alguien busca lo que tú ofreces. Cuando se hace bien, esa posición se mantiene y crece con el tiempo.
+
+La zona de resultados también es distinta: Google Ads aparece en los primeros 2-3 resultados, marcados claramente como publicidad. El SEO orgánico aparece justo debajo — y varios estudios muestran que más del 70% de los clics van a los resultados orgánicos, no a los anuncios.
+
+Esto no significa que uno sea mejor que el otro. Significa que sirven para cosas distintas, y la decisión correcta depende de tu negocio, tu presupuesto y en qué etapa estás.
+
+## Cuál genera clientes más rápido
+
+**Google Ads gana en velocidad.** Puedes lanzar una campaña hoy y recibir visitas en 2 horas. Si tienes un presupuesto activo y una landing page que convierte, los resultados son inmediatos. Para un negocio que abre sus puertas o lanza un producto nuevo, esa inmediatez tiene valor real.
+
+**El SEO tarda más.** Los plazos reales en Chile — no los que prometen algunos proveedores — son estos:
+
+Para búsquedas locales con poca competencia (por ejemplo, "veterinaria en Osorno" o "contador en Coyhaique"), los primeros resultados orgánicos aparecen entre **6 y 12 semanas** desde que el sitio está bien construido.
+
+Para búsquedas con competencia media (como "psicólogo en Santiago" o "taller mecánico en Concepción"), el plazo realista es **3 a 5 meses**.
+
+Para búsquedas muy competidas en ciudades grandes ("abogado Santiago", "diseño web Chile"), puede tomar **6 meses a un año** llegar a las primeras posiciones.
+
+La clave está en lo que pasa después: el tráfico de Google Ads dura exactamente lo que dura tu presupuesto. El tráfico de SEO, una vez ganado, es tuyo. No tienes que seguir pagando por cada visita.
+
+## Cuál es más rentable a largo plazo
+
+Esta es la pregunta que más importa, y la respuesta depende de los números reales.
+
+Con Google Ads, el costo por clic en Chile varía mucho según el rubro. Un clic de un abogado buscando clientes puede costar $2.000 o más. Un clic en una tienda de ropa puede costar $150. El problema es que esos costos no bajan con el tiempo — en muchos rubros, suben año a año a medida que más competidores entran al sistema.
+
+Si tu negocio convierte 1 de cada 20 visitas en cliente, y cada clic cuesta $500, estás pagando $10.000 por cliente nuevo desde Ads. Si tu servicio vale $50.000, eso puede ser rentable. Si vale $15.000, no lo es.
+
+Con SEO, el costo es la inversión inicial en construir el sitio correctamente y generar contenido relevante. Una vez que posicionas, las visitas son gratuitas. El mismo cálculo anterior — 1 de cada 20 visitas convierte — aplica, pero sin el costo por clic. A 12 meses, el SEO casi siempre resulta más rentable si el negocio tiene demanda de búsqueda real.
+
+**Un ejemplo concreto**: un gasfiter en Temuco con una web optimizada que posiciona para "gasfiter Temuco" puede recibir 80-150 visitas al mes sin pagar publicidad. A $500 el clic en Ads, eso equivaldría a $40.000-$75.000 mensuales en pauta que no está pagando.
+
+La contra: ese posicionamiento tardó 4 meses en construirse y requirió una inversión inicial. Ads habría dado resultados desde la primera semana.
+
+## Cuánto cuesta cada estrategia en Chile
+
+### Google Ads: lo que realmente se necesita
+
+El error más común es arrancar Google Ads con $50.000 o $100.000 al mes. Con eso, en rubros competitivos, alcanza para 50-200 clics — lo suficiente para probar, no para sacar conclusiones.
+
+Los presupuestos que generan resultados medibles en Chile:
+
+**Rubros de servicios locales (gasfitería, electricidad, belleza)**: desde $150.000 mensuales para ver volumen real.
+
+**Salud y bienestar (clínicas, psicólogos, nutricionistas)**: desde $200.000 mensuales. Los CPC en salud en Santiago están entre $400 y $1.200 por clic.
+
+**Legal, financiero y seguros**: los rubros más caros. CPC entre $800 y $2.500 por clic. Presupuesto mínimo real: $400.000 mensuales.
+
+**Retail y productos físicos**: más accesible, CPC entre $150 y $500. Desde $120.000 mensuales.
+
+A eso hay que agregar el costo de gestión si contratas a alguien (agencias cobran entre $80.000 y $250.000 mensuales), más el costo de crear landing pages que conviertan.
+
+### SEO: la inversión inicial
+
+Una web correctamente construida para posicionamiento orgánico en Chile parte desde $99.990 pago único. Eso cubre estructura técnica, SEO on-page, configuración de Google Analytics, Search Console y Google Maps. Sin mensualidades obligatorias.
+
+Para seguimiento mensual — ajuste de keywords, publicación de contenido, análisis de competencia — los planes van desde $80.000 a $200.000 mensuales, y son opcionales, no obligatorios para mantener el posicionamiento básico.
+
+La diferencia central: con SEO, la inversión no se repite por visita. Con Ads, sí.
+
+## Qué conviene para pymes chilenas
+
+No hay una respuesta única, pero sí hay patrones claros según la situación:
+
+**Si partes desde cero y tienes presupuesto limitado**: el SEO es la prioridad. Construye la base correctamente — web optimizada, perfil de Google Maps verificado, contenido relevante — y ese trabajo te sigue generando visitas sin costo adicional. Los primeros meses pueden complementarse con una pauta pequeña de Ads mientras el SEO madura.
+
+**Si tienes un evento, promoción o lanzamiento con fecha fija**: Google Ads. El SEO no puede acelerar sus tiempos por una fecha en el calendario. Para ventas navideñas, un evento en 3 semanas o el lanzamiento de un producto, Ads es la herramienta correcta.
+
+**Si tu rubro tiene búsquedas locales claras**: el SEO orgánico + Google Maps suele ser más rentable. "Peluquería en Valdivia", "dentista en Rancagua" — búsquedas así tienen intención de compra alta y competencia manejable en ciudades medianas.
+
+**Si estás en un rubro ultra-competido en Santiago**: puede que necesites Ads mientras construyes autoridad orgánica. Para palabras como "abogado laboral Santiago" o "inmobiliaria Las Condes", el SEO tarda más y los primeros resultados están dominados por actores grandes.
+
+## Cuándo combinar SEO y Google Ads
+
+La combinación de ambas estrategias es lo que hacen los negocios más inteligentes — y tiene lógica real.
+
+**Ads mientras el SEO madura**: lanzas la web optimizada y simultáneamente corres una campaña de Ads con presupuesto moderado. A medida que el SEO posiciona (mes 3, mes 4), vas reduciendo gradualmente la pauta. Al mes 6, el tráfico orgánico ya puede sostener el negocio y la dependencia de Ads disminuye.
+
+**SEO para informar la estrategia de Ads**: los datos de Google Search Console te muestran qué palabras ya te están generando clics orgánicos. Esas mismas palabras, con intención de compra alta, son candidatas a Ads para capturar más volumen en las posiciones pagadas mientras mantienes las orgánicas.
+
+**Ads para queries competitivas, SEO para el long tail**: en ciudades grandes, puedes usar Ads para las keywords de mayor competencia ("diseño web Santiago") y SEO para las de nicho específico ("diseño web para clínicas Santiago"), donde el costo de rankear es menor y la conversión es más alta.
+
+## Errores comunes al elegir entre SEO y Google Ads
+
+**Esperar resultados de SEO en 3 semanas.** Es el malentendido más frecuente. Si un proveedor te promete posicionar en menos de 30 días, está prometiendo algo que Google no puede entregar tan rápido para keywords con competencia real.
+
+**Correr Ads sin una landing page que convierta.** El clic más barato del mundo no sirve de nada si la página a la que llega el visitante no está diseñada para convertir. Ads sin landing correcta es presupuesto que se evapora.
+
+**Cancelar Ads justo cuando el SEO estaba a punto de rendir.** Muchos negocios cortan la pauta al mes 2-3 cuando aún no ven resultados orgánicos. Ese es exactamente el momento en que el SEO está a punto de activarse — y se quedan sin tráfico de ningún canal.
+
+**Usar Google Ads para branding.** Pagar por clics de personas que buscan tu nombre de empresa es, en la mayoría de los casos, gastar dinero en algo que el SEO hace gratis. Los Ads se justifican en keywords transaccionales con competencia, no en tu propio nombre.
+
+**No medir el costo por adquisición real.** Muchos negocios saben cuánto gastan en Ads pero no saben cuántos clientes reales generó esa inversión. Sin ese dato, es imposible tomar decisiones correctas sobre dónde invertir.
+
+## Casos reales en empresas chilenas
+
+**Centro dental en Santiago**: abrió con una campaña de Google Ads de $200.000 mensuales mientras construía su web optimizada. A los 5 meses, el SEO ya posicionaba para "dentista Providencia" y "clínica dental Ñuñoa". Redujeron la pauta a $80.000 enfocada en servicios específicos (implantes, ortodoncia) y el costo por paciente nuevo bajó 40%.
+
+**Tienda de outdoor en Temuco**: modelo completamente orgánico. Invirtieron en una web con fichas de producto optimizadas para búsquedas específicas ("carpa para lluvia Patagonia", "botas trekking sur de Chile"). Sin Ads. Hoy reciben más de 600 visitas mensuales orgánicas y el 70% viene de Google.
+
+**Empresa de aseo industrial en Concepción**: Ads para contratos grandes (keyword "empresa aseo industrial Concepción", CPC ~$600), SEO para el long tail (guías de contenido sobre protocolos de limpieza, que posicionan y generan autoridad). Los Ads cierran contratos grandes de inmediato; el SEO genera contactos de menor ticket pero de forma constante.
+
+## Si partes desde cero: qué hacer primero
+
+Para la mayoría de las pymes en Chile, la base correcta es construir primero la presencia orgánica — web optimizada, perfil de Google Maps y contenido relevante. Eso crea un activo que trabaja por ti de forma continua.
+
+Una vez que esa base existe, los Ads se vuelven más eficientes: la landing page ya convierte, el sitio ya tiene velocidad, y los datos de Search Console ya indican qué keywords tienen tracción real.
+
+En [cómo aparecer en Google si tienes una empresa en Chile](/aparecer-en-google) explicamos los 5 pilares que necesita cualquier negocio para construir esa base — independientemente de si después usas Ads o no.
+
+## Preguntas frecuentes
+
+### ¿Cuánto cuesta Google Ads en Chile por mes?
+
+Depende del rubro y la ciudad. Para obtener resultados medibles, los presupuestos realistas en Chile parten desde $120.000 mensuales para rubros locales con baja competencia, y llegan a $400.000 o más para rubros competidos en Santiago como salud, legal o financiero. A eso se suma el costo de gestión si contratas una agencia.
+
+### ¿Cuánto tarda el SEO en dar resultados en Chile?
+
+Para búsquedas locales con poca competencia, las primeras posiciones orgánicas aparecen entre 6 y 12 semanas. Para rubros con competencia media en ciudades grandes, el plazo realista es 3 a 5 meses. Para keywords muy competidas en Santiago, puede tomar hasta un año llegar a las primeras posiciones.
+
+### ¿Es mejor SEO o Google Ads para una pyme?
+
+Depende de la situación. Si tienes presupuesto limitado y tiempo, el SEO genera mejor retorno a largo plazo. Si necesitas resultados inmediatos o tienes una promoción con fecha fija, Google Ads es la herramienta correcta. La combinación de ambas, ejecutada en etapas, suele ser la estrategia más inteligente.
+
+### ¿Puedo hacer SEO y Google Ads al mismo tiempo?
+
+Sí, y en muchos casos es lo más recomendable. Ads genera tráfico mientras el SEO madura. Una vez que el posicionamiento orgánico está establecido, puedes reducir la pauta de Ads o enfocarla en keywords de mayor ticket donde la competencia orgánica es muy alta.
+
+### ¿Google Ads mejora mi posicionamiento orgánico?
+
+No. Son canales completamente separados. Pagar publicidad en Google no influye en tu posición en los resultados orgánicos — ni positiva ni negativamente. Son sistemas independientes dentro de Google.
+
+### ¿Qué pasa con mi tráfico si dejo de pagar Google Ads?
+
+Desapareces de los resultados pagados al instante. Si tu tráfico depende 100% de Ads y cancelas la pauta, el volumen de visitas cae a cero en ese canal. Por eso el SEO actúa como red de seguridad: si algún día debes cortar la inversión en Ads, el tráfico orgánico sigue llegando.`,
+    faqSchema: [
+      {
+        q: "¿Cuánto cuesta Google Ads en Chile por mes?",
+        a: "Los presupuestos realistas para obtener resultados medibles en Chile parten desde $120.000 mensuales para rubros locales con baja competencia, y llegan a $400.000 o más para rubros competidos en Santiago como salud, legal o financiero. A eso se suma el costo de gestión si contratas una agencia.",
+      },
+      {
+        q: "¿Cuánto tarda el SEO en dar resultados en Chile?",
+        a: "Para búsquedas locales con poca competencia, las primeras posiciones aparecen entre 6 y 12 semanas. Para rubros con competencia media en ciudades grandes, el plazo realista es 3 a 5 meses. Para keywords muy competidas en Santiago, puede tomar hasta un año.",
+      },
+      {
+        q: "¿Es mejor SEO o Google Ads para una pyme en Chile?",
+        a: "Depende de la situación. Si tienes presupuesto limitado y tiempo, el SEO genera mejor retorno a largo plazo. Si necesitas resultados inmediatos o tienes una promoción con fecha fija, Google Ads es la herramienta correcta. La combinación de ambas, ejecutada en etapas, suele ser la estrategia más inteligente.",
+      },
+      {
+        q: "¿Puedo hacer SEO y Google Ads al mismo tiempo?",
+        a: "Sí, y en muchos casos es lo más recomendable. Ads genera tráfico mientras el SEO madura. Una vez que el posicionamiento orgánico está establecido, puedes reducir la pauta o enfocarla en keywords de mayor ticket donde la competencia orgánica es muy alta.",
+      },
+      {
+        q: "¿Google Ads mejora mi posicionamiento orgánico?",
+        a: "No. Son canales completamente separados. Pagar publicidad en Google no influye en tu posición en los resultados orgánicos ni positiva ni negativamente.",
+      },
+      {
+        q: "¿Qué pasa con mi tráfico si dejo de pagar Google Ads?",
+        a: "Desapareces de los resultados pagados al instante. Si tu tráfico depende 100% de Ads y cancelas la pauta, ese canal cae a cero. El SEO actúa como red de seguridad: si debes cortar la inversión en Ads, el tráfico orgánico sigue llegando.",
+      },
+    ],
+  },
+  {
+    slug: "por-que-mi-negocio-no-aparece-en-google",
+    title: "Por Qué Mi Negocio No Aparece en Google: Diagnóstico Real",
+    metaTitle: "Por qué mi negocio no aparece en Google",
+    metaDescription:
+      "Si tu negocio no aparece en Google, estas son las razones reales. Diagnóstico honesto para empresas y pymes en Chile, con pasos concretos para solucionarlo.",
+    canonicalUrl:
+      "https://www.amtecnologia.cl/blog/por-que-mi-negocio-no-aparece-en-google",
+    date: "2026-05-13",
+    readingTime: 10,
+    author: "AM Tecnología",
+    category: "Posicionamiento en Google",
+    tags: ["posicionamiento", "Google", "SEO", "diagnóstico", "pymes", "Chile"],
+    excerpt:
+      "Tienes un negocio real, atiendes bien a tus clientes, pero en Google no existes. Esto no es mala suerte — hay razones concretas y todas tienen solución. Diagnóstico honesto para empresas chilenas.",
+    content: `## Las razones más comunes por las que Google no muestra tu negocio
+
+Antes de entrar al diagnóstico técnico, hay algo importante que entender: Google no muestra negocios al azar. Sus algoritmos toman decisiones basadas en señales concretas. Si tu negocio no aparece, es porque esas señales no existen, son débiles o están mal configuradas.
+
+Estas son las razones más frecuentes que vemos en empresas chilenas:
+
+**No tienes sitio web, o el que tienes no está indexado.** Google indexa páginas web. Si no tienes web, para Google simplemente no existes. Y si tienes una pero no está correctamente configurada, Google tampoco la muestra. Un sitio en Wix gratuito, un sitio construido sobre Flash o una web que nunca fue enviada a Google Search Console puede estar invisible aunque lleve meses publicada.
+
+**Tu negocio no tiene presencia en Google Maps.** Una gran parte de las búsquedas locales en Chile termina mostrando el "Local Pack" — ese mapa con tres negocios destacados que aparece antes de los resultados orgánicos. Si no tienes un perfil verificado en Google Business Profile, no puedes aparecer ahí. Y ese mapa tiene más clics que los resultados de texto para búsquedas como "dentista en Temuco" o "gasfiter en Santiago".
+
+**Tu web no le dice a Google de qué trata tu negocio.** Muchos sitios están bien diseñados pero son técnicamente opacos para Google. Imágenes sin texto alternativo, títulos de página genéricos ("Inicio" o "Bienvenido"), sin etiquetas H1 claras, sin descripciones meta. Google necesita señales textuales para entender a qué búsquedas debe mostrarte como respuesta.
+
+**Nadie apunta hacia tu web.** Los enlaces desde otros sitios son una de las señales de confianza más importantes para Google. Si ningún directorio, proveedor, cliente o medio enlaza a tu web, Google la considera menos relevante que las de tus competidores que sí tienen esa red de referencias.
+
+**Tu competencia hizo el trabajo que tú no hiciste.** No aparecer en Google no siempre significa que tu web está mal — puede significar que la de tu competidor está mejor. Google muestra lo mejor disponible para cada búsqueda. Si otro negocio de tu rubro tiene mejor estructura, más reseñas y más contenido, aparece antes que tú.
+
+## Tu negocio existe, pero Google no lo entiende
+
+Este es el diagnóstico más común y el que más confunde a los dueños de empresa: "Yo sí tengo página web, no entiendo por qué no aparezco."
+
+Tener una página web y tener una página web que Google puede leer y posicionar son cosas distintas.
+
+### El problema de la estructura técnica
+
+Google funciona como un lector muy sofisticado que visita tu sitio, lee el código y decide qué significa. Si la estructura es confusa, lo ignora o lo muestra muy abajo.
+
+Los problemas técnicos más frecuentes que vemos:
+
+**Sin etiqueta H1 o con múltiples H1.** El H1 es el título principal de tu página. Google lo usa para entender de qué trata. Si tienes tres H1 distintos o no tienes ninguno, la señal es débil y contradictoria.
+
+**URLs confusas.** Una URL como "amitaller.cl/?p=47" no le dice nada a Google. Una URL como "amitaller.cl/taller-mecanico-concepcion" le dice exactamente de qué trata la página y para qué ciudad es relevante.
+
+**Velocidad lenta.** Google mide cuánto tarda en cargar tu sitio. Un sitio lento pierde posiciones directamente. En Chile, muchos sitios construidos hace más de 3 años o alojados en servidores baratos tienen tiempos de carga que los perjudican.
+
+**No está optimizado para celular.** Más del 65% del tráfico web en Chile viene desde teléfonos. Google evalúa tu sitio primero en versión móvil. Si en celular se ve mal, carga lento o los textos quedan cortados, afecta directamente tu posicionamiento.
+
+### El problema del contenido
+
+Una página web con 3 párrafos genéricos no posiciona. Google prefiere contenido que responde preguntas reales de los usuarios.
+
+Si tu sitio dice "Somos una empresa de servicios dedicada a la satisfacción del cliente" y nada más, Google no sabe para qué búsqueda mostrarte. Pero si tu sitio dice "Taller mecánico en Concepción — servicio de frenos, cambio de aceite y revisión técnica", Google puede asociarte con docenas de búsquedas específicas que tus clientes realmente hacen.
+
+### El problema de la autoridad
+
+La autoridad de un dominio se construye con el tiempo y con los enlaces que recibe. Un sitio lanzado hace 2 meses compite contra negocios que llevan 5 años en línea con cientos de referencias. Eso no se resuelve de un día para otro — pero sí tiene atajos que aceleran el proceso.
+
+## Errores que impiden posicionar una empresa en Google
+
+Más allá de los problemas técnicos, hay errores de estrategia que cometen muchos negocios chilenos:
+
+**Construir el sitio sin pensar en las búsquedas.** El primer error es diseñar una web pensando solo en cómo se ve, no en qué frases buscan los clientes. Un sitio puede ser visualmente impecable y completamente invisible en Google si no incluye las palabras que tus clientes realmente escriben.
+
+**Usar el nombre de la empresa como única keyword.** Si tu empresa se llama "Constructora Hermanos Rojas Ltda.", nadie busca eso en Google. Tus clientes buscan "constructora Temuco" o "empresa de construcción sur de Chile". Tu web necesita incluir esas frases — no solo tu nombre.
+
+**No tener presencia en Google Maps o tenerla desactualizada.** Hemos visto empresas con perfiles de Google Business con el teléfono de hace 3 años, sin fotos, sin descripción y sin responder ninguna reseña. Google interpreta eso como señal de que el negocio podría estar cerrado o no estar activo.
+
+**Cambiar de dominio sin redireccionamientos.** Cuando una empresa cambia de dominio — de un .com a un .cl, por ejemplo — y no configura correctamente las redirecciones, pierde toda la autoridad acumulada. El nuevo dominio empieza desde cero.
+
+**Publicar el sitio y no volver a tocarlo.** Google premia los sitios que se actualizan. Un sitio idéntico durante 2 años sin contenido nuevo pierde posiciones progresivamente frente a competidores que sí publican.
+
+**Depender solo de redes sociales.** Instagram y Facebook no reemplazan una web. Google no indexa perfiles de redes sociales con la misma profundidad que un sitio propio. Los negocios que "solo tienen Instagram" no aparecen en búsquedas de Google.
+
+## Cómo saber si tu negocio tiene problemas de posicionamiento
+
+Antes de asumir que el problema es el diseño o el proveedor, puedes hacer un diagnóstico básico con herramientas gratuitas.
+
+### Google Search Console
+
+Es la herramienta oficial de Google para monitorear tu sitio. Te dice cuántas veces apareciste en resultados de búsqueda, para qué palabras, cuántos clics recibiste y si hay errores que están afectando tu indexación.
+
+Si tu sitio no está registrado en Search Console, ese es el primer problema — Google no tiene forma de comunicarte que algo está mal.
+
+Pasos para revisar: entra a search.google.com/search-console, agrega tu dominio, verifica la propiedad y revisa el informe de "Cobertura" para ver si hay páginas con errores o excluidas de los resultados.
+
+### La prueba del nombre del negocio
+
+Busca en Google exactamente el nombre de tu empresa. Si apareces en los primeros resultados para tu propio nombre, Google al menos sabe que existes. Si no apareces ni para tu nombre, el problema de indexación es severo.
+
+### La prueba de búsqueda local
+
+Busca en Google una frase que tus clientes usarían, como "gasfiter en [tu ciudad]" o "dentista en [tu barrio]". Compara tu posición con la de tus competidores. Si ellos aparecen y tú no, eso confirma que el problema es de posicionamiento, no de visibilidad general.
+
+### PageSpeed Insights
+
+Entra a pagespeed.web.dev e ingresa tu URL. Te da una nota de 0 a 100 para velocidad en móvil y en escritorio. Si tu puntaje en móvil es menor a 50, ese es un factor activo que te está perjudicando.
+
+### Revisión de indexación
+
+En Google, busca "site:tudominio.cl" (sin las comillas, reemplazando con tu dominio real). El resultado te dice cuántas páginas de tu sitio tiene Google indexadas. Si tienes 10 páginas en tu web pero Google solo muestra 1 o 2, tienes un problema de indexación.
+
+## Qué necesita una empresa para aparecer en Google
+
+Una vez identificado el problema, la solución sigue una lógica clara. No es magia — es construir las señales correctas que Google necesita.
+
+**Una web con estructura técnica correcta.** Esto significa: velocidad aceptable (puntaje PageSpeed mayor a 70 en móvil), diseño responsive, certificado SSL, etiquetas meta, H1 descriptivo en cada página y URLs que describan el contenido.
+
+**Contenido que responde búsquedas reales.** Cada página de tu web debería responder una pregunta específica que tus clientes hacen en Google. Una página sobre "gasfitería de emergencia en Valparaíso" posiciona para esa búsqueda exacta. Una página genérica "Servicios" no posiciona para nada.
+
+**Un perfil de Google Business Profile verificado y activo.** Nombre correcto, categoría específica, descripción con keywords relevantes, horarios reales, fotos actualizadas y mínimo 10 reseñas con respuestas. Este perfil es lo que te pone en el mapa — literalmente.
+
+**Consistencia en la información NAP.** NAP es "Name, Address, Phone" — nombre, dirección y teléfono. Deben ser idénticos en tu web, en Google Maps, en directorios y en cualquier mención online. Una diferencia pequeña confunde a Google y reduce tu confiabilidad como resultado.
+
+**Tiempo y continuidad.** No hay atajo para este factor. Google necesita ver que tu web lleva tiempo en línea, que se actualiza y que recibe tráfico. Los resultados reales del SEO aparecen entre 3 y 6 meses después de una implementación correcta — para búsquedas competitivas, puede tomar hasta un año.
+
+Para ver en detalle cómo funciona este proceso completo, lee [cómo aparecer en Google si tienes una empresa en Chile](/aparecer-en-google).
+
+## Casos comunes en empresas chilenas
+
+Estos son patrones que vemos repetirse en diferentes rubros y ciudades:
+
+**El taller mecánico en Temuco que no aparece para "taller cerca de mí".** El negocio tiene más de 15 años, buena reputación y clientes fieles. Pero su web la construyó un sobrino en Wix hace 4 años y no ha cambiado nada desde entonces. La velocidad es de 28/100 en móvil, no tiene etiquetas H1, y el perfil de Google Maps está sin verificar. Sus competidores más nuevos, con peor servicio pero mejor presencia digital, aparecen antes.
+
+**La psicóloga en Santiago que pierde clientes ante clínicas grandes.** Trabaja sola, tiene excelente formación y sus pacientes la recomiendan. Pero su web tiene una sola página con fotos y una descripción muy breve. No hay texto sobre sus especialidades, su ubicación específica ni las problemáticas que trata. Google no puede asociarla con búsquedas como "psicóloga ansiedad Providencia" porque esas palabras no existen en su web.
+
+**La empresa de turismo en la Patagonia que recibe tráfico pero no convierte.** Aparece en Google para algunas búsquedas genéricas pero no para las que tienen intención de compra. La razón: su contenido describe el paisaje de forma poética pero no incluye información que los turistas buscan antes de decidir — precios referenciales, fechas, dificultad de los recorridos, qué incluye el servicio. Google lo muestra, pero el visitante no encuentra lo que necesita y se va.
+
+**La ferretería en Osorno con 3 sucursales que solo aparece para su nombre.** Tiene web, tiene Maps, tiene Facebook. Pero cada sucursal usa el mismo número de teléfono en todos lados y la dirección está escrita diferente en cada plataforma. Google no logra asociar las tres ubicaciones como parte del mismo negocio con confianza suficiente para mostrarlas en búsquedas locales.
+
+Estos casos no son excepciones — son la norma en las pymes chilenas. Y todos tienen solución con una implementación correcta.
+
+## Cómo ayudamos a empresas chilenas a aparecer en Google
+
+Cuando trabajamos con un nuevo cliente, el proceso siempre empieza por un diagnóstico: qué tiene, qué le falta y dónde está frente a su competencia directa.
+
+Lo que construimos en cada proyecto:
+
+**Sitio web con estructura técnica para posicionamiento.** No es solo diseño — es la arquitectura correcta para que Google pueda leer, entender e indexar cada página. Velocidad optimizada, etiquetas correctas, URLs descriptivas y Schema.org implementado.
+
+**Perfil de Google Business Profile verificado y completo.** Configuramos o corregimos el perfil con la categoría exacta, descripción optimizada para las búsquedas de tu rubro y ciudad, y las fotos correctas. Conectado y consistente con tu web.
+
+**Contenido con intención de búsqueda.** Los textos de tu web no están escritos para lucir bien — están escritos para responder las preguntas que tus clientes buscan en Google. Eso hace toda la diferencia.
+
+**Configuración de Google Analytics y Search Console.** Desde el primer día, puedes ver cuántas personas visitan tu sitio, desde qué búsquedas llegan y qué páginas ven. Sin esto, estás manejando a ciegas.
+
+Trabajamos con negocios de todo Chile — desde Santiago hasta Punta Arenas. El proceso es 100% remoto y los resultados son medibles en Search Console desde las primeras semanas de publicación.
+
+Si quieres entender exactamente [qué necesita tu negocio para aparecer en Google](/aparecer-en-google), en esa página explicamos cada pilar con detalle y puedes cotizar directamente.
+
+## Preguntas frecuentes
+
+### ¿Por qué mi negocio no aparece en Google si tengo página web?
+
+Tener una página web no garantiza aparecer en Google. El sitio necesita estar indexado correctamente, tener velocidad aceptable en móvil, incluir las palabras clave que tus clientes buscan y tener una estructura técnica que Google pueda leer. Muchos sitios existen pero son técnicamente invisibles para los buscadores.
+
+### ¿Cuánto tarda en aparecer mi negocio en Google?
+
+Depende del punto de partida. Si el sitio está bien construido y el perfil de Google Maps está verificado, las primeras apariciones orgánicas ocurren entre 4 y 12 semanas. Para búsquedas competitivas en ciudades grandes como Santiago, puede tomar 3 a 6 meses. Lo importante es que los resultados crecen con el tiempo — al contrario de la publicidad pagada, que desaparece cuando dejas de pagar.
+
+### ¿Puedo aparecer en Google sin página web?
+
+Puedes aparecer en Google Maps sin tener sitio web, solo con un perfil de Google Business Profile. Pero tus posibilidades de aparecer en los resultados orgánicos son casi nulas. Además, los perfiles con página web enlazada tienen mayor prominencia que los que no tienen.
+
+### ¿Por qué aparece mi competencia y yo no?
+
+Porque tu competencia tiene al menos una de estas ventajas: sitio web con mejor estructura técnica, perfil de Google Maps más completo y activo, más reseñas, más tiempo en línea o contenido más específico para las búsquedas de tu rubro. La buena noticia es que todas estas ventajas son alcanzables.
+
+### ¿Google Ads me ayuda a aparecer en resultados orgánicos?
+
+No. Google Ads y el posicionamiento orgánico son canales completamente separados. Pagar publicidad no mejora ni perjudica tu posición orgánica. Son estrategias complementarias, no sustitutos.
+
+### ¿Cuánto cuesta solucionar los problemas de posicionamiento?
+
+Depende del punto de partida. Si el problema principal es que no tienes web, el costo es el de construir una desde cero con la estructura correcta. Si ya tienes web pero está mal configurada, el costo es una auditoría técnica y las correcciones necesarias. En AM Tecnología, el primer diagnóstico es gratuito — escríbenos por WhatsApp y en menos de 24 horas te decimos qué está pasando con tu web.`,
+    faqSchema: [
+      {
+        q: "¿Por qué mi negocio no aparece en Google si tengo página web?",
+        a: "Tener una página web no garantiza aparecer en Google. El sitio necesita estar indexado correctamente, tener velocidad aceptable en móvil, incluir las palabras clave que tus clientes buscan y tener una estructura técnica que Google pueda leer. Muchos sitios existen pero son técnicamente invisibles para los buscadores.",
+      },
+      {
+        q: "¿Cuánto tarda en aparecer mi negocio en Google?",
+        a: "Si el sitio está bien construido y el perfil de Google Maps está verificado, las primeras apariciones orgánicas ocurren entre 4 y 12 semanas. Para búsquedas competitivas en ciudades grandes como Santiago, puede tomar 3 a 6 meses. Los resultados crecen con el tiempo, al contrario de la publicidad pagada que desaparece cuando dejas de pagar.",
+      },
+      {
+        q: "¿Puedo aparecer en Google sin página web?",
+        a: "Puedes aparecer en Google Maps sin sitio web, solo con un perfil de Google Business Profile. Pero tus posibilidades de aparecer en los resultados orgánicos son casi nulas. Además, los perfiles con página web enlazada tienen mayor prominencia en Maps.",
+      },
+      {
+        q: "¿Por qué aparece mi competencia en Google y yo no?",
+        a: "Porque tu competencia tiene al menos una de estas ventajas: sitio web con mejor estructura técnica, perfil de Google Maps más completo, más reseñas, más tiempo en línea o contenido más específico para las búsquedas de tu rubro. Todas estas ventajas son alcanzables con la estrategia correcta.",
+      },
+      {
+        q: "¿Google Ads me ayuda a aparecer en resultados orgánicos?",
+        a: "No. Google Ads y el posicionamiento orgánico son canales completamente separados. Pagar publicidad no mejora ni perjudica tu posición orgánica. Son estrategias complementarias, no sustitutos.",
+      },
+      {
+        q: "¿Cuánto cuesta solucionar los problemas de posicionamiento en Google?",
+        a: "Depende del punto de partida. Si no tienes web, el costo es construir una con la estructura correcta. Si ya tienes web pero está mal configurada, el costo es una auditoría y las correcciones necesarias. En AM Tecnología el diagnóstico inicial es gratuito.",
       },
     ],
   },

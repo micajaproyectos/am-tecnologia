@@ -56,7 +56,7 @@ const faqJsonLd = {
       "name": "¿Cuánto cuesta una página web con tienda online?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Una tienda online con Webpay y MercadoPago integrado parte desde $199.990 pago único. Incluye gestión de productos, carrito de compras y panel administrativo completo.",
+        "text": "Una tienda online con Webpay y MercadoPago integrado parte desde $199.990 a $399.990 pago único. Incluye gestión de productos, carrito de compras y panel administrativo completo.",
       },
     },
     {
