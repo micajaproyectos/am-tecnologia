@@ -15,7 +15,7 @@ export default function WhatsAppButton() {
         href={WA}
         data-cta-source="sticky_whatsapp"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         aria-label="Cotiza tu posicionamiento en Google por WhatsApp"
         className="group relative flex items-center justify-center w-[60px] h-[60px] md:w-[72px] md:h-[72px] bg-[#25d366] rounded-full shadow-[0_6px_28px_rgba(37,211,102,0.5)] hover:scale-110 hover:shadow-[0_10px_36px_rgba(37,211,102,0.65)] transition-all duration-200"
       >

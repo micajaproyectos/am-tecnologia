@@ -102,8 +102,7 @@ export default function Footer() {
                   contacto@amconsultora.cl
                 </a>
               </li>
-              <li className="text-am-muted text-sm">Futaleufú, Patagonia Chilena.</li>
-              <li className="text-am-muted text-sm">Santiago, Chile.</li>
+              <li className="text-am-muted text-sm">Lo Barnechea, Santiago.</li>
             </ul>
           </div>
         </div>
@@ -142,7 +141,7 @@ function SocialLink({
       data-cta-source={dataCtaSource}
       aria-label={aria}
       target={target}
-      rel={target === "_blank" ? "noopener noreferrer" : undefined}
+      rel={target === "_blank" ? "nofollow noopener noreferrer" : undefined}
       className="w-9 h-9 rounded-xl border border-white/8 bg-white/4 flex items-center justify-center text-am-muted hover:border-am-primary/40 hover:text-am-primary hover:bg-am-primary/8 transition-all duration-200"
     >
       {children}

@@ -578,7 +578,7 @@ export default function AparecerEnGooglePage() {
               href={WA}
               data-cta-source="aparecer_ayudamos"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-am-primary hover:bg-am-primary/90 text-white font-semibold text-[15px] transition-all duration-200"
             >
               Cotizar ahora →
@@ -631,7 +631,7 @@ export default function AparecerEnGooglePage() {
           <p className="text-am-accent text-[13px] font-bold tracking-widest uppercase mb-6">
             También puede interesarte
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <Link
               href="/servicios/landing-page"
               className="flex flex-col gap-1 bg-am-surf2 border border-white/6 rounded-xl px-5 py-4 hover:border-am-primary/30 transition-colors group"
@@ -663,6 +663,28 @@ export default function AparecerEnGooglePage() {
               </span>
               <span className="text-am-muted text-[12px]">
                 Guía completa para empresas y pymes en Chile
+              </span>
+            </Link>
+            <Link
+              href="/blog/google-ads-vs-seo-chile"
+              className="flex flex-col gap-1 bg-am-surf2 border border-white/6 rounded-xl px-5 py-4 hover:border-am-primary/30 transition-colors group"
+            >
+              <span className="font-semibold text-white text-[14px] group-hover:text-am-primary transition-colors">
+                Google Ads vs SEO: cuál conviene →
+              </span>
+              <span className="text-am-muted text-[12px]">
+                Comparativa honesta para empresas en Chile
+              </span>
+            </Link>
+            <Link
+              href="/blog/por-que-mi-negocio-no-aparece-en-google"
+              className="flex flex-col gap-1 bg-am-surf2 border border-white/6 rounded-xl px-5 py-4 hover:border-am-primary/30 transition-colors group"
+            >
+              <span className="font-semibold text-white text-[14px] group-hover:text-am-primary transition-colors">
+                ¿Por qué no aparezco en Google? →
+              </span>
+              <span className="text-am-muted text-[12px]">
+                Diagnóstico real para negocios en Chile
               </span>
             </Link>
           </div>

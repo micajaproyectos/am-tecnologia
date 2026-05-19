@@ -59,7 +59,7 @@ export default function Coverage() {
                   <a
                     href={href}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     data-cta-source="coverage_wa"
                     className="flex flex-col gap-1 rounded-xl border border-white/6 bg-white/2 px-4 py-4 hover:border-am-primary/30 hover:bg-am-primary/5 transition-all duration-200 group h-full"
                   >

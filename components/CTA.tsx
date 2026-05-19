@@ -211,7 +211,7 @@ export default function CTA() {
                 href={WA}
                 data-cta-source="cta_final"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="text-white/60 hover:text-white font-semibold transition-colors"
               >
                 → WhatsApp

@@ -306,7 +306,7 @@ export default async function BlogPostPage({
               href={WA}
               data-cta-source="blog_article_bottom"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-am-primary hover:bg-am-primary/90 text-white font-bold text-[15px] transition-all duration-200"
             >
               Cotizar ahora →

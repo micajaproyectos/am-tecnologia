@@ -52,7 +52,7 @@ export default function Navbar() {
           href={WA}
           data-cta-source="navbar"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-md border border-white/20 text-sm font-semibold text-am-text hover:border-am-primary hover:text-am-primary transition-all duration-200"
         >
           Cotiza tu Proyecto
@@ -93,7 +93,7 @@ export default function Navbar() {
             href={WA}
             data-cta-source="mobile_menu"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="mt-2 flex items-center justify-center gap-2 px-5 py-3 rounded-md border border-am-primary text-am-primary font-semibold text-sm hover:bg-am-primary/8 transition-all duration-200"
           >
             Cotiza tu Proyecto

@@ -521,7 +521,7 @@ Antes de gastar en software, agota lo que existe gratis. La mayoría de las pyme
 
 **Google Analytics**: mide cuántas personas visitan tu web, desde dónde vienen, qué páginas ven y cuánto tiempo pasan. Gratuita. Con estos datos sabes si tu estrategia digital está funcionando o no.
 
-**WhatsApp Business**: la versión profesional de WhatsApp. Permite configurar respuestas automáticas, horario de atención, catálogo de productos y un perfil de negocio. Gratuita y esencial si usas WhatsApp para atender clientes — que en Chile, casi todos lo hacen.
+**WhatsApp Business**: la versión profesional de WhatsApp. Permite configurar respuestas automáticas, horario de atención, catálogo de productos y un perfil de negocio. Gratuita y esencial si usas WhatsApp para atender clientes — que en Chile, casi todos lo hacen. [Ver guía completa de WhatsApp Business →](/blog/whatsapp-business-para-empresas-chile)
 
 **Google Workspace básico** (Drive, Sheets, Calendar): para organización interna sin comprar software. Compartir documentos, llevar registros, agendar reuniones — todo gratis hasta cierto volumen.
 

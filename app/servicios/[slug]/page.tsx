@@ -50,6 +50,12 @@ export default async function ServicePage({
       "@id": "https://www.amtecnologia.cl/#business",
       name: "AM Tecnología",
       url: "https://www.amtecnologia.cl",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Lo Barnechea",
+        addressRegion: "Región Metropolitana",
+        addressCountry: "CL",
+      },
     },
     areaServed: { "@type": "Country", name: "Chile" },
     offers: {
@@ -117,7 +123,7 @@ export default async function ServicePage({
               href={WA}
               data-cta-source={`service_${service.slug}_hero`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-am-primary hover:bg-am-primary/90 text-white font-semibold text-[15px] transition-all duration-200"
             >
               Cotizar ahora
