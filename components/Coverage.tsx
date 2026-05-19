@@ -101,7 +101,7 @@ export default function Coverage() {
             href="https://wa.me/56985660954?text=Hola%2C%20quiero%20saber%20si%20trabajan%20en%20mi%20ciudad"
             data-cta-source="coverage"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="text-am-primary hover:text-am-accent font-semibold transition-colors"
           >
             Escríbenos — atendemos todo Chile →

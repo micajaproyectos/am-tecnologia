@@ -189,7 +189,7 @@ export default function AparecerEnGooglePage() {
             href={WA}
             data-cta-source="aparecer_hero"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-am-primary hover:bg-am-primary/90 text-white font-semibold text-[15px] transition-all duration-200"
           >
             Quiero aparecer en Google →

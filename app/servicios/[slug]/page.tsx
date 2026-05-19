@@ -260,7 +260,7 @@ export default async function ServicePage({
             href={WA}
             data-cta-source={`service_${service.slug}_cta`}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-am-primary hover:bg-am-primary/90 text-white font-bold text-[16px] transition-all duration-200"
           >
             Quiero empezar ahora →
