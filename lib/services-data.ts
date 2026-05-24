@@ -74,8 +74,8 @@ export const SERVICES: ServiceData[] = [
         desc: "Carga en menos de 2 segundos en móvil. Google prioriza la velocidad para el posicionamiento; tus clientes también.",
       },
       {
-        title: "Entrega en 48 horas",
-        desc: "Desde que apruebas la cotización hasta que el sitio está publicado: 48 horas hábiles. Sin demoras, sin excusas.",
+        title: "Posicionado desde el primer día",
+        desc: "Desde que apruebas la cotización, iniciamos de inmediato. Tu sitio publicado, optimizado y listo para captar clientes en Google.",
       },
     ],
     process: [
@@ -105,7 +105,7 @@ export const SERVICES: ServiceData[] = [
       },
     ],
     schemaDescription:
-      "Landing page profesional optimizada para posicionamiento en Google Chile. Diseño orientado a conversión, entrega en 48 horas.",
+      "Landing page profesional optimizada para posicionamiento en Google Chile. Diseño orientado a conversión y resultados medibles.",
   },
   {
     slug: "presencia-redes-sociales",
@@ -228,8 +228,8 @@ export const SERVICES: ServiceData[] = [
         desc: "Primer año sin costos adicionales. Te ayudamos a elegir y configurar tu dominio .cl o .com según corresponda.",
       },
       {
-        title: "Entrega en 48 horas",
-        desc: "Proceso ágil: brief, diseño, ajuste y publicación en 48 horas desde que confirmas la orden.",
+        title: "Posicionado desde el primer día",
+        desc: "Proceso ágil: brief, diseño, ajuste y publicación desde que confirmas la orden. Enfocado en resultados, no en velocidad.",
       },
     ],
     process: [

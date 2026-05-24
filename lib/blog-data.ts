@@ -26,7 +26,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "https://www.amtecnologia.cl/blog/cuanto-cuesta-una-pagina-web-en-chile",
     date: "2026-05-07",
     readingTime: 8,
-    author: "AM Tecnología",
+    author: "Allan Milla",
     category: "Precios y Costos",
     tags: ["precios", "página web", "Chile", "costos", "pymes"],
     excerpt:
@@ -105,7 +105,7 @@ Aquí está el problema real. Muchos entregan una web "bonita" pero sin configur
 
 **Rango de precio**: $99.990 a $500.000.
 
-El modelo que seguimos en AM Tecnología. No vendemos horas de diseño ni plantillas — entregamos una herramienta de captación de clientes. Cada [landing page](/servicios/landing-page) se construye con la estructura técnica que Google requiere, configuración de analytics y velocidad optimizada. El precio es competitivo porque nuestro proceso está diseñado para entregar en 48 horas sin sacrificar calidad.
+El modelo que seguimos en AM Tecnología. No vendemos horas de diseño ni plantillas — entregamos una herramienta de captación de clientes. Cada [landing page](/servicios/landing-page) se construye con la estructura técnica que Google requiere, configuración de analytics y velocidad optimizada. El precio es competitivo porque nuestro proceso está optimizado para obtener resultados sin sacrificar calidad.
 
 ## Los costos ocultos que nadie te cuenta
 
@@ -125,7 +125,7 @@ Antes de firmar, considera estos costos adicionales que a veces no aparecen en e
 
 Es la pregunta que más nos hacen. La respuesta es directa: no vendemos diseño web — vendemos la herramienta completa para que tu negocio aparezca en Google.
 
-Nuestro proceso está optimizado para entregar en 48 horas sin reuniones innecesarias. Usamos tecnología moderna que carga rápido y que Google puede leer correctamente. Y configuramos desde el día uno todo lo que hace que un sitio sea efectivo. Si quieres entender por qué el posicionamiento es el objetivo real —no solo tener una web bonita—, revisa [cómo aparecer en Google en Chile](/aparecer-en-google).
+Nuestro proceso está optimizado para obtener resultados sin reuniones innecesarias. Usamos tecnología moderna que carga rápido y que Google puede leer correctamente. Y configuramos desde el día uno todo lo que hace que un sitio sea efectivo. Si quieres entender por qué el posicionamiento es el objetivo real —no solo tener una web bonita—, revisa [cómo aparecer en Google en Chile](/aparecer-en-google).
 
 Lo que incluye cada sitio que entregamos:
 
@@ -171,7 +171,7 @@ No debería haberlos más allá del hosting y el dominio, que suman entre $40.00
 
 ### ¿Cuánto tarda en estar lista una página web?
 
-En AM Tecnología entregamos en 48 horas desde que apruebas la cotización. Agencias más grandes pueden tardar entre 4 y 12 semanas. Los tiempos largos no siempre significan mejor resultado — a veces significan procesos internos más lentos.
+En AM Tecnología publicamos tu sitio desde que apruebas la cotización, con el foco en que Google lo posicione cuanto antes. Agencias más grandes pueden tardar entre 4 y 12 semanas. Los tiempos largos no siempre significan mejor resultado — a veces significan procesos internos más lentos.
 
 ### ¿Puedo pagar en cuotas?
 
@@ -191,7 +191,7 @@ Depende del proveedor. En nuestro caso, aceptamos pago en cuotas con tarjeta de 
       },
       {
         q: "¿Cuánto tarda en estar lista una página web en Chile?",
-        a: "Depende del proveedor. En AM Tecnología entregamos en 48 horas desde que apruebas la cotización. Agencias más grandes pueden tardar entre 4 y 12 semanas.",
+        a: "Depende del proveedor. En AM Tecnología publicamos y posicionamos tu sitio desde que apruebas la cotización. Agencias más grandes pueden tardar entre 4 y 12 semanas.",
       },
       {
         q: "¿Puedo pagar una página web en cuotas en Chile?",
@@ -210,7 +210,7 @@ Depende del proveedor. En nuestro caso, aceptamos pago en cuotas con tarjeta de 
       "https://www.amtecnologia.cl/blog/como-aparecer-en-google-empresa-chile",
     date: "2026-05-07",
     readingTime: 11,
-    author: "AM Tecnología",
+    author: "Allan Milla",
     category: "Posicionamiento en Google",
     tags: ["posicionamiento", "Google", "SEO", "empresas", "pymes", "Chile"],
     excerpt:
@@ -440,7 +440,7 @@ Lo básico (configurar Google Business Profile, instalar Analytics) lo puedes ha
       "https://www.amtecnologia.cl/blog/como-digitalizar-tu-pyme-en-chile",
     date: "2026-05-07",
     readingTime: 9,
-    author: "AM Tecnología",
+    author: "Allan Milla",
     category: "Transformación Digital",
     tags: ["digitalización", "pymes", "Chile", "emprendimiento", "transformación digital"],
     excerpt:
@@ -635,7 +635,7 @@ Sí. Sercotec tiene la Ruta Digital con cursos gratuitos y el Capital Semilla co
       "https://www.amtecnologia.cl/blog/google-maps-para-negocios-chile-guia-completa",
     date: "2026-05-07",
     readingTime: 9,
-    author: "AM Tecnología",
+    author: "Allan Milla",
     category: "Google Maps",
     tags: ["Google Maps", "Google Business Profile", "SEO local", "Chile", "pymes"],
     excerpt:
@@ -853,7 +853,7 @@ Son distintos pero están conectados. Google Maps es el mapa donde apareces. Goo
       "https://www.amtecnologia.cl/blog/whatsapp-business-para-empresas-chile",
     date: "2026-05-07",
     readingTime: 9,
-    author: "AM Tecnología",
+    author: "Allan Milla",
     category: "Herramientas Digitales",
     tags: ["WhatsApp Business", "herramientas digitales", "pymes", "Chile", "ventas"],
     excerpt:
@@ -1046,7 +1046,7 @@ Absolutamente. De hecho, es donde más valor tiene: las respuestas automáticas 
       "https://www.amtecnologia.cl/blog/google-ads-vs-seo-chile",
     date: "2026-05-13",
     readingTime: 11,
-    author: "AM Tecnología",
+    author: "Allan Milla",
     category: "Posicionamiento en Google",
     tags: ["Google Ads", "SEO", "posicionamiento", "marketing digital", "pymes", "Chile"],
     excerpt:
@@ -1229,7 +1229,7 @@ Desapareces de los resultados pagados al instante. Si tu tráfico depende 100% d
       "https://www.amtecnologia.cl/blog/por-que-mi-negocio-no-aparece-en-google",
     date: "2026-05-13",
     readingTime: 10,
-    author: "AM Tecnología",
+    author: "Allan Milla",
     category: "Posicionamiento en Google",
     tags: ["posicionamiento", "Google", "SEO", "diagnóstico", "pymes", "Chile"],
     excerpt:

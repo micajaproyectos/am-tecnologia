@@ -3,7 +3,7 @@ import Link from "next/link";
 const CITIES = [
   { name: "Santiago",        region: "Región Metropolitana",   slug: "santiago" },
   { name: "Concepción",      region: "Región del Biobío",      slug: "concepcion" },
-  { name: "Valparaíso",      region: "Región de Valparaíso",   slug: null },
+  { name: "Valparaíso",      region: "Región de Valparaíso",   slug: "valparaiso" },
   { name: "Viña del Mar",    region: "Región de Valparaíso",   slug: null },
   { name: "Temuco",          region: "Región de La Araucanía", slug: "temuco" },
   { name: "Rancagua",        region: "Región del Libertador",  slug: null },

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const steps = [
   {
@@ -77,7 +78,10 @@ export default function HowItWorks() {
 
           {/* Founder */}
           <div className="flex justify-center lg:justify-end lg:order-2" data-reveal>
-            <div className="flex flex-col items-center text-center bg-white/4 border border-white/10 rounded-3xl overflow-hidden w-full max-w-[260px] shadow-[0_0_60px_rgba(37,99,235,0.08)]">
+            <Link
+              href="/sobre-nosotros"
+              className="group flex flex-col items-center text-center bg-white/4 border border-white/10 rounded-3xl overflow-hidden w-full max-w-[260px] shadow-[0_0_60px_rgba(37,99,235,0.08)] hover:border-am-primary/40 transition-colors duration-300"
+            >
               {/* Image flush to top */}
               <div className="relative w-full">
                 <Image
@@ -94,9 +98,12 @@ export default function HowItWorks() {
               <div className="px-6 py-5">
                 <p className="text-white font-bold text-[16px] leading-snug">Allan Milla</p>
                 <p className="text-am-primary font-semibold text-[13px] mt-0.5">Fundador · AM Tecnología</p>
-                <p className="text-am-muted text-[12px] mt-1">Ingeniero Civil</p>
+                <p className="text-am-muted text-[12px] mt-1">Ingeniero Civil Industrial</p>
+                <p className="text-am-primary text-[12px] font-semibold mt-3 group-hover:text-am-accent transition-colors">
+                  Ver perfil completo →
+                </p>
               </div>
-            </div>
+            </Link>
           </div>
 
         </div>

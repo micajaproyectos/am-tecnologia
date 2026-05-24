@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "¿Cuánto tarda en estar lista mi página?",
-    a: "La estructura de tu sitio queda lista en 48 horas. La optimización SEO completa — para que Google te posicione sobre tu competencia — puede tomar hasta 1 semana. Y para maximizar los resultados a largo plazo, contamos con planes de seguimiento mensual que incluyen: ajuste continuo de palabras clave, análisis de rendimiento en Google Search Console, mejoras de velocidad y experiencia de usuario, reportes de visibilidad y tráfico, y adaptación a los cambios del algoritmo de Google.",
+    a: "La estructura de tu sitio queda lista en los primeros días. La optimización SEO completa — para que Google te posicione sobre tu competencia — puede tomar hasta 1 semana. Y para maximizar los resultados a largo plazo, contamos con planes de seguimiento mensual que incluyen: ajuste continuo de palabras clave, análisis de rendimiento en Google Search Console, mejoras de velocidad y experiencia de usuario, reportes de visibilidad y tráfico, y adaptación a los cambios del algoritmo de Google.",
   },
   {
     q: "¿Necesito saber de tecnología?",
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "¿Cómo es el proceso para contratar?",
-    a: "Es simple: escríbenos por WhatsApp con los detalles de tu negocio. En menos de 1 hora te enviamos una cotización. Si la apruebas, empezamos el mismo día. En 48 horas tienes tu sitio web listo y publicado.",
+    a: "Es simple: escríbenos por WhatsApp con los detalles de tu negocio. En menos de 1 hora te enviamos una cotización. Si la apruebas, empezamos el mismo día y tu sitio queda publicado y posicionándose en Google.",
   },
   {
     q: "¿Trabajan en todo Chile?",

@@ -19,7 +19,7 @@ const services = [
       "Tu negocio visible en Google Maps",
       "Optimización para búsquedas locales",
       "Google Analytics y Search Console configurados",
-      "Entrega en 48 horas",
+      "Resultados medibles",
       "Sin costos ocultos",
     ],
     badge: { text: "Más popular", style: "border-am-primary/30 bg-am-primary/10 text-am-primary" },

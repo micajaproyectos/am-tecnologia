@@ -46,7 +46,7 @@ export const CITIES: CityData[] = [
       },
     ],
     whyUs:
-      "Trabajamos con empresas de Puerto Montt de forma 100% remota. No necesitas visitarnos ni esperar una reunión presencial. En menos de 48 horas tienes tu sitio web publicado, optimizado para aparecer en Google cuando alguien en Puerto Montt busca lo que tú ofreces.",
+      "Trabajamos con empresas de Puerto Montt de forma 100% remota. No necesitas visitarnos ni esperar una reunión presencial. Tu sitio web publicado y optimizado para aparecer en Google cuando alguien en Puerto Montt busca lo que tú ofreces.",
     localFaqs: [
       {
         q: "¿Cuánto tarda en aparecer mi negocio en Google en Puerto Montt?",
@@ -94,7 +94,7 @@ export const CITIES: CityData[] = [
       },
     ],
     whyUs:
-      "Conocemos el mercado del sur de Chile y adaptamos el posicionamiento de tu negocio a las búsquedas reales que hacen los clientes en Temuco. Todo remoto, entrega en 48 horas, sin mensualidades.",
+      "Conocemos el mercado del sur de Chile y adaptamos el posicionamiento de tu negocio a las búsquedas reales que hacen los clientes en Temuco. Todo remoto, orientado a resultados, sin mensualidades.",
     localFaqs: [
       {
         q: "¿Pueden posicionar mi negocio para búsquedas en Temuco específicamente?",
@@ -182,7 +182,7 @@ export const CITIES: CityData[] = [
       },
     ],
     whyUs:
-      "Conocemos el mercado del sur y adaptamos cada sitio web al rubro y la audiencia específica de Osorno. Trabajo remoto, entrega en 48 horas y sin mensualidades.",
+      "Conocemos el mercado del sur y adaptamos cada sitio web al rubro y la audiencia específica de Osorno. Trabajo remoto, resultados reales y sin mensualidades.",
     localFaqs: [
       {
         q: "¿Cuánta competencia existe en Google en Osorno?",
@@ -318,7 +318,7 @@ export const CITIES: CityData[] = [
       },
     ],
     whyUs:
-      "La distancia no es un problema. Trabajamos 100% remoto con negocios de la Patagonia chilena. En 48 horas tu sitio está publicado y comenzando a posicionarse en Google.",
+      "La distancia no es un problema. Trabajamos 100% remoto con negocios de la Patagonia chilena. Tu sitio publicado y comenzando a posicionarse en Google desde el primer día.",
     localFaqs: [
       {
         q: "¿Pueden crear páginas para negocios turísticos en Coyhaique?",
@@ -327,6 +327,54 @@ export const CITIES: CityData[] = [
       {
         q: "¿En idioma inglés también?",
         a: "Podemos incluir una versión en inglés del sitio para captar turistas internacionales. Es una opción adicional que conversamos según el proyecto.",
+      },
+    ],
+  },
+  {
+    slug: "valparaiso",
+    name: "Valparaíso",
+    region: "Región de Valparaíso",
+    metaTitle: "Posicionamiento en Google Valparaíso | AM Tecnología",
+    metaDescription:
+      "Posicionamiento web para empresas en Valparaíso. La ciudad con el puerto más importante de Chile merece negocios visibles en Google. Sin mensualidades.",
+    headline: "Tu negocio en Valparaíso,",
+    headlineAccent: "visible donde importa.",
+    intro:
+      "Valparaíso alberga uno de los puertos más importantes de Chile y Sudamérica. Flujo constante de personas, carga y actividad económica. Pero tener presencia en una ciudad activa no garantiza que tus clientes te encuentren en Google.",
+    context:
+      "El Puerto de Valparaíso mueve millones de toneladas al año y es uno de los ejes del comercio exterior chileno. La ciudad es sede del Congreso Nacional, tiene universidades reconocidas y es destino turístico declarado Patrimonio de la Humanidad por la UNESCO. Toda esa actividad genera demanda real de servicios locales. Sin embargo, muchos negocios en Valparaíso operan sin presencia digital optimizada: sus clientes los buscan en Google y no los encuentran. La analogía es directa: un puerto puede tener el mayor movimiento del país y aun así haber barcos que nadie ve llegar, porque no tienen la señal correcta. En Google pasa lo mismo. Sin una estructura SEO bien diseñada, tu negocio es invisible en medio de una ciudad con altísimo tráfico. AM Tecnología construye esa estructura para que aparezcas cuando alguien en Valparaíso busca lo que tú ofreces.",
+    marketPoints: [
+      {
+        title: "Puerto activo, mercado digital desaprovechado",
+        desc: "El ecosistema económico del Puerto genera actividad constante. Pero la mayoría de los negocios que rodean ese flujo no tienen presencia en Google — una oportunidad directa para quien llegue primero.",
+      },
+      {
+        title: "Turismo patrimonial todo el año",
+        desc: "Los cerros y el casco histórico de Valparaíso atraen turistas que buscan en Google restaurantes, hospedajes y actividades. Sin posicionamiento, esos clientes los encuentra tu competencia.",
+      },
+      {
+        title: "Comunidad universitaria y profesional",
+        desc: "PUCV, UTFSM y Universidad de Valparaíso generan una base activa de estudiantes y profesionales que consumen servicios locales y los buscan en Google.",
+      },
+      {
+        title: "Baja competencia digital en rubros clave",
+        desc: "A pesar del tamaño de la ciudad, muchos rubros en Valparaíso tienen poca presencia digital optimizada. Posicionarse ahora es más fácil y menos costoso que en Santiago.",
+      },
+    ],
+    whyUs:
+      "Entendemos que Valparaíso tiene todo el movimiento del mundo en lo físico, pero muchos negocios siguen invisibles en Google. Trabajamos 100% remoto y construimos la estructura SEO correcta para que tu negocio destaque en medio del ruido digital de una de las ciudades más activas de Chile.",
+    localFaqs: [
+      {
+        q: "¿Pueden posicionar mi negocio si estoy en los cerros de Valparaíso?",
+        a: "Sí. El SEO local funciona por ciudad, barrio y rubro. Podemos posicionarte para búsquedas como 'restaurante Cerro Alegre' o 'hostal Valparaíso centro'. La ubicación física no limita el posicionamiento digital.",
+      },
+      {
+        q: "¿Qué rubros tienen más oportunidad en Google en Valparaíso?",
+        a: "Turismo, gastronomía, hospedaje, servicios profesionales (legal, contable, salud) y comercio local tienen alta demanda de búsqueda y baja presencia digital. Son los rubros con mayor oportunidad inmediata.",
+      },
+      {
+        q: "¿Trabajan con negocios turísticos en Valparaíso?",
+        a: "Sí. Hostales, restaurantes, operadores turísticos y artesanos en Valparaíso tienen un mercado enorme en Google — tanto en búsquedas locales como de turistas que planifican su visita desde otras ciudades o desde el extranjero.",
       },
     ],
   },
@@ -362,7 +410,7 @@ export const CITIES: CityData[] = [
       },
     ],
     whyUs:
-      "Trabajamos con negocios en toda la Patagonia. La distancia no es una barrera: entrega remota en 48 horas, sin mensualidades y con soporte continuo.",
+      "Trabajamos con negocios en toda la Patagonia. La distancia no es una barrera: trabajo remoto con resultados reales, sin mensualidades y con soporte continuo.",
     localFaqs: [
       {
         q: "¿Pueden crear páginas para negocios de la Zona Franca?",

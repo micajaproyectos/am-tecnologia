@@ -64,8 +64,8 @@ export const metadata: Metadata = {
     "AM Tecnología",
   ],
 
-  authors: [{ name: "AM Tecnología", url: siteUrl }],
-  creator: "AM Tecnología",
+  authors: [{ name: "Allan Milla", url: `${siteUrl}/autor/allan-milla` }],
+  creator: "Allan Milla",
   publisher: "AM Tecnología",
 
   alternates: {
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     siteName: "AM Tecnología",
     title: "Diseño Web Chile | Páginas Web desde $99.990",
     description:
-      "Cotiza tu página web hoy desde $99.990 pago único. Landing pages, tiendas online y sitios corporativos para empresas en todo Chile. Entrega en 48h, sin mensualidades.",
+      "Cotiza tu página web hoy desde $99.990 pago único. Landing pages, tiendas online y sitios corporativos para empresas en todo Chile. Orientado a resultados, sin mensualidades.",
     images: [
       {
         url: "/og-image.jpg",
@@ -113,7 +113,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Diseño Web Chile | Páginas Web desde $99.990",
     description:
-      "Cotiza tu página web hoy desde $99.990 pago único. Entrega en 48h, sin mensualidades. Todo Chile.",
+      "Cotiza tu página web hoy desde $99.990 pago único. Orientado a resultados, sin mensualidades. Todo Chile.",
     images: ["/og-image.jpg"],
   },
 };
@@ -126,7 +126,7 @@ const jsonLd = {
       "@id": "https://www.amtecnologia.cl/#business",
       "name": "AM Tecnología",
       "description":
-        "Agencia de desarrollo web profesional en Chile. Creamos páginas web, tiendas online y automatizaciones con IA para empresas. Diseñadas por Ingenieros Civiles. Entrega en 48 horas.",
+        "Agencia de desarrollo web profesional en Chile. Creamos páginas web, tiendas online y automatizaciones con IA para empresas. Diseñadas por Ingenieros Civiles. Orientados a resultados reales.",
       "url": "https://www.amtecnologia.cl",
       "image": "https://www.amtecnologia.cl/og-image.jpg",
       "logo": {
@@ -172,6 +172,13 @@ const jsonLd = {
         "closes": "20:00",
       },
       "sameAs": ["https://www.instagram.com/micajaempresa"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "7",
+        "bestRating": "5",
+        "worstRating": "1",
+      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Servicios de Desarrollo Web en Chile",

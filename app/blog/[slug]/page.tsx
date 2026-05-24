@@ -113,9 +113,16 @@ export default async function BlogPostPage({
     datePublished: post.date,
     dateModified: post.date,
     author: {
-      "@type": "Organization",
+      "@type": "Person",
+      "@id": "https://www.amtecnologia.cl/autor/allan-milla",
       name: post.author,
-      url: "https://www.amtecnologia.cl",
+      url: "https://www.amtecnologia.cl/autor/allan-milla",
+      jobTitle: "Ingeniero Civil Industrial",
+      worksFor: {
+        "@type": "Organization",
+        name: "AM Tecnología",
+        url: "https://www.amtecnologia.cl",
+      },
     },
     publisher: {
       "@type": "Organization",
@@ -198,7 +205,12 @@ export default async function BlogPostPage({
             <span className="text-white/15">·</span>
             <span className="text-am-muted text-[13px]">{post.readingTime} min de lectura</span>
             <span className="text-white/15">·</span>
-            <span className="text-am-muted text-[13px]">{post.author}</span>
+            <Link
+              href="/autor/allan-milla"
+              className="text-am-muted text-[13px] hover:text-am-primary transition-colors"
+            >
+              {post.author}
+            </Link>
           </div>
 
           <h1
@@ -300,7 +312,7 @@ export default async function BlogPostPage({
               Tu negocio puede aparecer en Google este mes
             </h3>
             <p className="text-am-muted text-[14px] mb-6">
-              Desde $99.990 pago único · Entrega en 48 horas · Sin mensualidades
+              Desde $99.990 pago único · Resultados reales · Sin mensualidades
             </p>
             <a
               href={WA}

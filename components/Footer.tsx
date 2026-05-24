@@ -9,11 +9,12 @@ const serviceLinks = [
 ];
 
 const companyLinks = [
-  { href: "/",           label: "Inicio"    },
-  { href: "/#servicios", label: "Servicios" },
-  { href: "/#proyectos", label: "Proyectos" },
-  { href: "/blog",       label: "Blog"      },
-  { href: "/#contacto",  label: "Contacto"  },
+  { href: "/",                label: "Inicio"          },
+  { href: "/#servicios",      label: "Servicios"       },
+  { href: "/#proyectos",      label: "Proyectos"       },
+  { href: "/sobre-nosotros",  label: "Sobre Nosotros"  },
+  { href: "/blog",            label: "Blog"            },
+  { href: "/#contacto",       label: "Contacto"        },
 ];
 
 export default function Footer() {

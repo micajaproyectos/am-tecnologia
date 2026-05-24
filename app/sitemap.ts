@@ -21,6 +21,7 @@ const CITY_SLUGS = [
   "santiago",
   "coyhaique",
   "punta-arenas",
+  "valparaiso",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -38,6 +39,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.9,
+    },
+    {
+      url: `${BASE}/sobre-nosotros`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE}/autor/allan-milla`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
   ];
 
