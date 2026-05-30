@@ -1137,7 +1137,7 @@ Cuando recibas distintas propuestas, estas son las preguntas que deberías hacer
 
 Para ser directos: nuestro enfoque de base está en construir el sitio con la estructura técnica correcta desde el inicio — metadata, schema, velocidad, etiquetas y contenido orientado a búsquedas reales.
 
-Eso cuesta $99.990 pago único para una landing page o sitio básico. Sin mensualidades obligatorias.
+Eso cuesta $99.990 pago único para una [landing page](/servicios/landing-page) o sitio básico. Sin mensualidades obligatorias.
 
 Para seguimiento mensual — análisis de posiciones, contenido nuevo, ajuste de keywords y estrategia de links — partimos desde $59.990 mensuales, y se define según el rubro y la competencia. Este plan no se ofrece en la web; se conversa directamente con cada cliente para ajustarlo a lo que necesita.
 
