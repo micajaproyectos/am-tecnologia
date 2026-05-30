@@ -1037,6 +1037,334 @@ Absolutamente. De hecho, es donde más valor tiene: las respuestas automáticas 
     ],
   },
   {
+    slug: "cuanto-cobra-agencia-seo-chile",
+    title: "¿Cuánto Cobra una Agencia SEO en Chile? Precios Reales 2026",
+    metaTitle: "¿Cuánto cobra una agencia SEO en Chile? Precios 2026",
+    metaDescription:
+      "Precios reales de agencias SEO en Chile en 2026. Qué incluye cada plan, qué cobros son injustificados y cómo elegir sin caer en promesas vacías.",
+    canonicalUrl:
+      "https://www.amtecnologia.cl/blog/cuanto-cobra-agencia-seo-chile",
+    date: "2026-05-29",
+    readingTime: 10,
+    author: "Allan Milla",
+    category: "Precios y Costos",
+    tags: ["SEO", "agencia SEO", "precios", "posicionamiento", "Chile", "pymes"],
+    excerpt:
+      "El mercado de SEO en Chile tiene precios que van de $50.000 a $2.000.000 mensuales — y la diferencia no siempre refleja calidad real. Esto es lo que cobra cada tipo de proveedor, qué incluye y qué señales indican que te están cobrando de más.",
+    content: `## Por qué los precios de SEO varían tanto en Chile
+
+Si cotizas SEO con tres proveedores distintos en Chile, probablemente recibirás presupuestos que van desde $80.000 al mes hasta $800.000. Eso no es normal en otros servicios — y tiene una explicación.
+
+El SEO es intangible. No entrega un producto físico ni un diseño que se puede ver el primer día. Eso lo convierte en uno de los servicios más difíciles de comparar — y en uno de los más fáciles de sobrevender.
+
+Este artículo no es para decirte qué proveedor contratar. Es para que entiendas qué está incluido en cada rango de precio y qué preguntas hacer antes de firmar.
+
+## Los rangos de precio del mercado chileno en 2026
+
+Los precios reales del mercado, sin adornos:
+
+### Freelancers y proveedores individuales
+
+Entre **$50.000 y $150.000 mensuales**.
+
+Generalmente ofrecen reportes de posiciones, auditoría básica y algunos ajustes técnicos. El trabajo es más manual, los tiempos de respuesta varían mucho y la profundidad del análisis depende de la persona específica.
+
+¿Son malos? No necesariamente. Hay freelancers muy buenos que trabajan bien con negocios pequeños o medianos. El riesgo es la continuidad: si esa persona cambia de trabajo o se enferma, el servicio se interrumpe.
+
+### Agencias pequeñas especializadas
+
+Entre **$150.000 y $400.000 mensuales**.
+
+Aquí entra AM Tecnología y empresas similares. En este rango debería incluir: auditoría técnica inicial, estrategia de keywords, optimización on-page de las páginas principales, seguimiento mensual de posiciones, reportes en Search Console y al menos algo de generación de contenido.
+
+Es el rango donde mejor relación precio-resultado existe para la mayoría de las pymes chilenas.
+
+### Agencias medianas con equipo dedicado
+
+Entre **$400.000 y $900.000 mensuales**.
+
+Equipos especializados, gestores de cuenta dedicados, producción de contenido intensiva, link building activo y reporting avanzado. Tiene sentido para negocios con tráfico orgánico significativo que necesitan escalar o para rubros muy competitivos.
+
+### Agencias grandes o de precio alto
+
+Desde **$900.000 en adelante**.
+
+Puede tener sentido para empresas con operación nacional, e-commerce de volumen alto o industrias donde cada cliente nuevo vale millones. Para una pyme de servicios locales, rara vez es necesario.
+
+## Qué debería incluir un plan SEO mensual
+
+Independiente del precio, un contrato de SEO debería decirte exactamente qué vas a recibir cada mes. Si el presupuesto dice "optimización de posicionamiento" y nada más, eso es una señal de alerta.
+
+Lo mínimo que debería estar especificado:
+
+**Número de páginas optimizadas por mes.** El SEO on-page — ajustar títulos, meta descripciones, contenido y estructura interna — toma tiempo. Un plan que cuesta $100.000 y promete "optimizar todo el sitio" en un mes para un sitio de 30 páginas no tiene los números.
+
+**Producción de contenido.** ¿Cuántos artículos nuevos al mes? ¿De cuántas palabras? El contenido es una de las palancas más importantes del SEO a largo plazo. Si el plan no incluye contenido nuevo, el crecimiento va a tener techo.
+
+**Estrategia de links.** El link building — conseguir que otros sitios apunten al tuyo — es fundamental para la autoridad de dominio. ¿El proveedor incluye gestión activa de esto o solo lo menciona en la presentación inicial?
+
+**Reportes mensuales de Search Console.** No un PDF genérico con capturas de pantalla de posiciones. Un reporte real que muestre evolución de clics, impresiones, páginas que subieron y páginas que bajaron.
+
+**Qué pasa con el trabajo si dejas de contratar.** Esto importa: los cambios técnicos en tu web y el contenido publicado son tuyos. Lo que no debería irse si cambias de proveedor es tu propio sitio.
+
+## Los cobros que deberían hacerte dudar
+
+Hay prácticas en el mercado de SEO en Chile que, sin ser necesariamente fraudulentas, merecen preguntas.
+
+**Cobros por "horas de posicionamiento".** El SEO no se mide en horas, se mide en resultados. Un proveedor que factura por horas puede inflar fácilmente el tiempo sin que puedas verificarlo.
+
+**"Garantías de posición número 1 en Google".** Nadie puede garantizar la posición número 1 en Google para keywords competitivas. Si alguien lo hace, o está hablando de keywords que nadie busca, o está usando técnicas que Google penaliza y que eventualmente van a perjudicarte.
+
+**Planes que incluyen "500 links mensuales".** El link building masivo de baja calidad fue una táctica efectiva hace 10 años. Hoy Google lo detecta y penaliza. Si un proveedor te ofrece cientos de links al mes por un precio bajo, es probable que estén usando directorios basura que no van a ayudarte y que podrían perjudicarte.
+
+**Contratos de permanencia de 12 meses sin cláusula de resultados.** No es razonable comprometerse a pagar durante un año sin que el proveedor tenga alguna obligación de mostrar avance. Un contrato de 3 a 6 meses con revisión de resultados es lo estándar en el mercado serio.
+
+**Informes de "posiciones" sin contexto de volumen.** Aparecer en el puesto 1 para una keyword que nadie busca no sirve de nada. Asegúrate de que los reportes incluyen volumen de búsqueda real de las keywords que están optimizando.
+
+## Cómo comparar cotizaciones de SEO
+
+Cuando recibas distintas propuestas, estas son las preguntas que deberías hacer:
+
+**¿Pueden mostrarme ejemplos de clientes en mi rubro o ciudad donde hayan logrado resultados?** No pidas testimonios — pide acceso de vista a un Search Console real o una demostración de resultados concretos. Una agencia que no puede mostrar evidencia probablemente no tiene.
+
+**¿Qué pasa con el trabajo si cancelo el contrato?** Los artículos publicados en tu web, los cambios técnicos realizados y el perfil de Google Maps son tuyos. El proveedor no debería llevarse nada.
+
+**¿Cómo miden el éxito?** Si la respuesta es "posiciones en Google", pregunta para qué keywords específicamente y con qué volumen de búsqueda. Si la respuesta es "tráfico orgánico y leads", es una señal de que el proveedor piensa en resultados de negocio, no solo en métricas de pantalla.
+
+**¿Qué nivel de acceso tendrán a mi sitio web?** Un proveedor serio necesita acceso a Google Analytics, Search Console y, en muchos casos, al CMS de tu web. Si piden más acceso del necesario, pregunta por qué. Si no piden ningún acceso y ofrecen resultados, pregunta cómo van a hacer el trabajo técnico.
+
+## Lo que cuesta en AM Tecnología y por qué
+
+Para ser directos: nuestro enfoque de base está en construir el sitio con la estructura técnica correcta desde el inicio — metadata, schema, velocidad, etiquetas y contenido orientado a búsquedas reales.
+
+Eso cuesta $99.990 pago único para una landing page o sitio básico. Sin mensualidades obligatorias.
+
+Para seguimiento mensual — análisis de posiciones, contenido nuevo, ajuste de keywords y estrategia de links — partimos desde $59.990 mensuales, y se define según el rubro y la competencia. Este plan no se ofrece en la web; se conversa directamente con cada cliente para ajustarlo a lo que necesita.
+
+No ofrecemos contratos de 12 meses obligatorios ni garantías de posición número 1. Lo que ofrecemos es trabajo medible en Search Console mes a mes.
+
+Para entender cómo se ve una web construida correctamente para posicionamiento en Google, revisa la guía de [cómo aparecer en Google si tienes una empresa en Chile](/aparecer-en-google).
+
+## Cuándo el SEO mensual tiene sentido y cuándo no
+
+No siempre vale la pena contratar un plan de SEO mensual. Hay casos donde la inversión en el sitio inicial es suficiente, al menos por los primeros meses.
+
+**Tiene sentido el seguimiento mensual cuando:**
+
+Tu rubro tiene competencia digital activa. Si hay 10 competidores publicando contenido y optimizando sus sitios regularmente, necesitas hacer lo mismo para no perder posiciones.
+
+Tu negocio quiere crecer en varias ciudades o rubros. Posicionar una empresa de servicios para 5 ciudades distintas requiere páginas y contenido específico para cada una — eso es trabajo continuo.
+
+Tienes un e-commerce. Los catálogos cambian, aparecen nuevas páginas de productos y los cambios de temporada requieren actualización constante. Un e-commerce sin seguimiento SEO pierde tráfico orgánico progresivamente.
+
+**No es necesario el seguimiento mensual cuando:**
+
+Tienes un negocio local en una ciudad pequeña o con poca competencia digital. Una vez que el sitio está bien construido y el perfil de Google Maps verificado, el crecimiento puede ocurrir solo durante los primeros meses.
+
+Acabas de lanzar. Los primeros 3 meses después del lanzamiento son principalmente espera — Google necesita tiempo para indexar y evaluar el sitio. No tiene mucho sentido pagar seguimiento mensual cuando el sitio lleva 2 semanas en línea.
+
+Tienes presupuesto muy limitado. Si debes elegir entre construir el sitio correctamente o pagar un plan mensual barato, construir el sitio correctamente es siempre la prioridad.
+
+## Preguntas frecuentes
+
+### ¿Cuánto cobra una agencia SEO en Chile por mes?
+
+Los precios van desde $50.000 para freelancers hasta $900.000 o más para agencias grandes. El rango donde la mayoría de las pymes chilenas encuentra mejor relación precio-resultado está entre $150.000 y $400.000 mensuales, incluyendo auditoría técnica, optimización de páginas existentes, contenido nuevo y reportes mensuales de Search Console.
+
+### ¿El SEO mensual es obligatorio para posicionarse en Google?
+
+No. Una web bien construida con la estructura técnica correcta puede posicionarse sin un plan mensual continuo, especialmente en rubros con poca competencia digital. El seguimiento mensual acelera el crecimiento y es necesario en mercados competitivos, pero no es un prerequisito absoluto.
+
+### ¿Cómo sé si una agencia SEO me está dando resultados reales?
+
+Pide acceso de vista a tu Google Search Console y revisa mes a mes la evolución de clics orgánicos, impresiones y posición promedio. Si llevas 6 meses pagando y esas métricas no muestran tendencia positiva, hay un problema. Cualquier agencia seria debería poder mostrarte estos datos sin filtrar.
+
+### ¿Las agencias más caras dan mejores resultados?
+
+No necesariamente. El precio refleja el tamaño del equipo, los costos fijos y la marca de la agencia — no siempre la calidad del trabajo para un negocio específico. Agencias medianas especializadas suelen dar mejores resultados para pymes que agencias grandes que asignan tu cuenta a un ejecutivo junior.
+
+### ¿Puedo hacer SEO yo mismo sin contratar a nadie?
+
+Parte del SEO la puedes hacer tú: crear tu perfil de Google Business Profile, instalar Google Analytics y Search Console, y escribir contenido relevante para tu negocio. La parte técnica — estructura del sitio, velocidad, schema markup, arquitectura de URLs — generalmente requiere conocimientos más específicos o la ayuda de alguien que construya el sitio correctamente desde el inicio.`,
+    faqSchema: [
+      {
+        q: "¿Cuánto cobra una agencia SEO en Chile por mes?",
+        a: "Los precios van desde $50.000 para freelancers hasta $900.000 o más para agencias grandes. El rango donde la mayoría de las pymes chilenas encuentra mejor relación precio-resultado está entre $150.000 y $400.000 mensuales, incluyendo auditoría técnica, optimización de páginas, contenido nuevo y reportes mensuales de Search Console.",
+      },
+      {
+        q: "¿El SEO mensual es obligatorio para posicionarse en Google?",
+        a: "No. Una web bien construida con la estructura técnica correcta puede posicionarse sin un plan mensual continuo, especialmente en rubros con poca competencia digital. El seguimiento mensual acelera el crecimiento y es necesario en mercados competitivos, pero no es un prerequisito absoluto.",
+      },
+      {
+        q: "¿Cómo sé si una agencia SEO me está dando resultados reales?",
+        a: "Pide acceso de vista a tu Google Search Console y revisa mes a mes la evolución de clics, impresiones y posición promedio. Si llevas 6 meses pagando y esas métricas no muestran tendencia positiva, hay un problema. Cualquier agencia seria debería poder mostrarte estos datos sin filtrar.",
+      },
+      {
+        q: "¿Las agencias SEO más caras dan mejores resultados?",
+        a: "No necesariamente. El precio refleja el tamaño del equipo y los costos fijos, no siempre la calidad del trabajo para un negocio específico. Agencias medianas especializadas suelen dar mejores resultados para pymes que agencias grandes que asignan tu cuenta a un ejecutivo junior.",
+      },
+      {
+        q: "¿Puedo hacer SEO yo mismo sin contratar a nadie?",
+        a: "Parte del SEO la puedes hacer tú: crear tu perfil de Google Business Profile, instalar Analytics y Search Console, y escribir contenido relevante. La parte técnica — velocidad, schema markup, arquitectura de URLs — generalmente requiere conocimientos específicos o un sitio bien construido desde el inicio.",
+      },
+    ],
+  },
+  {
+    slug: "landing-page-vs-sitio-web-chile",
+    title: "Landing Page vs Sitio Web: Qué Necesita Tu Negocio en Chile",
+    metaTitle: "Landing page vs sitio web: cuál elegir en Chile",
+    metaDescription:
+      "¿Landing page o sitio web completo? Diferencias reales, cuándo conviene cada uno y cómo decidir sin gastar más de lo necesario para tu negocio en Chile.",
+    canonicalUrl:
+      "https://www.amtecnologia.cl/blog/landing-page-vs-sitio-web-chile",
+    date: "2026-05-29",
+    readingTime: 9,
+    author: "Allan Milla",
+    category: "Diseño Web",
+    tags: ["landing page", "sitio web", "diseño web", "Chile", "pymes", "posicionamiento"],
+    excerpt:
+      "Mucha gente llega a nosotros sin saber si necesita una landing page o un sitio web completo. La respuesta no es obvia — y elegir mal puede significar gastar el doble en algo que no necesitabas o quedarte corto con algo que no convierte.",
+    content: `## La confusión más común al cotizar una página web
+
+"Quiero una página web" — eso es lo que la mayoría dice cuando llega a cotizar. Pero cuando empezamos a preguntar qué quieren lograr, resulta que algunos necesitan una landing page y otros necesitan algo más completo.
+
+La diferencia importa porque son herramientas distintas, con estructuras distintas y objetivos distintos. Y en Chile, donde los precios varían mucho, elegir el formato equivocado significa pagar por algo que no necesitas — o quedarte con algo que no funciona para tu objetivo.
+
+## Qué es una landing page (de verdad)
+
+Una landing page es una sola página diseñada para que el visitante haga una acción específica: llamarte, escribirte por WhatsApp, dejar su correo o comprar algo.
+
+Todo en esa página apunta hacia ese objetivo. No hay menú de navegación que lleve a otras secciones. No hay sección "quiénes somos" con la historia de la empresa. No hay blog. Solo existe la oferta, los beneficios, la prueba social y el llamado a la acción.
+
+Eso no es una limitación — es la gracia. Una landing page bien hecha convierte mejor que un sitio de cinco páginas porque no distrae al visitante.
+
+Para negocios de servicios con una oferta clara — un gasfiter, una psicóloga, un consultor tributario, un salón de belleza — la landing page es, en la mayoría de los casos, todo lo que necesitan para captar clientes desde Google.
+
+## Qué es un sitio web y cuándo tiene sentido
+
+Un sitio web tiene múltiples páginas con propósitos distintos: inicio, sobre nosotros, servicios (cada uno en su propia URL), blog, contacto.
+
+Esa estructura tiene valor cuando:
+
+Tu negocio tiene varios servicios que merecen páginas propias para posicionarse en búsquedas distintas. Una empresa de construcción que hace obras menores, remodelaciones y construcción en seco puede tener una página por servicio y posicionar cada una para su propia keyword.
+
+Necesitas credibilidad institucional. Empresas B2B que venden a grandes clientes, estudios profesionales o empresas que van a concursar a licitaciones necesitan mostrar trayectoria, equipo y casos de trabajo — contenido que no cabe bien en una landing page.
+
+Quieres hacer marketing de contenidos a largo plazo. Un blog dentro del sitio genera tráfico orgánico para decenas de búsquedas distintas. Es uno de los activos más valiosos del SEO a largo plazo, pero requiere producción continua de contenido para dar frutos.
+
+## La diferencia real en posicionamiento Google
+
+Aquí hay un punto que pocos proveedores explican bien.
+
+Una landing page bien construida puede posicionarse perfectamente para búsquedas específicas de tu rubro y ciudad. "Psicóloga en Providencia", "gasfiter urgente Ñuñoa", "contador tributario Temuco" — para estas keywords, una sola página con contenido enfocado puede llegar a los primeros resultados.
+
+El límite de la landing page está en la cantidad de búsquedas para las que puede posicionarse al mismo tiempo. Una sola página no puede posicionar bien para veinte keywords distintas. Cuando el negocio quiere capturar múltiples segmentos — por ciudad, por servicio, por perfil de cliente — ahí se necesitan páginas adicionales.
+
+Un sitio con múltiples páginas tiene más "superficie" de ataque para el SEO: más URLs, más contenido, más chances de aparecer para más búsquedas. Pero también requiere más inversión inicial y más mantenimiento.
+
+Para la mayoría de las pymes en Chile que recién están construyendo su presencia digital, la landing page es el punto de partida correcto. Se puede escalar después — construir nuevas páginas encima de la misma base técnica — sin tener que empezar de cero.
+
+## Cuál cuesta más y por qué
+
+En el mercado chileno, los rangos son más o menos así:
+
+**Landing page profesional**: desde $99.990 hasta $300.000 pago único. La diferencia de precio entre proveedores no refleja calidad de diseño necesariamente — refleja qué tan bien está construida para posicionarse en Google. Una landing page bonita que carga lento, sin metadata correcta y sin schema.org no vale lo mismo que una que tiene todo eso configurado.
+
+**Sitio web de varias páginas**: desde $300.000 hasta $1.200.000 o más. El precio sube con el número de páginas, la personalización del diseño, si incluye sistema de gestión de contenido para que el cliente pueda editar, y si incluye funcionalidades especiales como formularios complejos, integración con CRM o tienda online.
+
+**E-commerce**: desde $200.000 hasta $2.000.000. Es la categoría con mayor rango porque la complejidad varía enormemente: una tienda con 10 productos y pago por transferencia es muy distinta a una tienda con 500 productos, Webpay, gestión de inventario y seguimiento de pedidos.
+
+Lo que muchos no dicen: el precio de la construcción es solo parte del costo real. El hosting, el dominio y eventualmente el mantenimiento o la actualización de contenido son costos recurrentes que deben estar en el cálculo. Revisa la guía de [cuánto cuesta una página web en Chile](/blog/cuanto-cuesta-una-pagina-web-en-chile) para tener los números completos del mercado.
+
+## Casos concretos: cuál elige cada tipo de negocio
+
+**La nutricionista independiente en Concepción**
+
+Ofrece consultas presenciales y online. Un cliente potencial la busca en Google, quiere ver sus credenciales, sus servicios y contactarla. No necesita un blog ni cinco páginas.
+
+Lo que necesita: landing page con descripción clara de su enfoque, sus especialidades, cómo funciona la consulta, precio referencial o rango, y botón directo a WhatsApp. Una landing page bien hecha posiciona para "nutricionista Concepción" y "nutricionista online Chile" sin problemas.
+
+**La empresa de climatización en Santiago**
+
+Instala aire acondicionado, hace mantenciones y vende equipos. Tres servicios distintos, cada uno con su propia búsqueda en Google ("instalación aire acondicionado Santiago", "mantención aire acondicionado Santiago", "venta split Santiago").
+
+Lo que necesita: sitio con una página por servicio principal más una página de inicio. Cada página puede posicionarse para su propia keyword. Una landing page única quedaría corta porque no puede hablar de los tres servicios con la profundidad necesaria.
+
+**El fotógrafo de matrimonios en Viña del Mar**
+
+Su trabajo se vende por el portafolio. Los clientes quieren ver fotos, leer testimonios y entender su estilo antes de contactarlo.
+
+Lo que necesita: one page corporativo con galería, testimonios y contacto. No necesariamente una landing page de conversión directa ni un sitio complejo. El diseño visual importa más que la estructura SEO en este caso.
+
+**La academia de idiomas en Puerto Montt**
+
+Ofrece inglés, portugués y alemán, con cursos para adultos, niños y empresas. Seis combinaciones de servicio × audiencia, cada una con búsquedas específicas.
+
+Lo que necesita: sitio completo con páginas por idioma y por audiencia, más eventualmente un blog con contenido educativo que posicione para búsquedas de aprendizaje de idiomas en la región. Una landing page única no le alcanza.
+
+## Una señal de que estás pagando de más
+
+Si un proveedor te ofrece un "sitio web de 10 páginas" para un negocio con un solo servicio en una sola ciudad, pregunta para qué sirven las 10 páginas.
+
+Muchos proveedores construyen sitios con más páginas de las necesarias porque cobran por página. Pero más páginas no son mejor SEO si el contenido está diluido o si varias páginas hablan de lo mismo con palabras distintas (eso se llama canibalización y puede perjudicar el posicionamiento).
+
+El número de páginas debe responder a cuántas búsquedas distintas quieres capturar — no al precio del paquete.
+
+## Cómo decidir: tres preguntas
+
+**¿Cuántos servicios distintos tienes?** Si tienes uno o dos servicios claros y bien definidos, una landing page es suficiente. Si tienes cinco o más servicios con búsquedas propias, necesitas páginas separadas.
+
+**¿Necesitas credibilidad institucional o solo captar clientes?** Para captar leads directos, la landing page convierte mejor. Para construir credibilidad ante empresas, instituciones o clientes de mayor ticket que van a investigar antes de decidir, el sitio completo da más confianza.
+
+**¿Tienes capacidad para mantener contenido?** Un blog solo tiene sentido si puedes publicar consistentemente. Un sitio con un blog abandonado hace 8 meses da peor imagen que no tener blog. Si no tienes tiempo para publicar, no lo pongas — o busca un proveedor que lo haga por ti.
+
+Si después de estas tres preguntas sigues sin claridad, lo más fácil es [cotizar directamente](/servicios/landing-page) — en AM Tecnología el diagnóstico inicial es gratuito y la recomendación siempre parte de lo que necesita tu negocio específico, no del producto que más nos conviene vender.
+
+## Preguntas frecuentes
+
+### ¿Una landing page puede posicionarse en Google?
+
+Sí. Una landing page bien optimizada con estructura técnica correcta puede posicionarse para búsquedas específicas de tu rubro y ciudad. Para muchas pymes con oferta clara y geografía definida, es todo lo que se necesita para aparecer en los primeros resultados y recibir clientes desde Google.
+
+### ¿Cuál es más barato, una landing page o un sitio web?
+
+En general, una landing page cuesta menos porque es una sola página. Pero "barato" no significa que sea menos efectivo — para muchos negocios, una landing page bien hecha genera más resultados que un sitio complejo y caro que nadie visita. El precio correcto depende de lo que necesitas lograr.
+
+### ¿Puedo empezar con una landing page y agregar páginas después?
+
+Sí. Es una de las formas más inteligentes de construir presencia digital: empezar con una landing page bien construida, posicionarla, y luego agregar páginas de servicio, ciudad o blog encima de la misma base técnica. No hay que empezar de cero.
+
+### ¿Una landing page tiene URL propia o es parte de un sitio?
+
+Puede ser cualquiera de las dos. Una landing page puede ser el sitio completo (amitaller.cl) o una página dentro de un sitio más grande (amitaller.cl/servicios/frenos). Para negocios que parten desde cero, la landing page como sitio principal es la forma más común y funcional.
+
+### ¿Cuál convierte mejor, una landing page o un sitio completo?
+
+Depende del objetivo. Para conversión directa — que alguien llegue, entienda el servicio y contacte — una landing page enfocada convierte mejor porque no distrae. Para decisiones de compra más largas donde el cliente investiga varias veces antes de decidir, el sitio completo con más contenido puede ser más efectivo porque construye confianza progresivamente.`,
+    faqSchema: [
+      {
+        q: "¿Una landing page puede posicionarse en Google?",
+        a: "Sí. Una landing page bien optimizada con estructura técnica correcta puede posicionarse para búsquedas específicas de tu rubro y ciudad. Para muchas pymes con oferta clara y geografía definida, es todo lo que se necesita para aparecer en los primeros resultados.",
+      },
+      {
+        q: "¿Cuál es más barato, una landing page o un sitio web?",
+        a: "En general, una landing page cuesta menos porque es una sola página. Pero 'barato' no significa menos efectivo — para muchos negocios, una landing page bien hecha genera más resultados que un sitio complejo que nadie visita. El precio correcto depende del objetivo.",
+      },
+      {
+        q: "¿Puedo empezar con una landing page y agregar páginas después?",
+        a: "Sí. Es una de las formas más inteligentes de construir presencia digital: empezar con una landing page bien construida, posicionarla, y luego agregar páginas de servicio o blog encima de la misma base técnica. No hay que empezar de cero.",
+      },
+      {
+        q: "¿Una landing page tiene URL propia o es parte de un sitio?",
+        a: "Puede ser cualquiera de las dos. Una landing page puede ser el sitio completo (amitaller.cl) o una página dentro de un sitio más grande (amitaller.cl/servicios/frenos). Para negocios que parten desde cero, la landing page como sitio principal es la forma más común.",
+      },
+      {
+        q: "¿Cuál convierte mejor, una landing page o un sitio completo?",
+        a: "Para conversión directa — que alguien llegue y contacte — una landing page enfocada convierte mejor porque no distrae. Para decisiones de compra largas donde el cliente investiga varias veces, el sitio completo puede ser más efectivo porque construye confianza progresivamente.",
+      },
+    ],
+  },
+  {
     slug: "google-ads-vs-seo-chile",
     title: "Google Ads vs SEO en Chile: Cuál Conviene Realmente",
     metaTitle: "Google Ads vs SEO en Chile: cuál conviene",
