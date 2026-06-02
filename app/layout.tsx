@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Posicionamiento en Google Chile | AM Tecnología",
+    default: "Contratar Página Web en Chile | AM Tecnología — desde $99.990",
     template: "%s | AM Tecnología",
   },
 
   description:
-    "Ayudamos a empresas de Chile a aparecer en Google con su página web. Presencia orgánica para que tus clientes te encuentren antes que a tu competencia.",
+    "¿Listo para contratar tu página web en Chile? La publicamos con SEO incluido desde $99.990 pago único, sin mensualidades. Cotiza hoy por WhatsApp.",
 
   keywords: [
     // Transaccionales — intención de compra
