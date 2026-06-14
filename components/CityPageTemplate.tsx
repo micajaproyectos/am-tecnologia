@@ -156,8 +156,8 @@ export default function CityPageTemplate({ city, jsonLd }: Props) {
             className="font-display font-bold text-white text-balance mb-6"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
-            Posicionamiento en Google para{" "}
-            <span className="gradient-text">negocios en {city.name}</span>
+            Diseño web para empresas en{" "}
+            <span className="gradient-text">{city.name}</span>
           </h2>
           <p className="text-am-muted text-base leading-[1.85] max-w-3xl mb-10">
             {city.whyUs}

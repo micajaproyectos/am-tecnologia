@@ -63,8 +63,8 @@ export default function PainPoints() {
             className="font-display font-bold text-white text-balance mb-4"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
-            ¿Por qué los negocios{" "}
-            <span className="gradient-text">no aparecen en Google?</span>
+            ¿Por qué tu negocio{" "}
+            <span className="gradient-text">no aparece en Google?</span>
           </h2>
         </div>
 

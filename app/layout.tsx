@@ -172,7 +172,7 @@ const jsonLd = {
         "opens": "09:00",
         "closes": "20:00",
       },
-      "sameAs": ["https://www.instagram.com/micajaempresa"],
+      "sameAs": ["https://www.facebook.com/profile.php?id=61572123085910"],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
@@ -186,7 +186,7 @@ const jsonLd = {
         "itemListElement": [
           {
             "@type": "Offer",
-            "price": "99990",
+            "price": "149990",
             "priceCurrency": "CLP",
             "itemOffered": {
               "@type": "Service",

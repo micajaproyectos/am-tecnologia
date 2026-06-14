@@ -15,7 +15,8 @@ export default function AboutService() {
               className="font-display font-bold text-white text-balance leading-snug"
               style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.2rem)" }}
             >
-              Posicionamiento en Google para pymes y emprendedores en Chile
+              Páginas web profesionales{" "}
+              <span className="gradient-text">que posicionan en Google</span>
             </h2>
           </header>
 

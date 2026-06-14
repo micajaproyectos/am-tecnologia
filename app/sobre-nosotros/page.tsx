@@ -155,7 +155,7 @@ export default function SobreNosotros() {
                 <div className="rounded-2xl overflow-hidden border border-white/8 shadow-[0_8px_40px_rgba(0,0,0,0.6)]">
                   <Image
                     src="/fundador.webp"
-                    alt="Allan Milla — Fundador de AM Tecnología"
+                    alt="Allan Milla, Ingeniero Civil y Fundador de AM Tecnología"
                     width={420}
                     height={500}
                     className="w-full object-cover"

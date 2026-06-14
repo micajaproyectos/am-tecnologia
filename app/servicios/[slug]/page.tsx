@@ -52,7 +52,7 @@ export default async function ServicePage({
       url: "https://www.amtecnologia.cl",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Lo Barnechea",
+        addressLocality: "Providencia",
         addressRegion: "Región Metropolitana",
         addressCountry: "CL",
       },

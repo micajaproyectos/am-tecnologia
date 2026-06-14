@@ -103,7 +103,7 @@ Aquí está el problema real. Muchos entregan una web "bonita" pero sin configur
 
 ### Agencia especializada en resultado
 
-**Rango de precio**: $99.990 a $500.000.
+**Rango de precio**: $149.990 a $500.000.
 
 El modelo que seguimos en AM Tecnología. No vendemos horas de diseño ni plantillas — entregamos una herramienta de captación de clientes. Cada [landing page](/servicios/landing-page) se construye con la estructura técnica que Google requiere, configuración de analytics y velocidad optimizada. El precio es competitivo porque nuestro proceso está optimizado para obtener resultados sin sacrificar calidad.
 
@@ -121,7 +121,7 @@ Antes de firmar, considera estos costos adicionales que a veces no aparecen en e
 
 **El costo invisible**: cada mes sin presencia en Google es un mes que tus competidores capturan esos clientes. Si tu rubro tiene 500 búsquedas mensuales en tu ciudad y tú no apareces, esos contactos van a otro lado — todos los meses.
 
-## ¿Por qué nuestro servicio parte desde $99.990?
+## ¿Por qué nuestro servicio parte desde $149.990?
 
 Es la pregunta que más nos hacen. La respuesta es directa: no vendemos diseño web — vendemos la herramienta completa para que tu negocio aparezca en Google.
 
@@ -378,7 +378,7 @@ Depende de qué canal:
 
 **Google Maps**: completamente gratis. Solo requiere tiempo para configurarlo bien.
 
-**Posicionamiento orgánico con web optimizada**: desde $99.990 pago único con una [landing page](/servicios/landing-page) bien construida. Es la inversión base — sin web optimizada, ninguna otra estrategia funciona.
+**Posicionamiento orgánico con web optimizada**: desde $149.990 pago único con una [landing page](/servicios/landing-page) bien construida. Es la inversión base — sin web optimizada, ninguna otra estrategia funciona.
 
 **SEO avanzado con seguimiento mensual**: variable según industria y objetivos. Para la mayoría de las pymes en Chile, el SEO local con una web bien estructurada es suficiente para resultados concretos.
 
@@ -846,9 +846,9 @@ Son distintos pero están conectados. Google Maps es el mapa donde apareces. Goo
   {
     slug: "whatsapp-business-para-empresas-chile",
     title: "WhatsApp Business para Empresas en Chile: Guía Completa 2026",
-    metaTitle: "WhatsApp Business para Empresas en Chile 2026",
+    metaTitle: "WhatsApp Business Chile: Guía Paso a Paso para Pymes 2026",
     metaDescription:
-      "Aprende a configurar y sacarle el máximo provecho a WhatsApp Business para tu empresa o pyme en Chile. Catálogo, respuestas automáticas, links directos y más.",
+      "Catálogo, respuestas automáticas y link directo configurados en menos de 20 minutos. La guía completa de WhatsApp Business para pymes en Chile.",
     canonicalUrl:
       "https://www.amtecnologia.cl/blog/whatsapp-business-para-empresas-chile",
     date: "2026-05-07",
@@ -1039,9 +1039,9 @@ Absolutamente. De hecho, es donde más valor tiene: las respuestas automáticas 
   {
     slug: "cuanto-cobra-agencia-seo-chile",
     title: "¿Cuánto Cobra una Agencia SEO en Chile? Precios Reales 2026",
-    metaTitle: "¿Cuánto cobra una agencia SEO en Chile? Precios 2026",
+    metaTitle: "¿Cuánto Cuesta el SEO en Chile? Precios Reales de Agencias 2026",
     metaDescription:
-      "Precios reales de agencias SEO en Chile en 2026. Qué incluye cada plan, qué cobros son injustificados y cómo elegir sin caer en promesas vacías.",
+      "De $50.000 a $2.000.000 al mes: comparamos qué incluye cada rango, qué cobros son injustificados y cómo elegir una agencia SEO en Chile sin pagar de más.",
     canonicalUrl:
       "https://www.amtecnologia.cl/blog/cuanto-cobra-agencia-seo-chile",
     date: "2026-05-29",
@@ -1137,7 +1137,7 @@ Cuando recibas distintas propuestas, estas son las preguntas que deberías hacer
 
 Para ser directos: nuestro enfoque de base está en construir el sitio con la estructura técnica correcta desde el inicio — metadata, schema, velocidad, etiquetas y contenido orientado a búsquedas reales.
 
-Eso cuesta $99.990 pago único para una [landing page](/servicios/landing-page) o sitio básico. Sin mensualidades obligatorias.
+Eso cuesta $149.990 pago único para una [landing page](/servicios/landing-page) o sitio básico. Sin mensualidades obligatorias.
 
 Para seguimiento mensual — análisis de posiciones, contenido nuevo, ajuste de keywords y estrategia de links — partimos desde $59.990 mensuales, y se define según el rubro y la competencia. Este plan no se ofrece en la web; se conversa directamente con cada cliente para ajustarlo a lo que necesita.
 
@@ -1185,7 +1185,9 @@ No necesariamente. El precio refleja el tamaño del equipo, los costos fijos y l
 
 ### ¿Puedo hacer SEO yo mismo sin contratar a nadie?
 
-Parte del SEO la puedes hacer tú: crear tu perfil de Google Business Profile, instalar Google Analytics y Search Console, y escribir contenido relevante para tu negocio. La parte técnica — estructura del sitio, velocidad, schema markup, arquitectura de URLs — generalmente requiere conocimientos más específicos o la ayuda de alguien que construya el sitio correctamente desde el inicio.`,
+Parte del SEO la puedes hacer tú: crear tu perfil de Google Business Profile, instalar Google Analytics y Search Console, y escribir contenido relevante para tu negocio. La parte técnica — estructura del sitio, velocidad, schema markup, arquitectura de URLs — generalmente requiere conocimientos más específicos o la ayuda de alguien que construya el sitio correctamente desde el inicio.
+
+Si estás buscando posicionamiento en una ciudad específica, tenemos guías para [Santiago](/posicionamiento-google-santiago), [Concepción](/posicionamiento-google-concepcion), [Temuco](/posicionamiento-google-temuco), [Puerto Montt](/posicionamiento-google-puerto-montt) y [otras ciudades de Chile](/aparecer-en-google).`,
     faqSchema: [
       {
         q: "¿Cuánto cobra una agencia SEO en Chile por mes?",

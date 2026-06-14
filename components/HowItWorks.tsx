@@ -48,8 +48,8 @@ export default function HowItWorks() {
             className="font-display font-bold text-white text-balance"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
-            ¿Cómo funciona contratar tu web{" "}
-            <span className="gradient-text">con AM Tecnología?</span>
+            ¿Cómo funciona crear tu{" "}
+            <span className="gradient-text">página web con nosotros?</span>
           </h2>
         </div>
 
@@ -86,7 +86,7 @@ export default function HowItWorks() {
               <div className="relative w-full">
                 <Image
                   src="/fundador.webp"
-                  alt="Allan Milla – Fundador AM Tecnología"
+                  alt="Allan Milla, Ingeniero Civil y Fundador de AM Tecnología"
                   width={260}
                   height={300}
                   sizes="260px"

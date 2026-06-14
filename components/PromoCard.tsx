@@ -23,7 +23,7 @@ export default function PromoCard() {
           /* eslint-disable-next-line @next/next/no-img-element */
           <img
             src="/promo-hero.png"
-            alt="Promoción de lanzamiento AM Tecnología"
+            alt="Diseño web profesional para empresas en Chile — AM Tecnología"
             className="w-full h-full object-cover"
             onError={() => setImgError(true)}
           />

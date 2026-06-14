@@ -13,7 +13,7 @@ const WA =
 
 const SHEET_WEBHOOK_URL =
   "https://script.google.com/macros/s/AKfycbzL-Ub_JIchX7l-yrHoKFcznn_tBhS6-Ak2k4vUVqPKnQV41VherHQDLt5ZcR5OUaP2/exec";
-const CONVERSION_VALUE = 99990;
+const CONVERSION_VALUE = 149990;
 const CONVERSION_NAME  = "lead_formulario_cta";
 const CHILE_TIME_ZONE  = "America/Santiago";
 
@@ -110,8 +110,8 @@ export default function CTA() {
               className="font-display font-extrabold text-white text-balance leading-[1.15] mb-3"
               style={{ fontSize: "clamp(1.75rem, 4vw, 2.75rem)" }}
             >
-              ¿Quieres que tu negocio{" "}
-              <span className="gradient-text-light">aparezca en Google?</span>
+              Cotiza tu{" "}
+              <span className="gradient-text-light">página web en Chile</span>
             </h2>
 
             <p className="text-white/55 text-base leading-relaxed mb-8">

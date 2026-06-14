@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Aparecer en Google | Posicionamiento Chile",
+  title: "Cómo Aparecer en Google en Chile | Posicionamiento Web para Pymes",
   description:
-    "Ayudamos a empresas y pymes a aparecer en Google mediante páginas web optimizadas, presencia digital y posicionamiento orgánico.",
+    "¿Tu negocio no aparece en Google? Creamos páginas web con SEO incluido para que tus clientes te encuentren antes que a tu competencia. Desde $149.990.",
   alternates: {
     canonical: "https://www.amtecnologia.cl/aparecer-en-google",
   },
@@ -529,7 +529,7 @@ export default function AparecerEnGooglePage() {
           <p className="text-am-muted text-[13px] font-semibold uppercase tracking-widest mb-4">Servicios</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {[
-              { href: "/servicios/landing-page", label: "Landing Page de Ventas", price: "desde $99.990" },
+              { href: "/servicios/landing-page", label: "Landing Page de Ventas", price: "desde $149.990" },
               { href: "/servicios/one-page-corporativo", label: "One Page Corporativo", price: "desde $99.990" },
               { href: "/servicios/ecommerce", label: "Tienda Online", price: "$199.990 a $399.990" },
               { href: "/servicios/automatizaciones-ia", label: "Automatizaciones con IA", price: "desde $199.990" },

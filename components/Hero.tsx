@@ -41,7 +41,7 @@ export default function Hero() {
             style={{ fontSize: "clamp(2rem, 4.5vw, 3.5rem)" }}
           >
             Contrata tu Página Web{" "}
-            <span className="gradient-text">Profesional en Chile</span>
+            <span className="gradient-text">con SEO en Chile</span>
           </h1>
 
           {/* Sub */}
@@ -55,7 +55,7 @@ export default function Hero() {
 
           {/* Price */}
           <p className="font-display font-extrabold text-white text-3xl mb-4">
-            $99.990
+            $149.990
           </p>
 
           {/* Bullets */}

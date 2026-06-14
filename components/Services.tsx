@@ -136,7 +136,7 @@ export default function Services() {
     <section id="servicios" className="relative py-28 overflow-hidden">
       {/* Image background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Image src="/proyectos.webp" alt="Servicios de diseño web y posicionamiento en Google para empresas chilenas" fill loading="lazy" sizes="100vw" className="object-cover object-center" />
+        <Image src="/proyectos.webp" alt="" fill loading="lazy" sizes="100vw" className="object-cover object-center" />
       </div>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/55 pointer-events-none" />
@@ -174,8 +174,8 @@ export default function Services() {
             <h2 className="font-display font-bold text-white text-balance"
               style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}
             >
-              Todo lo que necesitas para{" "}
-              <span className="gradient-text">aparecer en Google</span>
+              Servicios de diseño web{" "}
+              <span className="gradient-text">para empresas en Chile</span>
             </h2>
             <p className="text-am-muted text-sm leading-relaxed mt-3 max-w-lg">
               Posicionamiento en Google para negocios en todo Chile. Desde $99.990 pago único · Sin mensualidades.

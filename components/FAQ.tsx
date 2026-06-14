@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const faqs = [
   {
     q: "¿Cuánto cuesta una página web en Chile?",
-    a: "Con nosotros, $99.990 precio de lanzamiento — pago único. Lo que hacemos no es solo crear una página: es posicionar tu marca en Google para que tus clientes te encuentren cuando buscan lo que tú ofreces. Las agencias de marketing cobran entre $400.000 y $600.000 por este mismo resultado. Nosotros lo entregamos desde $99.990.",
+    a: "Con nosotros, $149.990 pago único. Lo que hacemos no es solo crear una página: es posicionar tu marca en Google para que tus clientes te encuentren cuando buscan lo que tú ofreces. Las agencias de marketing cobran entre $400.000 y $600.000 por este mismo resultado. Nosotros lo entregamos desde $149.990.",
   },
   {
     q: "¿Cómo hago para que mi negocio aparezca en Google?",
@@ -49,7 +50,7 @@ export default function FAQ() {
     <section className="relative py-24 overflow-hidden">
       {/* Image background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Image src="/proyectos.webp" alt="Diseño web profesional para negocios y pymes en Chile" fill loading="lazy" sizes="100vw" className="object-cover object-center" />
+        <Image src="/proyectos.webp" alt="" fill loading="lazy" sizes="100vw" className="object-cover object-center" />
       </div>
       {/* Overlay opaco para diferenciarlo de Services */}
       <div className="absolute inset-0 bg-black/82 pointer-events-none" />
@@ -74,7 +75,7 @@ export default function FAQ() {
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
             Preguntas frecuentes sobre{" "}
-            <span className="gradient-text">posicionamiento en Google</span>
+            <span className="gradient-text">páginas web en Chile</span>
           </h2>
         </div>
 
@@ -140,6 +141,15 @@ export default function FAQ() {
           >
             Escríbenos por WhatsApp →
           </a>
+        </p>
+        <p className="text-center text-am-muted text-sm mt-3">
+          ¿Quieres saber más sobre páginas web y SEO?{" "}
+          <Link
+            href="/blog"
+            className="text-am-primary hover:text-am-accent font-semibold transition-colors"
+          >
+            Lee nuestras guías →
+          </Link>
         </p>
       </div>
     </section>
