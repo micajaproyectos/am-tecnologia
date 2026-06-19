@@ -628,9 +628,9 @@ Sí. Sercotec tiene la Ruta Digital con cursos gratuitos y el Capital Semilla co
   {
     slug: "google-maps-para-negocios-chile-guia-completa",
     title: "Google Maps para Negocios en Chile: Guía Completa 2026",
-    metaTitle: "Google Maps para Negocios en Chile | Guía 2026",
+    metaTitle: "Cómo aparecer en Google Maps gratis: guía para tu negocio",
     metaDescription:
-      "Aprende a registrar y optimizar tu negocio en Google Maps gratis. Guía completa para empresas y pymes en Chile con pasos, tips y errores comunes.",
+      "Registra y optimiza tu negocio en Google Maps gratis y aparece antes que tu competencia. Guía paso a paso para pymes en Chile, con los errores que debes evitar.",
     canonicalUrl:
       "https://www.amtecnologia.cl/blog/google-maps-para-negocios-chile-guia-completa",
     date: "2026-05-07",
