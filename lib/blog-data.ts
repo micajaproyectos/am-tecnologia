@@ -12,6 +12,15 @@ export interface BlogPost {
   excerpt: string;
   content: string;
   faqSchema?: { q: string; a: string }[];
+  /** Override del CTA por post. Si se omite, se usa el CTA genérico de la plantilla. */
+  cta?: {
+    eyebrow: string;
+    heading: string;
+    subheading: string;
+    buttonText: string;
+    /** Texto que se pre-llena en WhatsApp (se codifica para la URL). */
+    waMessage: string;
+  };
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -1210,6 +1219,15 @@ Si estás buscando posicionamiento en una ciudad específica, tenemos guías par
         a: "Parte del SEO la puedes hacer tú: crear tu perfil de Google Business Profile, instalar Analytics y Search Console, y escribir contenido relevante. La parte técnica — velocidad, schema markup, arquitectura de URLs — generalmente requiere conocimientos específicos o un sitio bien construido desde el inicio.",
       },
     ],
+    cta: {
+      eyebrow: "Diagnóstico SEO gratis",
+      heading: "¿Quieres posicionar tu sitio en Google y no sabes por dónde partir?",
+      subheading:
+        "Te hacemos un diagnóstico SEO gratis de tu sitio: qué te está frenando y cuánto costaría solucionarlo. Sin compromiso.",
+      buttonText: "Quiero mi diagnóstico SEO gratis",
+      waMessage:
+        "Hola, leí su artículo sobre cuánto cuesta el SEO y quiero un diagnóstico gratis de mi sitio: ",
+    },
   },
   {
     slug: "landing-page-vs-sitio-web-chile",

@@ -306,22 +306,28 @@ export default async function BlogPostPage({
           {/* CTA */}
           <div className="mt-16 rounded-2xl border border-am-primary/20 bg-am-primary/5 px-8 py-10 text-center">
             <p className="text-am-accent text-[12px] font-bold uppercase tracking-widest mb-3">
-              ¿Listo para dar el siguiente paso?
+              {post.cta ? post.cta.eyebrow : "¿Listo para dar el siguiente paso?"}
             </p>
             <h3 className="font-display font-bold text-white text-[22px] mb-3 text-balance">
-              Tu negocio puede aparecer en Google este mes
+              {post.cta ? post.cta.heading : "Tu negocio puede aparecer en Google este mes"}
             </h3>
             <p className="text-am-muted text-[14px] mb-6">
-              Desde $99.990 pago único · Resultados reales · Sin mensualidades
+              {post.cta
+                ? post.cta.subheading
+                : "Desde $99.990 pago único · Resultados reales · Sin mensualidades"}
             </p>
             <a
-              href={WA}
+              href={
+                post.cta
+                  ? `https://wa.me/56985660954?text=${encodeURIComponent(post.cta.waMessage)}`
+                  : WA
+              }
               data-cta-source="blog_article_bottom"
               target="_blank"
               rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-am-primary hover:bg-am-primary/90 text-white font-bold text-[15px] transition-all duration-200"
             >
-              Cotizar ahora →
+              {post.cta ? post.cta.buttonText : "Cotizar ahora →"}
             </a>
           </div>
 
