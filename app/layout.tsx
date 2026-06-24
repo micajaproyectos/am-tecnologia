@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Contratar Página Web en Chile | AM Tecnología — desde $99.990",
+    default: "Contratar Página Web en Chile | AM Tecnología — desde $149.990",
     template: "%s | AM Tecnología",
   },
 
   description:
-    "¿Listo para contratar tu página web en Chile? La publicamos con SEO incluido desde $99.990 pago único, sin mensualidades. Cotiza hoy por WhatsApp.",
+    "¿Listo para contratar tu página web en Chile? La publicamos con SEO incluido desde $149.990 pago único, sin mensualidades. Cotiza hoy por WhatsApp.",
 
   keywords: [
     // Transaccionales — intención de compra
@@ -97,9 +97,9 @@ export const metadata: Metadata = {
     locale: "es_CL",
     url: siteUrl,
     siteName: "AM Tecnología",
-    title: "Diseño Web Chile | Páginas Web desde $99.990",
+    title: "Diseño Web Chile | Páginas Web desde $149.990",
     description:
-      "Cotiza tu página web hoy desde $99.990 pago único. Landing pages, tiendas online y sitios corporativos para empresas en todo Chile. Orientado a resultados, sin mensualidades.",
+      "Cotiza tu página web hoy desde $149.990 pago único. Landing pages, tiendas online y sitios corporativos para empresas en todo Chile. Orientado a resultados, sin mensualidades.",
     images: [
       {
         url: "/og-image.jpg",
@@ -112,9 +112,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Diseño Web Chile | Páginas Web desde $99.990",
+    title: "Diseño Web Chile | Páginas Web desde $149.990",
     description:
-      "Cotiza tu página web hoy desde $99.990 pago único. Orientado a resultados, sin mensualidades. Todo Chile.",
+      "Cotiza tu página web hoy desde $149.990 pago único. Orientado a resultados, sin mensualidades. Todo Chile.",
     images: ["/og-image.jpg"],
   },
 };

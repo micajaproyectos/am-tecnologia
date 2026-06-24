@@ -302,7 +302,7 @@ export default function SobreNosotros() {
             Tu negocio puede aparecer en Google este mes
           </h2>
           <p className="text-am-muted text-base leading-relaxed mb-8">
-            Desde $99.990 pago único · Resultados reales · Sin mensualidades
+            Desde $149.990 pago único · Resultados reales · Sin mensualidades
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a

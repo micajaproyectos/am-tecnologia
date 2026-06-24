@@ -189,7 +189,7 @@ export const SERVICES: ServiceData[] = [
     title: "One Page Corporativo",
     metaTitle: "One Page Corporativo | Diseño Web Chile",
     metaDescription:
-      "Sitio web corporativo en una página, elegante y optimizado para Google. Ideal para profesionales y pymes en Chile. Desde $99.990 pago único.",
+      "Sitio web corporativo en una página, elegante y optimizado para Google. Ideal para profesionales y pymes en Chile. Desde $149.990 pago único.",
     seoTitle: "One Page Corporativo Chile",
     whatIsTitle: "Por qué un One Page Corporativo mejora tu presencia digital",
     badge: "Para profesionales",
@@ -238,7 +238,7 @@ export const SERVICES: ServiceData[] = [
       { step: "03", title: "Optimización SEO", desc: "Configuramos metadata, schema, velocidad y estructura de palabras clave para tu rubro y ciudad." },
       { step: "04", title: "Publicación", desc: "Tu sitio queda online con dominio, hosting y Analytics configurados. Listo para recibir clientes." },
     ],
-    price: "$99.990",
+    price: "$149.990",
     priceNote: "Pago único · Sin mensualidades · Dominio y hosting incluidos el primer año",
     faqs: [
       {

@@ -594,7 +594,7 @@ Para cerrar, los errores que más vemos — y que puedes evitar:
 
 ### ¿Cuánto cuesta digitalizar una pyme en Chile?
 
-Depende de qué tan lejos quieras llegar. El punto de partida — una web profesional con SEO básico — parte desde $99.990 pago único. Herramientas como Google Analytics, Search Console, Google Business Profile y WhatsApp Business son completamente gratuitas. Si quieres aprovechar fondos del gobierno, Sercotec y Corfo tienen programas que pueden cubrir parte o todo el costo.
+Depende de qué tan lejos quieras llegar. El punto de partida — una web profesional con SEO básico — parte desde $149.990 pago único. Herramientas como Google Analytics, Search Console, Google Business Profile y WhatsApp Business son completamente gratuitas. Si quieres aprovechar fondos del gobierno, Sercotec y Corfo tienen programas que pueden cubrir parte o todo el costo.
 
 ### ¿Necesito saber de tecnología para digitalizar mi negocio?
 
@@ -614,7 +614,7 @@ Sí. Sercotec tiene la Ruta Digital con cursos gratuitos y el Capital Semilla co
     faqSchema: [
       {
         q: "¿Cuánto cuesta digitalizar una pyme en Chile?",
-        a: "El punto de partida — una web profesional con SEO básico — parte desde $99.990 pago único. Herramientas como Google Analytics, Search Console y Google Business Profile son completamente gratuitas. Sercotec y Corfo tienen programas que pueden cubrir parte del costo.",
+        a: "El punto de partida — una web profesional con SEO básico — parte desde $149.990 pago único. Herramientas como Google Analytics, Search Console y Google Business Profile son completamente gratuitas. Sercotec y Corfo tienen programas que pueden cubrir parte del costo.",
       },
       {
         q: "¿Necesito saber de tecnología para digitalizar mi negocio en Chile?",
@@ -1459,7 +1459,7 @@ A eso hay que agregar el costo de gestión si contratas a alguien (agencias cobr
 
 ### SEO: la inversión inicial
 
-Una web correctamente construida para posicionamiento orgánico en Chile parte desde $99.990 pago único. Eso cubre estructura técnica, SEO on-page, configuración de Google Analytics, Search Console y Google Maps. Sin mensualidades obligatorias.
+Una web correctamente construida para posicionamiento orgánico en Chile parte desde $149.990 pago único. Eso cubre estructura técnica, SEO on-page, configuración de Google Analytics, Search Console y Google Maps. Sin mensualidades obligatorias.
 
 Para seguimiento mensual — ajuste de keywords, publicación de contenido, análisis de competencia — los planes van desde $80.000 a $200.000 mensuales, y son opcionales, no obligatorios para mantener el posicionamiento básico.
 

@@ -31,7 +31,7 @@ export default function AboutService() {
               En AM Tecnología nos especializamos en llevar negocios chilenos a las primeras posiciones de Google. Creamos páginas web profesionales optimizadas para tu rubro y tu ciudad, configuramos tu perfil en Google Maps y aplicamos estrategias de SEO local para que aparezcas exactamente cuando tus clientes te buscan — sin que tengas que entender de tecnología.
             </p>
             <p>
-              Trabajamos con pymes y emprendedores en todo Chile, desde Santiago y Concepción hasta Temuco, Puerto Montt y Punta Arenas. Nuestro servicio de posicionamiento en Google parte desde <strong className="text-white font-semibold">$99.990 pago único</strong>, sin mensualidades ni costos ocultos.
+              Trabajamos con pymes y emprendedores en todo Chile, desde Santiago y Concepción hasta Temuco, Puerto Montt y Punta Arenas. Nuestro servicio de posicionamiento en Google parte desde <strong className="text-white font-semibold">$149.990 pago único</strong>, sin mensualidades ni costos ocultos.
             </p>
           </div>
 

@@ -1,13 +1,13 @@
 # AM Tecnología
 
-> Agencia chilena especializada en posicionamiento orgánico en Google para pymes y emprendedores. Creamos páginas web profesionales optimizadas para SEO local, configuramos Google Maps y aplicamos estrategias que llevan negocios a las primeras posiciones de Google — sin publicidad pagada, sin mensualidades, desde $99.990 pago único. Atendemos dos perfiles: negocios ya establecidos que viven de referidos y quieren que Google les envíe clientes, y emprendedores que quieren posicionarse desde el día uno. Fundador: Allan Milla, Ingeniero Civil. Servicio 100% remoto para todo Chile.
+> Agencia chilena especializada en posicionamiento orgánico en Google para pymes y emprendedores. Creamos páginas web profesionales optimizadas para SEO local, configuramos Google Maps y aplicamos estrategias que llevan negocios a las primeras posiciones de Google — sin publicidad pagada, sin mensualidades, desde $149.990 pago único. Atendemos dos perfiles: negocios ya establecidos que viven de referidos y quieren que Google les envíe clientes, y emprendedores que quieren posicionarse desde el día uno. Fundador: Allan Milla, Ingeniero Civil. Servicio 100% remoto para todo Chile.
 
 ## Servicios
 
 - [Posicionamiento en Google](https://www.amtecnologia.cl/aparecer-en-google): Página web profesional + SEO local + Google Maps + Analytics. Desde $149.990 pago único. Es el servicio principal.
 - [Landing Page de Ventas](https://www.amtecnologia.cl/servicios/landing-page): Página diseñada para convertir visitas en clientes. Incluye posicionamiento orgánico. $149.990 pago único.
 - [Gestión de Redes Sociales](https://www.amtecnologia.cl/servicios/presencia-redes-sociales): Administración mensual de Instagram, Facebook, TikTok y Google Business Profile. Desde $99.990/mes, sin permanencia mínima.
-- [One Page Corporativo](https://www.amtecnologia.cl/servicios/one-page-corporativo): Sitio web de una página para profesionales independientes, consultoras y pymes. $99.990 pago único.
+- [One Page Corporativo](https://www.amtecnologia.cl/servicios/one-page-corporativo): Sitio web de una página para profesionales independientes, consultoras y pymes. $149.990 pago único.
 - [E-commerce con Pago](https://www.amtecnologia.cl/servicios/ecommerce): Tienda online con Webpay y MercadoPago integrado. Gestión de inventario y panel administrativo. $199.990 a $399.990 pago único.
 - [Automatizaciones con IA](https://www.amtecnologia.cl/servicios/automatizaciones-ia): Chatbots 24/7, flujos automáticos de WhatsApp y análisis de datos con inteligencia artificial. Desde $199.990.
 - [App Web SaaS](https://www.amtecnologia.cl/servicios/app-web-saas): Aplicaciones web a medida para digitalizar procesos internos o lanzar un producto de software. Desde $500.000.

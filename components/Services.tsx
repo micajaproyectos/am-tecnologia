@@ -178,7 +178,7 @@ export default function Services() {
               <span className="gradient-text">para empresas en Chile</span>
             </h2>
             <p className="text-am-muted text-sm leading-relaxed mt-3 max-w-lg">
-              Posicionamiento en Google para negocios en todo Chile. Desde $99.990 pago único · Sin mensualidades.
+              Posicionamiento en Google para negocios en todo Chile. Desde $149.990 pago único · Sin mensualidades.
             </p>
           </div>
           {/* Nav arrows */}

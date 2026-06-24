@@ -55,7 +55,7 @@ export default function Hero() {
 
           {/* Price */}
           <p className="font-display font-extrabold text-white text-3xl mb-4">
-            $149.990
+            $199.990
           </p>
 
           {/* Bullets */}
