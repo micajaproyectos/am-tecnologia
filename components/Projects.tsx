@@ -3,7 +3,13 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-const projects: { url: string; title: string; type: string; img?: string }[] = [
+const projects: { url: string; title: string; type: string; img?: string; aspect?: number }[] = [
+  {
+    url: "https://futarte.cl",
+    title: "Futarte",
+    type: "Tienda de Ropa",
+    img: "/futarte.png",
+  },
   {
     url: "https://www.clinicabeautylab.cl",
     title: "Clínica Beauty Lab",
@@ -157,9 +163,9 @@ export default function Projects() {
   );
 }
 
-function ProjectCard({ url, title, type, img, cardW, scale, previewH }: (typeof projects)[0] & { cardW: number; scale: number; previewH: number }) {
+function ProjectCard({ url, title, type, img, aspect, cardW, scale, previewH }: (typeof projects)[0] & { cardW: number; scale: number; previewH: number }) {
   const domain = url.replace(/^https?:\/\/(www\.)?/, "");
-  const imgH = img ? Math.round(cardW / IMG_ASPECT) : previewH;
+  const imgH = img ? Math.round(cardW / (aspect ?? IMG_ASPECT)) : previewH;
 
   return (
     <div
