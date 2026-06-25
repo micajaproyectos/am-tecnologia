@@ -86,7 +86,7 @@ export default function HowItWorks() {
               <div className="relative w-full">
                 <Image
                   src="/fundador.webp"
-                  alt="Allan Milla, Ingeniero Civil y Fundador de AM Tecnología"
+                  alt="Allan Milla, Ingeniero Civil Industrial y Fundador de AM Tecnología"
                   width={260}
                   height={300}
                   sizes="260px"

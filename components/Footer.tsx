@@ -32,7 +32,7 @@ export default function Footer() {
             </a>
             <p className="text-am-muted text-sm leading-[1.7] max-w-[260px]">
               Posicionamiento en Google y soluciones digitales diseñadas por
-              Ingenieros Civiles para impulsar tu negocio en Chile.
+              un ingeniero para impulsar tu negocio en Chile.
             </p>
             {/* Social */}
             <div className="flex gap-3 mt-6">

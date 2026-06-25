@@ -79,7 +79,7 @@ export default function AllanMillaPage() {
             <div className="shrink-0 w-24 h-24 rounded-full border-2 border-am-primary/30 overflow-hidden">
               <Image
                 src="/fundador.webp"
-                alt="Allan Milla, Ingeniero Civil y Fundador de AM Tecnología"
+                alt="Allan Milla, Ingeniero Civil Industrial y Fundador de AM Tecnología"
                 width={96}
                 height={96}
                 className="w-full h-full object-cover object-top"

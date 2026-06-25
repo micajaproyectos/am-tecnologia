@@ -44,9 +44,9 @@ export default function WhyUs() {
               <span className="gradient-text">AM Tecnología</span>
             </h2>
             <p className="text-am-muted text-lg leading-[1.75] mb-10">
-              No somos una agencia genérica. Somos Ingenieros Civiles que entienden
+              No somos una agencia genérica: detrás hay un ingeniero que entiende
               la lógica de los procesos, la eficiencia y la optimización — y la
-              aplicamos al mundo digital.
+              aplica al mundo digital.
             </p>
 
             <div className="flex flex-col gap-6">

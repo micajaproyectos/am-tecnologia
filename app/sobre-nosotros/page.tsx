@@ -32,7 +32,8 @@ const jsonLd = {
   jobTitle: "Ingeniero Civil Industrial",
   description:
     "Fundador de AM Tecnología. Especialista en desarrollo Full Stack, Ingeniería de IA, Marketing Digital e Innovación. Construye presencia digital que posiciona empresas chilenas en Google.",
-  url: `${siteUrl}/sobre-nosotros`,
+  url: `${siteUrl}/autor/allan-milla`,
+  mainEntityOfPage: `${siteUrl}/autor/allan-milla`,
   image: `${siteUrl}/fundador.webp`,
   worksFor: {
     "@type": "Organization",
@@ -155,7 +156,7 @@ export default function SobreNosotros() {
                 <div className="rounded-2xl overflow-hidden border border-white/8 shadow-[0_8px_40px_rgba(0,0,0,0.6)]">
                   <Image
                     src="/fundador.webp"
-                    alt="Allan Milla, Ingeniero Civil y Fundador de AM Tecnología"
+                    alt="Allan Milla, Ingeniero Civil Industrial y Fundador de AM Tecnología"
                     width={420}
                     height={500}
                     className="w-full object-cover"

@@ -127,7 +127,7 @@ const jsonLd = {
       "@id": "https://www.amtecnologia.cl/#business",
       "name": "AM Tecnología",
       "description":
-        "Agencia de desarrollo web profesional en Chile. Creamos páginas web, tiendas online y automatizaciones con IA para empresas. Diseñadas por Ingenieros Civiles. Orientados a resultados reales.",
+        "Agencia de desarrollo web profesional en Chile. Creamos páginas web, tiendas online y automatizaciones con IA para empresas. Diseñadas por un Ingeniero Civil Industrial. Orientados a resultados reales.",
       "url": "https://www.amtecnologia.cl",
       "image": "https://www.amtecnologia.cl/og-image.jpg",
       "logo": {
