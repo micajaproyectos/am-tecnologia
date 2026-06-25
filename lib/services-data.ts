@@ -35,7 +35,7 @@ export const SERVICES: ServiceData[] = [
     title: "Landing Page de Ventas",
     metaTitle: "Landing Page Chile | Páginas que Convierten",
     metaDescription:
-      "Creamos landing pages que convierten visitas en clientes desde Google. Posicionamiento orgánico incluido. Desde $149.990 pago único en Chile.",
+      "Creamos landing pages que convierten visitas en clientes desde Google. Posicionamiento orgánico incluido. Desde $199.990 pago único en Chile.",
     seoTitle: "Landing Page de Ventas Chile",
     whatIsTitle: "Cómo funciona una Landing Page de Ventas en Chile",
     badge: "Más contratado",
@@ -84,7 +84,7 @@ export const SERVICES: ServiceData[] = [
       { step: "03", title: "Revisión y ajustes", desc: "Te mostramos el diseño. Tienes una ronda de ajustes incluida para que todo quede exactamente como lo necesitas." },
       { step: "04", title: "Publicación y entrega", desc: "Subimos el sitio, configuramos Analytics, Search Console y te entregamos accesos completos." },
     ],
-    price: "$149.990",
+    price: "$199.990",
     priceNote: "Pago único · Sin mensualidades · Dominio y hosting incluidos el primer año",
     faqs: [
       {
@@ -189,7 +189,7 @@ export const SERVICES: ServiceData[] = [
     title: "One Page Corporativo",
     metaTitle: "One Page Corporativo | Diseño Web Chile",
     metaDescription:
-      "Sitio web corporativo en una página, elegante y optimizado para Google. Ideal para profesionales y pymes en Chile. Desde $149.990 pago único.",
+      "Sitio web corporativo en una página, elegante y optimizado para Google. Ideal para profesionales y pymes en Chile. Desde $199.990 pago único.",
     seoTitle: "One Page Corporativo Chile",
     whatIsTitle: "Por qué un One Page Corporativo mejora tu presencia digital",
     badge: "Para profesionales",
@@ -238,7 +238,7 @@ export const SERVICES: ServiceData[] = [
       { step: "03", title: "Optimización SEO", desc: "Configuramos metadata, schema, velocidad y estructura de palabras clave para tu rubro y ciudad." },
       { step: "04", title: "Publicación", desc: "Tu sitio queda online con dominio, hosting y Analytics configurados. Listo para recibir clientes." },
     ],
-    price: "$149.990",
+    price: "$199.990",
     priceNote: "Pago único · Sin mensualidades · Dominio y hosting incluidos el primer año",
     faqs: [
       {

@@ -24,7 +24,7 @@ const faqJsonLd = {
       "name": "¿Cuánto cuesta una página web en Chile?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Con nosotros, $149.990 pago único. Lo que hacemos no es solo crear una página: es posicionar tu marca en Google para que tus clientes te encuentren cuando buscan lo que tú ofreces. Las agencias de marketing cobran entre $400.000 y $600.000 por este mismo resultado. Nosotros lo entregamos desde $149.990.",
+        "text": "Con nosotros, $199.990 pago único. Lo que hacemos no es solo crear una página: es posicionar tu marca en Google para que tus clientes te encuentren cuando buscan lo que tú ofreces. Las agencias de marketing cobran entre $400.000 y $600.000 por este mismo resultado. Nosotros lo entregamos desde $199.990.",
       },
     },
     {

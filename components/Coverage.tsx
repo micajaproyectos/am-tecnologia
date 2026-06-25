@@ -35,8 +35,8 @@ export default function Coverage() {
             className="font-display font-bold text-white text-balance"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
-            Diseño web para{" "}
-            <span className="gradient-text">negocios en todo Chile</span>
+            Posicionamiento en Google{" "}
+            <span className="gradient-text">en todo Chile</span>
           </h2>
           <p className="text-am-muted text-sm mt-4 max-w-xl mx-auto leading-relaxed">
             Trabajamos 100% remoto con negocios en todo Chile. Sin importar si estás en el norte, el centro o la Patagonia, aplicamos la misma metodología de SEO local que ha llevado a más de 50 pymes chilenas a las primeras posiciones de Google.

@@ -99,8 +99,8 @@ export default function Projects() {
         <h2 className="font-display font-bold text-white text-balance"
           style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}
         >
-          Diseño Web en Chile —{" "}
-          <span className="gradient-text">Resultados Reales</span>
+          Negocios que ya{" "}
+          <span className="gradient-text">posicionan en Google</span>
         </h2>
         <p className="text-am-muted text-sm mt-3">
           Sitios web, tiendas online y landing pages que están generando clientes hoy.

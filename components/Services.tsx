@@ -12,7 +12,7 @@ const services = [
         <path d="M11 8v6M8 11h6" strokeWidth="1.6" />
       </svg>
     ),
-    title: "Presencia en Google",
+    title: "Posicionamiento en Google",
     desc: "Tu página web profesional adaptada a tu rubro y ciudad, construida para que Google la posicione cuando tus clientes te buscan. Incluye SEO local, Google Maps y Analytics configurados desde el primer día. Sin publicidad pagada, sin mensualidades.",
     features: [
       "Página web profesional para tu nicho",
@@ -24,28 +24,6 @@ const services = [
     ],
     badge: { text: "Más popular", style: "border-am-primary/30 bg-am-primary/10 text-am-primary" },
     featured: true,
-  },
-  {
-    icon: (
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z" />
-        <circle cx="12" cy="12" r="3" />
-        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-      </svg>
-    ),
-    href: "/servicios/presencia-redes-sociales",
-    title: "Presencia en Redes Sociales",
-    desc: "Administramos tus redes sociales mes a mes con contenido relevante para tu audiencia y branding unificado. Tu marca activa y coherente en Instagram, Facebook, TikTok y Google Business sin que dediques tiempo. Incluye reporte mensual de resultados.",
-    features: [
-      "Gestión mensual de Instagram, Facebook y TikTok",
-      "Google Business Profile activo y actualizado",
-      "Creación de contenido con identidad de marca",
-      "Branding unificado en todos los perfiles",
-      "Reporte mensual de resultados",
-      "Respuesta a comentarios y mensajes",
-    ],
-    badge: { text: "Gestión continua", style: "border-am-accent/30 bg-am-accent/8 text-am-accent" },
-    featured: false,
   },
   {
     icon: (
@@ -74,6 +52,28 @@ const services = [
     desc: "Tienda online completa con pasarela de pago integrada — Webpay y MercadoPago. Vende tus productos o servicios las 24 horas con cobros automáticos, gestión de inventario y panel de administración. Sin comisiones adicionales de nuestra parte.",
     features: ["Webpay / MercadoPago", "Gestión de productos", "Panel administrativo"],
     badge: null,
+    featured: false,
+  },
+  {
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z" />
+        <circle cx="12" cy="12" r="3" />
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+    href: "/servicios/presencia-redes-sociales",
+    title: "Presencia en Redes Sociales",
+    desc: "Administramos tus redes sociales mes a mes con contenido relevante para tu audiencia y branding unificado. Tu marca activa y coherente en Instagram, Facebook, TikTok y Google Business sin que dediques tiempo. Incluye reporte mensual de resultados.",
+    features: [
+      "Gestión mensual de Instagram, Facebook y TikTok",
+      "Google Business Profile activo y actualizado",
+      "Creación de contenido con identidad de marca",
+      "Branding unificado en todos los perfiles",
+      "Reporte mensual de resultados",
+      "Respuesta a comentarios y mensajes",
+    ],
+    badge: { text: "Gestión continua", style: "border-am-accent/30 bg-am-accent/8 text-am-accent" },
     featured: false,
   },
   {
@@ -174,11 +174,11 @@ export default function Services() {
             <h2 className="font-display font-bold text-white text-balance"
               style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}
             >
-              Servicios de diseño web{" "}
+              Servicios digitales con posicionamiento{" "}
               <span className="gradient-text">para empresas en Chile</span>
             </h2>
             <p className="text-am-muted text-sm leading-relaxed mt-3 max-w-lg">
-              Posicionamiento en Google para negocios en todo Chile. Desde $149.990 pago único · Sin mensualidades.
+              Posicionamiento en Google para negocios en todo Chile. Desde $199.990 pago único · Sin mensualidades.
             </p>
           </div>
           {/* Nav arrows */}

@@ -1,11 +1,11 @@
 const serviceLinks = [
-  "Landing Page de Ventas",
-  "Presencia en Redes Sociales",
-  "One Page Corporativo",
-  "E-commerce con Pago",
-  "Automatizaciones con IA",
-  "App Web SaaS",
-  "Presencia en Google",
+  { href: "/",                                   label: "Posicionamiento en Google" },
+  { href: "/servicios/landing-page",             label: "Landing Page de Ventas" },
+  { href: "/servicios/one-page-corporativo",     label: "One Page Corporativo" },
+  { href: "/servicios/ecommerce",                label: "E-commerce con Pago" },
+  { href: "/servicios/presencia-redes-sociales", label: "Presencia en Redes Sociales" },
+  { href: "/servicios/automatizaciones-ia",      label: "Automatizaciones con IA" },
+  { href: "/servicios/app-web-saas",             label: "App Web SaaS" },
 ];
 
 const companyLinks = [
@@ -57,12 +57,12 @@ export default function Footer() {
             <p className="text-am-accent font-bold text-[15px] tracking-wide uppercase mb-5">Servicios</p>
             <ul className="flex flex-col gap-3">
               {serviceLinks.map((s) => (
-                <li key={s}>
+                <li key={s.href}>
                   <a
-                    href="#servicios"
+                    href={s.href}
                     className="text-am-muted text-sm hover:text-white transition-colors"
                   >
-                    {s}
+                    {s.label}
                   </a>
                 </li>
               ))}

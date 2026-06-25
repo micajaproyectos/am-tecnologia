@@ -209,7 +209,7 @@ export default function CityPageTemplate({ city, jsonLd }: Props) {
             <span className="gradient-text">en Google mañana.</span>
           </h2>
           <p className="text-am-muted text-base mb-8">
-            Desde $149.990 pago único · Sin mensualidades · Sin publicidad pagada
+            Desde $199.990 pago único · Sin mensualidades · Sin publicidad pagada
           </p>
           <a
             href={WA}

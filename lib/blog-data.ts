@@ -112,7 +112,7 @@ Aquí está el problema real. Muchos entregan una web "bonita" pero sin configur
 
 ### Agencia especializada en resultado
 
-**Rango de precio**: $149.990 a $500.000.
+**Rango de precio**: $199.990 a $500.000.
 
 El modelo que seguimos en AM Tecnología. No vendemos horas de diseño ni plantillas — entregamos una herramienta de captación de clientes. Cada [landing page](/servicios/landing-page) se construye con la estructura técnica que Google requiere, configuración de analytics y velocidad optimizada. El precio es competitivo porque nuestro proceso está optimizado para obtener resultados sin sacrificar calidad.
 
@@ -130,7 +130,7 @@ Antes de firmar, considera estos costos adicionales que a veces no aparecen en e
 
 **El costo invisible**: cada mes sin presencia en Google es un mes que tus competidores capturan esos clientes. Si tu rubro tiene 500 búsquedas mensuales en tu ciudad y tú no apareces, esos contactos van a otro lado — todos los meses.
 
-## ¿Por qué nuestro servicio parte desde $149.990?
+## ¿Por qué nuestro servicio parte desde $199.990?
 
 Es la pregunta que más nos hacen. La respuesta es directa: no vendemos diseño web — vendemos la herramienta completa para que tu negocio aparezca en Google.
 
@@ -387,7 +387,7 @@ Depende de qué canal:
 
 **Google Maps**: completamente gratis. Solo requiere tiempo para configurarlo bien.
 
-**Posicionamiento orgánico con web optimizada**: desde $149.990 pago único con una [landing page](/servicios/landing-page) bien construida. Es la inversión base — sin web optimizada, ninguna otra estrategia funciona.
+**Posicionamiento orgánico con web optimizada**: desde $199.990 pago único con una [landing page](/servicios/landing-page) bien construida. Es la inversión base — sin web optimizada, ninguna otra estrategia funciona.
 
 **SEO avanzado con seguimiento mensual**: variable según industria y objetivos. Para la mayoría de las pymes en Chile, el SEO local con una web bien estructurada es suficiente para resultados concretos.
 
@@ -594,7 +594,7 @@ Para cerrar, los errores que más vemos — y que puedes evitar:
 
 ### ¿Cuánto cuesta digitalizar una pyme en Chile?
 
-Depende de qué tan lejos quieras llegar. El punto de partida — una web profesional con SEO básico — parte desde $149.990 pago único. Herramientas como Google Analytics, Search Console, Google Business Profile y WhatsApp Business son completamente gratuitas. Si quieres aprovechar fondos del gobierno, Sercotec y Corfo tienen programas que pueden cubrir parte o todo el costo.
+Depende de qué tan lejos quieras llegar. El punto de partida — una web profesional con SEO básico — parte desde $199.990 pago único. Herramientas como Google Analytics, Search Console, Google Business Profile y WhatsApp Business son completamente gratuitas. Si quieres aprovechar fondos del gobierno, Sercotec y Corfo tienen programas que pueden cubrir parte o todo el costo.
 
 ### ¿Necesito saber de tecnología para digitalizar mi negocio?
 
@@ -614,7 +614,7 @@ Sí. Sercotec tiene la Ruta Digital con cursos gratuitos y el Capital Semilla co
     faqSchema: [
       {
         q: "¿Cuánto cuesta digitalizar una pyme en Chile?",
-        a: "El punto de partida — una web profesional con SEO básico — parte desde $149.990 pago único. Herramientas como Google Analytics, Search Console y Google Business Profile son completamente gratuitas. Sercotec y Corfo tienen programas que pueden cubrir parte del costo.",
+        a: "El punto de partida — una web profesional con SEO básico — parte desde $199.990 pago único. Herramientas como Google Analytics, Search Console y Google Business Profile son completamente gratuitas. Sercotec y Corfo tienen programas que pueden cubrir parte del costo.",
       },
       {
         q: "¿Necesito saber de tecnología para digitalizar mi negocio en Chile?",
@@ -1146,7 +1146,7 @@ Cuando recibas distintas propuestas, estas son las preguntas que deberías hacer
 
 Para ser directos: nuestro enfoque de base está en construir el sitio con la estructura técnica correcta desde el inicio — metadata, schema, velocidad, etiquetas y contenido orientado a búsquedas reales.
 
-Eso cuesta $149.990 pago único para una [landing page](/servicios/landing-page) o sitio básico. Sin mensualidades obligatorias.
+Eso cuesta $199.990 pago único para una [landing page](/servicios/landing-page) o sitio básico. Sin mensualidades obligatorias.
 
 Para seguimiento mensual — análisis de posiciones, contenido nuevo, ajuste de keywords y estrategia de links — partimos desde $59.990 mensuales, y se define según el rubro y la competencia. Este plan no se ofrece en la web; se conversa directamente con cada cliente para ajustarlo a lo que necesita.
 
@@ -1459,7 +1459,7 @@ A eso hay que agregar el costo de gestión si contratas a alguien (agencias cobr
 
 ### SEO: la inversión inicial
 
-Una web correctamente construida para posicionamiento orgánico en Chile parte desde $149.990 pago único. Eso cubre estructura técnica, SEO on-page, configuración de Google Analytics, Search Console y Google Maps. Sin mensualidades obligatorias.
+Una web correctamente construida para posicionamiento orgánico en Chile parte desde $199.990 pago único. Eso cubre estructura técnica, SEO on-page, configuración de Google Analytics, Search Console y Google Maps. Sin mensualidades obligatorias.
 
 Para seguimiento mensual — ajuste de keywords, publicación de contenido, análisis de competencia — los planes van desde $80.000 a $200.000 mensuales, y son opcionales, no obligatorios para mantener el posicionamiento básico.
 

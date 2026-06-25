@@ -48,8 +48,8 @@ export default function HowItWorks() {
             className="font-display font-bold text-white text-balance"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
-            ¿Cómo funciona crear tu{" "}
-            <span className="gradient-text">página web con nosotros?</span>
+            ¿Cómo posicionamos tu{" "}
+            <span className="gradient-text">negocio en Google?</span>
           </h2>
         </div>
 

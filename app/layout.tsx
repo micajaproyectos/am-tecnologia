@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Contratar Página Web en Chile | AM Tecnología — desde $149.990",
+    default: "Posicionamiento en Google en Chile | AM Tecnología",
     template: "%s | AM Tecnología",
   },
 
   description:
-    "¿Listo para contratar tu página web en Chile? La publicamos con SEO incluido desde $149.990 pago único, sin mensualidades. Cotiza hoy por WhatsApp.",
+    "Posicionamos tu negocio en Google con una página web profesional optimizada para SEO, desde $199.990 pago único. Sin mensualidades. Cotiza por WhatsApp.",
 
   keywords: [
     // Transaccionales — intención de compra
@@ -97,9 +97,9 @@ export const metadata: Metadata = {
     locale: "es_CL",
     url: siteUrl,
     siteName: "AM Tecnología",
-    title: "Diseño Web Chile | Páginas Web desde $149.990",
+    title: "Posicionamiento en Google Chile | Página Web que Posiciona",
     description:
-      "Cotiza tu página web hoy desde $149.990 pago único. Landing pages, tiendas online y sitios corporativos para empresas en todo Chile. Orientado a resultados, sin mensualidades.",
+      "Posicionamiento en Google con una página web profesional, desde $199.990 pago único. Para pymes y empresas en todo Chile, sin mensualidades.",
     images: [
       {
         url: "/og-image.jpg",
@@ -112,9 +112,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Diseño Web Chile | Páginas Web desde $149.990",
+    title: "Posicionamiento en Google Chile | Página Web que Posiciona",
     description:
-      "Cotiza tu página web hoy desde $149.990 pago único. Orientado a resultados, sin mensualidades. Todo Chile.",
+      "Posicionamiento en Google con tu página web, desde $199.990 pago único. Sin mensualidades. Todo Chile.",
     images: ["/og-image.jpg"],
   },
 };
@@ -173,20 +173,23 @@ const jsonLd = {
         "closes": "20:00",
       },
       "sameAs": ["https://www.facebook.com/profile.php?id=61572123085910"],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "7",
-        "bestRating": "5",
-        "worstRating": "1",
-      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Servicios de Desarrollo Web en Chile",
         "itemListElement": [
           {
             "@type": "Offer",
-            "price": "149990",
+            "price": "199990",
+            "priceCurrency": "CLP",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Posicionamiento en Google",
+              "description": "Página web profesional optimizada para SEO local, con Google Maps y Analytics configurados, para que tu negocio aparezca en Google cuando tus clientes te buscan en Chile.",
+            },
+          },
+          {
+            "@type": "Offer",
+            "price": "199990",
             "priceCurrency": "CLP",
             "itemOffered": {
               "@type": "Service",
@@ -196,7 +199,7 @@ const jsonLd = {
           },
           {
             "@type": "Offer",
-            "price": "99990",
+            "price": "199990",
             "priceCurrency": "CLP",
             "itemOffered": {
               "@type": "Service",

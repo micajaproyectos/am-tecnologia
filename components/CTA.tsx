@@ -13,7 +13,7 @@ const WA =
 
 const SHEET_WEBHOOK_URL =
   "https://script.google.com/macros/s/AKfycbzL-Ub_JIchX7l-yrHoKFcznn_tBhS6-Ak2k4vUVqPKnQV41VherHQDLt5ZcR5OUaP2/exec";
-const CONVERSION_VALUE = 149990;
+const CONVERSION_VALUE = 199990;
 const CONVERSION_NAME  = "lead_formulario_cta";
 const CHILE_TIME_ZONE  = "America/Santiago";
 
@@ -111,7 +111,7 @@ export default function CTA() {
               style={{ fontSize: "clamp(1.75rem, 4vw, 2.75rem)" }}
             >
               Cotiza tu{" "}
-              <span className="gradient-text-light">página web en Chile</span>
+              <span className="gradient-text-light">página web con posicionamiento</span>
             </h2>
 
             <p className="text-white/55 text-base leading-relaxed mb-8">

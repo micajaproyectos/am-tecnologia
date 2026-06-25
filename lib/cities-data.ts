@@ -244,7 +244,7 @@ export const CITIES: CityData[] = [
     region: "Región Metropolitana",
     metaTitle: "Posicionamiento en Google Santiago",
     metaDescription:
-      "Posicionamiento en Google para pymes en Santiago. Páginas web que te destacan en el mercado digital más competitivo de Chile. Desde $149.990.",
+      "Posicionamiento en Google para pymes en Santiago. Páginas web que te destacan en el mercado digital más competitivo de Chile. Desde $199.990.",
     headline: "Santiago es enorme.",
     headlineAccent: "Tu nicho, no.",
     intro:

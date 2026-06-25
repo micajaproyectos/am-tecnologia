@@ -314,7 +314,7 @@ export default async function BlogPostPage({
             <p className="text-am-muted text-[14px] mb-6">
               {post.cta
                 ? post.cta.subheading
-                : "Desde $149.990 pago único · Resultados reales · Sin mensualidades"}
+                : "Desde $199.990 pago único · Resultados reales · Sin mensualidades"}
             </p>
             <a
               href={

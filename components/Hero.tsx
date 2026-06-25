@@ -40,13 +40,13 @@ export default function Hero() {
             className="font-display font-extrabold text-white text-balance leading-[1.15] mb-3"
             style={{ fontSize: "clamp(2rem, 4.5vw, 3.5rem)" }}
           >
-            Contrata tu Página Web{" "}
-            <span className="gradient-text">con SEO en Chile</span>
+            Posicionamiento en Google en Chile{" "}
+            <span className="gradient-text">con tu Página Web</span>
           </h1>
 
           {/* Sub */}
           <p className="text-am-muted text-xl leading-snug mb-3 max-w-lg">
-            Posicionamiento en Google incluido desde el primer día.
+            Aparece en los primeros resultados desde el primer día.
           </p>
 
           <p className="text-am-muted text-base leading-relaxed mb-3 max-w-lg">

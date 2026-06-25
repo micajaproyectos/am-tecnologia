@@ -7,7 +7,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Cómo Aparecer en Google en Chile | Posicionamiento Web para Pymes",
   description:
-    "¿Tu negocio no aparece en Google? Creamos páginas web con SEO incluido para que tus clientes te encuentren antes que a tu competencia. Desde $149.990.",
+    "¿Tu negocio no aparece en Google? Creamos páginas web con SEO incluido para que tus clientes te encuentren antes que a tu competencia. Desde $199.990.",
   alternates: {
     canonical: "https://www.amtecnologia.cl/aparecer-en-google",
   },
@@ -109,7 +109,7 @@ const faqItems = [
   },
   {
     q: "¿Cuánto cuesta aparecer en Google?",
-    a: "En AM Tecnología trabajamos soluciones desde $149.990 pago único, dependiendo del tipo de negocio y del nivel de presencia digital que necesite. Google Maps es completamente gratuito. La base profesional para empezar a ser encontrado no requiere mensualidades.",
+    a: "En AM Tecnología trabajamos soluciones desde $199.990 pago único, dependiendo del tipo de negocio y del nivel de presencia digital que necesite. Google Maps es completamente gratuito. La base profesional para empezar a ser encontrado no requiere mensualidades.",
   },
   {
     q: "¿Cuánto tarda en aparecer en Google Maps específicamente?",
@@ -529,8 +529,8 @@ export default function AparecerEnGooglePage() {
           <p className="text-am-muted text-[13px] font-semibold uppercase tracking-widest mb-4">Servicios</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {[
-              { href: "/servicios/landing-page", label: "Landing Page de Ventas", price: "desde $149.990" },
-              { href: "/servicios/one-page-corporativo", label: "One Page Corporativo", price: "desde $149.990" },
+              { href: "/servicios/landing-page", label: "Landing Page de Ventas", price: "desde $199.990" },
+              { href: "/servicios/one-page-corporativo", label: "One Page Corporativo", price: "desde $199.990" },
               { href: "/servicios/ecommerce", label: "Tienda Online", price: "$199.990 a $399.990" },
               { href: "/servicios/automatizaciones-ia", label: "Automatizaciones con IA", price: "desde $199.990" },
             ].map((s) => (
