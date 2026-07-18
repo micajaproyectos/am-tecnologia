@@ -54,7 +54,7 @@ const formas = [
   {
     num: "04",
     title: "Google Ads — resultados inmediatos",
-    body: "Los anuncios pagados de Google aparecen antes que los resultados orgánicos. Son útiles para generar clientes mientras el SEO madura, o para rubros muy competitivos. La desventaja: cuando dejas de pagar, desapareces. Por eso la estrategia más inteligente es usar Ads de forma temporal mientras construyes posicionamiento orgánico duradero. El SEO dura — los Ads solo mientras inviertes.",
+    body: "Los anuncios pagados de Google aparecen antes que los resultados orgánicos. Son útiles para generar clientes mientras el SEO madura, o para rubros muy competitivos. La desventaja: cuando dejas de pagar, desapareces. Por eso la estrategia más inteligente es usar Ads mientras construyes posicionamiento orgánico duradero. Si quieres partir por aquí, configuramos tu primera campaña con landing de conversión incluida — bien hecha desde el día uno, sin quemar presupuesto aprendiendo.",
   },
   {
     num: "05",
@@ -530,6 +530,7 @@ export default function AparecerEnGooglePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {[
               { href: "/servicios/landing-page", label: "Landing Page de Ventas", price: "desde $199.990" },
+              { href: "/servicios/campanas-google-ads", label: "Campaña Google Ads + Landing", price: "$399.990" },
               { href: "/servicios/one-page-corporativo", label: "One Page Corporativo", price: "desde $199.990" },
               { href: "/servicios/ecommerce", label: "Tienda Online", price: "$199.990 a $399.990" },
               { href: "/servicios/automatizaciones-ia", label: "Automatizaciones con IA", price: "desde $199.990" },

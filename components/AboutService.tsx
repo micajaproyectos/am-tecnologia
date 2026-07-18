@@ -1,7 +1,7 @@
 export default function AboutService() {
   return (
-    <section className="metal-surface relative py-20 px-6">
-      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
+    <section className="metal-surface relative pt-28 pb-20 px-6">
+      <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-white via-white/40 to-transparent pointer-events-none z-10" />
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
 
       <div className="max-w-5xl mx-auto relative z-20">

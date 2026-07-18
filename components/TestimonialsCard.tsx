@@ -1,6 +1,6 @@
 "use client";
 
-const reviews = [
+export const reviews = [
   {
     name: "Claudia Villagrán",
     initial: "C",
@@ -8,7 +8,7 @@ const reviews = [
     badge: "Local Guide · 23 opiniones",
     timeAgo: "Hace 7 semanas",
     stars: 5,
-    text: "Excelente experiencia con el equipo. Lograron posicionar mi marca en la web de manera orgánica y, en poco tiempo…",
+    text: "Excelente experiencia con el equipo. Lograron posicionar mi marca en la web de manera orgánica.",
   },
   {
     name: "Millanolli",
@@ -17,7 +17,7 @@ const reviews = [
     badge: "3 opiniones",
     timeAgo: "Hace 7 semanas",
     stars: 5,
-    text: "Gracias por ayudarnos con su servicio. Desde que crearon nuestra marca en Google comenzamos a tener tráfico orgánico en…",
+    text: "Gracias por ayudarnos con su servicio. Desde que crearon nuestra marca en Google comenzamos a tener tráfico orgánico.",
   },
   {
     name: "Solange Ballen",
@@ -35,13 +35,13 @@ const reviews = [
     badge: "5 opiniones",
     timeAgo: "Hace 7 semanas",
     stars: 5,
-    text: "Para nosotros fue un gusto poder contar con el gran servicio que nos brindaron desde Mi Caja!! La experiencia fue única…",
+    text: "Para nosotros fue un gusto poder contar con el gran servicio que nos brindaron desde Mi Caja!! La experiencia fue única.",
   },
 ];
 
 export default function TestimonialsCard() {
   return (
-    <div className="relative w-full max-w-[400px] rounded-2xl overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.6)] border border-white/8">
+    <div className="relative w-full max-w-[400px] rounded-2xl overflow-hidden bg-white shadow-[0_12px_40px_rgba(0,0,0,0.10)] border border-[#dadce0]">
       <style>{`
         @keyframes scroll-up {
           0%   { transform: translateY(0); }
@@ -56,38 +56,38 @@ export default function TestimonialsCard() {
       `}</style>
 
       {/* Google-style header */}
-      <div className="bg-[#1c1c1e] px-4 pt-4 pb-3 border-b border-white/8">
+      <div className="bg-white px-4 pt-4 pb-3 border-b border-[#dadce0]">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
             <GoogleIcon />
             <div>
-              <span className="text-[#e8eaed] font-semibold text-[13px] block leading-tight">AM Tecnología</span>
-              <span className="text-[#9aa0a6] text-[11px] leading-tight">Lo que dicen nuestros clientes</span>
+              <span className="text-[#202124] font-semibold text-[13px] block leading-tight">AM Tecnología</span>
+              <span className="text-[#5f6368] text-[11px] leading-tight">Lo que dicen nuestros clientes</span>
             </div>
           </div>
-          <span className="text-[#9aa0a6] text-[11px]">Google</span>
+          <span className="text-[#5f6368] text-[11px]">Google</span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-[#e8eaed] font-bold text-2xl leading-none">5.0</span>
+          <span className="text-[#202124] font-bold text-2xl leading-none">5.0</span>
           <div className="flex gap-0.5">
             {[...Array(5)].map((_, i) => (
               <StarIcon key={i} />
             ))}
           </div>
-          <span className="text-[#9aa0a6] text-[11px] ml-1">4 reseñas</span>
+          <span className="text-[#5f6368] text-[11px] ml-1">4 reseñas</span>
         </div>
       </div>
 
       {/* Scrolling reviews */}
-      <div className="bg-[#202124] overflow-hidden h-[340px] relative">
+      <div className="bg-white overflow-hidden h-[340px] relative">
         {/* Fade top */}
-        <div className="absolute top-0 left-0 right-0 h-8 bg-gradient-to-b from-[#202124] to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 left-0 right-0 h-8 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none" />
         {/* Fade bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-[#202124] to-transparent z-10 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none" />
 
         <div className="reviews-track">
           {[...reviews, ...reviews].map((r, i) => (
-            <div key={i} className="px-4 py-3 border-b border-white/5 last:border-0">
+            <div key={i} className="px-4 py-3 border-b border-[#f1f3f4] last:border-0">
               <div className="flex items-start gap-3">
                 {/* Avatar */}
                 <div
@@ -100,9 +100,9 @@ export default function TestimonialsCard() {
                 <div className="flex-1 min-w-0">
                   {/* Name + badge */}
                   <div className="flex flex-wrap items-baseline gap-1.5">
-                    <span className="text-[#e8eaed] text-[13px] font-medium leading-tight">{r.name}</span>
+                    <span className="text-[#202124] text-[13px] font-medium leading-tight">{r.name}</span>
                     {r.badge && (
-                      <span className="text-[#9aa0a6] text-[11px] leading-tight">{r.badge}</span>
+                      <span className="text-[#5f6368] text-[11px] leading-tight">{r.badge}</span>
                     )}
                   </div>
 
@@ -115,7 +115,7 @@ export default function TestimonialsCard() {
 
                   {/* Review text */}
                   {r.text && (
-                    <p className="text-[#bdc1c6] text-[12px] leading-[1.6] mt-1.5">{r.text}</p>
+                    <p className="text-[#3c4043] text-[12px] leading-[1.6] mt-1.5">{r.text}</p>
                   )}
                 </div>
               </div>
@@ -129,16 +129,16 @@ export default function TestimonialsCard() {
         href="https://g.page/r/CX_Uc-66lRnzEAE/review"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-[#1c1c1e] px-4 py-2.5 border-t border-white/8 flex items-center justify-center gap-1.5 hover:bg-[#2a2a2e] transition-colors"
+        className="bg-white px-4 py-2.5 border-t border-[#dadce0] flex items-center justify-center gap-1.5 hover:bg-[#f8f9fa] transition-colors"
       >
         <GoogleIcon size={13} />
-        <span className="text-[#8ab4f8] text-[12px] font-medium">Dejar una reseña en Google</span>
+        <span className="text-[#1a73e8] text-[12px] font-medium">Dejar una reseña en Google</span>
       </a>
     </div>
   );
 }
 
-function StarIcon({ size = 13 }: { size?: number }) {
+export function StarIcon({ size = 13 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="#fbbc04">
       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -146,7 +146,7 @@ function StarIcon({ size = 13 }: { size?: number }) {
   );
 }
 
-function GoogleIcon({ size = 16 }: { size?: number }) {
+export function GoogleIcon({ size = 16 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24">
       <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>

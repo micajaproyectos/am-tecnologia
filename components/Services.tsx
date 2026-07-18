@@ -1,8 +1,6 @@
 "use client";
 
 import { useRef, useState } from "react";
-import Image from "next/image";
-
 const services = [
   {
     href: "/aparecer-en-google",
@@ -13,7 +11,7 @@ const services = [
       </svg>
     ),
     title: "Posicionamiento en Google",
-    desc: "Tu página web profesional adaptada a tu rubro y ciudad, construida para que Google la posicione cuando tus clientes te buscan. Incluye SEO local, Google Maps y Analytics configurados desde el primer día. Sin publicidad pagada, sin mensualidades.",
+    desc: "Tu página web profesional adaptada a tu rubro y ciudad, construida para que Google la posicione cuando tus clientes te buscan. Incluye SEO local, Google Maps y Analytics configurados desde el primer día. Tráfico orgánico sin costo por clic, sin mensualidades.",
     features: [
       "Página web profesional para tu nicho",
       "Tu negocio visible en Google Maps",
@@ -24,6 +22,25 @@ const services = [
     ],
     badge: { text: "Más popular", style: "border-am-primary/30 bg-am-primary/10 text-am-primary" },
     featured: true,
+  },
+  {
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M3 11l18-7-7 18-2.5-7.5L3 11z" strokeLinejoin="round" />
+        <path d="M11.5 14.5L21 4" strokeLinecap="round" strokeWidth="1.6" />
+      </svg>
+    ),
+    href: "/servicios/campanas-google-ads",
+    title: "Campaña de Google Ads + Landing",
+    desc: "Tu sistema de captación completo: landing page optimizada en conversión más tu primera campaña en Google Ads o Meta Ads configurada por expertos. Incluye tracking de conversiones y 30 días de optimización para que la campaña rinda con datos reales.",
+    features: [
+      "Landing optimizada en conversión",
+      "Campaña Google Ads o Meta Ads",
+      "Tracking de conversiones completo",
+      "30 días de optimización incluidos",
+    ],
+    badge: { text: "Nuevo", style: "border-am-green/30 bg-am-green/10 text-am-green" },
+    featured: false,
   },
   {
     icon: (
@@ -133,51 +150,21 @@ export default function Services() {
   }
 
   return (
-    <section id="servicios" className="relative py-28 overflow-hidden">
-      {/* Image background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Image src="/proyectos.webp" alt="" fill loading="lazy" sizes="100vw" className="object-cover object-center" />
-      </div>
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/55 pointer-events-none" />
-
+    <section id="servicios" className="relative bg-white py-28 overflow-hidden">
       {/* Fade superior desde Projects */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
-
-      {/* Tech background */}
-      <div className="absolute inset-0 grid-bg opacity-25 pointer-events-none" />
-
-      {/* Scan line */}
-      <div
-        className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-am-primary/30 to-transparent pointer-events-none"
-        style={{ animation: "scan-line 8s ease-in-out infinite" }}
-      />
-
-      {/* Floating orbs */}
-      <div
-        className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-am-primary/7 blur-[100px] pointer-events-none"
-        style={{ animation: "orb-1 12s ease-in-out infinite" }}
-      />
-      <div
-        className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-am-accent/6 blur-[90px] pointer-events-none"
-        style={{ animation: "orb-2 16s ease-in-out infinite" }}
-      />
-      <div
-        className="absolute top-1/2 left-1/2 w-[300px] h-[300px] rounded-full bg-am-primary/5 blur-[80px] pointer-events-none"
-        style={{ animation: "orb-3 20s ease-in-out infinite" }}
-      />
+      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
           <div>
-            <h2 className="font-display font-bold text-white text-balance"
+            <h2 className="font-display font-extrabold text-slate-800 text-balance"
               style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}
             >
               Servicios digitales con posicionamiento{" "}
               <span className="gradient-text">para empresas en Chile</span>
             </h2>
-            <p className="text-am-muted text-sm leading-relaxed mt-3 max-w-lg">
+            <p className="text-slate-600 text-sm leading-relaxed mt-3 max-w-lg">
               Posicionamiento en Google para negocios en todo Chile. Desde $199.990 pago único · Sin mensualidades.
             </p>
           </div>
@@ -186,7 +173,7 @@ export default function Services() {
             <button
               onClick={() => scroll("left")}
               aria-label="Anterior"
-              className="w-11 h-11 rounded-full border border-white/10 bg-white/4 text-am-muted flex items-center justify-center hover:border-am-primary/40 hover:text-am-primary transition-all duration-200"
+              className="w-11 h-11 rounded-full border border-slate-200 bg-white text-slate-500 flex items-center justify-center hover:border-am-blue/50 hover:text-am-blue transition-all duration-200"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <path d="M15 18l-6-6 6-6" />
@@ -195,7 +182,7 @@ export default function Services() {
             <button
               onClick={() => scroll("right")}
               aria-label="Siguiente"
-              className="w-11 h-11 rounded-full border border-white/10 bg-white/4 text-am-muted flex items-center justify-center hover:border-am-primary/40 hover:text-am-primary transition-all duration-200"
+              className="w-11 h-11 rounded-full border border-slate-200 bg-white text-slate-500 flex items-center justify-center hover:border-am-blue/50 hover:text-am-blue transition-all duration-200"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <path d="M9 18l6-6-6-6" />
@@ -227,8 +214,8 @@ export default function Services() {
             style={{ width: CARD_W, minWidth: CARD_W }}
             className={`relative flex-shrink-0 rounded-2xl p-8 border flex flex-col gap-5 group transition-all duration-300 hover:-translate-y-1 ${
               s.featured
-                ? "border-am-primary/40 bg-gradient-to-br from-am-surf2 to-am-primary/10 shadow-[0_0_32px_rgba(37,99,235,0.14)]"
-                : "border-white/6 bg-am-bg hover:border-am-primary/20 hover:shadow-[0_0_18px_rgba(37,99,235,0.07)]"
+                ? "border-am-blue/40 bg-gradient-to-br from-white to-am-blue/5 shadow-[0_0_32px_rgba(37,99,235,0.12)]"
+                : "border-slate-200 bg-white hover:border-am-blue/30 hover:shadow-[0_8px_24px_rgba(15,23,42,0.08)]"
             }`}
           >
             {/* Featured top accent line */}
@@ -244,20 +231,20 @@ export default function Services() {
             )}
 
             {/* Icon */}
-            <div className="w-14 h-14 rounded-xl border border-am-primary/20 bg-am-primary/10 flex items-center justify-center text-am-primary group-hover:bg-am-primary/18 group-hover:border-am-primary/35 transition-all duration-200">
+            <div className="w-14 h-14 rounded-xl border border-am-blue/20 bg-am-blue/5 flex items-center justify-center text-am-blue group-hover:bg-am-blue/10 group-hover:border-am-blue/35 transition-all duration-200">
               {s.icon}
             </div>
 
             <div>
-              <h3 className="font-display font-bold text-white text-lg mb-2">{s.title}</h3>
-              <p className="text-am-muted text-[14px] leading-[1.65]">{s.desc}</p>
+              <h3 className="font-display font-bold text-slate-900 text-lg mb-2">{s.title}</h3>
+              <p className="text-slate-600 text-[14px] leading-[1.65]">{s.desc}</p>
             </div>
 
             {/* Features */}
             <ul className="flex flex-col gap-2 mt-auto">
               {s.features.map((f) => (
-                <li key={f} className="flex items-center gap-2.5 text-[13px] text-am-muted">
-                  <span className="w-1.5 h-1.5 rounded-full bg-am-primary shrink-0" />
+                <li key={f} className="flex items-center gap-2.5 text-[13px] text-slate-600">
+                  <span className="w-1.5 h-1.5 rounded-full bg-am-blue shrink-0" />
                   {f}
                 </li>
               ))}

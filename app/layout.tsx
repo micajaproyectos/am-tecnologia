@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Archivo } from "next/font/google";
 import Script from "next/script";
 import GoogleAdsEvents from "@/components/GoogleAdsEvents";
 import "./globals.css";
@@ -10,8 +10,8 @@ const inter = Inter({
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
   display: "swap",
 });
@@ -199,6 +199,16 @@ const jsonLd = {
           },
           {
             "@type": "Offer",
+            "price": "399990",
+            "priceCurrency": "CLP",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Campaña de Google Ads + Landing",
+              "description": "Landing page optimizada en conversión más tu primera campaña de Google Ads o Meta Ads configurada por expertos, con tracking de conversiones y 30 días de optimización incluidos.",
+            },
+          },
+          {
+            "@type": "Offer",
             "price": "199990",
             "priceCurrency": "CLP",
             "itemOffered": {
@@ -258,7 +268,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
+      className={`${inter.variable} ${archivo.variable} antialiased`}
     >
       <body className="font-sans">
         {children}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import TestimonialsCard from "./TestimonialsCard";
 
 declare global {
   interface Window {
@@ -9,7 +10,7 @@ declare global {
 }
 
 const WA =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
+  "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20p%C3%A1gina%20web";
 
 const SHEET_WEBHOOK_URL =
   "https://script.google.com/macros/s/AKfycbzL-Ub_JIchX7l-yrHoKFcznn_tBhS6-Ak2k4vUVqPKnQV41VherHQDLt5ZcR5OUaP2/exec";
@@ -87,7 +88,7 @@ export default function CTA() {
       {/* Fade superior desde FAQ */}
       <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black to-transparent pointer-events-none" />
 
-      <div className="relative z-10 max-w-2xl mx-auto px-6">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_400px] gap-10 items-center">
         <div className="relative rounded-3xl overflow-hidden border border-am-primary/20 bg-gradient-to-br from-[#0d1120] via-[#131928] to-[#0b1020] shadow-[0_0_60px_rgba(37,99,235,0.12)] px-8 py-14">
           {/* Orbs */}
           <div className="absolute -top-40 -left-24 w-80 h-80 rounded-full bg-am-primary/20 blur-[80px] pointer-events-none" />
@@ -235,6 +236,11 @@ export default function CTA() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Reseñas reales de Google junto al cierre */}
+        <div className="flex justify-center lg:justify-end">
+          <TestimonialsCard />
         </div>
       </div>
     </section>

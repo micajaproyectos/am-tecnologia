@@ -108,6 +108,87 @@ export const SERVICES: ServiceData[] = [
       "Landing page profesional optimizada para posicionamiento en Google Chile. Diseño orientado a conversión y resultados medibles.",
   },
   {
+    slug: "campanas-google-ads",
+    title: "Campaña de Google Ads + Landing",
+    metaTitle: "Campañas de Google Ads Chile | Landing Incluida",
+    metaDescription:
+      "Tu primera campaña de Google Ads o Meta Ads configurada por expertos + landing page optimizada en conversión. 30 días de optimización incluidos. $399.990 pago único.",
+    seoTitle: "Campañas de Google Ads para pymes en Chile",
+    whatIsTitle: "Cómo funciona el sistema de landing + campaña publicitaria",
+    badge: "Sistema completo",
+    headline: "Tu sistema de captación de clientes,",
+    headlineAccent: "funcionando en días.",
+    intro:
+      "Una campaña publicitaria sin una buena landing quema presupuesto. Una landing sin tráfico es un folleto guardado en un cajón. Aquí te entregamos el sistema completo: la página que convierte y la campaña que le trae visitas, configuradas por expertos.",
+    whatIs:
+      "Este servicio combina las dos piezas que un negocio necesita para captar clientes con publicidad digital. Primero construimos una landing page optimizada en conversión: mensaje claro, oferta visible, prueba social y un solo objetivo — que el visitante te contacte. Después configuramos tu primera campaña en Google Ads o Meta Ads, según lo que convenga a tu negocio: si tus clientes te buscan activamente en Google (servicios, urgencias, cotizaciones), la campaña va en Google Ads; si tu producto se vende por impulso visual o tu público aún no te busca, va en Meta. Incluye el tracking de conversiones completo — para saber exactamente qué anuncio genera contactos — y 30 días de optimización posteriores al lanzamiento, que es donde una campaña pasa de \"configurada\" a \"rentable\": depuramos términos de búsqueda, ajustamos pujas y mejoramos los anuncios con datos reales.",
+    idealFor: [
+      "Negocios establecidos que quieren clientes nuevos esta semana, no en 6 meses",
+      "Empresas que ya venden bien y quieren escalar con publicidad",
+      "Servicios con demanda activa en Google: técnicos, clínicas, abogados, arriendos",
+      "Tiendas online que necesitan tráfico calificado para vender",
+      "Quienes ya probaron hacer campañas solos y quemaron presupuesto sin resultados",
+    ],
+    features: [
+      {
+        title: "Landing page optimizada en conversión",
+        desc: "Página diseñada con un solo objetivo: que la visita que llega desde el anuncio te escriba. Mensaje alineado con la campaña, oferta clara y CTA directo a WhatsApp.",
+      },
+      {
+        title: "Tu primera campaña configurada por expertos",
+        desc: "Estructura profesional: investigación de palabras clave, segmentación, anuncios redactados para tu oferta y palabras negativas desde el día uno para no pagar clics basura.",
+      },
+      {
+        title: "Google Ads o Meta Ads según tu negocio",
+        desc: "No te hacemos elegir a ciegas. Diagnosticamos tu rubro y tu cliente, y lanzamos la campaña en la plataforma con mejor retorno para tu caso.",
+      },
+      {
+        title: "Tracking de conversiones completo",
+        desc: "Configuramos la etiqueta de Google, el píxel y los eventos de conversión. Sabrás cuántos contactos genera cada peso invertido, no solo cuántos clics.",
+      },
+      {
+        title: "30 días de optimización incluidos",
+        desc: "Una campaña recién lanzada necesita ajustes con datos reales. Durante el primer mes depuramos búsquedas, ajustamos pujas y mejoramos anuncios. No te dejamos solo con el botón de encendido.",
+      },
+      {
+        title: "Reporte de resultados claro",
+        desc: "Al cierre del primer mes recibes un reporte en español simple: cuánto se invirtió, cuántos contactos llegaron, qué costó cada uno y qué conviene hacer después.",
+      },
+    ],
+    process: [
+      { step: "01", title: "Diagnóstico y plataforma", desc: "Analizamos tu negocio, tu cliente ideal y tu competencia. Definimos si tu campaña rinde más en Google Ads o Meta Ads y qué presupuesto publicitario recomendamos." },
+      { step: "02", title: "Landing y tracking", desc: "Construimos la landing optimizada en conversión y configuramos el seguimiento de conversiones completo antes de invertir un peso en anuncios." },
+      { step: "03", title: "Lanzamiento de campaña", desc: "Creamos la estructura de campaña, los anuncios y la segmentación. Lanzamos con palabras negativas configuradas para proteger tu presupuesto desde el primer clic." },
+      { step: "04", title: "Optimización por 30 días", desc: "Revisamos los datos reales, depuramos términos, ajustamos pujas y mejoramos anuncios. Cerramos el mes con un reporte y una recomendación honesta de continuidad." },
+    ],
+    price: "$399.990",
+    priceNote: "Pago único · Incluye 30 días de optimización · El presupuesto publicitario se paga aparte a Google o Meta (recomendamos desde $150.000/mes)",
+    faqs: [
+      {
+        q: "¿El precio incluye el presupuesto de publicidad?",
+        a: "No, y es importante que lo sepas antes de partir. Los $399.990 cubren nuestro trabajo: landing, tracking, configuración de campaña y 30 días de optimización. El presupuesto publicitario lo pagas directamente a Google o Meta desde tu propia cuenta — recomendamos partir desde $150.000 mensuales para tener datos suficientes. Tu cuenta, tu tarjeta, tu control total.",
+      },
+      {
+        q: "¿Cómo deciden entre Google Ads y Meta Ads?",
+        a: "Depende de cómo compra tu cliente. Si la gente busca activamente tu servicio en Google — como 'gasfiter urgencia' o 'dentista en Temuco' — Google Ads captura esa demanda existente. Si tu producto se descubre visualmente o tu público aún no sabe que te necesita, Meta Ads genera esa demanda. Lo definimos juntos en el diagnóstico, con argumentos, no con monedas al aire.",
+      },
+      {
+        q: "¿Qué pasa después de los 30 días de optimización?",
+        a: "La campaña queda funcionando en tu cuenta y es tuya: puedes administrarla tú mismo con lo que te dejamos configurado. Si prefieres que sigamos optimizándola mes a mes, ofrecemos gestión continua — te lo cotizamos por WhatsApp según tu caso, sin permanencia mínima.",
+      },
+      {
+        q: "¿Me garantizan ventas?",
+        a: "No, y desconfía de quien te las garantice: las ventas dependen también de tu oferta, tu precio, tu rubro y de qué tan rápido respondes los contactos. Lo que sí garantizamos es el sistema completo bien construido: landing que convierte, campaña bien estructurada, tracking midiendo todo y un mes de optimización con datos reales.",
+      },
+      {
+        q: "¿Sirve si ya tengo página web?",
+        a: "Sí, pero igual construimos una landing específica para la campaña. Una web corporativa tiene menú, secciones y distracciones; una landing de campaña tiene un solo mensaje y un solo botón. Esa diferencia puede duplicar la tasa de conversión del mismo tráfico.",
+      },
+    ],
+    schemaDescription:
+      "Landing page optimizada en conversión + primera campaña de Google Ads o Meta Ads configurada por expertos, con tracking de conversiones y 30 días de optimización. Para pymes en Chile.",
+  },
+  {
     slug: "presencia-redes-sociales",
     title: "Presencia en Redes Sociales",
     metaTitle: "Gestión de Redes Sociales Chile",

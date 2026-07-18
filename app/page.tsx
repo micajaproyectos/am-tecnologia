@@ -61,6 +61,14 @@ const faqJsonLd = {
     },
     {
       "@type": "Question",
+      "name": "¿Hacen campañas de Google Ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Te construimos una landing page optimizada en conversión y configuramos tu primera campaña en Google Ads o Meta Ads por $399.990 pago único, con tracking de conversiones y 30 días de optimización incluidos. El presupuesto publicitario se paga aparte, directo a Google o Meta. Es el complemento ideal para recibir clientes de inmediato mientras tu posicionamiento orgánico madura.",
+      },
+    },
+    {
+      "@type": "Question",
       "name": "¿Cómo es el proceso para contratar?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -85,7 +93,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <Navbar />
+      <Navbar corporate />
       <main>
         <Hero />
         <AboutService />

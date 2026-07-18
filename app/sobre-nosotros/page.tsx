@@ -7,7 +7,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 const siteUrl = "https://www.amtecnologia.cl";
 const WA =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
+  "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20p%C3%A1gina%20web";
 
 export const metadata: Metadata = {
   title: "Sobre Nosotros | AM Tecnología",
@@ -247,7 +247,7 @@ export default function SobreNosotros() {
                 construir presencia digital efectiva no tiene que ser caro ni
                 complejo. Un sitio web bien construido, con la arquitectura técnica
                 correcta, puede posicionar a una pyme en Google de forma permanente
-                — sin mensualidades, sin publicidad pagada.
+                — sin mensualidades ni dependencia de publicidad pagada.
               </p>
 
               <div className="flex flex-col gap-5">

@@ -1,11 +1,12 @@
 # AM Tecnología
 
-> Agencia chilena especializada en posicionamiento orgánico en Google para pymes y emprendedores. Creamos páginas web profesionales optimizadas para SEO local, configuramos Google Maps y aplicamos estrategias que llevan negocios a las primeras posiciones de Google — sin publicidad pagada, sin mensualidades, desde $199.990 pago único. Atendemos dos perfiles: negocios ya establecidos que viven de referidos y quieren que Google les envíe clientes, y emprendedores que quieren posicionarse desde el día uno. Fundador: Allan Milla, Ingeniero Civil Industrial. Servicio 100% remoto para todo Chile.
+> Agencia chilena especializada en posicionamiento orgánico en Google para pymes y emprendedores. Creamos páginas web profesionales optimizadas para SEO local, configuramos Google Maps y aplicamos estrategias que llevan negocios a las primeras posiciones de Google — sin mensualidades, desde $199.990 pago único. Para quienes necesitan clientes de inmediato, también construimos landing pages con la primera campaña de Google Ads o Meta Ads configurada e incluida ($399.990 pago único). Atendemos dos perfiles: negocios ya establecidos que viven de referidos y quieren que Google les envíe clientes, y emprendedores que quieren posicionarse desde el día uno. Fundador: Allan Milla, Ingeniero Civil Industrial. Servicio 100% remoto para todo Chile.
 
 ## Servicios
 
 - [Posicionamiento en Google](https://www.amtecnologia.cl/aparecer-en-google): Página web profesional + SEO local + Google Maps + Analytics. Desde $199.990 pago único. Es el servicio principal.
 - [Landing Page de Ventas](https://www.amtecnologia.cl/servicios/landing-page): Página diseñada para convertir visitas en clientes. Incluye posicionamiento orgánico. $199.990 pago único.
+- [Campaña de Google Ads + Landing](https://www.amtecnologia.cl/servicios/campanas-google-ads): Landing page optimizada en conversión + primera campaña de Google Ads o Meta Ads configurada por expertos, con tracking de conversiones y 30 días de optimización incluidos. $399.990 pago único (presupuesto publicitario aparte).
 - [Gestión de Redes Sociales](https://www.amtecnologia.cl/servicios/presencia-redes-sociales): Administración mensual de Instagram, Facebook, TikTok y Google Business Profile. Desde $99.990/mes, sin permanencia mínima.
 - [One Page Corporativo](https://www.amtecnologia.cl/servicios/one-page-corporativo): Sitio web de una página para profesionales independientes, consultoras y pymes. $199.990 pago único.
 - [E-commerce con Pago](https://www.amtecnologia.cl/servicios/ecommerce): Tienda online con Webpay y MercadoPago integrado. Gestión de inventario y panel administrativo. $199.990 a $399.990 pago único.

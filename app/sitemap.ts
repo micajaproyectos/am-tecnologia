@@ -5,6 +5,7 @@ const BASE = "https://www.amtecnologia.cl";
 
 const SERVICE_SLUGS = [
   "landing-page",
+  "campanas-google-ads",
   "presencia-redes-sociales",
   "one-page-corporativo",
   "ecommerce",

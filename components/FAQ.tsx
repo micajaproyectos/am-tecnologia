@@ -34,6 +34,10 @@ const faqs = [
     a: "Una tienda online con Webpay y MercadoPago integrado parte desde $199.990 a $399.990 pago único. Incluye gestión de productos, carrito de compras y panel administrativo completo.",
   },
   {
+    q: "¿Hacen campañas de Google Ads?",
+    a: "Sí. Te construimos una landing page optimizada en conversión y configuramos tu primera campaña en Google Ads o Meta Ads por $399.990 pago único, con tracking de conversiones y 30 días de optimización incluidos. El presupuesto publicitario se paga aparte, directo a Google o Meta. Es el complemento ideal para recibir clientes de inmediato mientras tu posicionamiento orgánico madura.",
+  },
+  {
     q: "¿Cómo es el proceso para contratar?",
     a: "Es simple: escríbenos por WhatsApp con los detalles de tu negocio. En menos de 1 hora te enviamos una cotización. Si la apruebas, empezamos el mismo día y tu sitio queda publicado y posicionándose en Google.",
   },

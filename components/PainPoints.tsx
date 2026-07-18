@@ -53,14 +53,15 @@ const points = [
 
 export default function PainPoints() {
   return (
-    <section className="metal-surface relative py-20 px-6">
-      <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
-      <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
+    <section className="relative bg-white py-28 px-6">
+      {/* Difuminados de transición con las secciones oscuras vecinas */}
+      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
       <div className="max-w-4xl mx-auto relative z-20">
         {/* Header */}
         <div className="text-center mb-12" data-reveal>
           <h2
-            className="font-display font-bold text-white text-balance mb-4"
+            className="font-display font-extrabold text-slate-800 text-balance mb-4"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
             ¿Por qué tu negocio{" "}
@@ -74,12 +75,12 @@ export default function PainPoints() {
             <div
               key={i}
               data-reveal
-              className="flex items-start gap-4 bg-am-surf2 border border-white/6 rounded-2xl px-5 py-5 hover:border-red-500/20 transition-colors duration-300"
+              className="flex items-start gap-4 bg-white border border-slate-200 rounded-2xl px-5 py-5 hover:border-am-blue/30 transition-colors duration-300"
             >
-              <div className="shrink-0 w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400">
+              <div className="shrink-0 w-12 h-12 rounded-xl bg-am-blue/5 border border-am-blue/20 flex items-center justify-center text-am-blue">
                 {p.icon}
               </div>
-              <p className="text-am-text text-[15px] leading-snug pt-1 font-medium">
+              <p className="text-slate-600 text-[15px] leading-snug pt-1 font-medium">
                 {p.text}
               </p>
             </div>
@@ -87,11 +88,11 @@ export default function PainPoints() {
         </div>
 
         {/* Closing line */}
-        <p className="text-center text-am-muted text-base" data-reveal>
+        <p className="text-center text-slate-600 text-base" data-reveal>
           Si te identificas con alguno de estos, descubre{" "}
           <Link
             href="/aparecer-en-google"
-            className="text-am-accent underline"
+            className="text-am-blue underline"
           >
             cómo aparecer en Google
           </Link>.

@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { SERVICES, getServiceBySlug } from "@/lib/services-data";
 
-const WA = "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
+const WA = "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20p%C3%A1gina%20web";
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -38,6 +38,10 @@ export default async function ServicePage({
   const service = getServiceBySlug(slug);
   if (!service) notFound();
 
+  // Primer precio del string ("$199.990 a $399.990" → "199990").
+  const priceValue =
+    (service.price.match(/\d{1,3}(?:\.\d{3})*/)?.[0] ?? "0").replace(/\./g, "");
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -60,7 +64,7 @@ export default async function ServicePage({
     areaServed: { "@type": "Country", name: "Chile" },
     offers: {
       "@type": "Offer",
-      price: service.price.replace(/\D/g, ""),
+      price: priceValue,
       priceCurrency: "CLP",
       availability: "https://schema.org/InStock",
     },
@@ -122,6 +126,8 @@ export default async function ServicePage({
             <a
               href={WA}
               data-cta-source={`service_${service.slug}_hero`}
+              data-cta-value={priceValue}
+              data-offer={service.slug === "campanas-google-ads" ? "ads" : undefined}
               target="_blank"
               rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-am-primary hover:bg-am-primary/90 text-white font-semibold text-[15px] transition-all duration-200"
@@ -259,6 +265,8 @@ export default async function ServicePage({
           <a
             href={WA}
             data-cta-source={`service_${service.slug}_cta`}
+            data-cta-value={priceValue}
+            data-offer={service.slug === "campanas-google-ads" ? "ads" : undefined}
             target="_blank"
             rel="nofollow noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-am-primary hover:bg-am-primary/90 text-white font-bold text-[16px] transition-all duration-200"

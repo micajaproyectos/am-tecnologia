@@ -21,7 +21,7 @@ const steps = [
       </svg>
     ),
     title: "Creamos tu presencia en Google",
-    desc: "Diseñamos y publicamos tu página web con la estructura técnica y el contenido que Google necesita para posicionarte. Activamos tu perfil en Google Maps, configuramos Search Console y aplicamos SEO local para que aparezcas en búsquedas de tu ciudad. Sin publicidad pagada.",
+    desc: "Diseñamos y publicamos tu página web con la estructura técnica y el contenido que Google necesita para posicionarte. Activamos tu perfil en Google Maps, configuramos Search Console y aplicamos SEO local para que aparezcas en búsquedas de tu ciudad. Sin necesidad de pagar por cada clic.",
   },
   {
     number: "3",

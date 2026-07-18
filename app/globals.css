@@ -14,8 +14,13 @@
   --color-am-text:    #e2e8f0;
   --color-am-muted:   #7d8fa8;
 
+  /* Corporativo claro: azul marino metálico + azul de acción */
+  --color-am-navy:   #15315d;
+  --color-am-navy-2: #0d2347;
+  --color-am-blue:   #1a73e8;
+
   --font-sans:    var(--font-inter);
-  --font-display: var(--font-space);
+  --font-display: var(--font-archivo);
 
   --animate-pulse-dot: pulse-dot 2s ease-in-out infinite;
   --animate-float:     float-y 3s ease-in-out infinite;

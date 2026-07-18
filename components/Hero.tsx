@@ -1,132 +1,138 @@
 import Image from "next/image";
-import TestimonialsCard from "./TestimonialsCard";
+import HeroReviewsRotator from "./HeroReviewsRotator";
 
-const WA =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web";
-
-const bullets = [
-  "Google te recomienda cuando buscan servicios como el tuyo.",
-  "Haz que Google te envíe clientes directo a tu WhatsApp.",
-  "Aparece antes que tu competencia.",
-];
+const WA_SEO =
+  "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20p%C3%A1gina%20web%20con%20posicionamiento";
+const WA_ADS =
+  "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20campa%C3%B1a%20de%20Google%20Ads%20%2B%20landing%20page";
 
 export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-[72px]"
+      className="relative min-h-[100dvh] flex flex-col justify-center bg-white pt-[72px]"
     >
-      <Image
-        src="/proyectos.png"
-        alt="Muestra de proyectos web para empresas y pymes en Chile"
-        fill
-        priority
-        sizes="100vw"
-        aria-hidden="true"
-        className="absolute inset-0 object-cover object-center pointer-events-none"
-      />
-
-      <div className="absolute inset-0 bg-black/75 pointer-events-none" />
-      <div className="absolute inset-0 grid-bg pointer-events-none opacity-40" />
-
-      <div className="absolute -top-52 -left-24 w-[600px] h-[600px] rounded-full bg-am-primary/15 blur-[100px] pointer-events-none" />
-      <div className="absolute -bottom-32 -right-16 w-[500px] h-[500px] rounded-full bg-am-accent/10 blur-[90px] pointer-events-none" />
-
       <div className="relative max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* ── COPY ── */}
         <div>
           {/* Headline */}
           <h1
-            className="font-display font-extrabold text-white text-balance leading-[1.15] mb-3"
-            style={{ fontSize: "clamp(2rem, 4.5vw, 3.5rem)" }}
+            className="font-display font-extrabold text-slate-800 text-balance leading-[1.12] mb-6"
+            style={{ fontSize: "clamp(2.375rem, 5vw, 4rem)" }}
           >
-            Posicionamiento en Google en Chile{" "}
-            <span className="gradient-text">con tu Página Web</span>
+            Que nuevos clientes conozcan tu negocio
           </h1>
 
-          {/* Sub */}
-          <p className="text-am-muted text-xl leading-snug mb-3 max-w-lg">
-            Aparece en los primeros resultados desde el primer día.
+          {/* Bajada */}
+          <p className="text-slate-600 text-[20px] leading-snug mb-8 max-w-lg">
+            Aumenta la visibilidad de tu negocio y consigue más clientes.
           </p>
 
-          <p className="text-am-muted text-base leading-relaxed mb-3 max-w-lg">
-            Diseñamos y publicamos tu página web profesional, optimizada para posicionarte desde el primer día — sin publicidad pagada, sin mensualidades.
-          </p>
 
-          {/* Price */}
-          <p className="font-display font-extrabold text-white text-3xl mb-4">
-            $199.990
-          </p>
+          {/* Doble oferta */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 mb-4 max-w-xl divide-y sm:divide-y-0 sm:divide-x divide-slate-200">
+            {/* Orgánico */}
+            <div className="flex flex-col pb-6 sm:pb-0 sm:pr-6">
+              <span className="text-am-blue text-[11px] font-bold tracking-widest uppercase mb-1.5">
+                Orgánico
+              </span>
+              <span className="font-display font-bold text-slate-900 text-[16px]">
+                Página Web + SEO orgánico
+              </span>
+              <span className="font-display font-bold tracking-tight text-slate-900 text-[26px] leading-tight">
+                $199.990
+              </span>
+              <span className="text-slate-600 text-[13px] leading-snug mt-1 mb-4">
+                Resultados orgánicos, sin pagar por clic
+              </span>
+              <a
+                href={WA_SEO}
+                data-cta-source="hero_seo"
+                data-cta-value="199990"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="mt-auto inline-flex items-center justify-center gap-2 bg-am-blue hover:bg-[#1765cc] text-white font-semibold text-[14px] px-4 py-2.5 rounded-lg transition-colors duration-200"
+              >
+                <WaIcon />
+                Comenzar
+              </a>
+            </div>
 
-          {/* Bullets */}
-          <ul className="flex flex-col gap-2 mb-5">
-            {bullets.map((b) => (
-              <li key={b} className="flex items-start gap-3 text-am-text text-[15px]">
-                <CheckIcon />
-                {b}
-              </li>
-            ))}
-          </ul>
-
-          {/* Actions */}
-          <div className="flex flex-wrap gap-4 mb-6">
-            <a
-              href={WA}
-              data-cta-source="hero"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="inline-flex items-center gap-2.5 bg-green-500 hover:bg-green-400 text-white font-bold text-[15px] px-6 py-3 rounded-xl transition-colors duration-200"
-            >
-              <WaIcon />
-              Cotizar mi proyecto
-            </a>
-            <a
-              href="#proyectos"
-              className="inline-flex items-center gap-2 border border-white/20 hover:border-white/40 text-am-text hover:text-white font-semibold text-[15px] px-6 py-3 rounded-xl transition-all duration-200"
-            >
-              Ver proyectos
-            </a>
+            {/* Inmediato */}
+            <div className="relative flex flex-col pt-6 sm:pt-0 sm:pl-6">
+              <span className="absolute top-6 sm:top-0 right-0 text-[10px] font-bold uppercase tracking-wider text-am-blue bg-am-blue/5 rounded-full px-2 py-0.5">
+                Nuevo
+              </span>
+              <span className="text-am-blue text-[11px] font-bold tracking-widest uppercase mb-1.5">
+                Inmediato
+              </span>
+              <span className="font-display font-bold text-slate-900 text-[16px]">
+                Landing + Google Ads
+              </span>
+              <span className="text-slate-400 text-[13px] leading-tight">
+                Antes: <span className="line-through">$399.990</span>
+              </span>
+              <span className="font-display font-bold tracking-tight text-slate-900 text-[26px] leading-tight">
+                <span className="text-[14px] font-semibold text-slate-500">Ahora:</span>{" "}
+                $299.990
+              </span>
+              <span className="text-slate-600 text-[13px] leading-snug mt-1 mb-4">
+                Tu primera campaña, clientes esta semana
+              </span>
+              <a
+                href={WA_ADS}
+                data-cta-source="hero_ads"
+                data-cta-value="299990"
+                data-offer="ads"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="mt-auto inline-flex items-center justify-center gap-2 bg-am-blue hover:bg-[#1765cc] text-white font-semibold text-[14px] px-4 py-2.5 rounded-lg transition-colors duration-200"
+              >
+                <WaIcon />
+                Comenzar
+              </a>
+            </div>
           </div>
 
-          {/* Stats */}
-          <div className="flex flex-nowrap gap-2">
-            <div className="flex items-center gap-2 bg-white/8 border border-white/15 rounded-full px-4 py-2">
-              <ShieldIcon />
-              <span className="text-white text-[13px] font-semibold">100% Satisfacción</span>
+          <p className="text-slate-500 text-[12px]">
+            Negocios reales que encontraron nuevos clientes
+          </p>
+        </div>
+
+        {/* ── PROYECTOS REALES ── */}
+        <div className="flex flex-col items-center lg:items-end">
+          <div className="relative w-full max-w-[560px] pt-10 sm:pt-16 select-none">
+            {/* Secundario, detrás */}
+            <div className="absolute top-0 right-0 w-[62%] rotate-[4deg] rounded-xl overflow-hidden ring-1 ring-slate-200 shadow-[0_16px_40px_rgba(0,0,0,0.16)] hidden sm:block">
+              <Image
+                src="/preview-abogadas.png"
+                alt="Sitio web del estudio jurídico Solar & Arriagada, proyecto de AM Tecnología"
+                width={1250}
+                height={858}
+                sizes="(max-width: 1024px) 60vw, 350px"
+                className="w-full h-auto"
+              />
             </div>
-            <div className="flex items-center gap-2 bg-white/8 border border-white/15 rounded-full px-4 py-2">
-              <SearchIcon />
-              <span className="text-white text-[13px] font-semibold">Posicionamiento orgánico</span>
+            {/* Principal, delante */}
+            <div className="relative w-full sm:w-[82%] sm:mt-14 rotate-0 sm:rotate-[-3deg] rounded-xl overflow-hidden ring-1 ring-slate-200 shadow-[0_24px_60px_rgba(0,0,0,0.18)]">
+              <Image
+                src="/preview-rioespolon.png"
+                alt="Sitio web de Cabañas Río Espolón en Futaleufú, proyecto de AM Tecnología"
+                width={1250}
+                height={858}
+                priority
+                sizes="(max-width: 1024px) 90vw, 460px"
+                className="w-full h-auto"
+              />
             </div>
-            <div className="flex items-center gap-2 bg-white/8 border border-white/15 rounded-full px-4 py-2">
-              <FolderIcon />
-              <span className="text-white text-[13px] font-semibold">+50 proyectos en Google</span>
+            {/* Reseñas de Google rotando bajo los mockups */}
+            <div className="w-full mt-5">
+              <HeroReviewsRotator />
             </div>
           </div>
         </div>
-
-        {/* ── TESTIMONIALS CARD ── */}
-        <div className="flex justify-center lg:justify-end">
-          <TestimonialsCard />
-        </div>
-      </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent pointer-events-none" />
-
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-am-muted text-[11px] uppercase tracking-[0.1em] animate-float pointer-events-none">
-        <span>Desliza</span>
-        <div className="w-4 h-4 border-r-2 border-b-2 border-am-muted rotate-45 -mt-1" />
       </div>
     </section>
-  );
-}
-
-function CheckIcon() {
-  return (
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" className="shrink-0 mt-0.5">
-      <circle cx="12" cy="12" r="12" fill="rgba(42,170,110,0.15)" />
-      <path d="M7 12l3.5 3.5L17 8.5" stroke="#2aaa6e" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
   );
 }
 
@@ -138,28 +144,3 @@ function WaIcon() {
   );
 }
 
-function ShieldIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="shrink-0">
-      <path d="M12 2L4 6v6c0 5.25 3.5 10.15 8 11.35C16.5 22.15 20 17.25 20 12V6l-8-4z" fill="rgba(42,170,110,0.25)" stroke="#2aaa6e" strokeWidth="1.8" strokeLinejoin="round" />
-      <path d="M9 12l2 2 4-4" stroke="#2aaa6e" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
-function SearchIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="shrink-0">
-      <circle cx="11" cy="11" r="7" stroke="#60a5fa" strokeWidth="1.8" />
-      <path d="M16.5 16.5L21 21" stroke="#60a5fa" strokeWidth="1.8" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function FolderIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="shrink-0">
-      <path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" fill="rgba(168,85,247,0.2)" stroke="#a855f7" strokeWidth="1.8" strokeLinejoin="round" />
-    </svg>
-  );
-}

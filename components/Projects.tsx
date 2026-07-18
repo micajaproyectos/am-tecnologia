@@ -5,10 +5,34 @@ import { useEffect, useRef, useState } from "react";
 
 const projects: { url: string; title: string; type: string; img?: string; aspect?: number }[] = [
   {
+    url: "https://www.abogadasconcepcion.cl",
+    title: "Solar & Arriagada",
+    type: "Estudio Jurídico",
+    img: "/preview-abogadas.png",
+  },
+  {
+    url: "https://www.patagoniafutaleufu.cl",
+    title: "Cabañas Río Espolón",
+    type: "Turismo / Cabañas",
+    img: "/preview-rioespolon.png",
+  },
+  {
     url: "https://futarte.cl",
     title: "Futarte",
     type: "Tienda de Ropa",
     img: "/futarte.png",
+  },
+  {
+    url: "https://www.ajonegroaustral.cl",
+    title: "Ajo Negro Austral",
+    type: "Tienda Online",
+    img: "/preview-ajonegro.png",
+  },
+  {
+    url: "https://www.micajaempresa.cl",
+    title: "Mi Caja Empresa",
+    type: "SaaS / App Web",
+    img: "/preview-micaja.png",
   },
   {
     url: "https://www.clinicabeautylab.cl",
@@ -29,22 +53,10 @@ const projects: { url: string; title: string; type: string; img?: string; aspect
     img: "/preview-millanolli.png",
   },
   {
-    url: "https://www.ajonegroaustral.cl",
-    title: "Ajo Negro Austral",
-    type: "Tienda Online",
-    img: "/preview-ajonegro.png",
-  },
-  {
     url: "https://www.perfumeriasur.cl",
     title: "Perfumería Sur",
     type: "E-commerce",
     img: "/preview-perfumeria.png",
-  },
-  {
-    url: "https://www.micajaempresa.cl",
-    title: "Mi Caja Empresa",
-    type: "SaaS / App Web",
-    img: "/preview-micaja.png",
   },
 ];
 
