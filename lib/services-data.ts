@@ -112,7 +112,7 @@ export const SERVICES: ServiceData[] = [
     title: "Campaña de Google Ads + Landing",
     metaTitle: "Campañas de Google Ads Chile | Landing Incluida",
     metaDescription:
-      "Tu primera campaña de Google Ads o Meta Ads configurada por expertos + landing page optimizada en conversión. 30 días de optimización incluidos. $399.990 pago único.",
+      "Tu primera campaña de Google Ads o Meta Ads configurada por expertos + landing page optimizada en conversión. 30 días de optimización incluidos. $299.990 pago único.",
     seoTitle: "Campañas de Google Ads para pymes en Chile",
     whatIsTitle: "Cómo funciona el sistema de landing + campaña publicitaria",
     badge: "Sistema completo",
@@ -161,12 +161,12 @@ export const SERVICES: ServiceData[] = [
       { step: "03", title: "Lanzamiento de campaña", desc: "Creamos la estructura de campaña, los anuncios y la segmentación. Lanzamos con palabras negativas configuradas para proteger tu presupuesto desde el primer clic." },
       { step: "04", title: "Optimización por 30 días", desc: "Revisamos los datos reales, depuramos términos, ajustamos pujas y mejoramos anuncios. Cerramos el mes con un reporte y una recomendación honesta de continuidad." },
     ],
-    price: "$399.990",
+    price: "$299.990",
     priceNote: "Pago único · Incluye 30 días de optimización · El presupuesto publicitario se paga aparte a Google o Meta (recomendamos desde $150.000/mes)",
     faqs: [
       {
         q: "¿El precio incluye el presupuesto de publicidad?",
-        a: "No, y es importante que lo sepas antes de partir. Los $399.990 cubren nuestro trabajo: landing, tracking, configuración de campaña y 30 días de optimización. El presupuesto publicitario lo pagas directamente a Google o Meta desde tu propia cuenta — recomendamos partir desde $150.000 mensuales para tener datos suficientes. Tu cuenta, tu tarjeta, tu control total.",
+        a: "No, y es importante que lo sepas antes de partir. Los $299.990 cubren nuestro trabajo: landing, tracking, configuración de campaña y 30 días de optimización. El presupuesto publicitario lo pagas directamente a Google o Meta desde tu propia cuenta — recomendamos partir desde $150.000 mensuales para tener datos suficientes. Tu cuenta, tu tarjeta, tu control total.",
       },
       {
         q: "¿Cómo deciden entre Google Ads y Meta Ads?",

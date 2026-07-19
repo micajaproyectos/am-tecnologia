@@ -5,7 +5,7 @@ import TestimonialsCard from "@/components/TestimonialsCard";
 // noindex: no compite con el SEO del sitio. AdsBot sí puede rastrearla
 // (no está bloqueada en robots.txt) para el Quality Score.
 export const metadata: Metadata = {
-  title: "Landing + Campaña de Google Ads — $399.990 pago único",
+  title: "Landing + Campaña de Google Ads — $299.990 pago único",
   description:
     "Te construimos la landing y configuramos tu primera campaña en Google Ads o Meta Ads. Tracking completo y 30 días de optimización incluidos.",
   robots: {
@@ -54,7 +54,7 @@ const pasos = [
 const faqs = [
   {
     q: "¿El precio incluye el presupuesto de publicidad?",
-    a: "No. Los $399.990 cubren nuestro trabajo completo: landing, tracking, campaña y 30 días de optimización. El presupuesto publicitario lo pagas directo a Google o Meta desde tu propia cuenta — recomendamos desde $150.000/mes. Tu cuenta, tu tarjeta, tu control.",
+    a: "No. Los $299.990 cubren nuestro trabajo completo: landing, tracking, campaña y 30 días de optimización. El presupuesto publicitario lo pagas directo a Google o Meta desde tu propia cuenta — recomendamos desde $150.000/mes. Tu cuenta, tu tarjeta, tu control.",
   },
   {
     q: "¿En cuánto tiempo está funcionando?",
@@ -135,7 +135,7 @@ export default function LpGoogleAdsPage() {
               {/* Precio */}
               <div className="flex items-baseline gap-3 mb-5">
                 <span className="font-display font-extrabold text-white text-4xl">
-                  $399.990
+                  $299.990
                 </span>
                 <span className="text-am-muted text-sm font-semibold">
                   pago único
@@ -158,7 +158,7 @@ export default function LpGoogleAdsPage() {
               <a
                 href={WA}
                 data-cta-source="lp_ads_hero"
-                data-cta-value="399990"
+                data-cta-value="299990"
                 data-offer="ads"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
@@ -211,7 +211,7 @@ export default function LpGoogleAdsPage() {
               style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
             >
               Todo lo que recibes por{" "}
-              <span className="gradient-text">$399.990</span>
+              <span className="gradient-text">$299.990</span>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {incluye.map((item) => (
@@ -235,7 +235,7 @@ export default function LpGoogleAdsPage() {
                 Hablemos claro: el presupuesto publicitario va aparte
               </p>
               <p className="text-am-muted text-[14px] leading-relaxed">
-                Los $399.990 cubren nuestro trabajo completo. Lo que inviertes
+                Los $299.990 cubren nuestro trabajo completo. Lo que inviertes
                 en anuncios se paga directo a Google o Meta desde tu propia
                 cuenta — recomendamos partir desde $150.000 mensuales.
                 Preferimos decírtelo aquí y no después de cotizar: trabajamos
@@ -319,7 +319,7 @@ export default function LpGoogleAdsPage() {
               Landing + campaña + 30 días de optimización
             </h2>
             <div className="font-display font-extrabold text-white text-5xl mb-2">
-              $399.990
+              $299.990
             </div>
             <p className="text-am-muted text-sm mb-8">
               Pago único · Presupuesto publicitario aparte · Sin mensualidades obligatorias
@@ -327,7 +327,7 @@ export default function LpGoogleAdsPage() {
             <a
               href={WA}
               data-cta-source="lp_ads_final"
-              data-cta-value="399990"
+              data-cta-value="299990"
               data-offer="ads"
               target="_blank"
               rel="nofollow noopener noreferrer"
@@ -360,7 +360,7 @@ export default function LpGoogleAdsPage() {
         <a
           href={WA}
           data-cta-source="lp_ads_sticky"
-          data-cta-value="399990"
+          data-cta-value="299990"
           data-offer="ads"
           target="_blank"
           rel="nofollow noopener noreferrer"

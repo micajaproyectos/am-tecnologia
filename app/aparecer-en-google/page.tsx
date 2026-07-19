@@ -530,7 +530,7 @@ export default function AparecerEnGooglePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {[
               { href: "/servicios/landing-page", label: "Landing Page de Ventas", price: "desde $199.990" },
-              { href: "/servicios/campanas-google-ads", label: "Campaña Google Ads + Landing", price: "$399.990" },
+              { href: "/servicios/campanas-google-ads", label: "Campaña Google Ads + Landing", price: "$299.990" },
               { href: "/servicios/one-page-corporativo", label: "One Page Corporativo", price: "desde $199.990" },
               { href: "/servicios/ecommerce", label: "Tienda Online", price: "$199.990 a $399.990" },
               { href: "/servicios/automatizaciones-ia", label: "Automatizaciones con IA", price: "desde $199.990" },

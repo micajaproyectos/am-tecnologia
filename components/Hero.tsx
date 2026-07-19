@@ -25,7 +25,7 @@ export default function Hero() {
 
           {/* Bajada */}
           <p className="text-slate-600 text-[20px] leading-snug mb-8 max-w-lg">
-            Aumenta la visibilidad de tu negocio y consigue más clientes.
+            Aumenta la visibilidad de tu negocio y consigue más clientes desde Google.
           </p>
 
 
