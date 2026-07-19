@@ -16,7 +16,7 @@ const projects: { url: string; title: string; type: string; img?: string; aspect
     url: "https://www.patagoniafutaleufu.cl",
     title: "Cabañas Río Espolón",
     type: "Turismo / Cabañas",
-    img: "/preview-rioespolon.png",
+    img: "/preview-rioespolon-2.webp",
   },
   {
     url: "https://futarte.cl",
