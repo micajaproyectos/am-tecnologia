@@ -35,7 +35,7 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https:",
       "font-src 'self'",
-      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://script.google.com https://script.googleusercontent.com https://region1.google-analytics.com https://www.google.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://h.clarity.ms",
+      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://script.google.com https://script.googleusercontent.com https://region1.google-analytics.com https://www.google.com https://www.google.cl https://www.googleadservices.com https://googleads.g.doubleclick.net https://h.clarity.ms",
       "frame-src https://www.googletagmanager.com https://td.doubleclick.net",
       "object-src 'none'",
       "base-uri 'self'",
