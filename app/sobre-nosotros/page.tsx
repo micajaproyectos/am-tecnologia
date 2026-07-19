@@ -122,7 +122,7 @@ export default function SobreNosotros() {
               </h1>
               <p className="text-am-muted text-lg leading-relaxed mb-4">
                 Soy Allan Milla, Ingeniero Civil Industrial y fundador de AM Tecnología. Creo que
-                las pymes en Chile merecen presencia digital diseñada con la misma
+                los emprendedores y pymes en Chile merecen presencia digital diseñada con la misma
                 rigurosidad que un sistema de ingeniería: analizada, optimizada y
                 orientada a resultados.
               </p>
@@ -236,18 +236,26 @@ export default function SobreNosotros() {
                 <span className="gradient-text">AM Tecnología</span>
               </h2>
               <p className="text-am-muted text-base leading-relaxed mb-4">
-                Trabajando como ingeniero, vi de cerca cómo decenas de negocios
-                chilenos tenían excelentes productos y servicios, pero eran
-                completamente invisibles en Google. Dependían de recomendaciones
-                de boca a boca y publicidad pagada que se terminaba cuando se
-                terminaba el presupuesto.
+                Trabajé 8 años en una empresa de ingeniería y vi de cerca cómo
+                se tomaban en serio la visibilidad de su marca: era una
+                inversión estratégica, no un gasto. Mientras tanto, veía a
+                emprendedores con excelentes productos y servicios que eran
+                completamente invisibles, dependiendo del boca a boca y de
+                publicidad que se terminaba junto con el presupuesto.
+              </p>
+              <p className="text-am-muted text-base leading-relaxed mb-4">
+                Acumulé tanto conocimiento en esos años que decidí comenzar a
+                impartirlo a emprendedores que están dando sus primeros pasos
+                en posicionar su negocio de manera digital. Así nació AM
+                Tecnología a inicios de 2025.
               </p>
               <p className="text-am-muted text-base leading-relaxed mb-8">
-                Fundé AM Tecnología a inicios de 2025 con la convicción de que
-                construir presencia digital efectiva no tiene que ser caro ni
-                complejo. Un sitio web bien construido, con la arquitectura técnica
-                correcta, puede posicionar a una pyme en Google de forma permanente
-                — sin mensualidades ni dependencia de publicidad pagada.
+                Hoy la realidad es simple: si no estás en la web — redes
+                sociales, Google Maps, una página propia — no existes. Y
+                construir esa presencia no tiene que ser caro ni complejo: un
+                sitio bien construido puede posicionar tu emprendimiento en
+                Google de forma permanente, sin mensualidades ni dependencia
+                de publicidad pagada.
               </p>
 
               <div className="flex flex-col gap-5">

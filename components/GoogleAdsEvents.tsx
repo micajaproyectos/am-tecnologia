@@ -11,7 +11,7 @@ const ATTRIBUTION_KEY = "am_attribution";
 // Valor por defecto = oferta base del sitio ($199.990). Los CTAs de ofertas
 // distintas lo sobreescriben con data-cta-value (ej: LP de Ads = 299990).
 const DEFAULT_CONVERSION_VALUE = 199990;
-const CONVERSION_SEND_TO = "AW-18068672063/_M70CObOn6IcEL-c6KdD";
+const CONVERSION_SEND_TO = "AW-18068672063/OeknCObymdMcEL-c6KdD";
 const WA_PHONE = "56985660954";
 
 const TRACKING_PARAMS = [

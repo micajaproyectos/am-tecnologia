@@ -91,7 +91,7 @@ export default function ResultsSection() {
               </div>
               <p className="text-am-muted text-[15px] leading-relaxed mb-6">
                 Quisimos demostrar nuestro método con nuestro propio
-                emprendimiento: ajo negro artesanal producido en Futaleufú.
+                emprendimiento: ajo negro artesanal producido en la Patagonia.
                 Cero pesos en publicidad — solo posicionamiento orgánico.
               </p>
 

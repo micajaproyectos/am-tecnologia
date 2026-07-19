@@ -104,7 +104,7 @@ export default function Footer() {
                   contacto@amconsultora.cl
                 </a>
               </li>
-              <li className="text-am-muted text-sm">Lo Barnechea, Santiago.</li>
+              <li className="text-am-muted text-sm">Santiago, Chile.</li>
             </ul>
           </div>
         </div>

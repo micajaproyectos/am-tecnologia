@@ -16,6 +16,9 @@ const SHEET_WEBHOOK_URL =
   "https://script.google.com/macros/s/AKfycbzL-Ub_JIchX7l-yrHoKFcznn_tBhS6-Ak2k4vUVqPKnQV41VherHQDLt5ZcR5OUaP2/exec";
 const CONVERSION_VALUE = 199990;
 const CONVERSION_NAME  = "lead_formulario_cta";
+// Misma acción de conversión que el funnel de WhatsApp (GoogleAdsEvents.tsx):
+// ambas rutas cuentan como "Contacto WhatsApp" y se distinguen por cta_source.
+const CONVERSION_SEND_TO = "AW-18068672063/OeknCObymdMcEL-c6KdD";
 const CHILE_TIME_ZONE  = "America/Santiago";
 
 export default function CTA() {
@@ -68,6 +71,15 @@ export default function CTA() {
       body: JSON.stringify(payload),
     }).catch(() => {});
 
+    // Conversiones avanzadas: el teléfono que dejó el lead, hasheado por la
+    // etiqueta de Google antes de enviarse (formato E.164 requerido).
+    window.gtag?.("set", "user_data", { phone_number: `+569${numero}` });
+    window.gtag?.("event", "conversion", {
+      send_to: CONVERSION_SEND_TO,
+      value: CONVERSION_VALUE,
+      currency: "CLP",
+      cta_source: CONVERSION_NAME,
+    });
     window.gtag?.("event", "generate_lead", {
       value: CONVERSION_VALUE,
       currency: "CLP",
