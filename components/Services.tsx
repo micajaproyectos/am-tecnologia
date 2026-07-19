@@ -1,6 +1,81 @@
-"use client";
+const extraServices = [
+  {
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" />
+        <path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" />
+      </svg>
+    ),
+    title: "Redes sociales y contenido",
+    text: "Gestionamos tus redes y creamos contenido para tu marca.",
+    price: "Desde $99.990/mes",
+  },
+  {
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="3" width="7" height="9" rx="1" /><rect x="14" y="3" width="7" height="5" rx="1" />
+        <rect x="14" y="12" width="7" height="9" rx="1" /><rect x="3" y="16" width="7" height="5" rx="1" />
+      </svg>
+    ),
+    title: "Sistema de gestión para tu negocio",
+    text: "Reservas, pedidos, clientes, stock y reportes con IA, adaptado a tu operación.",
+    price: "A cotizar",
+  },
+  {
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+      </svg>
+    ),
+    title: "Fidelización con QR",
+    text: "Premia a tus clientes frecuentes y haz que vuelvan a comprarte.",
+    price: "$250.000 único",
+  },
+  {
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" />
+        <rect x="3" y="14" width="7" height="7" rx="1" />
+        <path d="M14 14h3v3h-3zM18 18h3v3h-3zM14 21h1M21 14v1" />
+      </svg>
+    ),
+    title: "Catálogo digital con QR",
+    text: "Tus productos o servicios siempre actualizados, fáciles de compartir.",
+    price: "A cotizar",
+  },
+  {
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" />
+        <path d="M9 16l2 2 4-4" />
+      </svg>
+    ),
+    title: "Reservas y agenda online",
+    text: "Disponibilidad en línea y confirmaciones automáticas para tus clientes.",
+    price: "A cotizar",
+  },
+  {
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+      </svg>
+    ),
+    title: "Aplicaciones web a medida",
+    text: "Convertimos los procesos de tu negocio en una herramienta hecha para ti.",
+    price: "A cotizar",
+  },
+  {
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+      </svg>
+    ),
+    title: "Automatización de tareas",
+    text: "Eliminamos el trabajo repetitivo para que ganes horas cada semana.",
+    price: "A cotizar",
+  },
+];
 
-import { useRef, useState } from "react";
 const services = [
   {
     href: "/aparecer-en-google",
@@ -124,31 +199,7 @@ const services = [
   },
 ];
 
-const CARD_W = 320;
-
 export default function Services() {
-  const trackRef = useRef<HTMLDivElement>(null);
-  const [dragging, setDragging] = useState(false);
-  const startX = useRef(0);
-  const scrollLeft = useRef(0);
-
-  function onMouseDown(e: React.MouseEvent) {
-    setDragging(true);
-    startX.current = e.pageX - (trackRef.current?.offsetLeft ?? 0);
-    scrollLeft.current = trackRef.current?.scrollLeft ?? 0;
-  }
-  function onMouseMove(e: React.MouseEvent) {
-    if (!dragging || !trackRef.current) return;
-    e.preventDefault();
-    const x = e.pageX - trackRef.current.offsetLeft;
-    trackRef.current.scrollLeft = scrollLeft.current - (x - startX.current) * 1.2;
-  }
-  function stopDrag() { setDragging(false); }
-
-  function scroll(dir: "left" | "right") {
-    trackRef.current?.scrollBy({ left: dir === "right" ? CARD_W + 24 : -(CARD_W + 24), behavior: "smooth" });
-  }
-
   return (
     <section id="servicios" className="relative bg-white py-28 overflow-hidden">
       {/* Fade superior desde Projects */}
@@ -167,89 +218,99 @@ export default function Services() {
               Posicionamiento en Google para negocios en todo Chile. Desde $199.990 pago único · Sin mensualidades.
             </p>
           </div>
-          {/* Nav arrows */}
-          <div className="flex gap-3">
-            <button
-              onClick={() => scroll("left")}
-              aria-label="Anterior"
-              className="w-11 h-11 rounded-full border border-slate-200 bg-white text-slate-500 flex items-center justify-center hover:border-am-blue/50 hover:text-am-blue transition-all duration-200"
+        </div>
+
+        {/* Tarjetas compactas — el detalle completo está en la página de cada servicio */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {services.map((s) => (
+            <a
+              key={s.title}
+              href={s.href}
+              className={`relative flex items-center gap-3.5 rounded-xl px-4 py-4 border group transition-all duration-200 ${
+                s.featured
+                  ? "border-am-blue/40 bg-gradient-to-br from-white to-am-blue/5 shadow-[0_0_24px_rgba(37,99,235,0.10)]"
+                  : "border-slate-200 bg-white hover:border-am-blue/30 hover:shadow-[0_6px_18px_rgba(15,23,42,0.07)]"
+              }`}
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <path d="M15 18l-6-6 6-6" />
-              </svg>
-            </button>
-            <button
-              onClick={() => scroll("right")}
-              aria-label="Siguiente"
-              className="w-11 h-11 rounded-full border border-slate-200 bg-white text-slate-500 flex items-center justify-center hover:border-am-blue/50 hover:text-am-blue transition-all duration-200"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <path d="M9 18l6-6-6-6" />
-              </svg>
-            </button>
-          </div>
+              <div className="shrink-0 w-11 h-11 rounded-lg border border-am-blue/20 bg-am-blue/5 flex items-center justify-center text-am-blue group-hover:bg-am-blue/10 transition-colors duration-200">
+                {s.icon}
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-display font-bold text-slate-900 text-[15px] leading-tight">
+                  {s.title}
+                </h3>
+                {s.badge && (
+                  <span className={`inline-block mt-1 text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full border ${s.badge.style}`}>
+                    {s.badge.text}
+                  </span>
+                )}
+              </div>
+              <span className="shrink-0 text-slate-400 group-hover:text-am-blue group-hover:translate-x-0.5 transition-all duration-200">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </span>
+            </a>
+          ))}
         </div>
       </div>
 
-      {/* Scroll track — full bleed */}
-      <div
-        ref={trackRef}
-        className="relative z-10 flex gap-6 overflow-x-auto scroll-smooth pb-6 select-none"
-        style={{
-          paddingLeft: "max(24px, calc((100vw - 1280px) / 2 + 24px))",
-          paddingRight: "max(24px, calc((100vw - 1280px) / 2 + 24px))",
-          scrollbarWidth: "none",
-          cursor: dragging ? "grabbing" : "grab",
-        }}
-        onMouseDown={onMouseDown}
-        onMouseMove={onMouseMove}
-        onMouseUp={stopDrag}
-        onMouseLeave={stopDrag}
-      >
-        {services.map((s) => (
+      {/* Servicios adicionales — pasarela continua */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 mt-14">
+        <h3 className="font-display font-bold text-slate-800 text-center text-[20px] mb-1.5">
+          También podemos gestionar por ti
+        </h3>
+        <p className="text-slate-600 text-[14px] text-center mb-8">
+          Soluciones para operar y hacer crecer tu negocio, adaptadas a
+          cualquier rubro.
+        </p>
+
+        {/* Se duplica la lista para el loop sin corte */}
+        <div
+          className="overflow-hidden"
+          style={{
+            maskImage:
+              "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+            WebkitMaskImage:
+              "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+          }}
+        >
+          <div className="flex gap-3 w-max animate-marquee hover:[animation-play-state:paused]">
+            {[...extraServices, ...extraServices].map((s, i) => (
+              <div
+                key={`${s.title}-${i}`}
+                className="flex items-center gap-3.5 rounded-xl border border-slate-200 bg-white px-4 py-3.5 w-[340px] shrink-0"
+              >
+                <div className="shrink-0 w-9 h-9 rounded-lg bg-am-blue/5 border border-am-blue/20 text-am-blue flex items-center justify-center">
+                  {s.icon}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-slate-900 font-semibold text-[14px] leading-tight">
+                    {s.title}
+                  </p>
+                  <p className="text-slate-600 text-[13px] leading-snug mt-0.5">
+                    {s.text}
+                  </p>
+                </div>
+                <span className="shrink-0 text-[11px] font-semibold text-slate-600 bg-slate-50 border border-slate-200 rounded-full px-2.5 py-1 whitespace-nowrap">
+                  {s.price}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="text-center mt-8 pb-10">
           <a
-            key={s.title}
-            href={s.href}
-            style={{ width: CARD_W, minWidth: CARD_W }}
-            className={`relative flex-shrink-0 rounded-2xl p-8 border flex flex-col gap-5 group transition-all duration-300 hover:-translate-y-1 ${
-              s.featured
-                ? "border-am-blue/40 bg-gradient-to-br from-white to-am-blue/5 shadow-[0_0_32px_rgba(37,99,235,0.12)]"
-                : "border-slate-200 bg-white hover:border-am-blue/30 hover:shadow-[0_8px_24px_rgba(15,23,42,0.08)]"
-            }`}
+            href="https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20adicional%20para%20mi%20negocio"
+            data-cta-source="servicios_adicionales"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-[#17804a] hover:bg-[#12683c] text-white font-semibold text-[14px] px-5 py-2.5 rounded-lg transition-colors duration-200"
           >
-            {/* Featured top accent line */}
-            {s.featured && (
-              <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-am-primary/60 to-transparent" />
-            )}
-
-            {/* Badge */}
-            {s.badge && (
-              <span className={`absolute top-5 right-5 text-[11px] font-bold tracking-wider uppercase px-3 py-1 rounded-full border ${s.badge.style}`}>
-                {s.badge.text}
-              </span>
-            )}
-
-            {/* Icon */}
-            <div className="w-14 h-14 rounded-xl border border-am-blue/20 bg-am-blue/5 flex items-center justify-center text-am-blue group-hover:bg-am-blue/10 group-hover:border-am-blue/35 transition-all duration-200">
-              {s.icon}
-            </div>
-
-            <div>
-              <h3 className="font-display font-bold text-slate-900 text-lg mb-2">{s.title}</h3>
-              <p className="text-slate-600 text-[14px] leading-[1.65]">{s.desc}</p>
-            </div>
-
-            {/* Features */}
-            <ul className="flex flex-col gap-2 mt-auto">
-              {s.features.map((f) => (
-                <li key={f} className="flex items-center gap-2.5 text-[13px] text-slate-600">
-                  <span className="w-1.5 h-1.5 rounded-full bg-am-blue shrink-0" />
-                  {f}
-                </li>
-              ))}
-            </ul>
+            Cuéntanos qué necesitas
           </a>
-        ))}
+        </div>
       </div>
 
       {/* Fade inferior hacia Footer */}

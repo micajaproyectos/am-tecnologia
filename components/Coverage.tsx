@@ -38,48 +38,30 @@ export default function Coverage() {
             Posicionamiento en Google en todo Chile
           </h2>
           <p className="text-am-muted text-sm mt-4 max-w-xl mx-auto leading-relaxed">
-            Trabajamos 100% remoto con negocios en todo Chile. Sin importar si estás en el norte, el centro o la Patagonia, aplicamos la misma metodología de SEO local que ha llevado a más de 50 pymes chilenas a las primeras posiciones de Google.
-          </p>
-          <p className="text-am-muted text-sm mt-3 max-w-xl mx-auto leading-relaxed">
-            Para los negocios fuera de Santiago, el posicionamiento local en Google representa una ventaja enorme: menos competencia digital significa mayor oportunidad de aparecer primero. Un servicio en Rancagua, La Serena o Temuco puede superar a empresas más grandes con la estrategia correcta.
+            Trabajamos 100% remoto con pymes de todo Chile — más de 50 negocios
+            ya posicionan su negocio.
           </p>
         </div>
 
-        {/* Grid de ciudades */}
-        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-          {CITIES.map((city) => {
-            const href = city.slug
-              ? `/posicionamiento-google-${city.slug}`
-              : `https://wa.me/56985660954?text=Hola%2C%20quiero%20aparecer%20en%20Google%20en%20${encodeURIComponent(city.name)}`;
-            const isExternal = !city.slug;
-            if (isExternal) {
-              return (
-                <li key={city.name}>
-                  <a
-                    href={href}
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    data-cta-source="coverage_wa"
-                    className="flex flex-col gap-1 rounded-xl border border-white/6 bg-white/2 px-4 py-4 hover:border-am-primary/30 hover:bg-am-primary/5 transition-all duration-200 group h-full"
-                  >
-                    <span className="font-semibold text-white text-[14px] group-hover:text-am-primary transition-colors">
-                      {city.name}
-                      <span className="ml-1 text-am-primary/50 text-[10px]">→</span>
-                    </span>
-                    <span className="text-am-muted text-[11px] leading-snug">
-                      {city.region}
-                    </span>
-                  </a>
-                </li>
-              );
-            }
-            return (
-              <li key={city.name}>
-                <Link
-                  href={href}
-                  prefetch={true}
-                  className="flex flex-col gap-1 rounded-xl border border-white/6 bg-white/2 px-4 py-4 hover:border-am-primary/30 hover:bg-am-primary/5 transition-all duration-200 group h-full"
-                >
+        {/* Pasarela de ciudades; se duplica la lista para el loop sin corte */}
+        <div
+          className="overflow-hidden"
+          style={{
+            maskImage:
+              "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+            WebkitMaskImage:
+              "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+          }}
+        >
+          <div className="flex gap-3 w-max animate-marquee hover:[animation-play-state:paused]">
+            {[...CITIES, ...CITIES].map((city, i) => {
+              const href = city.slug
+                ? `/posicionamiento-google-${city.slug}`
+                : `https://wa.me/56985660954?text=Hola%2C%20quiero%20aparecer%20en%20Google%20en%20${encodeURIComponent(city.name)}`;
+              const cardClass =
+                "flex flex-col gap-1 rounded-xl border border-white/6 bg-white/2 px-4 py-4 hover:border-am-primary/30 hover:bg-am-primary/5 transition-all duration-200 group w-[180px] shrink-0";
+              const inner = (
+                <>
                   <span className="font-semibold text-white text-[14px] group-hover:text-am-primary transition-colors">
                     {city.name}
                     <span className="ml-1 text-am-primary/50 text-[10px]">→</span>
@@ -87,11 +69,35 @@ export default function Coverage() {
                   <span className="text-am-muted text-[11px] leading-snug">
                     {city.region}
                   </span>
+                </>
+              );
+              if (!city.slug) {
+                return (
+                  <a
+                    key={`${city.name}-${i}`}
+                    href={href}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    data-cta-source="coverage_wa"
+                    className={cardClass}
+                  >
+                    {inner}
+                  </a>
+                );
+              }
+              return (
+                <Link
+                  key={`${city.name}-${i}`}
+                  href={href}
+                  prefetch={true}
+                  className={cardClass}
+                >
+                  {inner}
                 </Link>
-              </li>
-            );
-          })}
-        </ul>
+              );
+            })}
+          </div>
+        </div>
 
         {/* Nota al pie */}
         <p className="text-center text-am-muted text-sm mt-10">

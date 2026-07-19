@@ -154,6 +154,15 @@ export default function FAQ() {
             Lee nuestras guías →
           </Link>
         </p>
+        <p className="text-center text-am-muted text-sm mt-3">
+          Si tu negocio aún no aparece, descubre{" "}
+          <Link
+            href="/aparecer-en-google"
+            className="text-am-primary hover:text-am-accent font-semibold transition-colors"
+          >
+            cómo aparecer en Google →
+          </Link>
+        </p>
       </div>
     </section>
   );
