@@ -54,12 +54,6 @@ const projects: { url: string; title: string; type: string; img?: string; aspect
     type: "Tienda Online",
     img: "/preview-millanolli.png",
   },
-  {
-    url: "https://www.perfumeriasur.cl",
-    title: "Perfumería Sur",
-    type: "E-commerce",
-    img: "/preview-perfumeria.png",
-  },
 ];
 
 const MAX_CARD_W = 520;
