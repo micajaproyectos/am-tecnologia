@@ -36,7 +36,7 @@ const projects = [
   {
     img: "/futarte.png",
     title: "Futarte",
-    type: "Tienda de Ropa",
+    type: "Souvenirs y Regalos",
     // La captura es más ancha que el marco; sin esto sale recortada.
     fit: "contain" as const,
   },

@@ -21,7 +21,7 @@ const projects: { url: string; title: string; type: string; img?: string; aspect
   {
     url: "https://futarte.cl",
     title: "Futarte",
-    type: "Tienda de Ropa",
+    type: "Souvenirs y Regalos",
     img: "/futarte.png",
   },
   {
