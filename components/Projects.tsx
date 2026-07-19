@@ -8,7 +8,9 @@ const projects: { url: string; title: string; type: string; img?: string; aspect
     url: "https://www.abogadasconcepcion.cl",
     title: "Solar & Arriagada",
     type: "Estudio Jurídico",
-    img: "/preview-abogadas.png",
+    img: "/abogadasconcepcion.png",
+    // La captura es más ancha que el ratio 16/10 por defecto; con su aspect real no se recorta.
+    aspect: 3320 / 1714,
   },
   {
     url: "https://www.patagoniafutaleufu.cl",
