@@ -33,14 +33,11 @@ const projects = [
     type: "Landing Médica",
   },
   {
-    img: "/preview-perfumeria.png",
-    title: "Perfumería Sur",
-    type: "E-commerce",
-  },
-  {
     img: "/futarte.png",
     title: "Futarte",
     type: "Tienda de Ropa",
+    // La captura es más ancha que el marco; sin esto sale recortada.
+    fit: "contain" as const,
   },
   {
     img: "/preview-millanolli.png",
@@ -91,7 +88,7 @@ export default function HeroShowcase() {
 
       {/* Principal, delante — vitrina rotativa */}
       <div className="relative w-full sm:w-[82%] sm:mt-14 rotate-0 sm:rotate-[-3deg] rounded-xl overflow-hidden ring-1 ring-slate-200 shadow-[0_24px_60px_rgba(0,0,0,0.18)]">
-        <div className="relative w-full aspect-[1250/858] bg-slate-100">
+        <div className="relative w-full aspect-[1250/858] bg-white">
           {projects.map((p, i) =>
             i <= maxMounted ? (
               <Image
@@ -100,8 +97,10 @@ export default function HeroShowcase() {
                 alt={`Sitio web de ${p.title} (${p.type}), proyecto de AM Tecnología`}
                 fill
                 sizes="(max-width: 1024px) 90vw, 460px"
-                preload={i === 0 ? true : undefined}
-                className={`object-cover object-top transition-opacity duration-700 ease-in-out ${
+                loading={i === 0 ? "eager" : undefined}
+                className={`${
+                  p.fit === "contain" ? "object-contain" : "object-cover object-top"
+                } transition-opacity duration-700 ease-in-out ${
                   i === index ? "opacity-100" : "opacity-0"
                 }`}
               />

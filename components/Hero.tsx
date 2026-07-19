@@ -20,7 +20,7 @@ export default function Hero() {
             className="font-display font-extrabold text-slate-800 text-balance leading-[1.12] mb-6"
             style={{ fontSize: "clamp(2.375rem, 5vw, 4rem)" }}
           >
-            Que nuevos clientes conozcan tu negocio
+            Atrae Más Clientes a tu Negocio
           </h1>
 
           {/* Bajada */}
@@ -51,18 +51,15 @@ export default function Hero() {
                 data-cta-value="199990"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className="mt-auto inline-flex items-center justify-center gap-2 bg-am-blue hover:bg-[#1765cc] text-white font-semibold text-[14px] px-4 py-2.5 rounded-lg transition-colors duration-200"
+                className="mt-auto inline-flex items-center justify-center gap-2 bg-[#17804a] hover:bg-[#12683c] text-white font-semibold text-[14px] px-4 py-2.5 rounded-lg transition-colors duration-200"
               >
                 <WaIcon />
-                Comenzar
+                Elegir
               </a>
             </div>
 
             {/* Inmediato */}
-            <div className="relative flex flex-col pt-6 sm:pt-0 sm:pl-6">
-              <span className="absolute top-6 sm:top-0 right-0 text-[10px] font-bold uppercase tracking-wider text-am-blue bg-am-blue/5 rounded-full px-2 py-0.5">
-                Nuevo
-              </span>
+            <div className="flex flex-col pt-6 sm:pt-0 sm:pl-6">
               <span className="text-am-blue text-[11px] font-bold tracking-widest uppercase mb-1.5">
                 Inmediato
               </span>
@@ -86,10 +83,10 @@ export default function Hero() {
                 data-offer="ads"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className="mt-auto inline-flex items-center justify-center gap-2 bg-am-blue hover:bg-[#1765cc] text-white font-semibold text-[14px] px-4 py-2.5 rounded-lg transition-colors duration-200"
+                className="mt-auto inline-flex items-center justify-center gap-2 bg-[#17804a] hover:bg-[#12683c] text-white font-semibold text-[14px] px-4 py-2.5 rounded-lg transition-colors duration-200"
               >
                 <WaIcon />
-                Comenzar
+                Elegir
               </a>
             </div>
           </div>

@@ -20,8 +20,8 @@ export const reviews = [
     text: "Gracias por ayudarnos con su servicio. Desde que crearon nuestra marca en Google comenzamos a tener tráfico orgánico.",
   },
   {
-    name: "Solange Ballen",
-    initial: "S",
+    name: "Dra. Ballen",
+    initial: "D",
     color: "#34a853",
     badge: "1 opinión",
     timeAgo: "Hace 7 semanas",
