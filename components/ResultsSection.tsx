@@ -82,10 +82,13 @@ export default function ResultsSection() {
               <span className="text-white/55 text-[11px] font-bold tracking-widest uppercase">
                 Caso 1 · Nuestro propio negocio
               </span>
-              <h3 className="font-display font-bold text-white text-[26px] mt-1.5 mb-3">
-                Ajo Negro Austral
-                <sup className="text-[13px] font-semibold ml-0.5">®</sup>
-              </h3>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-1.5 mb-3">
+                <h3 className="font-display font-bold text-white text-[26px]">
+                  Ajo Negro Austral
+                  <sup className="text-[13px] font-semibold ml-0.5">®</sup>
+                </h3>
+                <VerifyPill query="ajo negro patagonia" />
+              </div>
               <p className="text-am-muted text-[15px] leading-relaxed mb-6">
                 Quisimos demostrar nuestro método con nuestro propio
                 emprendimiento: ajo negro artesanal producido en Futaleufú.
@@ -132,8 +135,6 @@ export default function ResultsSection() {
                   </p>
                 </li>
               </ol>
-
-              <VerifyPill query="ajo negro patagonia" />
             </div>
 
             <figure>
@@ -201,9 +202,12 @@ export default function ResultsSection() {
             <span className="text-white/55 text-[11px] font-bold tracking-widest uppercase">
               Caso 2 · Visibilidad desde cero
             </span>
-            <h3 className="font-display font-bold text-white text-[22px] mt-1.5 mb-3">
-              Futarte
-            </h3>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-1.5 mb-3">
+              <h3 className="font-display font-bold text-white text-[22px]">
+                Futarte
+              </h3>
+              <VerifyPill query="regalos en futaleufú" />
+            </div>
             <p className="text-am-muted text-[14px] leading-relaxed mb-5">
               Hacían souvenirs personalizados prácticamente sin visibilidad
               online. Creamos su landing y hoy son los primeros cuando alguien
@@ -220,9 +224,6 @@ export default function ResultsSection() {
                 className="w-full h-auto"
               />
             </BrowserFrame>
-            <div className="mt-5">
-              <VerifyPill query="regalos en futaleufú" />
-            </div>
           </article>
 
           <article
@@ -233,9 +234,12 @@ export default function ResultsSection() {
             <span className="text-white/55 text-[11px] font-bold tracking-widest uppercase">
               Caso 3 · De invisible a primero
             </span>
-            <h3 className="font-display font-bold text-white text-[22px] mt-1.5 mb-3">
-              Cabañas Río Espolón
-            </h3>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-1.5 mb-3">
+              <h3 className="font-display font-bold text-white text-[22px]">
+                Cabañas Río Espolón
+              </h3>
+              <VerifyPill query="cabañas en futaleufú" />
+            </div>
             <p className="text-am-muted text-[14px] leading-relaxed mb-5">
               Sus cabañas rankeaban fuera del top 10. Actualizamos su perfil de
               Google y creamos una página enfocada en posicionamiento: hoy son
@@ -252,9 +256,6 @@ export default function ResultsSection() {
                 className="w-full h-auto"
               />
             </BrowserFrame>
-            <div className="mt-5">
-              <VerifyPill query="cabañas en futaleufú" />
-            </div>
           </article>
         </div>
 
@@ -311,7 +312,7 @@ function VerifyPill({ query }: { query: string }) {
         <circle cx="11" cy="11" r="7" />
         <path d="M21 21l-4.3-4.3" />
       </svg>
-      Compruébalo: busca &ldquo;{query}&rdquo;
+      Busca &ldquo;{query}&rdquo;
     </a>
   );
 }

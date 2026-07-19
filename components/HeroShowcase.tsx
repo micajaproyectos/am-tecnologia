@@ -7,11 +7,6 @@ const INTERVAL_MS = 4500;
 
 const projects = [
   {
-    img: "/preview-rioespolon.png",
-    title: "Cabañas Río Espolón",
-    type: "Turismo / Cabañas",
-  },
-  {
     img: "/abogadasconcepcion.png",
     title: "Solar & Arriagada",
     type: "Estudio Jurídico",
