@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const projects: { url: string; title: string; type: string; img?: string; aspect?: number }[] = [
   {
@@ -68,11 +68,7 @@ const IFRAME_H = 900;
 const IMG_ASPECT = 16 / 10; // landscape preview ratio
 
 export default function Projects() {
-  const trackRef = useRef<HTMLDivElement>(null);
-  const [dragging, setDragging] = useState(false);
   const [cardW, setCardW] = useState(MAX_CARD_W);
-  const startX = useRef(0);
-  const scrollLeft = useRef(0);
 
   useEffect(() => {
     const update = () => setCardW(window.innerWidth < 768 ? window.innerWidth - 32 : MAX_CARD_W);
@@ -83,30 +79,24 @@ export default function Projects() {
 
   const scale = cardW / IFRAME_W;
   const previewH = Math.round(IFRAME_H * scale);
-
-  function onMouseDown(e: React.MouseEvent) {
-    setDragging(true);
-    startX.current = e.pageX - (trackRef.current?.offsetLeft ?? 0);
-    scrollLeft.current = trackRef.current?.scrollLeft ?? 0;
-  }
-  function onMouseMove(e: React.MouseEvent) {
-    if (!dragging || !trackRef.current) return;
-    e.preventDefault();
-    const x = e.pageX - trackRef.current.offsetLeft;
-    const walk = (x - startX.current) * 1.2;
-    trackRef.current.scrollLeft = scrollLeft.current - walk;
-  }
-  function stopDrag() {
-    setDragging(false);
-  }
-
-  function scroll(dir: "left" | "right") {
-    if (!trackRef.current) return;
-    trackRef.current.scrollBy({ left: dir === "right" ? cardW + 16 : -(cardW + 16), behavior: "smooth" });
-  }
+  // Velocidad constante (~54 px/s) aunque cambie la cantidad de proyectos
+  const marqueeDuration = projects.length * 10;
 
   return (
     <section id="proyectos" className="relative overflow-hidden">
+      <style>{`
+        @keyframes projects-marquee {
+          from { transform: translateX(0); }
+          to   { transform: translateX(-50%); }
+        }
+        .projects-marquee-track {
+          animation: projects-marquee ${marqueeDuration}s linear infinite;
+          will-change: transform;
+        }
+        .projects-marquee:hover .projects-marquee-track {
+          animation-play-state: paused;
+        }
+      `}</style>
       {/* Image background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <Image src="/proyectos.webp" alt="" fill loading="lazy" sizes="100vw" className="object-cover object-center" />
@@ -126,46 +116,28 @@ export default function Projects() {
         </p>
       </div>
 
-      {/* Nav — left */}
-      <button
-        onClick={() => scroll("left")}
-        aria-label="Anterior"
-        className="hidden md:flex absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full border border-white/15 bg-am-bg/80 backdrop-blur-sm text-am-muted items-center justify-center hover:border-am-primary/50 hover:text-am-primary transition-all duration-200"
-      >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-          <path d="M15 18l-6-6 6-6" />
-        </svg>
-      </button>
-
-      {/* Nav — right */}
-      <button
-        onClick={() => scroll("right")}
-        aria-label="Siguiente"
-        className="hidden md:flex absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full border border-white/15 bg-am-bg/80 backdrop-blur-sm text-am-muted items-center justify-center hover:border-am-primary/50 hover:text-am-primary transition-all duration-200"
-      >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-          <path d="M9 18l6-6-6-6" />
-        </svg>
-      </button>
-
-      {/* Scroll track — full bleed */}
+      {/* Marquesina — full bleed, pasa sola y se pausa con el mouse encima */}
       <div
-        ref={trackRef}
-        className="flex gap-6 overflow-x-auto scroll-smooth select-none py-12"
+        className="projects-marquee relative overflow-hidden select-none py-12"
         style={{
-          paddingLeft: "40px",
-          paddingRight: "40px",
-          scrollbarWidth: "none",
-          cursor: dragging ? "grabbing" : "grab",
+          maskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+          WebkitMaskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
         }}
-        onMouseDown={onMouseDown}
-        onMouseMove={onMouseMove}
-        onMouseUp={stopDrag}
-        onMouseLeave={stopDrag}
       >
-        {projects.map((p) => (
-          <ProjectCard key={p.url} {...p} cardW={cardW} scale={scale} previewH={previewH} />
-        ))}
+        <div className="projects-marquee-track flex w-max">
+          {[0, 1].map((copy) => (
+            <div
+              key={copy}
+              className="flex gap-6 pr-6"
+              aria-hidden={copy === 1 || undefined}
+              inert={copy === 1 || undefined}
+            >
+              {projects.map((p) => (
+                <ProjectCard key={p.url} {...p} cardW={cardW} scale={scale} previewH={previewH} />
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
 
 
