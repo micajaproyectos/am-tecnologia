@@ -74,10 +74,10 @@ export default function ResultsSection() {
 
         {/* ── CASO 1: AJO NEGRO AUSTRAL ── */}
         <article
-          className="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-10 mb-10"
+          className="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8 mb-10"
           data-reveal
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <span className="text-white/55 text-[11px] font-bold tracking-widest uppercase">
                 Caso 1 · Nuestro propio negocio
@@ -154,29 +154,40 @@ export default function ResultsSection() {
             </figure>
           </div>
 
-          {/* Cotizaciones por WhatsApp */}
-          <div className="mt-10 pt-8 border-t border-white/10">
+          {/* Cotizaciones por WhatsApp — marquesina continua */}
+          <div className="mt-8 pt-6 border-t border-white/10">
             <p className="text-white text-[15px] font-semibold mb-1">
               Y las cotizaciones llegan solas por WhatsApp
             </p>
-            <p className="text-am-muted text-[13px] mb-5">
+            <p className="text-am-muted text-[13px] mb-4">
               Ya tenemos lista de espera con pedidos agendados y clientes
               satisfechos que nos felicitan por el producto. Pedidos mayoristas
               desde Santiago hasta Puerto Montt. Conversaciones reales — datos
               de los clientes difuminados.
             </p>
-            <div className="flex gap-4 overflow-x-auto pb-2" style={{ scrollbarWidth: "thin" }}>
-              {whatsappProofs.map((p) => (
-                <Image
-                  key={p.src}
-                  src={p.src}
-                  alt={p.alt}
-                  width={p.w}
-                  height={p.h}
-                  sizes="220px"
-                  className="w-[200px] sm:w-[220px] h-auto shrink-0 rounded-xl ring-1 ring-white/10"
-                />
-              ))}
+            {/* Se duplica la lista para el loop sin corte */}
+            <div
+              className="overflow-hidden"
+              style={{
+                maskImage:
+                  "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+                WebkitMaskImage:
+                  "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+              }}
+            >
+              <div className="flex gap-3 w-max animate-marquee hover:[animation-play-state:paused]">
+                {[...whatsappProofs, ...whatsappProofs].map((p, i) => (
+                  <Image
+                    key={`${p.src}-${i}`}
+                    src={p.src}
+                    alt={p.alt}
+                    width={p.w}
+                    height={p.h}
+                    sizes="160px"
+                    className="w-[150px] sm:w-[160px] h-auto shrink-0 rounded-xl ring-1 ring-white/10"
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </article>
