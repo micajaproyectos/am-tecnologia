@@ -161,8 +161,7 @@ export default function Services() {
             <h2 className="font-display font-extrabold text-slate-800 text-balance"
               style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}
             >
-              Servicios digitales con posicionamiento{" "}
-              <span className="gradient-text">para empresas en Chile</span>
+              Servicios digitales con posicionamiento para empresas en Chile
             </h2>
             <p className="text-slate-600 text-sm leading-relaxed mt-3 max-w-lg">
               Posicionamiento en Google para negocios en todo Chile. Desde $199.990 pago único · Sin mensualidades.

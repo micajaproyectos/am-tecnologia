@@ -71,15 +71,14 @@ export default function FAQ() {
       <div className="relative z-20 max-w-3xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-14">
-          <span className="inline-block px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-white/60 text-[12px] font-semibold tracking-widest uppercase mb-5">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-white/5 text-white/60 text-[12px] font-semibold tracking-widest uppercase mb-5">
             Preguntas frecuentes
           </span>
           <h2
             className="font-display font-bold text-white text-balance"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
-            Preguntas frecuentes sobre{" "}
-            <span className="gradient-text">páginas web en Chile</span>
+            Preguntas frecuentes sobre páginas web en Chile
           </h2>
         </div>
 

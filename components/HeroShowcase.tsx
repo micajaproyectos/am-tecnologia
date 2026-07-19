@@ -5,12 +5,18 @@ import { useEffect, useState } from "react";
 
 const INTERVAL_MS = 4500;
 
-// Solar & Arriagada queda fija en la tarjeta de atrás, por eso no va aquí.
 const projects = [
   {
     img: "/preview-rioespolon.png",
     title: "Cabañas Río Espolón",
     type: "Turismo / Cabañas",
+  },
+  {
+    img: "/abogadasconcepcion.png",
+    title: "Solar & Arriagada",
+    type: "Estudio Jurídico",
+    // La captura es más ancha que el marco; sin esto sale recortada.
+    fit: "contain" as const,
   },
   {
     img: "/preview-beautylab.png",
@@ -77,10 +83,10 @@ export default function HeroShowcase() {
       {/* Secundario, detrás — fijo */}
       <div className="absolute top-0 right-0 w-[62%] rotate-[4deg] rounded-xl overflow-hidden ring-1 ring-slate-200 shadow-[0_16px_40px_rgba(0,0,0,0.16)] hidden sm:block">
         <Image
-          src="/preview-abogadas.png"
-          alt="Sitio web del estudio jurídico Solar & Arriagada, proyecto de AM Tecnología"
-          width={1250}
-          height={858}
+          src="/amtecnologia_landing.png"
+          alt="Landing page de AM Tecnología"
+          width={2440}
+          height={1284}
           sizes="(max-width: 1024px) 60vw, 350px"
           className="w-full h-auto"
         />

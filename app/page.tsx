@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
 import Navbar        from "@/components/Navbar";
 import Hero          from "@/components/Hero";
+import ResultsSection from "@/components/ResultsSection";
 import AboutService  from "@/components/AboutService";
-import PainPoints    from "@/components/PainPoints";
 import Services      from "@/components/Services";
 import HowItWorks    from "@/components/HowItWorks";
 import Coverage      from "@/components/Coverage";
@@ -96,8 +96,8 @@ export default function Home() {
       <Navbar corporate />
       <main>
         <Hero />
+        <ResultsSection />
         <AboutService />
-        <PainPoints />
         <Projects />
         <Services />
         <HowItWorks />

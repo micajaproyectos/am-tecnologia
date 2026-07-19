@@ -111,8 +111,7 @@ export default function CTA() {
               className="font-display font-extrabold text-white text-balance leading-[1.15] mb-3"
               style={{ fontSize: "clamp(1.75rem, 4vw, 2.75rem)" }}
             >
-              Cotiza tu{" "}
-              <span className="gradient-text-light">página web con posicionamiento</span>
+              Cotiza tu página web con posicionamiento
             </h2>
 
             <p className="text-white/55 text-base leading-relaxed mb-8">
