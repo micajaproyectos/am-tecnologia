@@ -1,5 +1,5 @@
-import Image from "next/image";
 import HeroReviewsRotator from "./HeroReviewsRotator";
+import HeroShowcase from "./HeroShowcase";
 
 const WA_SEO =
   "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20p%C3%A1gina%20web%20con%20posicionamiento";
@@ -102,29 +102,8 @@ export default function Hero() {
         {/* ── PROYECTOS REALES ── */}
         <div className="flex flex-col items-center lg:items-end">
           <div className="relative w-full max-w-[560px] pt-10 sm:pt-16 select-none">
-            {/* Secundario, detrás */}
-            <div className="absolute top-0 right-0 w-[62%] rotate-[4deg] rounded-xl overflow-hidden ring-1 ring-slate-200 shadow-[0_16px_40px_rgba(0,0,0,0.16)] hidden sm:block">
-              <Image
-                src="/preview-abogadas.png"
-                alt="Sitio web del estudio jurídico Solar & Arriagada, proyecto de AM Tecnología"
-                width={1250}
-                height={858}
-                sizes="(max-width: 1024px) 60vw, 350px"
-                className="w-full h-auto"
-              />
-            </div>
-            {/* Principal, delante */}
-            <div className="relative w-full sm:w-[82%] sm:mt-14 rotate-0 sm:rotate-[-3deg] rounded-xl overflow-hidden ring-1 ring-slate-200 shadow-[0_24px_60px_rgba(0,0,0,0.18)]">
-              <Image
-                src="/preview-rioespolon.png"
-                alt="Sitio web de Cabañas Río Espolón en Futaleufú, proyecto de AM Tecnología"
-                width={1250}
-                height={858}
-                priority
-                sizes="(max-width: 1024px) 90vw, 460px"
-                className="w-full h-auto"
-              />
-            </div>
+            {/* Vitrina rotativa de proyectos */}
+            <HeroShowcase />
             {/* Reseñas de Google rotando bajo los mockups */}
             <div className="w-full mt-5">
               <HeroReviewsRotator />
