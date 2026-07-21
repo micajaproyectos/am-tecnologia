@@ -1,9 +1,13 @@
 "use client";
 
-// Funnel de WhatsApp: captura de atribución (gclid/UTM), modal de
-// precalificación con micro-compromisos, composición del mensaje en primera
-// persona y disparo de conversiones de Google Ads en el momento real de
-// salida a WhatsApp (no en el clic curioso).
+// Interceptor central de todos los links a WhatsApp del sitio. Dos flujos:
+// - "floating": el botón flotante de WhatsApp (data-floating) — único link
+//   que termina abriendo wa.me. Pide nombre+fono primero (registro
+//   silencioso, ver TODO sheet), sigue con las preguntas de precalificación
+//   y abre WhatsApp al final con el mensaje compuesto.
+// - "lead": el resto de los CTAs del sitio. Formulario de una sola pantalla
+//   (nombre, fono, servicio, tiene página web) que dispara la conversión de
+//   Google Ads y cierra con "te contactamos", sin abrir WhatsApp.
 
 import { useEffect, useState } from "react";
 
@@ -13,6 +17,8 @@ const ATTRIBUTION_KEY = "am_attribution";
 const DEFAULT_CONVERSION_VALUE = 199990;
 const CONVERSION_SEND_TO = "AW-18068672063/OeknCObymdMcEL-c6KdD";
 const WA_PHONE = "56985660954";
+const SHEET_WEBHOOK_URL =
+  "https://script.google.com/macros/s/AKfycbzL-Ub_JIchX7l-yrHoKFcznn_tBhS6-Ak2k4vUVqPKnQV41VherHQDLt5ZcR5OUaP2/exec";
 
 const TRACKING_PARAMS = [
   "gclid",
@@ -37,6 +43,12 @@ type Attribution = Partial<Record<(typeof TRACKING_PARAMS)[number], string>> & {
 };
 
 type Flow = "seo" | "ads";
+type Kind = "floating" | "lead";
+
+const SERVICE_OPTIONS: Record<Flow, { label: string; value: number }> = {
+  seo: { label: "Landing + SEO", value: 199990 },
+  ads: { label: "Landing + Campaña Ads", value: 299990 },
+};
 
 interface FlowOption {
   label: string; // lo que ve en el chip
@@ -130,6 +142,7 @@ const FLOWS: Record<Flow, { greeting: string; closing: string; steps: FlowStep[]
 };
 
 interface PendingCta {
+  kind: Kind;
   flow: Flow;
   ctaSource: string;
   value: number;
@@ -139,13 +152,29 @@ interface PendingCta {
 // Mensajes ya compuestos en esta visita (solo en memoria: una recarga de
 // página limpia el estado y el modal vuelve a mostrarse).
 const savedMessages: Partial<Record<Flow, string>> = {};
+// Nombre+fono ya capturados en esta visita para el flujo del botón flotante:
+// no se vuelve a pedir si el visitante reabre el modal.
+let floatingContactSaved = false;
 
 export default function GoogleAdsEvents() {
   const [pending, setPending] = useState<PendingCta | null>(null);
+
+  // Flujo "floating": paso de contacto + preguntas de precalificación
+  const [contactDone, setContactDone] = useState(false);
+  const [contactName, setContactName] = useState("");
+  const [contactPhone, setContactPhone] = useState("");
+  const [contactError, setContactError] = useState("");
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<FlowOption[]>([]);
-  // Mensaje ya compuesto en esta visita → pantalla "listo" en vez de preguntas
   const [ready, setReady] = useState<string | null>(null);
+
+  // Flujo "lead": formulario de una sola pantalla
+  const [leadName, setLeadName] = useState("");
+  const [leadPhone, setLeadPhone] = useState("");
+  const [leadService, setLeadService] = useState<Flow>("seo");
+  const [leadHasWebsite, setLeadHasWebsite] = useState<"si" | "no" | null>(null);
+  const [leadError, setLeadError] = useState("");
+  const [leadDone, setLeadDone] = useState(false);
 
   useEffect(() => {
     captureAttribution();
@@ -160,6 +189,7 @@ export default function GoogleAdsEvents() {
       const ctaSource = link.dataset.ctaSource ?? "unknown";
       const value = Number(link.dataset.ctaValue) || DEFAULT_CONVERSION_VALUE;
       const flow: Flow = link.dataset.offer === "ads" ? "ads" : "seo";
+      const kind: Kind = link.dataset.floating !== undefined ? "floating" : "lead";
       let originalText = FLOWS[flow].greeting;
       try {
         originalText = new URL(link.href).searchParams.get("text") ?? originalText;
@@ -169,23 +199,32 @@ export default function GoogleAdsEvents() {
 
       e.preventDefault();
 
-      // Contacto directo sin precalificación (ej: ícono del footer)
-      if (link.dataset.noModal !== undefined) {
-        openWhatsApp(originalText, ctaSource, value);
+      if (kind === "floating") {
+        const saved = savedMessages[flow] ?? null;
+        window.gtag?.("event", saved ? "modal_reopen_ready" : "modal_open", {
+          flow,
+          cta_source: ctaSource,
+          kind,
+        });
+        setContactDone(floatingContactSaved);
+        setContactName("");
+        setContactPhone("");
+        setContactError("");
+        setStep(0);
+        setAnswers([]);
+        setReady(saved);
+        setPending({ kind, flow, ctaSource, value, originalText });
         return;
       }
 
-      // Si ya respondió en esta visita, mostramos su mensaje listo para
-      // confirmar (nunca redirigir en silencio: es confuso y esconde errores).
-      const saved = savedMessages[flow] ?? null;
-      window.gtag?.("event", saved ? "modal_reopen_ready" : "modal_open", {
-        flow,
-        cta_source: ctaSource,
-      });
-      setStep(0);
-      setAnswers([]);
-      setReady(saved);
-      setPending({ flow, ctaSource, value, originalText });
+      window.gtag?.("event", "modal_open", { flow, cta_source: ctaSource, kind });
+      setLeadName("");
+      setLeadPhone("");
+      setLeadService(flow);
+      setLeadHasWebsite(null);
+      setLeadError("");
+      setLeadDone(false);
+      setPending({ kind, flow, ctaSource, value, originalText });
     }
 
     document.addEventListener("click", handleClick);
@@ -210,7 +249,7 @@ export default function GoogleAdsEvents() {
 
   function closeModal() {
     if (!pending) return;
-    window.gtag?.("event", "modal_close", { flow: pending.flow, step: step + 1 });
+    window.gtag?.("event", "modal_close", { kind: pending.kind, flow: pending.flow, step: step + 1 });
     setPending(null);
   }
 
@@ -269,18 +308,91 @@ export default function GoogleAdsEvents() {
     setAnswers([]);
   }
 
-  if (!pending) return null;
+  function submitContact(e: React.SyntheticEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (!contactName.trim() || contactPhone.length < 8) {
+      setContactError("Ingresa tu nombre y celular.");
+      return;
+    }
+    if (!pending) return;
+    setContactError("");
+    floatingContactSaved = true;
+    window.gtag?.("event", "floating_contact_saved", { cta_source: pending.ctaSource });
 
-  const flowDef = FLOWS[pending.flow];
-  const current = flowDef.steps[step];
-  const isLast = step === flowDef.steps.length - 1;
+    fetch(SHEET_WEBHOOK_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({
+        origen: "floating_contact",
+        nombre: contactName,
+        fono: contactPhone,
+        gclid: getClickId(getAttribution()) ?? "",
+      }),
+    }).catch(() => {});
+
+    setContactDone(true);
+  }
+
+  function submitLead(e: React.SyntheticEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (!leadName.trim()) {
+      setLeadError("Ingresa tu nombre.");
+      return;
+    }
+    if (leadPhone.length < 8) {
+      setLeadError("Ingresa un número válido.");
+      return;
+    }
+    if (!leadHasWebsite) {
+      setLeadError("Selecciona si tienes página web.");
+      return;
+    }
+    if (!pending) return;
+    setLeadError("");
+
+    const value = SERVICE_OPTIONS[leadService].value;
+
+    // Conversiones avanzadas: el teléfono que dejó el lead, hasheado por la
+    // etiqueta de Google antes de enviarse (formato E.164 requerido).
+    window.gtag?.("set", "user_data", { phone_number: `+569${leadPhone}` });
+    window.gtag?.("event", "conversion", {
+      send_to: CONVERSION_SEND_TO,
+      value,
+      currency: "CLP",
+      cta_source: pending.ctaSource,
+    });
+    window.gtag?.("event", "generate_lead", {
+      value,
+      currency: "CLP",
+      conversion_name: "lead_modal_contactar_ahora",
+    });
+
+    fetch(SHEET_WEBHOOK_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({
+        origen: "lead_modal",
+        nombre: leadName,
+        fono: leadPhone,
+        servicio: SERVICE_OPTIONS[leadService].label,
+        tiene_pagina: leadHasWebsite,
+        gclid: getClickId(getAttribution()) ?? "",
+      }),
+    }).catch(() => {});
+
+    setLeadDone(true);
+  }
+
+  if (!pending) return null;
 
   return (
     <div
       className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center px-4 pb-4 sm:pb-4"
       role="dialog"
       aria-modal="true"
-      aria-label="Cuéntanos de tu negocio antes de ir a WhatsApp"
+      aria-label="Cuéntanos de tu negocio"
     >
       <style>{`
         @keyframes am-modal-in {
@@ -300,92 +412,337 @@ export default function GoogleAdsEvents() {
         className="relative w-full max-w-sm bg-am-surf2 border border-white/10 rounded-2xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.6)]"
         style={{ animation: "am-modal-in 0.22s ease-out" }}
       >
-        {/* Progreso + cerrar */}
-        <div className="flex items-center justify-between mb-5">
-          {ready ? (
-            <span className="text-am-green text-[12px] font-bold tracking-wide">
-              ✓ Mensaje listo
-            </span>
+        <button
+          onClick={closeModal}
+          aria-label="Cerrar"
+          className="absolute top-5 right-5 w-8 h-8 flex items-center justify-center rounded-lg text-am-muted hover:text-white hover:bg-white/5 transition-colors"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+
+        {pending.kind === "floating" ? (
+          !contactDone ? (
+            <FloatingContactStep
+              name={contactName}
+              phone={contactPhone}
+              error={contactError}
+              onName={setContactName}
+              onPhone={setContactPhone}
+              onSubmit={submitContact}
+            />
           ) : (
-            <div className="flex items-center gap-1.5">
-              {flowDef.steps.map((s, i) => (
-                <span
-                  key={s.question}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    i <= step ? "w-6 bg-am-primary" : "w-3 bg-white/15"
-                  }`}
-                />
-              ))}
-              <span className="text-am-muted text-[11px] font-semibold ml-2">
-                {step + 1} de {flowDef.steps.length}
-              </span>
-            </div>
-          )}
-          <button
-            onClick={closeModal}
-            aria-label="Cerrar"
-            className="w-8 h-8 flex items-center justify-center rounded-lg text-am-muted hover:text-white hover:bg-white/5 transition-colors"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-              <path d="M18 6L6 18M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-
-        {ready ? (
-          <>
-            <h3 className="font-display font-bold text-white text-[18px] leading-snug mb-3">
-              Tu mensaje está listo
-            </h3>
-            <p className="bg-white/4 border border-white/10 rounded-xl px-4 py-3 text-am-muted text-[13px] leading-relaxed mb-4 whitespace-pre-line">
-              {ready}
-            </p>
-            <button
-              onClick={confirmReady}
-              className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold text-[15px] px-4 py-3 rounded-xl transition-colors duration-200"
-            >
-              Abrir WhatsApp →
-            </button>
-            <button
-              onClick={restartQuestions}
-              className="mt-3 w-full text-am-muted/70 hover:text-white text-[12.5px] underline underline-offset-2 transition-colors"
-            >
-              Responder de nuevo
-            </button>
-          </>
+            <FloatingQuestions
+              flow={pending.flow}
+              step={step}
+              ready={ready}
+              onSelect={selectOption}
+              onSkip={skipModal}
+              onConfirmReady={confirmReady}
+              onRestart={restartQuestions}
+            />
+          )
+        ) : leadDone ? (
+          <LeadDone />
         ) : (
-          <>
-            <h3 className="font-display font-bold text-white text-[18px] leading-snug mb-4">
-              {current.question}
-            </h3>
-
-            <div className="flex flex-col gap-2.5">
-              {current.options.map((opt) => (
-                <button
-                  key={opt.label}
-                  onClick={() => selectOption(opt)}
-                  className="w-full text-left px-4 py-3.5 rounded-xl border border-white/10 bg-white/4 text-am-text text-[14.5px] font-semibold hover:border-am-primary/50 hover:bg-am-primary/10 active:scale-[0.98] transition-all duration-150"
-                >
-                  {opt.label}
-                </button>
-              ))}
-            </div>
-
-            {isLast && (
-              <p className="text-am-muted/70 text-[11.5px] mt-3">
-                Al elegir, se abre WhatsApp con tu mensaje listo ✓
-              </p>
-            )}
-
-            <button
-              onClick={skipModal}
-              className="mt-4 text-am-muted/70 hover:text-white text-[12.5px] underline underline-offset-2 transition-colors"
-            >
-              Prefiero escribir directo →
-            </button>
-          </>
+          <LeadForm
+            name={leadName}
+            phone={leadPhone}
+            service={leadService}
+            hasWebsite={leadHasWebsite}
+            error={leadError}
+            onName={setLeadName}
+            onPhone={setLeadPhone}
+            onService={setLeadService}
+            onHasWebsite={setLeadHasWebsite}
+            onSubmit={submitLead}
+          />
         )}
       </div>
+    </div>
+  );
+}
+
+/* ───────────────────────── subcomponentes de UI ───────────────────────── */
+
+function FloatingContactStep({
+  name,
+  phone,
+  error,
+  onName,
+  onPhone,
+  onSubmit,
+}: {
+  name: string;
+  phone: string;
+  error: string;
+  onName: (v: string) => void;
+  onPhone: (v: string) => void;
+  onSubmit: (e: React.SyntheticEvent<HTMLFormElement>) => void;
+}) {
+  return (
+    <form onSubmit={onSubmit}>
+      <h3 className="font-display font-bold text-white text-[18px] leading-snug mb-4 pr-8">
+        Antes de escribirnos, ¿cómo te contactamos?
+      </h3>
+      <div className="flex flex-col gap-3">
+        <input
+          type="text"
+          required
+          value={name}
+          onChange={(e) => onName(e.target.value)}
+          placeholder="Tu nombre"
+          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-[15px] placeholder-white/25 focus:outline-none focus:border-am-primary/50 focus:bg-white/8 transition-all duration-200"
+        />
+        <div className="flex items-center bg-white/5 border border-white/10 rounded-xl overflow-hidden focus-within:border-am-primary/50 focus-within:bg-white/8 transition-all duration-200">
+          <span className="px-4 py-3 text-white/50 text-[15px] font-mono select-none shrink-0 border-r border-white/10">
+            +569
+          </span>
+          <input
+            type="text"
+            inputMode="numeric"
+            autoComplete="off"
+            required
+            value={phone}
+            onChange={(e) => onPhone(e.target.value.replace(/\D/g, "").slice(0, 8))}
+            placeholder="8566 0954"
+            maxLength={8}
+            className="flex-1 bg-transparent px-4 py-3 text-white text-[15px] placeholder-white/25 focus:outline-none"
+          />
+        </div>
+      </div>
+
+      {error && <p className="text-center text-sm text-red-300 mt-3">{error}</p>}
+
+      <button
+        type="submit"
+        className="w-full mt-4 py-3.5 rounded-xl bg-green-500 hover:bg-green-400 text-white font-bold text-[15px] transition-colors duration-200"
+      >
+        Continuar →
+      </button>
+    </form>
+  );
+}
+
+function FloatingQuestions({
+  flow,
+  step,
+  ready,
+  onSelect,
+  onSkip,
+  onConfirmReady,
+  onRestart,
+}: {
+  flow: Flow;
+  step: number;
+  ready: string | null;
+  onSelect: (opt: FlowOption) => void;
+  onSkip: () => void;
+  onConfirmReady: () => void;
+  onRestart: () => void;
+}) {
+  const flowDef = FLOWS[flow];
+  const current = flowDef.steps[step];
+  const isLast = step === flowDef.steps.length - 1;
+
+  return (
+    <>
+      <div className="flex items-center justify-between mb-5 pr-8">
+        {ready ? (
+          <span className="text-am-green text-[12px] font-bold tracking-wide">
+            ✓ Mensaje listo
+          </span>
+        ) : (
+          <div className="flex items-center gap-1.5">
+            {flowDef.steps.map((s, i) => (
+              <span
+                key={s.question}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i <= step ? "w-6 bg-am-primary" : "w-3 bg-white/15"
+                }`}
+              />
+            ))}
+            <span className="text-am-muted text-[11px] font-semibold ml-2">
+              {step + 1} de {flowDef.steps.length}
+            </span>
+          </div>
+        )}
+      </div>
+
+      {ready ? (
+        <>
+          <h3 className="font-display font-bold text-white text-[18px] leading-snug mb-3">
+            Tu mensaje está listo
+          </h3>
+          <p className="bg-white/4 border border-white/10 rounded-xl px-4 py-3 text-am-muted text-[13px] leading-relaxed mb-4 whitespace-pre-line">
+            {ready}
+          </p>
+          <button
+            onClick={onConfirmReady}
+            className="w-full inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold text-[15px] px-4 py-3 rounded-xl transition-colors duration-200"
+          >
+            Abrir WhatsApp →
+          </button>
+          <button
+            onClick={onRestart}
+            className="mt-3 w-full text-am-muted/70 hover:text-white text-[12.5px] underline underline-offset-2 transition-colors"
+          >
+            Responder de nuevo
+          </button>
+        </>
+      ) : (
+        <>
+          <h3 className="font-display font-bold text-white text-[18px] leading-snug mb-4">
+            {current.question}
+          </h3>
+
+          <div className="flex flex-col gap-2.5">
+            {current.options.map((opt) => (
+              <button
+                key={opt.label}
+                onClick={() => onSelect(opt)}
+                className="w-full text-left px-4 py-3.5 rounded-xl border border-white/10 bg-white/4 text-am-text text-[14.5px] font-semibold hover:border-am-primary/50 hover:bg-am-primary/10 active:scale-[0.98] transition-all duration-150"
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+
+          {isLast && (
+            <p className="text-am-muted/70 text-[11.5px] mt-3">
+              Al elegir, se abre WhatsApp con tu mensaje listo ✓
+            </p>
+          )}
+
+          <button
+            onClick={onSkip}
+            className="mt-4 text-am-muted/70 hover:text-white text-[12.5px] underline underline-offset-2 transition-colors"
+          >
+            Prefiero escribir directo →
+          </button>
+        </>
+      )}
+    </>
+  );
+}
+
+function LeadForm({
+  name,
+  phone,
+  service,
+  hasWebsite,
+  error,
+  onName,
+  onPhone,
+  onService,
+  onHasWebsite,
+  onSubmit,
+}: {
+  name: string;
+  phone: string;
+  service: Flow;
+  hasWebsite: "si" | "no" | null;
+  error: string;
+  onName: (v: string) => void;
+  onPhone: (v: string) => void;
+  onService: (v: Flow) => void;
+  onHasWebsite: (v: "si" | "no") => void;
+  onSubmit: (e: React.SyntheticEvent<HTMLFormElement>) => void;
+}) {
+  return (
+    <form onSubmit={onSubmit} className="flex flex-col gap-4">
+      <div className="pr-8">
+        <h3 className="font-display font-bold text-white text-[18px] leading-snug mb-1">
+          Cuéntanos qué necesitas
+        </h3>
+        <p className="text-am-muted text-[13px]">Te contactamos en menos de 1 hora.</p>
+      </div>
+
+      <div>
+        <label className="block text-white/70 text-[13px] font-semibold mb-2">Nombre</label>
+        <input
+          type="text"
+          required
+          value={name}
+          onChange={(e) => onName(e.target.value)}
+          placeholder="Tu nombre"
+          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-[15px] placeholder-white/25 focus:outline-none focus:border-am-primary/50 focus:bg-white/8 transition-all duration-200"
+        />
+      </div>
+
+      <div>
+        <label className="block text-white/70 text-[13px] font-semibold mb-2">WhatsApp de contacto</label>
+        <div className="flex items-center bg-white/5 border border-white/10 rounded-xl overflow-hidden focus-within:border-am-primary/50 focus-within:bg-white/8 transition-all duration-200">
+          <span className="px-4 py-3 text-white/50 text-[15px] font-mono select-none shrink-0 border-r border-white/10">
+            +569
+          </span>
+          <input
+            type="text"
+            inputMode="numeric"
+            autoComplete="off"
+            required
+            value={phone}
+            onChange={(e) => onPhone(e.target.value.replace(/\D/g, "").slice(0, 8))}
+            placeholder="8566 0954"
+            maxLength={8}
+            className="flex-1 bg-transparent px-4 py-3 text-white text-[15px] placeholder-white/25 focus:outline-none"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label className="block text-white/70 text-[13px] font-semibold mb-2">¿Qué servicio necesitas?</label>
+        <select
+          value={service}
+          onChange={(e) => onService(e.target.value as Flow)}
+          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-[15px] focus:outline-none focus:border-am-primary/50 focus:bg-white/8 transition-all duration-200 appearance-none"
+        >
+          {(Object.keys(SERVICE_OPTIONS) as Flow[]).map((key) => (
+            <option key={key} value={key} className="bg-am-surf2 text-white">
+              {SERVICE_OPTIONS[key].label} — ${SERVICE_OPTIONS[key].value.toLocaleString("es-CL")}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div>
+        <label className="block text-white/70 text-[13px] font-semibold mb-2">¿Tienes página web?</label>
+        <div className="flex gap-3">
+          {(["si", "no"] as const).map((val) => (
+            <button
+              key={val}
+              type="button"
+              onClick={() => onHasWebsite(val)}
+              className={`flex-1 py-3 rounded-xl border text-[15px] font-semibold transition-all duration-200 ${
+                hasWebsite === val
+                  ? "border-am-primary bg-am-primary text-white"
+                  : "border-white/10 bg-white/5 text-white/50 hover:border-white/25 hover:text-white/80"
+              }`}
+            >
+              {val === "si" ? "Sí" : "No"}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {error && <p className="text-center text-sm text-red-300">{error}</p>}
+
+      <button
+        type="submit"
+        className="w-full mt-1 py-4 rounded-xl bg-am-green hover:bg-[#25c068] text-white font-bold text-[16px] shadow-[0_4px_24px_rgba(42,170,110,0.4)] hover:shadow-[0_6px_32px_rgba(42,170,110,0.55)] hover:-translate-y-0.5 transition-all duration-200"
+      >
+        Contactar Ahora
+      </button>
+    </form>
+  );
+}
+
+function LeadDone() {
+  return (
+    <div className="text-center py-6">
+      <p className="text-am-green font-bold text-xl mb-2">¡Recibido!</p>
+      <p className="text-white/60 text-sm">Te contactaremos en menos de 1 hora.</p>
     </div>
   );
 }
@@ -467,6 +824,12 @@ function getAttribution(): Attribution {
   } catch {
     return {};
   }
+}
+
+// gclid = clic estándar; gbraid/wbraid = iOS. Valor crudo (sin prefijo) para
+// la columna "gclid" del Sheet.
+function getClickId(attribution: Attribution): string | null {
+  return attribution.gclid || attribution.gbraid || attribution.wbraid || null;
 }
 
 function formatConversionTime(date: Date) {

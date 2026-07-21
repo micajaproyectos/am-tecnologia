@@ -362,6 +362,7 @@ export default function LpGoogleAdsPage() {
           data-cta-source="lp_ads_sticky"
           data-cta-value="299990"
           data-offer="ads"
+          data-floating=""
           target="_blank"
           rel="nofollow noopener noreferrer"
           aria-label="Cotiza tu landing y campaña de Google Ads por WhatsApp"
