@@ -201,10 +201,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="relative bg-white py-28 overflow-hidden">
-      {/* Fade superior desde Projects */}
-      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
-
+    <section id="servicios" className="relative bg-blue-50 py-28 overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
@@ -228,7 +225,7 @@ export default function Services() {
               href={s.href}
               className={`relative flex items-center gap-3.5 rounded-xl px-4 py-4 border group transition-all duration-200 ${
                 s.featured
-                  ? "border-am-blue/40 bg-gradient-to-br from-white to-am-blue/5 shadow-[0_0_24px_rgba(37,99,235,0.10)]"
+                  ? "border-am-blue/40 bg-white shadow-sm"
                   : "border-slate-200 bg-white hover:border-am-blue/30 hover:shadow-[0_6px_18px_rgba(15,23,42,0.07)]"
               }`}
             >
@@ -312,9 +309,6 @@ export default function Services() {
           </a>
         </div>
       </div>
-
-      {/* Fade inferior hacia Footer */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none z-10" />
     </section>
   );
 }

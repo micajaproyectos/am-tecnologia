@@ -38,14 +38,12 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="metal-surface relative py-24 px-6">
-      <div className="absolute top-0 left-0 right-0 h-28 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
-      <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
+    <section className="relative bg-white py-24 px-6">
       <div className="max-w-6xl mx-auto relative z-20">
         {/* Header */}
         <div className="text-center mb-16" data-reveal>
           <h2
-            className="font-display font-bold text-white text-balance"
+            className="font-display font-bold text-slate-800 text-balance"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
             ¿Cómo posicionamos tu negocio en Google?
@@ -59,15 +57,15 @@ export default function HowItWorks() {
           <div className="flex flex-col gap-6 lg:order-1">
             {steps.map((s, i) => (
               <div key={i} className="flex items-start gap-5" data-reveal>
-                <div className="shrink-0 w-14 h-14 rounded-2xl bg-am-primary/12 border border-am-primary/25 flex items-center justify-center text-am-primary shadow-[0_0_24px_rgba(37,99,235,0.15)]">
+                <div className="shrink-0 w-14 h-14 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center text-am-primary">
                   {s.icon}
                 </div>
                 <div>
-                  <p className="text-am-muted text-[11px] font-bold uppercase tracking-widest mb-1">Paso {s.number}</p>
-                  <h3 className="font-display font-bold text-white text-[17px] leading-snug mb-1">
+                  <p className="text-slate-500 text-[11px] font-bold uppercase tracking-widest mb-1">Paso {s.number}</p>
+                  <h3 className="font-display font-bold text-slate-900 text-[17px] leading-snug mb-1">
                     {s.title}
                   </h3>
-                  <p className="text-am-muted text-[14px] leading-relaxed">
+                  <p className="text-slate-600 text-[14px] leading-relaxed">
                     {s.desc}
                   </p>
                 </div>
@@ -79,7 +77,7 @@ export default function HowItWorks() {
           <div className="flex justify-center lg:justify-end lg:order-2" data-reveal>
             <Link
               href="/sobre-nosotros"
-              className="group flex flex-col items-center text-center bg-white/4 border border-white/10 rounded-3xl overflow-hidden w-full max-w-[260px] shadow-[0_0_60px_rgba(37,99,235,0.08)] hover:border-am-primary/40 transition-colors duration-300"
+              className="group flex flex-col items-center text-center bg-blue-50 border border-blue-100 rounded-3xl overflow-hidden w-full max-w-[260px] shadow-sm hover:border-am-primary/40 transition-colors duration-300"
             >
               {/* Image flush to top */}
               <div className="relative w-full">
@@ -91,13 +89,12 @@ export default function HowItWorks() {
                   sizes="260px"
                   className="w-full h-[300px] object-cover object-top"
                 />
-                <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-[#0d0d0d]/80 to-transparent pointer-events-none" />
               </div>
               {/* Info */}
               <div className="px-6 py-5">
-                <p className="text-white font-bold text-[16px] leading-snug">Allan Milla</p>
+                <p className="text-slate-900 font-bold text-[16px] leading-snug">Allan Milla</p>
                 <p className="text-am-primary font-semibold text-[13px] mt-0.5">Fundador · AM Tecnología</p>
-                <p className="text-am-muted text-[12px] mt-1">Ingeniero Civil Industrial</p>
+                <p className="text-slate-500 text-[12px] mt-1">Ingeniero Civil Industrial</p>
                 <p className="text-am-primary text-[12px] font-semibold mt-3 group-hover:text-am-accent transition-colors">
                   Ver perfil completo →
                 </p>

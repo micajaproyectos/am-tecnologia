@@ -77,7 +77,7 @@ export default function Projects() {
   const marqueeDuration = projects.length * 10;
 
   return (
-    <section id="proyectos" className="relative overflow-hidden">
+    <section id="proyectos" className="relative overflow-hidden bg-white">
       <style>{`
         @keyframes projects-marquee {
           from { transform: translateX(0); }
@@ -91,21 +91,14 @@ export default function Projects() {
           animation-play-state: paused;
         }
       `}</style>
-      {/* Image background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Image src="/proyectos.webp" alt="" fill loading="lazy" sizes="100vw" className="object-cover object-center" />
-      </div>
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/55 pointer-events-none" />
-
       {/* Section header */}
       <div className="relative z-20 text-center pt-16 pb-2 px-6">
-        <h2 className="font-display font-bold text-white text-balance"
+        <h2 className="font-display font-bold text-slate-800 text-balance"
           style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}
         >
           Negocios que ya tienen nuevos clientes
         </h2>
-        <p className="text-am-muted text-sm mt-3">
+        <p className="text-slate-600 text-sm mt-3">
           Sitios web, tiendas online y landing pages que están generando clientes hoy.
         </p>
       </div>
@@ -133,11 +126,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-
-
-      {/* Fade inferior hacia Services */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-black pointer-events-none z-10" />
-
     </section>
   );
 }

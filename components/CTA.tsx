@@ -88,58 +88,35 @@ export default function CTA() {
   }
 
   return (
-    <section id="contacto" className="relative py-28 overflow-hidden">
-      {/* Image background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed pointer-events-none"
-        style={{ backgroundImage: "url('/fondo.webp')" }}
-      />
-      <div className="absolute inset-0 bg-black/85 pointer-events-none" />
-      <div className="absolute inset-0 bg-am-primary/12 pointer-events-none" />
-
-      {/* Fade superior desde FAQ */}
-      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black to-transparent pointer-events-none" />
-
+    <section id="contacto" className="relative bg-blue-50 py-28 overflow-hidden">
       <div className="relative z-10 max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_400px] gap-10 items-center">
-        <div className="relative rounded-3xl overflow-hidden border border-am-primary/20 bg-gradient-to-br from-[#0d1120] via-[#131928] to-[#0b1020] shadow-[0_0_60px_rgba(37,99,235,0.12)] px-8 py-14">
-          {/* Orbs */}
-          <div className="absolute -top-40 -left-24 w-80 h-80 rounded-full bg-am-primary/20 blur-[80px] pointer-events-none" />
-          <div className="absolute -bottom-24 -right-16 w-64 h-64 rounded-full bg-am-accent/15 blur-[70px] pointer-events-none" />
-
-          {/* Noise texture */}
-          <div
-            className="absolute inset-0 opacity-[0.015] pointer-events-none"
-            style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`,
-            }}
-          />
-
+        <div className="relative rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-xl shadow-slate-900/5 px-8 py-14">
           <div className="relative">
-            <span className="inline-block px-4 py-1.5 rounded-full border border-white/15 bg-white/8 text-white/70 text-[12px] font-semibold tracking-widest uppercase mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full border border-blue-200 bg-blue-50 text-am-primary text-[12px] font-semibold tracking-widest uppercase mb-6">
               ¿Listo para dar el salto?
             </span>
 
             <h2
-              className="font-display font-extrabold text-white text-balance leading-[1.15] mb-3"
+              className="font-display font-extrabold text-slate-900 text-balance leading-[1.15] mb-3"
               style={{ fontSize: "clamp(1.75rem, 4vw, 2.75rem)" }}
             >
               Cotiza tu página web con posicionamiento
             </h2>
 
-            <p className="text-white/55 text-base leading-relaxed mb-8">
+            <p className="text-slate-600 text-base leading-relaxed mb-8">
               Completa estos datos y te contactamos en menos de 1 hora.
             </p>
 
             {enviado ? (
               <div className="text-center py-10">
                 <p className="text-am-green font-bold text-xl mb-2">¡Recibido!</p>
-                <p className="text-white/60 text-sm">Te contactamos en menos de 1 hora por WhatsApp.</p>
+                <p className="text-slate-600 text-sm">Te contactamos en menos de 1 hora por WhatsApp.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                 {/* Nombre */}
                 <div>
-                  <label className="block text-white/70 text-[13px] font-semibold mb-2">
+                  <label className="block text-slate-700 text-[13px] font-semibold mb-2">
                     Nombre de tu negocio
                   </label>
                   <input
@@ -149,17 +126,17 @@ export default function CTA() {
                     onChange={(e) => setNombre(e.target.value)}
                     placeholder="Ej: Empresa S.A."
                     suppressHydrationWarning
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-[15px] placeholder-white/25 focus:outline-none focus:border-am-primary/50 focus:bg-white/8 transition-all duration-200"
+                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 text-[15px] placeholder-slate-400 focus:outline-none focus:border-am-primary focus:bg-white transition-all duration-200"
                   />
                 </div>
 
                 {/* Teléfono */}
                 <div>
-                  <label className="block text-white/70 text-[13px] font-semibold mb-2">
+                  <label className="block text-slate-700 text-[13px] font-semibold mb-2">
                     WhatsApp de contacto
                   </label>
-                  <div className="flex items-center bg-white/5 border border-white/10 rounded-xl overflow-hidden focus-within:border-am-primary/50 focus-within:bg-white/8 transition-all duration-200">
-                    <span className="px-4 py-3 text-white/50 text-[15px] font-mono select-none shrink-0 border-r border-white/10">
+                  <div className="flex items-center bg-slate-50 border border-slate-200 rounded-xl overflow-hidden focus-within:border-am-primary focus-within:bg-white transition-all duration-200">
+                    <span className="px-4 py-3 text-slate-500 text-[15px] font-mono select-none shrink-0 border-r border-slate-200">
                       +569
                     </span>
                     <input
@@ -172,14 +149,14 @@ export default function CTA() {
                       placeholder="8566 0954"
                       maxLength={8}
                       suppressHydrationWarning
-                      className="flex-1 bg-transparent px-4 py-3 text-white text-[15px] placeholder-white/25 focus:outline-none"
+                      className="flex-1 bg-transparent px-4 py-3 text-slate-900 text-[15px] placeholder-slate-400 focus:outline-none"
                     />
                   </div>
                 </div>
 
                 {/* ¿Tienes web? */}
                 <div>
-                  <label className="block text-white/70 text-[13px] font-semibold mb-2">
+                  <label className="block text-slate-700 text-[13px] font-semibold mb-2">
                     ¿Tienes página web?
                   </label>
                   <div className="flex gap-3">
@@ -191,7 +168,7 @@ export default function CTA() {
                         className={`flex-1 py-3 rounded-xl border text-[15px] font-semibold transition-all duration-200 ${
                           tieneWeb === val
                             ? "border-am-primary bg-am-primary text-white"
-                            : "border-white/10 bg-white/5 text-white/50 hover:border-white/25 hover:text-white/80"
+                            : "border-slate-200 bg-slate-50 text-slate-500 hover:border-slate-300 hover:text-slate-700"
                         }`}
                       >
                         {val === "si" ? "Sí" : "No"}
@@ -209,7 +186,7 @@ export default function CTA() {
                 </button>
 
                 {error && (
-                  <p className="text-center text-sm text-red-300">
+                  <p className="text-center text-sm text-red-600">
                     {error}
                   </p>
                 )}
@@ -217,30 +194,30 @@ export default function CTA() {
             )}
 
             {/* WA alternativa */}
-            <p className="text-center text-white/35 text-sm mt-6">
+            <p className="text-center text-slate-500 text-sm mt-6">
               ¿Prefieres escribirnos directo?{" "}
               <a
                 href={WA}
                 data-cta-source="cta_final"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className="text-white/60 hover:text-white font-semibold transition-colors"
+                className="text-am-primary hover:text-am-prim2 font-semibold transition-colors"
               >
                 → WhatsApp
               </a>
             </p>
 
-            <div className="mt-8 pt-7 border-t border-white/8">
-              <p className="text-white/40 text-[13px] mb-3 text-center">¿Ya trabajaste con nosotros?</p>
+            <div className="mt-8 pt-7 border-t border-slate-200">
+              <p className="text-slate-500 text-[13px] mb-3 text-center">¿Ya trabajaste con nosotros?</p>
               <div className="flex justify-center">
                 <a
                   href="https://g.page/r/CX_Uc-66lRnzEAE/review"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/25 transition-all duration-200"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 bg-slate-50 hover:bg-slate-100 hover:border-slate-300 transition-all duration-200"
                 >
                   <GoogleColorIcon />
-                  <span className="text-white/70 text-[13px] font-medium hover:text-white transition-colors">
+                  <span className="text-slate-700 text-[13px] font-medium hover:text-slate-900 transition-colors">
                     Déjanos tu reseña en Google
                   </span>
                 </a>
