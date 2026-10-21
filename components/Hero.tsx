@@ -1,10 +1,8 @@
+import HeroPanels from "./HeroPanels";
 import HeroReviewsRotator from "./HeroReviewsRotator";
-import HeroShowcase from "./HeroShowcase";
 
-const WA_SEO =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20p%C3%A1gina%20web%20con%20posicionamiento";
-const WA_ADS =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20campa%C3%B1a%20de%20Google%20Ads%20%2B%20landing%20page";
+const WA_SOFTWARE =
+  "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20un%20software%20para%20administrar%20mi%20empresa";
 
 export default function Hero() {
   return (
@@ -12,97 +10,38 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-[100dvh] flex flex-col justify-center bg-white pt-[72px]"
     >
-      <div className="relative max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-[1fr_1.25fr] gap-12 items-center">
         {/* ── COPY ── */}
         <div>
-          {/* Headline */}
           <h1
             className="font-display font-extrabold text-slate-800 text-balance leading-[1.12] mb-6"
             style={{ fontSize: "clamp(2.375rem, 5vw, 4rem)" }}
           >
-            Atrae Más Clientes a tu Negocio
+            Tu empresa creció y tu Excel ya no alcanza
           </h1>
 
-          {/* Bajada */}
           <p className="text-slate-600 text-[20px] leading-snug mb-8 max-w-lg">
-            Aumenta la visibilidad de tu negocio y consigue más clientes desde Google.
+            Diseñamos tu software a medida para terminar con planillas que no cuadran y datos repartidos en distintas plataformas.
           </p>
 
-
-          {/* Doble oferta */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 mb-4 max-w-xl divide-y sm:divide-y-0 sm:divide-x divide-slate-200">
-            {/* Orgánico */}
-            <div className="flex flex-col pb-6 sm:pb-0 sm:pr-6">
-              <span className="text-am-blue text-[11px] font-bold tracking-widest uppercase mb-1.5">
-                Orgánico
-              </span>
-              <span className="font-display font-bold text-slate-900 text-[16px]">
-                Página Web + SEO orgánico
-              </span>
-              <span className="font-display font-bold tracking-tight text-slate-900 text-[26px] leading-tight">
-                $199.990
-              </span>
-              <span className="text-slate-600 text-[13px] leading-snug mt-1 mb-4">
-                Resultados orgánicos, sin pagar por clic
-              </span>
-              <a
-                href={WA_SEO}
-                data-cta-source="hero_seo"
-                data-cta-value="199990"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="mt-auto inline-flex items-center justify-center gap-2 bg-[#17804a] hover:bg-[#12683c] text-white font-semibold text-[14px] px-4 py-2.5 rounded-lg transition-colors duration-200"
-              >
-                <WaIcon />
-                Elegir
-              </a>
-            </div>
-
-            {/* Inmediato */}
-            <div className="flex flex-col pt-6 sm:pt-0 sm:pl-6">
-              <span className="text-am-blue text-[11px] font-bold tracking-widest uppercase mb-1.5">
-                Inmediato
-              </span>
-              <span className="font-display font-bold text-slate-900 text-[16px]">
-                Landing + Google Ads
-              </span>
-              <span className="text-slate-400 text-[13px] leading-tight">
-                Antes: <span className="line-through">$399.990</span>
-              </span>
-              <span className="font-display font-bold tracking-tight text-slate-900 text-[26px] leading-tight">
-                <span className="text-[14px] font-semibold text-slate-500">Ahora:</span>{" "}
-                $299.990
-              </span>
-              <span className="text-slate-600 text-[13px] leading-snug mt-1 mb-4">
-                Tu primera campaña, clientes esta semana
-              </span>
-              <a
-                href={WA_ADS}
-                data-cta-source="hero_ads"
-                data-cta-value="299990"
-                data-offer="ads"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="mt-auto inline-flex items-center justify-center gap-2 bg-[#17804a] hover:bg-[#12683c] text-white font-semibold text-[14px] px-4 py-2.5 rounded-lg transition-colors duration-200"
-              >
-                <WaIcon />
-                Elegir
-              </a>
-            </div>
-          </div>
-
-          <p className="text-slate-500 text-[12px]">
-            Negocios reales que encontraron nuevos clientes
-          </p>
+          <a
+            href={WA_SOFTWARE}
+            data-cta-source="hero_software"
+            data-service="software"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-[#17804a] hover:bg-[#12683c] text-white font-semibold text-[16px] px-7 py-3.5 rounded-lg transition-colors duration-200"
+          >
+            Cotizar mi software
+          </a>
         </div>
 
-        {/* ── PROYECTOS REALES ── */}
+        {/* ── VISUAL: herramientas sueltas → un solo sistema ── */}
         <div className="flex flex-col items-center lg:items-end">
-          <div className="relative w-full max-w-[560px] pt-10 sm:pt-16 select-none">
-            {/* Vitrina rotativa de proyectos */}
-            <HeroShowcase />
-            {/* Reseñas de Google rotando bajo los mockups */}
-            <div className="w-full mt-5">
+          <div className="w-full max-w-[520px] lg:max-w-[680px] select-none">
+            <ScatteredToSystem />
+            {/* En desktop, alineado bajo el panel (deja libre la columna de herramientas) */}
+            <div className="w-full mt-5 lg:pl-[152px]">
               <HeroReviewsRotator />
             </div>
           </div>
@@ -112,11 +51,74 @@ export default function Hero() {
   );
 }
 
-function WaIcon() {
+/* Herramientas sueltas (Excel, papel, Drive) que convergen en un solo sistema */
+function ScatteredToSystem() {
+  const sources = [
+    // Fondo con el color de cada herramienta: verde Excel, papel crema, azul Drive
+    { label: "Excel", icon: <SheetIcon />, color: "text-[#107c41]", box: "bg-[#e6f4ea] border-[#107c41]/40", text: "text-[#0b5a2f]" },
+    { label: "Papel", icon: <PaperIcon />, color: "text-[#9a7b4f]", box: "bg-[#fbf3e2] border-[#c9a96e]/50", text: "text-[#6b5232]" },
+    { label: "Drive", icon: <FolderIcon />, color: "text-[#1a73e8]", box: "bg-[#e8f0fe] border-[#1a73e8]/40", text: "text-[#174ea6]" },
+  ];
+
+  const chips = sources.map((s) => (
+    <div
+      key={s.label}
+      className={`flex items-center justify-center gap-2 rounded-xl border border-dashed h-11 ${s.box}`}
+    >
+      <span className={s.color}>{s.icon}</span>
+      <span className={`text-[14px] font-semibold ${s.text}`}>{s.label}</span>
+    </div>
+  ));
+
+  // Una sola grilla: en móvil todo apilado (herramientas arriba, flechas hacia
+  // abajo); en desktop herramientas a la izquierda con flechas hacia el panel.
+  // Chips de 44px + gap 12px → centros en y = 22, 78, 134 del SVG lateral.
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    <div className="grid grid-cols-1 lg:grid-cols-[112px_40px_minmax(0,1fr)] items-center">
+      <div className="grid grid-cols-3 gap-3 lg:flex lg:flex-col" aria-hidden="true">
+        {chips}
+      </div>
+
+      <svg aria-hidden="true" viewBox="0 0 300 44" className="lg:hidden w-full h-11 text-slate-300" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+        <path d="M50 2 C50 26 150 18 150 40" />
+        <path d="M150 2 V40" />
+        <path d="M250 2 C250 26 150 18 150 40" />
+        <path d="M144 34 L150 41 L156 34" />
+      </svg>
+      <svg aria-hidden="true" viewBox="0 0 40 156" className="hidden lg:block w-10 h-[156px] text-slate-300" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+        <path d="M2 22 C22 22 18 78 38 78" />
+        <path d="M2 78 H38" />
+        <path d="M2 134 C22 134 18 78 38 78" />
+        <path d="M32 72 L39 78 L32 84" />
+      </svg>
+
+      <HeroPanels />
+    </div>
+  );
+}
+
+function SheetIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <path d="M3 9h18M3 15h18M9 3v18" />
     </svg>
   );
 }
 
+function PaperIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+      <path d="M14 2v6h6M8 13h8M8 17h5" />
+    </svg>
+  );
+}
+
+function FolderIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z" />
+    </svg>
+  );
+}

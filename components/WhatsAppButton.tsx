@@ -1,23 +1,37 @@
-const WA =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20posicionamiento%20en%20Google";
+// Texto y flujo según la página: la home vende software; el resto de las
+// páginas (servicios web, blog, ciudades) siguen con posicionamiento.
+const VARIANTS = {
+  seo: {
+    href: "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20posicionamiento%20en%20Google",
+    label: "Agenda tu posicionamiento",
+    aria: "Cotiza tu posicionamiento en Google por WhatsApp",
+  },
+  software: {
+    href: "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20un%20software%20para%20administrar%20mi%20empresa",
+    label: "Cotiza tu software",
+    aria: "Cotiza tu software por WhatsApp",
+  },
+};
 
-export default function WhatsAppButton() {
+export default function WhatsAppButton({ offer = "seo" }: { offer?: "seo" | "software" }) {
+  const v = VARIANTS[offer];
   return (
     <div className="fixed bottom-7 right-7 z-50 flex items-center gap-3">
 
       {/* Label — solo desktop */}
       <span className="hidden md:block bg-white text-slate-800 text-[13px] font-bold px-4 py-2 rounded-xl shadow-xl whitespace-nowrap select-none">
-        Agenda tu posicionamiento
+        {v.label}
       </span>
 
       {/* Botón — más grande en desktop */}
       <a
-        href={WA}
+        href={v.href}
         data-cta-source="sticky_whatsapp"
         data-floating=""
+        data-offer={offer === "software" ? "software" : undefined}
         target="_blank"
         rel="nofollow noopener noreferrer"
-        aria-label="Cotiza tu posicionamiento en Google por WhatsApp"
+        aria-label={v.aria}
         className="group relative flex items-center justify-center w-[60px] h-[60px] md:w-[72px] md:h-[72px] bg-[#25d366] rounded-full shadow-[0_6px_28px_rgba(37,211,102,0.5)] hover:scale-110 hover:shadow-[0_10px_36px_rgba(37,211,102,0.65)] transition-all duration-200"
       >
         {/* Pulse ring */}

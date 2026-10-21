@@ -22,14 +22,21 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Posicionamiento en Google en Chile | AM Tecnología",
+    default: "Software de Gestión a Medida en Chile | AM Tecnología",
     template: "%s | AM Tecnología",
   },
 
   description:
-    "Posicionamos tu negocio en Google con una página web profesional optimizada para SEO, desde $199.990 pago único. Sin mensualidades. Cotiza por WhatsApp.",
+    "Creamos software a medida para administrar tu empresa: ventas, gastos, caja y reportes en un solo sistema. Deja el Excel, el papel y el Drive. Cotiza tu proyecto.",
 
   keywords: [
+    // Foco principal — software de gestión
+    "software de gestión a medida Chile",
+    "software administrativo para empresas",
+    "software contable a medida",
+    "sistema de gestión para pymes Chile",
+    "desarrollo de software a medida Chile",
+    "reemplazar Excel en mi empresa",
     // Transaccionales — intención de compra
     "contratar diseño web Chile",
     "cotizar página web Chile",
@@ -97,24 +104,24 @@ export const metadata: Metadata = {
     locale: "es_CL",
     url: siteUrl,
     siteName: "AM Tecnología",
-    title: "Posicionamiento en Google Chile | Página Web que Posiciona",
+    title: "Software de Gestión a Medida en Chile | AM Tecnología",
     description:
-      "Posicionamiento en Google con una página web profesional, desde $199.990 pago único. Para pymes y empresas en todo Chile, sin mensualidades.",
+      "Software a medida para administrar tu empresa. Deja el Excel, el papel y el Drive: todo en un solo sistema.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "AM Tecnología — Soluciones Web para Empresas en Chile",
+        alt: "AM Tecnología — Software a medida para empresas en Chile",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Posicionamiento en Google Chile | Página Web que Posiciona",
+    title: "Software de Gestión a Medida en Chile | AM Tecnología",
     description:
-      "Posicionamiento en Google con tu página web, desde $199.990 pago único. Sin mensualidades. Todo Chile.",
+      "Software a medida para administrar tu empresa. Deja el Excel, el papel y el Drive: todo en un solo sistema.",
     images: ["/og-image.jpg"],
   },
 };
@@ -127,7 +134,7 @@ const jsonLd = {
       "@id": "https://www.amtecnologia.cl/#business",
       "name": "AM Tecnología",
       "description":
-        "Agencia de desarrollo web profesional en Chile. Creamos páginas web, tiendas online y automatizaciones con IA para empresas. Diseñadas por un Ingeniero Civil Industrial. Orientados a resultados reales.",
+        "Desarrollo de software a medida para la gestión administrativa y contable de empresas en Chile. También creamos páginas web y tiendas online. Liderado por un Ingeniero Civil Industrial.",
       "url": "https://www.amtecnologia.cl",
       "image": "https://www.amtecnologia.cl/og-image.jpg",
       "logo": {
@@ -175,8 +182,16 @@ const jsonLd = {
       "sameAs": ["https://www.facebook.com/profile.php?id=61572123085910"],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Servicios de Desarrollo Web en Chile",
+        "name": "Servicios de Software y Desarrollo Web en Chile",
         "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Software de Gestión a Medida",
+              "description": "Software a medida para la gestión administrativa y contable: ventas, gastos, caja, inventario y reportes en un solo sistema, para empresas que hoy trabajan con Excel, papel y Drive por separado.",
+            },
+          },
           {
             "@type": "Offer",
             "price": "199990",
@@ -256,7 +271,7 @@ const jsonLd = {
       "@id": "https://www.amtecnologia.cl/#website",
       "url": "https://www.amtecnologia.cl",
       "name": "AM Tecnología",
-      "description": "Páginas web profesionales en Chile. Landing pages, tiendas online y automatizaciones con IA.",
+      "description": "Software de gestión a medida para empresas en Chile. También páginas web y tiendas online.",
       "publisher": { "@id": "https://www.amtecnologia.cl/#business" },
     },
   ],

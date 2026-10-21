@@ -1,5 +1,6 @@
 const serviceLinks = [
-  { href: "/",                                   label: "Posicionamiento en Google" },
+  { href: "/",                                   label: "Software de Gestión a Medida" },
+  { href: "/aparecer-en-google",                 label: "Posicionamiento en Google" },
   { href: "/servicios/landing-page",             label: "Landing Page de Ventas" },
   { href: "/servicios/campanas-google-ads",      label: "Campaña de Google Ads + Landing" },
   { href: "/servicios/one-page-corporativo",     label: "One Page Corporativo" },
@@ -54,7 +55,7 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
+          <div id="servicios" className="scroll-mt-24">
             <p className="text-am-accent font-bold text-[15px] tracking-wide uppercase mb-5">Servicios</p>
             <ul className="flex flex-col gap-3">
               {serviceLinks.map((s) => (

@@ -6,11 +6,12 @@ const steps = [
     number: "1",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+        <path d="M14 2v6h6M8 13h8M8 17h5" />
       </svg>
     ),
-    title: "Nos cuentas a qué te dedicas",
-    desc: "Una conversación por WhatsApp basta: tu rubro, tu ciudad y a qué clientes quieres llegar.",
+    title: "Revisamos cómo trabajas hoy",
+    desc: "Nos muestras tus planillas Excel, documentos y carpetas de Drive. Entendemos tus procesos administrativos y contables antes de proponerte nada.",
   },
   {
     number: "2",
@@ -20,25 +21,25 @@ const steps = [
         <path d="M3 9h18M9 21V9" />
       </svg>
     ),
-    title: "Creamos tu presencia en Google",
-    desc: "Publicamos tu página optimizada, activamos Google Maps y aplicamos SEO local para tu ciudad.",
+    title: "Diseñamos un sistema a tu medida",
+    desc: "Reunimos todo en una sola plataforma web: tu información, tus procesos y tus reportes, solo con lo que tu empresa realmente necesita.",
   },
   {
     number: "3",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="11" cy="11" r="8" /><path d="M21 21l-4.35-4.35" />
-        <path d="M11 8v3h3" strokeWidth="1.6" />
+        <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+        <path d="M22 4L12 14.01l-3-3" />
       </svg>
     ),
-    title: "Tus clientes llegan solos",
-    desc: "Apareces cuando te buscan y los interesados te escriben directo por WhatsApp.",
+    title: "Lo implementamos contigo",
+    desc: "Traspasamos tu información al nuevo sistema y capacitamos a tu equipo. Dejas atrás el Excel, el papel y los archivos sueltos.",
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section className="relative bg-white py-24 px-6">
+    <section id="como-funciona" className="relative bg-white py-24 px-6 scroll-mt-[72px]">
       <div className="max-w-6xl mx-auto relative z-20">
         {/* Header */}
         <div className="text-center mb-16" data-reveal>
@@ -46,7 +47,7 @@ export default function HowItWorks() {
             className="font-display font-bold text-slate-800 text-balance"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
           >
-            ¿Cómo posicionamos tu negocio en Google?
+            ¿Cómo creamos el software de tu empresa?
           </h2>
         </div>
 
@@ -95,6 +96,7 @@ export default function HowItWorks() {
                 <p className="text-slate-900 font-bold text-[16px] leading-snug">Allan Milla</p>
                 <p className="text-am-primary font-semibold text-[13px] mt-0.5">Fundador · AM Tecnología</p>
                 <p className="text-slate-500 text-[12px] mt-1">Ingeniero Civil Industrial</p>
+                <p className="text-slate-500 text-[12px]">Especialista en procesos y gestión</p>
                 <p className="text-am-primary text-[12px] font-semibold mt-3 group-hover:text-am-accent transition-colors">
                   Ver perfil completo →
                 </p>

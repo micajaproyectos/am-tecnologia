@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 
-const WA = "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20p%C3%A1gina%20web";
+const WA_WEB = "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20p%C3%A1gina%20web";
+// En el home (corporate) el foco es software de gestión
+const WA_SOFTWARE = "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20un%20software%20para%20administrar%20mi%20empresa";
 
 export default function Navbar({ corporate = false }: { corporate?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
@@ -14,8 +16,13 @@ export default function Navbar({ corporate = false }: { corporate?: boolean }) {
     return () => window.removeEventListener("scroll", fn);
   }, []);
 
+  const WA = corporate ? WA_SOFTWARE : WA_WEB;
+  const offer = corporate ? "software" : undefined;
+
   const links = [
-    { href: "/#servicios", label: "Servicios" },
+    corporate
+      ? { href: "/#como-funciona", label: "Cómo trabajamos" }
+      : { href: "/#servicios", label: "Servicios" },
     { href: "/#proyectos", label: "Proyectos" },
     { href: "/blog",       label: "Blog"      },
     { href: "/#contacto",  label: "Contacto"  },
@@ -63,6 +70,7 @@ export default function Navbar({ corporate = false }: { corporate?: boolean }) {
         <a
           href={WA}
           data-cta-source="navbar"
+          data-offer={offer}
           target="_blank"
           rel="nofollow noopener noreferrer"
           className={`hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-md text-sm font-semibold transition-all duration-200 ${
@@ -125,6 +133,7 @@ export default function Navbar({ corporate = false }: { corporate?: boolean }) {
           <a
             href={WA}
             data-cta-source="mobile_menu"
+            data-offer={offer}
             target="_blank"
             rel="nofollow noopener noreferrer"
             className={`mt-2 flex items-center justify-center gap-2 px-5 py-3 rounded-md font-semibold text-sm transition-all duration-200 ${

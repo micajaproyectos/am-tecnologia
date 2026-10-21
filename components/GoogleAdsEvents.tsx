@@ -42,12 +42,18 @@ type Attribution = Partial<Record<(typeof TRACKING_PARAMS)[number], string>> & {
   captured_at?: string;
 };
 
-type Flow = "seo" | "ads";
+type Flow = "seo" | "ads" | "software";
 type Kind = "floating" | "lead";
 
-const SERVICE_OPTIONS: Record<Flow, { label: string; value: number }> = {
+// Opciones del select del formulario "lead": una por flujo. Los servicios sin
+// precio fijo usan quote (se muestra "A cotizar"; value queda solo como valor
+// de conversión para Ads).
+type LeadService = Flow;
+
+const SERVICE_OPTIONS: Record<LeadService, { label: string; value: number; quote?: boolean }> = {
   seo: { label: "Landing + SEO", value: 199990 },
   ads: { label: "Landing + Campaña Ads", value: 299990 },
+  software: { label: "Software personalizado", value: DEFAULT_CONVERSION_VALUE, quote: true },
 };
 
 interface FlowOption {
@@ -104,6 +110,28 @@ const FLOWS: Record<Flow, { greeting: string; closing: string; steps: FlowStep[]
             label: "Aún estoy evaluando",
             closing: "Antes de partir, ¿me detallan qué incluye?",
           },
+        ],
+      },
+    ],
+  },
+  software: {
+    greeting: "Hola, quiero cotizar un software para administrar mi empresa.",
+    closing: "¿Cuál es el siguiente paso?",
+    steps: [
+      {
+        question: "¿Cómo llevas hoy la administración?",
+        options: [
+          { label: "En Excel y planillas", text: "Hoy llevo la administración en Excel y planillas" },
+          { label: "En papel", text: "Hoy llevo la administración en papel" },
+          { label: "Un poco de todo", text: "Hoy tengo la información repartida entre Excel, papel y Drive" },
+        ],
+      },
+      {
+        question: "¿Cuándo quieres partir?",
+        options: [
+          { label: "Lo antes posible", closing: "¿Podemos conversarlo esta semana?" },
+          { label: "Este mes", closing: "Quiero partir este mes, ¿cuál es el siguiente paso?" },
+          { label: "Aún estoy evaluando", closing: "Antes de decidir, ¿me cuentan cómo trabajan?" },
         ],
       },
     ],
@@ -171,7 +199,7 @@ export default function GoogleAdsEvents() {
   // Flujo "lead": formulario de una sola pantalla
   const [leadName, setLeadName] = useState("");
   const [leadPhone, setLeadPhone] = useState("");
-  const [leadService, setLeadService] = useState<Flow>("seo");
+  const [leadService, setLeadService] = useState<LeadService>("seo");
   const [leadHasWebsite, setLeadHasWebsite] = useState<"si" | "no" | null>(null);
   const [leadError, setLeadError] = useState("");
   const [leadDone, setLeadDone] = useState(false);
@@ -188,7 +216,8 @@ export default function GoogleAdsEvents() {
 
       const ctaSource = link.dataset.ctaSource ?? "unknown";
       const value = Number(link.dataset.ctaValue) || DEFAULT_CONVERSION_VALUE;
-      const flow: Flow = link.dataset.offer === "ads" ? "ads" : "seo";
+      const offer = link.dataset.offer;
+      const flow: Flow = offer === "ads" || offer === "software" ? offer : "seo";
       const kind: Kind = link.dataset.floating !== undefined ? "floating" : "lead";
       let originalText = FLOWS[flow].greeting;
       try {
@@ -220,7 +249,8 @@ export default function GoogleAdsEvents() {
       window.gtag?.("event", "modal_open", { flow, cta_source: ctaSource, kind });
       setLeadName("");
       setLeadPhone("");
-      setLeadService(flow);
+      // data-service preselecciona un servicio sin flujo de WhatsApp propio
+      setLeadService(link.dataset.service === "software" ? "software" : flow);
       setLeadHasWebsite(null);
       setLeadError("");
       setLeadDone(false);
@@ -344,7 +374,9 @@ export default function GoogleAdsEvents() {
       setLeadError("Ingresa un número válido.");
       return;
     }
-    if (!leadHasWebsite) {
+    // "¿Tienes página web?" no aplica a software personalizado
+    const asksWebsite = leadService !== "software";
+    if (asksWebsite && !leadHasWebsite) {
       setLeadError("Selecciona si tienes página web.");
       return;
     }
@@ -377,7 +409,7 @@ export default function GoogleAdsEvents() {
         nombre: leadName,
         fono: leadPhone,
         servicio: SERVICE_OPTIONS[leadService].label,
-        tiene_pagina: leadHasWebsite,
+        tiene_pagina: asksWebsite ? leadHasWebsite : "",
         gclid: getClickId(getAttribution()) ?? "",
       }),
     }).catch(() => {});
@@ -641,12 +673,12 @@ function LeadForm({
 }: {
   name: string;
   phone: string;
-  service: Flow;
+  service: LeadService;
   hasWebsite: "si" | "no" | null;
   error: string;
   onName: (v: string) => void;
   onPhone: (v: string) => void;
-  onService: (v: Flow) => void;
+  onService: (v: LeadService) => void;
   onHasWebsite: (v: "si" | "no") => void;
   onSubmit: (e: React.SyntheticEvent<HTMLFormElement>) => void;
 }) {
@@ -695,17 +727,20 @@ function LeadForm({
         <label className="block text-white/70 text-[13px] font-semibold mb-2">¿Qué servicio necesitas?</label>
         <select
           value={service}
-          onChange={(e) => onService(e.target.value as Flow)}
+          onChange={(e) => onService(e.target.value as LeadService)}
           className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-[15px] focus:outline-none focus:border-am-primary/50 focus:bg-white/8 transition-all duration-200 appearance-none"
         >
-          {(Object.keys(SERVICE_OPTIONS) as Flow[]).map((key) => (
+          {(Object.keys(SERVICE_OPTIONS) as LeadService[]).map((key) => (
             <option key={key} value={key} className="bg-am-surf2 text-white">
-              {SERVICE_OPTIONS[key].label} — ${SERVICE_OPTIONS[key].value.toLocaleString("es-CL")}
+              {SERVICE_OPTIONS[key].label} — {SERVICE_OPTIONS[key].quote
+                ? "A cotizar"
+                : `$${SERVICE_OPTIONS[key].value.toLocaleString("es-CL")}`}
             </option>
           ))}
         </select>
       </div>
 
+      {service !== "software" && (
       <div>
         <label className="block text-white/70 text-[13px] font-semibold mb-2">¿Tienes página web?</label>
         <div className="flex gap-3">
@@ -725,6 +760,7 @@ function LeadForm({
           ))}
         </div>
       </div>
+      )}
 
       {error && <p className="text-center text-sm text-red-300">{error}</p>}
 

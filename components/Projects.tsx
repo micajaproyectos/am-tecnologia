@@ -3,14 +3,28 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const projects: { url: string; title: string; type: string; img?: string; aspect?: number }[] = [
+// Sin `url` = sistema privado: sin botón "Ver página" y la barra muestra "acceso privado".
+// `wideBg`: la captura es más ancha que 16/10; se muestra completa (sin recorte),
+// anclada arriba, y el espacio sobrante abajo se rellena con ese color.
+const projects: { url?: string; title: string; type: string; img?: string; wideBg?: string }[] = [
+  {
+    title: "Río Austral",
+    type: "Software de Gestión de Pagos",
+    img: "/preview_rioaustral.png",
+    wideBg: "#000000",
+  },
+  {
+    url: "https://www.micajaempresa.cl",
+    title: "Mi Caja Empresa",
+    type: "SaaS / App Web",
+    img: "/preview-micaja.png",
+  },
   {
     url: "https://www.abogadasconcepcion.cl",
     title: "Solar & Arriagada",
     type: "Estudio Jurídico",
     img: "/abogadasconcepcion.png",
-    // La captura es más ancha que el ratio 16/10 por defecto; con su aspect real no se recorta.
-    aspect: 3320 / 1714,
+    wideBg: "#141c33",
   },
   {
     url: "https://www.patagoniafutaleufu.cl",
@@ -29,12 +43,6 @@ const projects: { url: string; title: string; type: string; img?: string; aspect
     title: "Ajo Negro Austral",
     type: "Tienda Online",
     img: "/preview-ajonegro.png",
-  },
-  {
-    url: "https://www.micajaempresa.cl",
-    title: "Mi Caja Empresa",
-    type: "SaaS / App Web",
-    img: "/preview-micaja.png",
   },
   {
     url: "https://www.clinicabeautylab.cl",
@@ -96,10 +104,10 @@ export default function Projects() {
         <h2 className="font-display font-bold text-slate-800 text-balance"
           style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}
         >
-          Negocios que ya tienen nuevos clientes
+          Proyectos que ya están funcionando
         </h2>
         <p className="text-slate-600 text-sm mt-3">
-          Sitios web, tiendas online y landing pages que están generando clientes hoy.
+          Software de gestión, sitios web y tiendas online que desarrollamos para empresas reales.
         </p>
       </div>
 
@@ -120,7 +128,7 @@ export default function Projects() {
               inert={copy === 1 || undefined}
             >
               {projects.map((p) => (
-                <ProjectCard key={p.url} {...p} cardW={cardW} scale={scale} previewH={previewH} />
+                <ProjectCard key={p.title} {...p} cardW={cardW} scale={scale} previewH={previewH} />
               ))}
             </div>
           ))}
@@ -130,9 +138,10 @@ export default function Projects() {
   );
 }
 
-function ProjectCard({ url, title, type, img, aspect, cardW, scale, previewH }: (typeof projects)[0] & { cardW: number; scale: number; previewH: number }) {
-  const domain = url.replace(/^https?:\/\/(www\.)?/, "");
-  const imgH = img ? Math.round(cardW / (aspect ?? IMG_ASPECT)) : previewH;
+function ProjectCard({ url, title, type, img, wideBg, cardW, scale, previewH }: (typeof projects)[0] & { cardW: number; scale: number; previewH: number }) {
+  const domain = url ? url.replace(/^https?:\/\/(www\.)?/, "") : "Sistema interno · acceso privado";
+  // Misma altura para todas las tarjetas, así el texto inferior queda alineado
+  const imgH = img ? Math.round(cardW / IMG_ASPECT) : previewH;
 
   return (
     <div
@@ -155,8 +164,9 @@ function ProjectCard({ url, title, type, img, aspect, cardW, scale, previewH }: 
       </div>
 
       {/* Screenshot */}
-      <div className="relative overflow-hidden bg-am-surf2" style={{ height: imgH }}>
-        {/* Ver página button */}
+      <div className="relative overflow-hidden bg-am-surf2" style={{ height: imgH, backgroundColor: wideBg }}>
+        {/* Ver página button (solo proyectos públicos) */}
+        {url && (
         <a
           href={url}
           target="_blank"
@@ -166,14 +176,15 @@ function ProjectCard({ url, title, type, img, aspect, cardW, scale, previewH }: 
         >
           Ver página →
         </a>
+        )}
         {img ? (
           <Image
             src={img}
-            alt={`Sitio web ${title} — posicionamiento en Google Chile`}
+            alt={url ? `Sitio web ${title} — posicionamiento en Google Chile` : `Sistema ${title} — software a medida`}
             fill
             loading="lazy"
             sizes="(max-width: 767px) calc(100vw - 80px), 385px"
-            className="object-cover object-top"
+            className={wideBg ? "object-contain object-top" : "object-cover object-top"}
           />
         ) : (
           <div

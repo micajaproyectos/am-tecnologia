@@ -1,312 +1,157 @@
 import Image from "next/image";
 
 const WA_RESULTS =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20posicionar%20mi%20negocio%20en%20Google%20como%20sus%20casos%20reales";
+  "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20un%20software%20para%20administrar%20mi%20empresa";
 
-const whatsappProofs = [
+/* Logos de clientes. `outline` = el logo tiene partes blancas/doradas que se
+   pierden sobre el fondo claro; se les aplica un contorno de sombra. */
+const clientLogos = [
+  { src: "/empresas_logos/logo_transparente.png", w: 800, h: 533, name: "Solar & Arriagada Abogadas", rubro: "Estudio jurídico", outline: true },
+  { src: "/empresas_logos/logo-ajo-austral.png", w: 1000, h: 1000, name: "Ajo Negro Austral", rubro: "Alimentos" },
+  { src: "/empresas_logos/logo_medico.png", w: 2167, h: 725, name: "Dra. Solange Ballén", rubro: "Salud", outline: true },
+  { src: "/empresas_logos/logo_trasnparente.png", w: 1024, h: 1024, name: "Futarte", rubro: "Souvenirs y regalos" },
+  { src: "/empresas_logos/logo_cabanas_rio-espolon.png", w: 2172, h: 724, name: "Cabañas Río Espolón", rubro: "Turismo", outline: true },
+  { src: "/empresas_logos/logo_cosmeticabeauty.png", w: 512, h: 512, name: "Clínica Beauty Lab", rubro: "Estética" },
+  { src: "/empresas_logos/logo_grua.png", w: 1254, h: 1254, name: "Grúa Emergencia 27-4", rubro: "Asistencia en ruta", outline: true },
+  { src: "/empresas_logos/logo_mi-caja.png", w: 1254, h: 1254, name: "Mi Caja Empresa", rubro: "Software" },
+  { src: "/empresas_logos/logo_millanolli.png", w: 1645, h: 956, name: "Millanolli", rubro: "Joyería y deco" },
+  { src: "/empresas_logos/logo_panaderia.png", w: 1254, h: 1254, name: "Panadería Emanuel", rubro: "Panadería", outline: true },
+  { src: "/empresas_logos/logo-badge.png", w: 512, h: 512, name: "Refugio del Vilcún", rubro: "Restaurante y hospedaje" },
+  { src: "/empresas_logos/logo_los-hermanos.png", w: 2953, h: 2953, name: "Frutería Los Hermanos", rubro: "Frutería e insumos agrícolas" },
+  { src: "/empresas_logos/logo_habitandostudio.png", w: 2170, h: 725, name: "Habitando Studio", rubro: "Arquitectura" },
+  { src: "/empresas_logos/logo-rio-austral.png", w: 262, h: 160, name: "Río Austral", rubro: "Construcción" },
+];
+
+const LOGO_OUTLINE =
+  "drop-shadow(0 0 0.6px rgba(15,23,42,0.75)) drop-shadow(0 1px 1.5px rgba(15,23,42,0.35))";
+
+const testimonialsData = [
   {
-    src: "/ajonegro_demanda/lista-espera.jpg",
-    w: 640,
-    h: 1096,
-    alt: "Conversación real de WhatsApp: pedido agendado en lista de espera hasta que salga la próxima producción",
+    quote: "Muy buen servicio, es totalmente personalizado. Nos hemos ahorrado tiempo en la capacidad de respuesta para tomar decisiones.",
+    company: "Río Austral",
+    rubro: "Construcción",
   },
   {
-    src: "/ajonegro_demanda/felicitaciones-pedidos.jpg",
-    w: 640,
-    h: 1096,
-    alt: "Conversación real de WhatsApp: cliente felicita a Ajo Negro Austral por el buen servicio y la respuesta",
+    quote: "Gracias a los chiquillos hoy nuestra producción alcanza su mejor momento, todo está controlado y sistematizado.",
+    company: "Ajo Negro Austral",
+    rubro: "Alimentos",
   },
   {
-    src: "/ajonegro_demanda/cliente-1.jpg",
-    w: 640,
-    h: 1096,
-    alt: "Conversación real de WhatsApp: cliente cotizando ajo negro por kilo y en bolsitas",
-  },
-  {
-    src: "/ajonegro_demanda/cliente-2.jpg",
-    w: 638,
-    h: 1098,
-    alt: "Conversación real de WhatsApp: cliente de Santiago pidiendo 1.200 grs de ajo negro",
-  },
-  {
-    src: "/ajonegro_demanda/cliente-3.jpg",
-    w: 638,
-    h: 1098,
-    alt: "Conversación real de WhatsApp: cliente cotizando ajo negro al por mayor para comercio",
-  },
-  {
-    src: "/ajonegro_demanda/cliente-4.jpg",
-    w: 638,
-    h: 1093,
-    alt: "Conversación real de WhatsApp: cliente pidiendo valores mayoristas de 1 kg hacia arriba",
-  },
-  {
-    src: "/ajonegro_demanda/cliente-5.jpg",
-    w: 638,
-    h: 1098,
-    alt: "Conversación real de WhatsApp: clienta de Puerto Montt cotizando para su negocio",
+    quote: "Nos hicieron un sistema conectado que automatiza gran parte de las gestiones que antes había que hacer manualmente.",
+    company: "Millanolli",
+    rubro: "Joyería y deco",
   },
 ];
+
+// El logo se toma de la marquesina por nombre de empresa
+const testimonials = testimonialsData.map((t) => ({
+  ...t,
+  logo: clientLogos.find((l) => l.name === t.company),
+}));
 
 export default function ResultsSection() {
   return (
     <section id="resultados" className="relative bg-blue-50 px-6 pt-24 pb-24">
       <div className="max-w-6xl mx-auto relative z-20">
         {/* Encabezado */}
-        <header className="text-center mb-14" data-reveal>
+        <header className="text-center mb-3" data-reveal>
           <h2
             className="font-display font-bold text-slate-800 text-balance"
             style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.75rem)" }}
           >
-            Resultados Reales
+            Empresas de más de 20 rubros confían en nosotros
           </h2>
-          <p className="text-slate-600 text-[16px] mt-3 max-w-2xl mx-auto">
-            Casos con evidencia que puedes comprobar ahora mismo: abre Google,
-            busca y míralo tú mismo.
-          </p>
         </header>
 
-        {/* ── CASO 1: AJO NEGRO AUSTRAL ── */}
-        <article
-          className="rounded-2xl border border-slate-200 bg-white shadow-sm p-6 sm:p-8 mb-10"
-          data-reveal
-        >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <span className="text-slate-500 text-[11px] font-bold tracking-widest uppercase">
-                Caso 1 · Nuestro propio negocio
-              </span>
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-1.5 mb-3">
-                <h3 className="font-display font-bold text-slate-900 text-[26px]">
-                  Ajo Negro Austral
-                  <sup className="text-[13px] font-semibold ml-0.5">®</sup>
-                </h3>
-                <VerifyPill query="ajo negro patagonia" />
-              </div>
-              <p className="text-slate-600 text-[15px] leading-relaxed mb-6">
-                Quisimos demostrar nuestro método con nuestro propio
-                emprendimiento: ajo negro artesanal producido en la Patagonia.
-                Cero pesos en publicidad — solo posicionamiento orgánico.
-              </p>
-
-              {/* Línea de tiempo */}
-              <ol className="relative border-l-2 border-slate-200 pl-5 space-y-4 mb-6">
-                <li className="relative">
-                  <span className="absolute -left-[27px] top-1.5 w-3 h-3 rounded-[2px] bg-am-primary" />
-                  <p className="text-slate-900 text-[14px] font-semibold">Junio</p>
-                  <p className="text-slate-600 text-[14px]">
-                    Lanzamos el sitio y el perfil de Google.
-                  </p>
-                </li>
-                <li className="relative">
-                  <span className="absolute -left-[27px] top-1.5 w-3 h-3 rounded-[2px] bg-am-primary" />
-                  <p className="text-slate-900 text-[14px] font-semibold">
-                    Ese mismo mes
-                  </p>
-                  <p className="text-slate-600 text-[14px]">
-                    Primeras ventas con tráfico orgánico, sin ninguna promoción.
-                  </p>
-                </li>
-                <li className="relative">
-                  <span className="absolute -left-[27px] top-1.5 w-3 h-3 rounded-[2px] bg-am-primary" />
-                  <p className="text-slate-900 text-[14px] font-semibold">
-                    Un mes después
-                  </p>
-                  <p className="text-slate-600 text-[14px]">
-                    Compramos maquinaria para abastecer la demanda.
-                  </p>
-                </li>
-                <li className="relative">
-                  <span className="absolute -left-[30px] top-0.5 w-[18px] h-[18px] rounded-full bg-[#17804a] text-white flex items-center justify-center">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M20 6L9 17l-5-5" />
-                    </svg>
-                  </span>
-                  <p className="text-slate-900 text-[14px] font-semibold">Hoy</p>
-                  <p className="text-slate-600 text-[14px]">
-                    Lista de espera para la próxima producción y clientes
-                    felicitando el servicio.
-                  </p>
-                </li>
-              </ol>
-            </div>
-
-            <figure>
-              <BrowserFrame>
-                <Image
-                  src="/ajonegro_demanda/busqueda_incognito.png"
-                  alt='Búsqueda de Google en incógnito para "ajo negro patagonia": la IA de Google menciona a Ajo Negro Austral como productor local y su sitio es el primer resultado orgánico'
-                  width={1751}
-                  height={771}
-                  sizes="(max-width: 1024px) 90vw, 540px"
-                  className="w-full h-auto"
-                />
-              </BrowserFrame>
-              <figcaption className="text-slate-500 text-[13px] mt-3">
-                La IA de Google lo recomienda como productor local y es el
-                primer resultado orgánico.
-              </figcaption>
-            </figure>
-          </div>
-
-          {/* Cotizaciones por WhatsApp — marquesina continua */}
-          <div className="mt-8 pt-6 border-t border-slate-200">
-            <p className="text-slate-900 text-[15px] font-semibold mb-1">
-              Y las cotizaciones llegan solas por WhatsApp
-            </p>
-            <p className="text-slate-600 text-[13px] mb-4">
-              Ya tenemos lista de espera con pedidos agendados y clientes
-              satisfechos que nos felicitan por el producto. Pedidos mayoristas
-              desde Santiago hasta Puerto Montt. Conversaciones reales — datos
-              de los clientes difuminados.
-            </p>
-            {/* Se duplica la lista para el loop sin corte */}
-            <div
-              className="overflow-hidden"
-              style={{
-                maskImage:
-                  "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
-                WebkitMaskImage:
-                  "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
-              }}
-            >
-              <div className="flex gap-3 w-max animate-marquee hover:[animation-play-state:paused]">
-                {[...whatsappProofs, ...whatsappProofs].map((p, i) => (
-                  <Image
-                    key={`${p.src}-${i}`}
-                    src={p.src}
-                    alt={p.alt}
-                    width={p.w}
-                    height={p.h}
-                    sizes="160px"
-                    className="w-[150px] sm:w-[160px] h-auto shrink-0 rounded-xl ring-1 ring-slate-200"
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        </article>
-
-        {/* ── CASOS 2 Y 3 ── */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
-          <article
-            className="rounded-2xl border border-slate-200 bg-white shadow-sm p-6 sm:p-8 flex flex-col"
-            data-reveal
+        {/* ── LOGOS DE CLIENTES — marquesina continua ── */}
+        <div className="mb-14" data-reveal>
+          <p className="text-center text-slate-500 text-[11px] font-bold tracking-widest uppercase mb-5">
+            Soluciones a medida funcionando en salud, construcción, alimentos, turismo y más
+          </p>
+          {/* Lista duplicada para el loop sin corte; el espaciado va como
+              padding de cada ítem para que -50% calce exacto */}
+          <div
+            className="overflow-hidden"
+            style={{
+              maskImage:
+                "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+              WebkitMaskImage:
+                "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+            }}
           >
-            <span className="text-slate-500 text-[11px] font-bold tracking-widest uppercase">
-              Caso 2 · Visibilidad desde cero
-            </span>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-1.5 mb-3">
-              <h3 className="font-display font-bold text-slate-900 text-[22px]">
-                Futarte
-              </h3>
-              <VerifyPill query="regalos en futaleufú" />
-            </div>
-            <p className="text-slate-600 text-[14px] leading-relaxed mb-5">
-              Hacían souvenirs personalizados prácticamente sin visibilidad
-              online. Creamos su landing y hoy son los primeros cuando alguien
-              busca regalos en Futaleufú: primeros en el mapa y primer
-              resultado orgánico, con su Instagram justo después.
-            </p>
-            <BrowserFrame>
-              <Image
-                src="/busqueda_futarte/busqueda_incognito.png"
-                alt='Búsqueda de Google en incógnito para "regalos en futaleufu": Futarte aparece primero en el mapa de sitios y futarte.cl es el primer resultado orgánico'
-                width={1751}
-                height={868}
-                sizes="(max-width: 1024px) 90vw, 500px"
-                className="w-full h-auto"
-              />
-            </BrowserFrame>
-          </article>
-
-          <article
-            className="rounded-2xl border border-slate-200 bg-white shadow-sm p-6 sm:p-8 flex flex-col"
-            data-reveal
-            data-delay="120"
-          >
-            <span className="text-slate-500 text-[11px] font-bold tracking-widest uppercase">
-              Caso 3 · De invisible a primero
-            </span>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-1.5 mb-3">
-              <h3 className="font-display font-bold text-slate-900 text-[22px]">
-                Cabañas Río Espolón
-              </h3>
-              <VerifyPill query="cabañas en futaleufú" />
-            </div>
-            <p className="text-slate-600 text-[14px] leading-relaxed mb-5">
-              Sus cabañas rankeaban fuera del top 10. Actualizamos su perfil de
-              Google y creamos una página enfocada en posicionamiento: hoy son
-              las primeras en aparecer al buscar cabañas en Futaleufú, sobre
-              competidores con años de presencia.
-            </p>
-            <BrowserFrame>
-              <Image
-                src="/busqueda_rioespolon/busqueda_incognito.png"
-                alt='Búsqueda de Google en incógnito para "cabañas en futaleufu": Cabañas Río Espolón aparece en primer lugar del listado de alojamientos'
-                width={1758}
-                height={731}
-                sizes="(max-width: 1024px) 90vw, 500px"
-                className="w-full h-auto"
-              />
-            </BrowserFrame>
-          </article>
+            <ul className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+              {[...clientLogos, ...clientLogos].map((l, i) => (
+                <li
+                  key={`${l.src}-${i}`}
+                  className="shrink-0 pr-4"
+                  aria-hidden={i >= clientLogos.length || undefined}
+                >
+                  <div className="flex items-center justify-center w-[240px] sm:w-[300px] h-[144px] sm:h-[176px] p-1">
+                    <Image
+                      src={l.src}
+                      alt={`Logo de ${l.name}`}
+                      width={l.w}
+                      height={l.h}
+                      sizes="300px"
+                      // Carga inmediata: con lazy cada logo se descargaba al
+                      // entrar en pantalla y "aparecía" en plena marquesina
+                      loading="eager"
+                      className="max-w-full max-h-full w-auto h-auto object-contain"
+                      style={l.outline ? { filter: LOGO_OUTLINE } : undefined}
+                    />
+                  </div>
+                  <p className="text-center text-slate-500 text-[12px] font-medium mt-2">
+                    {l.rubro}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+
+        {/* ── TESTIMONIOS — citas breves, sin tarjetas ── */}
+        <ul className="grid gap-8 md:grid-cols-3 md:gap-10 max-w-5xl mx-auto mb-14" data-reveal>
+          {testimonials.map((t) => (
+            <li key={t.company}>
+              <figure className="border-l-2 border-slate-300 pl-4">
+                <blockquote className="text-slate-600 text-[15px] leading-relaxed">
+                  “{t.quote}”
+                </blockquote>
+                <figcaption className="mt-4 flex items-center gap-3 text-[13px]">
+                  {t.logo ? (
+                    <Image
+                      src={t.logo.src}
+                      alt={t.company}
+                      width={t.logo.w}
+                      height={t.logo.h}
+                      sizes="120px"
+                      className="h-10 w-auto max-w-[120px] object-contain"
+                      style={t.logo.outline ? { filter: LOGO_OUTLINE } : undefined}
+                    />
+                  ) : (
+                    <span className="font-semibold text-slate-800">{t.company}</span>
+                  )}
+                  <span className="text-slate-500">{t.rubro}</span>
+                </figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
 
         {/* Cierre */}
         <div className="text-center" data-reveal>
-          <p
-            className="font-display font-bold text-slate-800 mb-5"
-            style={{ fontSize: "clamp(1.4rem, 2.4vw, 1.9rem)" }}
-          >
-            Tu negocio puede ser el siguiente
-          </p>
           <a
             href={WA_RESULTS}
-            data-cta-source="resultados_seo"
-            data-cta-value="199990"
+            data-cta-source="resultados"
+            data-service="software"
             target="_blank"
             rel="nofollow noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-[#17804a] hover:bg-[#12683c] text-white font-semibold text-[15px] px-6 py-3 rounded-lg transition-colors duration-200"
           >
-            Quiero estos resultados
+            Cotizar mi proyecto
           </a>
         </div>
       </div>
     </section>
-  );
-}
-
-/* Marco tipo navegador para las capturas de búsquedas */
-function BrowserFrame({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="rounded-xl overflow-hidden ring-1 ring-white/10 shadow-[0_12px_36px_rgba(0,0,0,0.4)]">
-      <div className="flex items-center gap-2 px-4 py-2 bg-[#0d1120]">
-        <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
-        <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
-        <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
-        <span className="text-white/40 text-[11px] font-mono ml-2 truncate">
-          google.com · búsqueda en incógnito
-        </span>
-      </div>
-      {children}
-    </div>
-  );
-}
-
-function VerifyPill({ query }: { query: string }) {
-  return (
-    <a
-      href={`https://www.google.com/search?q=${encodeURIComponent(query)}`}
-      target="_blank"
-      rel="nofollow noopener noreferrer"
-      className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-700 text-[13px] font-semibold px-4 py-2 transition-colors duration-200"
-    >
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-        <circle cx="11" cy="11" r="7" />
-        <path d="M21 21l-4.3-4.3" />
-      </svg>
-      Busca &ldquo;{query}&rdquo;
-    </a>
   );
 }

@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
 
+// React usa eval() solo en desarrollo (callstacks de depuración); en producción
+// nunca, así que 'unsafe-eval' se habilita únicamente con `next dev`.
+const devEval = process.env.NODE_ENV === "development" ? " 'unsafe-eval'" : "";
+
 const securityHeaders = [
   // Fuerza HTTPS por 2 años, incluyendo subdominios
   {
@@ -31,11 +35,11 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms https://scripts.clarity.ms https://googleads.g.doubleclick.net https://www.googleadservices.com https://connect.facebook.net",
+      `script-src 'self' 'unsafe-inline'${devEval} https://www.googletagmanager.com https://www.clarity.ms https://scripts.clarity.ms https://googleads.g.doubleclick.net https://www.googleadservices.com https://connect.facebook.net`,
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https:",
       "font-src 'self'",
-      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://script.google.com https://script.googleusercontent.com https://region1.google-analytics.com https://www.google.com https://www.google.cl https://www.googleadservices.com https://googleads.g.doubleclick.net https://h.clarity.ms",
+      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://script.google.com https://script.googleusercontent.com https://region1.google-analytics.com https://www.google.com https://www.google.cl https://www.googleadservices.com https://googleads.g.doubleclick.net https://ad.doubleclick.net https://*.clarity.ms",
       "frame-src https://www.googletagmanager.com https://td.doubleclick.net",
       "object-src 'none'",
       "base-uri 'self'",

@@ -10,7 +10,7 @@ declare global {
 }
 
 const WA =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20p%C3%A1gina%20web";
+  "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20un%20software%20para%20administrar%20mi%20empresa";
 
 const SHEET_WEBHOOK_URL =
   "https://script.google.com/macros/s/AKfycbzL-Ub_JIchX7l-yrHoKFcznn_tBhS6-Ak2k4vUVqPKnQV41VherHQDLt5ZcR5OUaP2/exec";
@@ -24,7 +24,6 @@ const CHILE_TIME_ZONE  = "America/Santiago";
 export default function CTA() {
   const [nombre, setNombre]   = useState("");
   const [numero, setNumero]   = useState("");
-  const [tieneWeb, setTieneWeb] = useState<"si" | "no" | null>(null);
   const [enviado, setEnviado] = useState(false);
   const [error, setError]     = useState("");
 
@@ -46,11 +45,6 @@ export default function CTA() {
     e.preventDefault();
     setError("");
 
-    if (!tieneWeb) {
-      setError("Selecciona si tienes página web.");
-      return;
-    }
-
     const payload = {
       lead_id:          leadIdRef.current,
       gclid:            gclidRef.current,
@@ -59,7 +53,8 @@ export default function CTA() {
       conversion_name:  CONVERSION_NAME,
       nombre_negocio:   nombre,
       contacto:         numero,
-      tiene_pagina:     tieneWeb,
+      // Se mantiene la columna de la planilla; la pregunta no aplica a software
+      tiene_pagina:     "",
     };
 
     setEnviado(true);
@@ -92,15 +87,11 @@ export default function CTA() {
       <div className="relative z-10 max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_400px] gap-10 items-center">
         <div className="relative rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-xl shadow-slate-900/5 px-8 py-14">
           <div className="relative">
-            <span className="inline-block px-4 py-1.5 rounded-full border border-blue-200 bg-blue-50 text-am-primary text-[12px] font-semibold tracking-widest uppercase mb-6">
-              ¿Listo para dar el salto?
-            </span>
-
             <h2
               className="font-display font-extrabold text-slate-900 text-balance leading-[1.15] mb-3"
               style={{ fontSize: "clamp(1.75rem, 4vw, 2.75rem)" }}
             >
-              Cotiza tu página web con posicionamiento
+              Cotiza tu software a medida
             </h2>
 
             <p className="text-slate-600 text-base leading-relaxed mb-8">
@@ -154,35 +145,12 @@ export default function CTA() {
                   </div>
                 </div>
 
-                {/* ¿Tienes web? */}
-                <div>
-                  <label className="block text-slate-700 text-[13px] font-semibold mb-2">
-                    ¿Tienes página web?
-                  </label>
-                  <div className="flex gap-3">
-                    {(["si", "no"] as const).map((val) => (
-                      <button
-                        key={val}
-                        type="button"
-                        onClick={() => setTieneWeb(val)}
-                        className={`flex-1 py-3 rounded-xl border text-[15px] font-semibold transition-all duration-200 ${
-                          tieneWeb === val
-                            ? "border-am-primary bg-am-primary text-white"
-                            : "border-slate-200 bg-slate-50 text-slate-500 hover:border-slate-300 hover:text-slate-700"
-                        }`}
-                      >
-                        {val === "si" ? "Sí" : "No"}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
                 {/* Submit */}
                 <button
                   type="submit"
                   className="w-full mt-2 py-4 rounded-xl bg-am-green hover:bg-[#25c068] text-white font-bold text-[16px] shadow-[0_4px_24px_rgba(42,170,110,0.4)] hover:shadow-[0_6px_32px_rgba(42,170,110,0.55)] hover:-translate-y-0.5 transition-all duration-200"
                 >
-                  Quiero aparecer en Google
+                  Cotizar mi software
                 </button>
 
                 {error && (
@@ -199,6 +167,7 @@ export default function CTA() {
               <a
                 href={WA}
                 data-cta-source="cta_final"
+                data-offer="software"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 className="text-am-primary hover:text-am-prim2 font-semibold transition-colors"

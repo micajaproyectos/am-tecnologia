@@ -20,6 +20,22 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## IndexNow
+
+Avisa a Bing / Yandex / Seznam / Naver cuando cambia el contenido. Google no participa.
+
+```bash
+npm run indexnow:dry        # muestra qué enviaría, sin enviar
+npm run indexnow            # envía solo las URLs cuyo texto cambió
+npm run indexnow -- --all   # fuerza el envío de todo el sitemap
+npm run indexnow -- --url=https://www.amtecnologia.cl/blog/mi-post
+```
+
+Se corre **después** de que el deploy esté en producción: el script lee el sitemap y
+el HTML del sitio publicado, y compara contra `scripts/indexnow-state.json` (versionado)
+para no repetir envíos. La clave vive en `public/82424b2fb0c74422a2a876c5e1a250ec.txt`
+y debe seguir accesible; si se borra, IndexNow responde `403`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
