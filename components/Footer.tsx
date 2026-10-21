@@ -33,8 +33,7 @@ export default function Footer() {
               <span className="font-display font-bold text-xl text-white">Tecnología</span>
             </a>
             <p className="text-am-muted text-sm leading-[1.7] max-w-[260px]">
-              Posicionamiento en Google y soluciones digitales diseñadas por
-              un ingeniero para impulsar tu negocio en Chile.
+              Software a medida para administrar tu empresa. Diseñado por ingenieros expertos en optimización de procesos.
             </p>
             {/* Social */}
             <div className="flex gap-3 mt-6">
