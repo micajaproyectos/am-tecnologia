@@ -7,19 +7,19 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 const siteUrl = "https://www.amtecnologia.cl";
 const WA =
-  "https://wa.me/56985660954?text=Hola%2C%20quiero%20contratar%20mi%20p%C3%A1gina%20web";
+  "https://wa.me/56985660954?text=Hola%2C%20quiero%20cotizar%20un%20software%20para%20administrar%20mi%20empresa";
 
 export const metadata: Metadata = {
   title: "Sobre Nosotros | AM Tecnología",
   description:
-    "Conoce a Allan Milla, Ingeniero Civil Industrial fundador de AM Tecnología. Especialista en desarrollo Full Stack, Ingeniería de IA y Marketing Digital para empresas en Chile.",
+    "Conoce a Allan Milla, fundador de AM Tecnología. Ingeniero Civil Industrial con 8 años de experiencia optimizando procesos en una empresa de ingeniería, hoy aplicados al desarrollo de software a medida para empresas en Chile.",
   alternates: {
     canonical: `${siteUrl}/sobre-nosotros`,
   },
   openGraph: {
     title: "Sobre Nosotros — Allan Milla | AM Tecnología",
     description:
-      "Ingeniero Civil Industrial especialista en desarrollo web, IA y posicionamiento en Google para empresas en Chile.",
+      "Ingeniero Civil Industrial con 8 años de experiencia optimizando procesos en una empresa de ingeniería. Fundador de AM Tecnología.",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
 };
@@ -31,7 +31,7 @@ const jsonLd = {
   name: "Allan Milla",
   jobTitle: "Ingeniero Civil Industrial",
   description:
-    "Fundador de AM Tecnología. Especialista en desarrollo Full Stack, Ingeniería de IA, Marketing Digital e Innovación. Construye presencia digital que posiciona empresas chilenas en Google.",
+    "Ingeniero Civil Industrial con 8 años de experiencia optimizando procesos en una empresa de ingeniería. Fundador de AM Tecnología, donde lleva ese conocimiento a software a medida para empresas chilenas.",
   url: `${siteUrl}/autor/allan-milla`,
   mainEntityOfPage: `${siteUrl}/autor/allan-milla`,
   image: `${siteUrl}/fundador.webp`,
@@ -42,11 +42,11 @@ const jsonLd = {
     url: siteUrl,
   },
   knowsAbout: [
+    "Optimización de procesos productivos",
+    "Software de gestión a medida",
     "Desarrollo Full Stack",
     "Ingeniería de Inteligencia Artificial",
-    "Marketing Digital",
     "SEO y Posicionamiento Web",
-    "Innovación y Desarrollo",
   ],
   hasCredential: {
     "@type": "EducationalOccupationalCredential",
@@ -58,30 +58,30 @@ const jsonLd = {
 const specialties = [
   {
     icon: "⚙️",
-    title: "Desarrollo Full Stack",
-    desc: "Arquitectura de software moderna con Next.js, React y TypeScript. Sitios que cargan rápido y escalan.",
+    title: "Optimización de procesos",
+    desc: "Analizamos cómo trabaja tu empresa hoy y detectamos qué tareas se repiten, se duplican o se pueden automatizar.",
+  },
+  {
+    icon: "📊",
+    title: "Software de gestión a medida",
+    desc: "Sistemas web para pagos, inventario, personal y reportes, diseñados según tus procesos y no al revés.",
   },
   {
     icon: "🤖",
-    title: "Ingeniería de IA",
-    desc: "Integración de modelos de lenguaje y automatizaciones inteligentes para optimizar procesos de negocio.",
+    title: "Automatización e IA",
+    desc: "Integramos automatizaciones e inteligencia artificial para que las tareas repetitivas se hagan solas.",
   },
   {
-    icon: "📈",
-    title: "Marketing Digital",
-    desc: "Estrategia SEO, analítica de conversiones y posicionamiento orgánico en Google para el mercado chileno.",
-  },
-  {
-    icon: "💡",
-    title: "Innovación y Desarrollo",
-    desc: "Aplicaciones web SaaS y soluciones digitales a medida que resuelven problemas reales de negocio.",
+    icon: "💻",
+    title: "Desarrollo web",
+    desc: "Páginas web y tiendas online para cuando tu empresa también necesita vender y aparecer en Google.",
   },
 ];
 
 const milestones = [
   { year: "2025", text: "Fundación de AM Tecnología en Santiago, Chile." },
-  { year: "2025", text: "Primeros +50 proyectos publicados y posicionados en Google." },
-  { year: "2026", text: "Expansión a clientes en 16 ciudades de Chile, con foco en el sur del país." },
+  { year: "2025", text: "Más de 50 proyectos web publicados para empresas de distintos rubros." },
+  { year: "2026", text: "Foco en software de gestión a medida para empresas de todo Chile." },
 ];
 
 export default function SobreNosotros() {
@@ -110,36 +110,37 @@ export default function SobreNosotros() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Copy */}
             <div>
-              <span className="inline-block px-4 py-1.5 rounded-full border border-am-primary/25 bg-am-primary/8 text-am-primary text-[13px] font-semibold tracking-widest uppercase mb-6">
+              <span className="inline-block text-am-primary text-[13px] font-semibold tracking-widest uppercase mb-6">
                 Quién está detrás
               </span>
               <h1
                 className="font-display font-extrabold text-white text-balance leading-[1.15] mb-5"
                 style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
               >
-                El Ingeniero detrás de{" "}
-                <span className="gradient-text">AM Tecnología</span>
+                El ingeniero detrás de AM Tecnología
               </h1>
               <p className="text-am-muted text-lg leading-relaxed mb-4">
-                Soy Allan Milla, Ingeniero Civil Industrial y fundador de AM Tecnología. Creo que
-                los emprendedores y pymes en Chile merecen presencia digital diseñada con la misma
-                rigurosidad que un sistema de ingeniería: analizada, optimizada y
-                orientada a resultados.
+                Soy Allan Milla, Ingeniero Civil Industrial y fundador de AM Tecnología. Durante
+                8 años trabajé en una empresa de ingeniería analizando y optimizando procesos
+                para hacerlos cada vez más eficientes. Hoy pongo esa experiencia al servicio de
+                tu empresa, junto con tecnología de punta, para entregar soluciones a medida
+                que funcionan.
               </p>
               <p className="text-am-muted text-base leading-relaxed mb-8">
-                AM Tecnología nació a inicios de 2025 con un objetivo claro: que cualquier
-                empresa en Chile pueda aparecer en Google y recibir clientes sin depender
-                de publicidad pagada ni de mensualidades.
+                AM Tecnología nació a inicios de 2025 con un objetivo claro: ayudar a las
+                empresas a ser cada vez más eficientes, dejando atrás métodos de trabajo
+                obsoletos que frenan su crecimiento.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
                   href={WA}
                   data-cta-source="sobre-nosotros-hero"
+                  data-offer="software"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-am-primary hover:bg-am-primary/90 text-white font-bold text-[15px] px-6 py-3 rounded-xl transition-colors duration-200"
                 >
-                  Cotizar proyecto →
+                  Cotizar mi software →
                 </a>
                 <Link
                   href="/autor/allan-milla"
@@ -177,15 +178,14 @@ export default function SobreNosotros() {
       <section className="py-24 bg-black">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="inline-block px-4 py-1.5 rounded-full border border-am-primary/25 bg-am-primary/8 text-am-primary text-[13px] font-semibold tracking-widest uppercase mb-5">
+            <span className="inline-block text-am-primary text-[13px] font-semibold tracking-widest uppercase mb-5">
               Especialidades
             </span>
             <h2
               className="font-display font-bold text-white text-balance mb-4"
               style={{ fontSize: "clamp(1.6rem, 3vw, 2.25rem)" }}
             >
-              Ingeniería aplicada a{" "}
-              <span className="gradient-text">cada proyecto</span>
+              Ingeniería aplicada a cada proyecto
             </h2>
             <p className="text-am-muted text-base leading-relaxed">
               Cada disciplina se aplica directamente en los proyectos de los
@@ -225,37 +225,31 @@ export default function SobreNosotros() {
 
             {/* Story */}
             <div>
-              <span className="inline-block px-4 py-1.5 rounded-full border border-am-accent/25 bg-am-accent/8 text-am-accent text-[13px] font-semibold tracking-widest uppercase mb-6">
+              <span className="inline-block text-am-accent text-[13px] font-semibold tracking-widest uppercase mb-6">
                 Historia
               </span>
               <h2
                 className="font-display font-bold text-white text-balance mb-5"
                 style={{ fontSize: "clamp(1.6rem, 3vw, 2.25rem)" }}
               >
-                Por qué nació{" "}
-                <span className="gradient-text">AM Tecnología</span>
+                Por qué nació AM Tecnología
               </h2>
               <p className="text-am-muted text-base leading-relaxed mb-4">
-                Trabajé 8 años en una empresa de ingeniería y vi de cerca cómo
-                se tomaban en serio la visibilidad de su marca: era una
-                inversión estratégica, no un gasto. Mientras tanto, veía a
-                emprendedores con excelentes productos y servicios que eran
-                completamente invisibles, dependiendo del boca a boca y de
-                publicidad que se terminaba junto con el presupuesto.
+                Trabajé 8 años en una empresa de ingeniería analizando y optimizando
+                procesos. Ahí vi lo que cambia en una empresa cuando su información
+                está ordenada: decisiones más rápidas, menos errores y menos horas
+                perdidas.
               </p>
               <p className="text-am-muted text-base leading-relaxed mb-4">
-                Acumulé tanto conocimiento en esos años que decidí comenzar a
-                impartirlo a emprendedores que están dando sus primeros pasos
-                en posicionar su negocio de manera digital. Así nació AM
-                Tecnología a inicios de 2025.
+                En 2025 fundé AM Tecnología y partimos ayudando a emprendedores con
+                páginas web y posicionamiento en Google. Trabajando con ellos vimos
+                que el problema de fondo era otro: la administración repartida entre
+                planillas, papeles y carpetas sueltas.
               </p>
               <p className="text-am-muted text-base leading-relaxed mb-8">
-                Hoy la realidad es simple: si no estás en la web — redes
-                sociales, Google Maps, una página propia — no existes. Y
-                construir esa presencia no tiene que ser caro ni complejo: un
-                sitio bien construido puede posicionar tu emprendimiento en
-                Google de forma permanente, sin mensualidades ni dependencia
-                de publicidad pagada.
+                Hoy nos enfocamos en eso: software a medida que reúne la gestión de
+                tu empresa en un solo sistema, para que dediques tu tiempo a crecer
+                y no a cuadrar planillas.
               </p>
 
               <div className="flex flex-col gap-5">
@@ -282,17 +276,17 @@ export default function SobreNosotros() {
               className="font-display font-bold text-white text-balance mb-5"
               style={{ fontSize: "clamp(1.6rem, 3vw, 2.25rem)" }}
             >
-              Un proyecto digital es un sistema que debe funcionar solo
+              Un sistema bien diseñado trabaja por tu empresa
             </h2>
             <p className="text-am-muted text-lg leading-relaxed max-w-2xl mx-auto mb-4">
-              Requiere análisis del problema, diseño del proceso correcto y ejecución
-              sin fricciones. No se improvisa. Y cuando está bien diseñado, opera con
-              autonomía — atrayendo clientes sin que tengas que hacer nada extra.
+              Requiere entender el problema, diseñar el proceso correcto y ejecutarlo
+              sin fricciones. No se improvisa. Y cuando está bien hecho, tu equipo
+              trabaja más rápido, con menos errores y sin esfuerzo extra.
             </p>
             <p className="text-am-muted text-base leading-relaxed max-w-xl mx-auto">
-              Esa mentalidad de ingeniería industrial aplicada al mundo digital es lo que
-              diferencia los proyectos de AM Tecnología de una plantilla genérica
-              o un sitio sin estrategia.
+              Esa mentalidad de ingeniería industrial es lo que diferencia los proyectos
+              de AM Tecnología de un software genérico que obliga a tu empresa a
+              adaptarse a él.
             </p>
           </div>
         </div>
@@ -301,40 +295,41 @@ export default function SobreNosotros() {
       {/* ── CTA ── */}
       <section className="py-20 metal-bg">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full border border-am-primary/25 bg-am-primary/8 text-am-primary text-[13px] font-semibold tracking-widest uppercase mb-6">
+          <span className="inline-block text-am-primary text-[13px] font-semibold tracking-widest uppercase mb-6">
             ¿Hablamos?
           </span>
           <h2
             className="font-display font-bold text-white text-balance mb-4"
             style={{ fontSize: "clamp(1.6rem, 3vw, 2.25rem)" }}
           >
-            Tu negocio puede aparecer en Google este mes
+            Cuéntanos cómo trabaja tu empresa hoy
           </h2>
           <p className="text-am-muted text-base leading-relaxed mb-8">
-            Desde $199.990 pago único · Resultados reales · Sin mensualidades
+            Revisamos tus procesos y te enviamos una cotización a medida, sin compromiso.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href={WA}
               data-cta-source="sobre-nosotros-cta"
+              data-offer="software"
               target="_blank"
               rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2.5 bg-green-500 hover:bg-green-400 text-white font-bold text-[15px] px-7 py-3.5 rounded-xl transition-colors duration-200"
             >
-              Cotizar por WhatsApp
+              Cotizar mi software
             </a>
             <Link
-              href="/blog"
+              href="/#proyectos"
               className="inline-flex items-center gap-2 border border-white/20 hover:border-white/40 text-am-text hover:text-white font-semibold text-[15px] px-7 py-3.5 rounded-xl transition-all duration-200"
             >
-              Leer el blog →
+              Ver proyectos →
             </Link>
           </div>
         </div>
       </section>
 
       <Footer />
-      <WhatsAppButton />
+      <WhatsAppButton offer="software" />
     </>
   );
 }

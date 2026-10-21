@@ -24,7 +24,7 @@ export default function Team() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full border border-am-primary/25 bg-am-primary/8 text-am-primary text-[13px] font-semibold tracking-widest uppercase mb-5">
+          <span className="inline-block text-am-primary text-[13px] font-semibold tracking-widest uppercase mb-5">
             Quién está detrás
           </span>
           <h2
@@ -46,7 +46,7 @@ export default function Team() {
 
           {/* Philosophy card */}
           <div className="rounded-2xl border border-am-accent/20 bg-gradient-to-br from-am-primary/8 to-am-accent/5 p-8 flex flex-col justify-center">
-            <span className="inline-block px-3 py-1 rounded-full border border-am-accent/30 bg-am-accent/8 text-am-accent text-[11px] font-bold tracking-wider uppercase mb-6 w-fit">
+            <span className="inline-block text-am-accent text-[11px] font-bold tracking-wider uppercase mb-6 w-fit">
               Nuestro enfoque
             </span>
             <div className="text-4xl mb-5">⚙️</div>
@@ -66,7 +66,7 @@ export default function Team() {
 
           {/* Metrics card */}
           <div className="rounded-2xl border border-white/8 bg-am-surface p-8 flex flex-col justify-center">
-            <span className="inline-block px-3 py-1 rounded-full border border-am-primary/30 bg-am-primary/8 text-am-primary text-[11px] font-bold tracking-wider uppercase mb-6 w-fit">
+            <span className="inline-block text-am-primary text-[11px] font-bold tracking-wider uppercase mb-6 w-fit">
               Resultados reales
             </span>
             <div className="grid grid-cols-2 gap-5">

@@ -96,7 +96,6 @@ export default function HowItWorks() {
                 <p className="text-slate-900 font-bold text-[16px] leading-snug">Allan Milla</p>
                 <p className="text-am-primary font-semibold text-[13px] mt-0.5">Fundador · AM Tecnología</p>
                 <p className="text-slate-500 text-[12px] mt-1">Ingeniero Civil Industrial</p>
-                <p className="text-slate-500 text-[12px]">Especialista en procesos y gestión</p>
                 <p className="text-am-primary text-[12px] font-semibold mt-3 group-hover:text-am-accent transition-colors">
                   Ver perfil completo →
                 </p>

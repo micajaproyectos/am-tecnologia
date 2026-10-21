@@ -479,7 +479,7 @@ export default function AparecerEnGooglePage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="bg-am-surf2 border border-white/6 rounded-2xl p-6 hover:border-am-primary/20 transition-colors">
-              <div className="inline-flex px-3 py-1 rounded-full bg-am-primary/10 border border-am-primary/20 text-am-primary text-[11px] font-bold tracking-wide mb-4">
+              <div className="inline-block text-am-primary text-[11px] font-bold tracking-wide mb-4">
                 Taller mecánico · Temuco
               </div>
               <p className="text-am-muted text-[13.5px] leading-relaxed">
@@ -487,7 +487,7 @@ export default function AparecerEnGooglePage() {
               </p>
             </div>
             <div className="bg-am-surf2 border border-white/6 rounded-2xl p-6 hover:border-blue-500/20 transition-colors">
-              <div className="inline-flex px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[11px] font-bold tracking-wide mb-4">
+              <div className="inline-block text-blue-400 text-[11px] font-bold tracking-wide mb-4">
                 Psicóloga · Santiago
               </div>
               <p className="text-am-muted text-[13.5px] leading-relaxed">
@@ -495,7 +495,7 @@ export default function AparecerEnGooglePage() {
               </p>
             </div>
             <div className="bg-am-surf2 border border-white/6 rounded-2xl p-6 hover:border-purple-500/20 transition-colors">
-              <div className="inline-flex px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[11px] font-bold tracking-wide mb-4">
+              <div className="inline-block text-purple-400 text-[11px] font-bold tracking-wide mb-4">
                 Operador turístico · Puerto Montt
               </div>
               <p className="text-am-muted text-[13.5px] leading-relaxed">

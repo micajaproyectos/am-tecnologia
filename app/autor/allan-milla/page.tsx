@@ -11,7 +11,7 @@ const siteUrl = "https://www.amtecnologia.cl";
 export const metadata: Metadata = {
   title: "Allan Milla — Autor | AM Tecnología",
   description:
-    "Artículos escritos por Allan Milla, Ingeniero Civil Industrial y fundador de AM Tecnología. Guías prácticas sobre posicionamiento en Google, SEO y digitalización para empresas en Chile.",
+    "Artículos escritos por Allan Milla, Ingeniero Civil Industrial con 8 años de experiencia optimizando procesos en una empresa de ingeniería y fundador de AM Tecnología. Guías prácticas sobre posicionamiento en Google, SEO y digitalización para empresas en Chile.",
   alternates: {
     canonical: `${siteUrl}/autor/allan-milla`,
   },
@@ -30,7 +30,7 @@ const jsonLd = {
   name: "Allan Milla",
   jobTitle: "Ingeniero Civil Industrial",
   description:
-    "Fundador de AM Tecnología. Especialista en desarrollo Full Stack, Ingeniería de IA y Marketing Digital. Autor de guías sobre posicionamiento en Google para empresas chilenas.",
+    "Ingeniero Civil Industrial con 8 años de experiencia optimizando procesos en una empresa de ingeniería. Fundador de AM Tecnología y autor de guías para empresas chilenas.",
   url: `${siteUrl}/autor/allan-milla`,
   image: `${siteUrl}/fundador.webp`,
   worksFor: {
@@ -87,7 +87,7 @@ export default function AllanMillaPage() {
             </div>
 
             <div>
-              <span className="inline-block px-3 py-1 rounded-full border border-am-primary/25 bg-am-primary/8 text-am-primary text-[11px] font-bold tracking-widest uppercase mb-3">
+              <span className="inline-block text-am-primary text-[11px] font-bold tracking-widest uppercase mb-3">
                 Autor
               </span>
               <h1 className="font-display font-extrabold text-white text-[2rem] leading-tight mb-1">
@@ -97,8 +97,8 @@ export default function AllanMillaPage() {
                 Ing. Civil · Fundador de AM Tecnología
               </p>
               <p className="text-am-muted text-[14px] leading-relaxed max-w-xl">
-                Especialista en desarrollo Full Stack, Ingeniería de IA y Marketing Digital.
-                Escribo guías prácticas sobre cómo las empresas chilenas pueden aparecer
+                Ingeniero con 8 años de experiencia optimizando procesos en una
+                empresa de ingeniería. Escribo guías prácticas sobre cómo las empresas chilenas pueden aparecer
                 en Google y crecer de forma orgánica.
               </p>
               <div className="flex items-center gap-4 mt-4">
