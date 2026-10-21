@@ -549,30 +549,6 @@ export default function AparecerEnGooglePage() {
             ))}
           </div>
 
-          {/* Ciudades */}
-          <p className="text-am-muted text-[13px] font-semibold uppercase tracking-widest mb-4">Posicionamiento por ciudad</p>
-          <div className="flex flex-wrap gap-3 mb-10">
-            {[
-              { href: "/posicionamiento-google-santiago", label: "Santiago" },
-              { href: "/posicionamiento-google-concepcion", label: "Concepción" },
-              { href: "/posicionamiento-google-temuco", label: "Temuco" },
-              { href: "/posicionamiento-google-valdivia", label: "Valdivia" },
-              { href: "/posicionamiento-google-puerto-montt", label: "Puerto Montt" },
-              { href: "/posicionamiento-google-osorno", label: "Osorno" },
-              { href: "/posicionamiento-google-coyhaique", label: "Coyhaique" },
-              { href: "/posicionamiento-google-punta-arenas", label: "Punta Arenas" },
-            ].map((c) => (
-              <Link
-                key={c.href}
-                href={c.href}
-                prefetch={true}
-                className="px-4 py-2 rounded-full border border-white/10 bg-white/4 text-am-muted hover:text-white hover:border-am-primary/40 text-[13px] font-semibold transition-all duration-200"
-              >
-                {c.label}
-              </Link>
-            ))}
-          </div>
-
           {/* CTA */}
           <div className="flex flex-wrap gap-4 pt-6 border-t border-white/6">
             <a

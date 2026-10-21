@@ -57,22 +57,41 @@ const jsonLd = {
 
 const specialties = [
   {
-    icon: "⚙️",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M3 3v18h18" />
+        <path d="M7 15l4-4 3 3 5-6" />
+      </svg>
+    ),
     title: "Optimización de procesos",
     desc: "Analizamos cómo trabaja tu empresa hoy y detectamos qué tareas se repiten, se duplican o se pueden automatizar.",
   },
   {
-    icon: "📊",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+        <path d="M3 9h18M9 21V9" />
+      </svg>
+    ),
     title: "Software de gestión a medida",
     desc: "Sistemas web para pagos, inventario, personal y reportes, diseñados según tus procesos y no al revés.",
   },
   {
-    icon: "🤖",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M13 2L4 14h7l-1 8 9-12h-7z" />
+      </svg>
+    ),
     title: "Automatización e IA",
     desc: "Integramos automatizaciones e inteligencia artificial para que las tareas repetitivas se hagan solas.",
   },
   {
-    icon: "💻",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="2" y="4" width="20" height="13" rx="2" />
+        <path d="M8 21h8M12 17v4" />
+      </svg>
+    ),
     title: "Desarrollo web",
     desc: "Páginas web y tiendas online para cuando tu empresa también necesita vender y aparecer en Google.",
   },
@@ -199,7 +218,7 @@ export default function SobreNosotros() {
                 key={s.title}
                 className="rounded-2xl border border-white/6 bg-am-surface p-6 hover:border-am-primary/20 hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="text-3xl mb-4">{s.icon}</div>
+                <div className="w-12 h-12 mb-4 rounded-xl border border-white/10 flex items-center justify-center text-am-primary">{s.icon}</div>
                 <h3 className="font-display font-bold text-white text-[16px] mb-2">{s.title}</h3>
                 <p className="text-am-muted text-[13px] leading-[1.7]">{s.desc}</p>
               </div>
@@ -271,7 +290,6 @@ export default function SobreNosotros() {
       <section className="py-24 bg-black">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="rounded-2xl border border-am-primary/20 bg-am-primary/5 px-8 py-14">
-            <div className="text-5xl mb-6">⚙️</div>
             <h2
               className="font-display font-bold text-white text-balance mb-5"
               style={{ fontSize: "clamp(1.6rem, 3vw, 2.25rem)" }}

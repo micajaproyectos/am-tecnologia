@@ -292,7 +292,7 @@ El SEO on-page es todo lo que se hace dentro de tu sitio:
 
 El SEO local es el posicionamiento para búsquedas con una ciudad o zona geográfica. Para la mayoría de las pymes, es más valioso que el SEO nacional.
 
-"Gasfiter en [Rancagua](/posicionamiento-google-santiago)" tiene mucho menos competencia que "gasfiter en Chile" — y el que busca especifica ciudad tiene más intención de contratar pronto.
+"Gasfiter en Rancagua" tiene mucho menos competencia que "gasfiter en Chile" — y el que busca especifica ciudad tiene más intención de contratar pronto.
 
 ### ¿Cuánto tarda en funcionar el SEO?
 
@@ -776,7 +776,7 @@ Google usa tres factores principales para decidir qué negocios mostrar en el Lo
 
 ¿Qué tan bien coincide tu perfil con lo que el usuario está buscando? Si alguien busca "peluquería canina en Valdivia" y tu categoría es "Peluquería Canina" con esa ciudad en tu zona de servicio y esa frase en tu descripción, tu relevancia es alta.
 
-Puedes mejorar la relevancia con: categoría correcta, descripción con keywords, y una web con contenido relevante para tu rubro y ciudad. Por ejemplo, si estás en Valdivia, revisa cómo trabajamos el [posicionamiento en Google en Valdivia](/posicionamiento-google-valdivia) como referencia.
+Puedes mejorar la relevancia con: categoría correcta, descripción con keywords, y una web con contenido relevante para tu rubro y ciudad.
 
 ### Distancia
 
@@ -1196,7 +1196,7 @@ No necesariamente. El precio refleja el tamaño del equipo, los costos fijos y l
 
 Parte del SEO la puedes hacer tú: crear tu perfil de Google Business Profile, instalar Google Analytics y Search Console, y escribir contenido relevante para tu negocio. La parte técnica — estructura del sitio, velocidad, schema markup, arquitectura de URLs — generalmente requiere conocimientos más específicos o la ayuda de alguien que construya el sitio correctamente desde el inicio.
 
-Si estás buscando posicionamiento en una ciudad específica, tenemos guías para [Santiago](/posicionamiento-google-santiago), [Concepción](/posicionamiento-google-concepcion), [Temuco](/posicionamiento-google-temuco), [Puerto Montt](/posicionamiento-google-puerto-montt) y [otras ciudades de Chile](/aparecer-en-google).`,
+Si quieres ver cómo trabajamos el posicionamiento local, revisa nuestra guía para [aparecer en Google](/aparecer-en-google).`,
     faqSchema: [
       {
         q: "¿Cuánto cobra una agencia SEO en Chile por mes?",

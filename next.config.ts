@@ -86,6 +86,12 @@ const nextConfig: NextConfig = {
         destination: "https://www.amtecnologia.cl/:path*",
         permanent: true,
       },
+      // Páginas de posicionamiento por ciudad eliminadas (2026-10-21, sin tráfico)
+      {
+        source: "/posicionamiento-google-:ciudad",
+        destination: "/aparecer-en-google",
+        permanent: true,
+      },
     ];
   },
 };

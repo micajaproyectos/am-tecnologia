@@ -13,18 +13,6 @@ const SERVICE_SLUGS = [
   "app-web-saas",
 ];
 
-const CITY_SLUGS = [
-  "puerto-montt",
-  "temuco",
-  "valdivia",
-  "osorno",
-  "concepcion",
-  "santiago",
-  "coyhaique",
-  "punta-arenas",
-  "valparaiso",
-];
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
@@ -62,13 +50,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const cityPages: MetadataRoute.Sitemap = CITY_SLUGS.map((slug) => ({
-    url: `${BASE}/posicionamiento-google-${slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.75,
-  }));
-
   const blogIndex: MetadataRoute.Sitemap = [
     {
       url: `${BASE}/blog`,
@@ -85,5 +66,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...corePages, ...servicePages, ...cityPages, ...blogIndex, ...blogPosts];
+  return [...corePages, ...servicePages, ...blogIndex, ...blogPosts];
 }
